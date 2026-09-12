@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyHub - Free Study Material</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        nav {
+            background: #1e293b;
+            padding: 18px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 70px 20px;
+            background: white;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 28px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .subjects {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 220px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #ddd;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        footer {
+            margin-top: 30px;
+            background: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#subjects">Subjects</a>
+        <a href="notes.html">Notes</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to StudyHub 📚</h1>
+
+        <p>Free study material to help students learn better.</p>
+
+        <a class="btn" href="#subjects">Start Learning</a>
+    </section>
+
+    <section class="section" id="subjects">
+        <h2>Our Subjects</h2>
+
+        <div class="subjects">
+
+            <div class="card">
+                <h3>Mathematics</h3>
+                <p>Notes, questions and practice material.</p>
+            </div>
+
+            <div class="card">
+                <h3>English</h3>
+                <p>Grammar, vocabulary and study notes.</p>
+            </div>
+
+            <div class="card">
+                <h3>Computer Science</h3>
+                <p>Computer notes and important questions.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 StudyHub - Free Study Material</p>
+    </footer>
+
+</body>
+</html>
