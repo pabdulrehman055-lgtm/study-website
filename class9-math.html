@@ -230,52 +230,77 @@
             </p>
                 ```html
         <div class="box">
-            <h2>📝 Class 9 Mathematics MCQs</h2>
+          ```html
+<h2>📝 Class 9 Mathematics Quiz</h2>
 
-            <div class="question">
-                <strong>1. Which of the following is an irrational number?</strong>
-                <p>A) 2</p>
-                <p>B) 3/5</p>
-                <p>C) √2</p>
-                <p>D) 7</p>
-                <strong>Answer: C) √2</strong>
-            </div>
+<div class="question">
+    <strong>1. Which of the following is an irrational number?</strong><br><br>
 
-            <div class="question">
-                <strong>2. What is 3x + 2x?</strong>
-                <p>A) 5</p>
-                <p>B) 5x</p>
-                <p>C) 6x</p>
-                <p>D) x</p>
-                <strong>Answer: B) 5x</strong>
-            </div>
+    <button onclick="checkAnswer(this, false)">A) 2</button>
+    <button onclick="checkAnswer(this, false)">B) 3/5</button>
+    <button onclick="checkAnswer(this, true)">C) √2</button>
+    <button onclick="checkAnswer(this, false)">D) 7</button>
 
-            <div class="question">
-                <strong>3. Solve: x + 5 = 12</strong>
-                <p>A) 5</p>
-                <p>B) 6</p>
-                <p>C) 7</p>
-                <p>D) 8</p>
-                <strong>Answer: C) 7</strong>
-            </div>
+    <p class="result"></p>
+</div>
 
-            <div class="question">
-                <strong>4. What is the sum of angles in a triangle?</strong>
-                <p>A) 90°</p>
-                <p>B) 180°</p>
-                <p>C) 270°</p>
-                <p>D) 360°</p>
-                <strong>Answer: B) 180°</strong>
-            </div>
+<div class="question">
+    <strong>2. What is 3x + 2x?</strong><br><br>
 
-            <div class="question">
-                <strong>5. What is 3/5 in decimal form?</strong>
-                <p>A) 0.3</p>
-                <p>B) 0.5</p>
-                <p>C) 0.6</p>
-                <p>D) 0.8</p>
-                <strong>Answer: C) 0.6</strong>
-            </div>
+    <button onclick="checkAnswer(this, false)">A) 5</button>
+    <button onclick="checkAnswer(this, true)">B) 5x</button>
+    <button onclick="checkAnswer(this, false)">C) 6x</button>
+    <button onclick="checkAnswer(this, false)">D) x</button>
+
+    <p class="result"></p>
+</div>
+
+<div class="question">
+    <strong>3. Solve: x + 5 = 12</strong><br><br>
+
+    <button onclick="checkAnswer(this, false)">A) 5</button>
+    <button onclick="checkAnswer(this, false)">B) 6</button>
+    <button onclick="checkAnswer(this, true)">C) 7</button>
+    <button onclick="checkAnswer(this, false)">D) 8</button>
+
+    <p class="result"></p>
+</div>
+
+<div class="question">
+    <strong>4. What is the sum of angles in a triangle?</strong><br><br>
+
+    <button onclick="checkAnswer(this, false)">A) 90°</button>
+    <button onclick="checkAnswer(this, true)">B) 180°</button>
+    <button onclick="checkAnswer(this, false)">C) 270°</button>
+    <button onclick="checkAnswer(this, false)">D) 360°</button>
+
+    <p class="result"></p>
+</div>
+
+<div class="question">
+    <strong>5. What is 3/5 in decimal form?</strong><br><br>
+
+    <button onclick="checkAnswer(this, false)">A) 0.3</button>
+    <button onclick="checkAnswer(this, false)">B) 0.5</button>
+    <button onclick="checkAnswer(this, true)">C) 0.6</button>
+    <button onclick="checkAnswer(this, false)">D) 0.8</button>
+
+    <p class="result"></p>
+</div>
+
+<script>
+function checkAnswer(button, correct) {
+    let result = button.parentElement.querySelector(".result");
+
+    if (correct) {
+        result.innerHTML = "✅ Correct Answer!";
+    } else {
+        result.innerHTML = "❌ Wrong Answer. Try again!";
+    }
+}
+</script>
+```
+
         </div>
 ```
 
