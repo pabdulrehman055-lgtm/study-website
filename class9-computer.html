@@ -355,13 +355,22 @@
 let computerScore = 0;
 
 function checkComputerAnswer(button, correct) {
-    let result = button.parentElement.querySelector(".result");
+
+    let question = button.parentElement;
+
+    if (question.dataset.answered === "true") {
+        return;
+    }
+
+    question.dataset.answered = "true";
+
+    let result = question.querySelector(".result");
 
     if (correct) {
         result.innerHTML = "✅ Correct Answer!";
         computerScore++;
     } else {
-        result.innerHTML = "❌ Wrong Answer. Try again!";
+        result.innerHTML = "❌ Wrong Answer!";
     }
 
     document.getElementById("computerScore").innerHTML =
