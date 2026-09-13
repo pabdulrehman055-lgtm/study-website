@@ -233,6 +233,7 @@
           ```html
 <h2>📝 Class 9 Mathematics Quiz</h2>
 <p id="mathScore">Score: 0 / 5</p>
+            <button onclick="restartMathQuiz()">🔄 Restart Quiz</button>
 <div class="question">
     <strong>1. Which of the following is an irrational number?</strong><br><br>
 
@@ -312,6 +313,24 @@ function checkAnswer(button, correct) {
 
     document.getElementById("mathScore").innerHTML =
         "Score: " + mathScore + " / 5";
+}
+    function restartMathQuiz() {
+    mathScore = 0;
+
+    document.getElementById("mathScore").innerHTML =
+        "Score: 0 / 5";
+
+    let questions = document.querySelectorAll(".question");
+
+    questions.forEach(function(question) {
+        question.dataset.answered = "false";
+
+        let result = question.querySelector(".result");
+
+        if (result) {
+            result.innerHTML = "";
+        }
+    });
 }
 </script>
 ```
