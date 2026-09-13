@@ -377,6 +377,24 @@ function checkComputerAnswer(button, correct) {
         "Score: " + computerScore + " / 5";
 }
 </script>
+            function restartComputerQuiz() {
+    computerScore = 0;
+
+    document.getElementById("computerScore").innerHTML =
+        "Score: 0 / 5";
+
+    let questions = document.querySelectorAll(".question");
+
+    questions.forEach(function(question) {
+        question.dataset.answered = "false";
+
+        let result = question.querySelector(".result");
+
+        if (result) {
+            result.innerHTML = "";
+        }
+    });
+}
 
 </div>
 
