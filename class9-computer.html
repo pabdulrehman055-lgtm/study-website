@@ -353,15 +353,20 @@
     <p class="result"></p>
 </div>
 
-<script>
+let computerScore = 0;
+
 function checkComputerAnswer(button, correct) {
     let result = button.parentElement.querySelector(".result");
 
     if (correct) {
         result.innerHTML = "✅ Correct Answer!";
+        computerScore++;
     } else {
         result.innerHTML = "❌ Wrong Answer. Try again!";
     }
+
+    document.getElementById("computerScore").innerHTML =
+        "Score: " + computerScore + " / 5";
 }
 </script>
 ```
