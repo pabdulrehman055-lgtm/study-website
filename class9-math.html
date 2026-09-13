@@ -289,14 +289,29 @@
 </div>
 
 <script>
+let mathScore = 0;
+
 function checkAnswer(button, correct) {
-    let result = button.parentElement.querySelector(".result");
+
+    let question = button.parentElement;
+
+    if (question.dataset.answered === "true") {
+        return;
+    }
+
+    question.dataset.answered = "true";
+
+    let result = question.querySelector(".result");
 
     if (correct) {
         result.innerHTML = "✅ Correct Answer!";
+        mathScore++;
     } else {
-        result.innerHTML = "❌ Wrong Answer. Try again!";
+        result.innerHTML = "❌ Wrong Answer!";
     }
+
+    document.getElementById("mathScore").innerHTML =
+        "Score: " + mathScore + " / 5";
 }
 </script>
 ```
