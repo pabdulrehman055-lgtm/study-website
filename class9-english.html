@@ -265,6 +265,7 @@
            ```html
 <h2>📝 Class 9 English Quiz</h2>
 <p id="englishScore">Score: 0 / 5</p>
+            <button onclick="restartEnglishQuiz()">🔄 Restart Quiz</button>
 <div class="question">
     <strong>1. Which word is a noun?</strong><br><br>
 
@@ -344,6 +345,24 @@ function checkAnswer(button, correct) {
 
     document.getElementById("englishScore").innerHTML =
         "Score: " + englishScore + " / 5";
+}
+    function restartEnglishQuiz() {
+    englishScore = 0;
+
+    document.getElementById("englishScore").innerHTML =
+        "Score: 0 / 5";
+
+    let questions = document.querySelectorAll(".question");
+
+    questions.forEach(function(question) {
+        question.dataset.answered = "false";
+
+        let result = question.querySelector(".result");
+
+        if (result) {
+            result.innerHTML = "";
+        }
+    });
 }
 </script>
 ```
