@@ -321,14 +321,29 @@
 </div>
 
 <script>
+let englishScore = 0;
+
 function checkAnswer(button, correct) {
-    let result = button.parentElement.querySelector(".result");
+
+    let question = button.parentElement;
+
+    if (question.dataset.answered === "true") {
+        return;
+    }
+
+    question.dataset.answered = "true";
+
+    let result = question.querySelector(".result");
 
     if (correct) {
         result.innerHTML = "✅ Correct Answer!";
+        englishScore++;
     } else {
-        result.innerHTML = "❌ Wrong Answer. Try again!";
+        result.innerHTML = "❌ Wrong Answer!";
     }
+
+    document.getElementById("englishScore").innerHTML =
+        "Score: " + englishScore + " / 5";
 }
 </script>
 ```
