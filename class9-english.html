@@ -262,58 +262,76 @@
             </p>
             ```html
         <div class="box">
-            <h2>📝 Class 9 English MCQs</h2>
+           ```html
+<h2>📝 Class 9 English Quiz</h2>
 
-            <div class="question">
-                <strong>1. Which word is a noun?</strong>
-                <p>A) Quickly</p>
-                <p>B) Beautiful</p>
-                <p>C) School</p>
-                <p>D) Run</p>
-                <strong>Answer: C) School</strong>
-            </div>
+<div class="question">
+    <strong>1. Which word is a noun?</strong><br><br>
 
-            <div class="question">
-                <strong>2. What is the past form of "go"?</strong>
-                <p>A) Goed</p>
-                <p>B) Went</p>
-                <p>C) Going</p>
-                <p>D) Goes</p>
-                <strong>Answer: B) Went</strong>
-            </div>
+    <button onclick="checkAnswer(this, false)">A) Quickly</button>
+    <button onclick="checkAnswer(this, false)">B) Beautiful</button>
+    <button onclick="checkAnswer(this, true)">C) School</button>
+    <button onclick="checkAnswer(this, false)">D) Run</button>
 
-            <div class="question">
-                <strong>3. Which tense is used in: "She plays cricket every day"?</strong>
-                <p>A) Past Simple</p>
-                <p>B) Future Simple</p>
-                <p>C) Present Simple</p>
-                <p>D) Present Continuous</p>
-                <strong>Answer: C) Present Simple</strong>
-            </div>
+    <p class="result"></p>
+</div>
 
-            <div class="question">
-                <strong>4. What is the meaning of "Improve"?</strong>
-                <p>A) Make better</p>
-                <p>B) Make worse</p>
-                <p>C) Stop</p>
-                <p>D) Forget</p>
-                <strong>Answer: A) Make better</strong>
-            </div>
+<div class="question">
+    <strong>2. What is the past form of "go"?</strong><br><br>
 
-            <div class="question">
-                <strong>5. Which word is a verb?</strong>
-                <p>A) Happy</p>
-                <p>B) Quickly</p>
-                <p>C) Run</p>
-                <p>D) School</p>
-                <strong>Answer: C) Run</strong>
-            </div>
-        </div>
+    <button onclick="checkAnswer(this, false)">A) Goed</button>
+    <button onclick="checkAnswer(this, true)">B) Went</button>
+    <button onclick="checkAnswer(this, false)">C) Going</button>
+    <button onclick="checkAnswer(this, false)">D) Goes</button>
+
+    <p class="result"></p>
+</div>
+
+<div class="question">
+    <strong>3. Which tense is used in: "She plays cricket every day"?</strong><br><br>
+
+    <button onclick="checkAnswer(this, false)">A) Past Simple</button>
+    <button onclick="checkAnswer(this, false)">B) Future Simple</button>
+    <button onclick="checkAnswer(this, true)">C) Present Simple</button>
+    <button onclick="checkAnswer(this, false)">D) Present Continuous</button>
+
+    <p class="result"></p>
+</div>
+
+<div class="question">
+    <strong>4. What is the meaning of "Improve"?</strong><br><br>
+
+    <button onclick="checkAnswer(this, true)">A) Make better</button>
+    <button onclick="checkAnswer(this, false)">B) Make worse</button>
+    <button onclick="checkAnswer(this, false)">C) Stop</button>
+    <button onclick="checkAnswer(this, false)">D) Forget</button>
+
+    <p class="result"></p>
+</div>
+
+<div class="question">
+    <strong>5. Which word is a verb?</strong><br><br>
+
+    <button onclick="checkAnswer(this, false)">A) Happy</button>
+    <button onclick="checkAnswer(this, false)">B) Quickly</button>
+    <button onclick="checkAnswer(this, true)">C) Run</button>
+    <button onclick="checkAnswer(this, false)">D) School</button>
+
+    <p class="result"></p>
+</div>
+
+<script>
+function checkAnswer(button, correct) {
+    let result = button.parentElement.querySelector(".result");
+
+    if (correct) {
+        result.innerHTML = "✅ Correct Answer!";
+    } else {
+        result.innerHTML = "❌ Wrong Answer. Try again!";
+    }
+}
+</script>
 ```
-
-        </div>
-
-    </div>
 
     <footer>
         <p>© 2026 StudyHub - Free Study Material</p>
