@@ -305,52 +305,63 @@
         </div>
 
         <div class="box">
-            <h2>📝 Class 9 Computer MCQs</h2>
+           <h2>📝 Class 9 Computer Quiz</h2>
 
-            <div class="question">
-                <strong>1.</strong> What is the brain of a computer?
-                <p>A) Monitor</p>
-                <p>B) CPU</p>
-                <p>C) Keyboard</p>
-                <p>D) Mouse</p>
-                <strong>Answer: B) CPU</strong>
-            </div>
+<div class="question">
+    <strong>1. What is the brain of a computer?</strong><br><br>
+    <button onclick="checkComputerAnswer(this, false)">A) Monitor</button>
+    <button onclick="checkComputerAnswer(this, true)">B) CPU</button>
+    <button onclick="checkComputerAnswer(this, false)">C) Keyboard</button>
+    <button onclick="checkComputerAnswer(this, false)">D) Mouse</button>
+    <p class="result"></p>
+</div>
 
-            <div class="question">
-                <strong>2.</strong> Which of the following is an input device?
-                <p>A) Monitor</p>
-                <p>B) Printer</p>
-                <p>C) Keyboard</p>
-                <p>D) Speaker</p>
-                <strong>Answer: C) Keyboard</strong>
-            </div>
+<div class="question">
+    <strong>2. Which of the following is an input device?</strong><br><br>
+    <button onclick="checkComputerAnswer(this, false)">A) Monitor</button>
+    <button onclick="checkComputerAnswer(this, false)">B) Printer</button>
+    <button onclick="checkComputerAnswer(this, true)">C) Keyboard</button>
+    <button onclick="checkComputerAnswer(this, false)">D) Speaker</button>
+    <p class="result"></p>
+</div>
 
-            <div class="question">
-                <strong>3.</strong> What is the full form of CPU?
-                <p>A) Central Processing Unit</p>
-                <p>B) Computer Processing Unit</p>
-                <p>C) Central Program Unit</p>
-                <p>D) Computer Program Unit</p>
-                <strong>Answer: A) Central Processing Unit</strong>
-            </div>
+<div class="question">
+    <strong>3. What is the full form of CPU?</strong><br><br>
+    <button onclick="checkComputerAnswer(this, true)">A) Central Processing Unit</button>
+    <button onclick="checkComputerAnswer(this, false)">B) Computer Processing Unit</button>
+    <button onclick="checkComputerAnswer(this, false)">C) Central Program Unit</button>
+    <button onclick="checkComputerAnswer(this, false)">D) Computer Program Unit</button>
+    <p class="result"></p>
+</div>
 
-            <div class="question">
-                <strong>4.</strong> Which one is an operating system?
-                <p>A) Windows</p>
-                <p>B) Chrome</p>
-                <p>C) Google</p>
-                <p>D) YouTube</p>
-                <strong>Answer: A) Windows</strong>
-            </div>
+<div class="question">
+    <strong>4. Which one is an operating system?</strong><br><br>
+    <button onclick="checkComputerAnswer(this, true)">A) Windows</button>
+    <button onclick="checkComputerAnswer(this, false)">B) Chrome</button>
+    <button onclick="checkComputerAnswer(this, false)">C) Google</button>
+    <button onclick="checkComputerAnswer(this, false)">D) YouTube</button>
+    <p class="result"></p>
+</div>
 
-            <div class="question">
-                <strong>5.</strong> What is used to access websites?
-                <p>A) Web Browser</p>
-                <p>B) Calculator</p>
-                <p>C) Paint</p>
-                <p>D) Notepad</p>
-                <strong>Answer: A) Web Browser</strong>
-            </div>
-        </div>
+<div class="question">
+    <strong>5. What is used to access websites?</strong><br><br>
+    <button onclick="checkComputerAnswer(this, true)">A) Web Browser</button>
+    <button onclick="checkComputerAnswer(this, false)">B) Calculator</button>
+    <button onclick="checkComputerAnswer(this, false)">C) Paint</button>
+    <button onclick="checkComputerAnswer(this, false)">D) Notepad</button>
+    <p class="result"></p>
+</div>
+
+<script>
+function checkComputerAnswer(button, correct) {
+    let result = button.parentElement.querySelector(".result");
+
+    if (correct) {
+        result.innerHTML = "✅ Correct Answer!";
+    } else {
+        result.innerHTML = "❌ Wrong Answer. Try again!";
+    }
+}
+</script>
 ```
 
