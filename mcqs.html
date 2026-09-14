@@ -1,65 +1,37 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>StudyHub - MDCAT MCQs Practice Test</title>
-
-    <meta name="description" content="Practice MDCAT Biology, Chemistry and Physics MCQs with an instant score.">
+    <title>StudyHub - MDCAT Practice Test</title>
 
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
+            margin: 0;
             background: #f4f7fb;
             color: #222;
-            line-height: 1.6;
         }
 
-        nav {
-            background: #1e293b;
-            padding: 18px;
-            text-align: center;
-        }
-
-        nav a {
+        header {
+            background: #173f5f;
             color: white;
-            text-decoration: none;
-            margin: 0 12px;
-            font-weight: bold;
+            text-align: center;
+            padding: 25px;
         }
 
         .container {
             max-width: 900px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-
-        .header {
-            background: white;
-            text-align: center;
-            padding: 30px 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px #ddd;
-        }
-
-        .header h1 {
-            margin-top: 0;
-            font-size: 36px;
+            margin: 30px auto;
+            padding: 20px;
         }
 
         .question {
             background: white;
-            margin-top: 20px;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
 
         .question h3 {
@@ -68,273 +40,364 @@
 
         label {
             display: block;
-            padding: 10px;
-            margin: 7px 0;
-            background: #f8fafc;
-            border-radius: 7px;
+            padding: 8px;
             cursor: pointer;
         }
 
-        label:hover {
-            background: #eef2ff;
-        }
-
-        input[type="radio"] {
-            margin-right: 10px;
-        }
-
-        .submit-btn {
-            display: block;
-            margin: 30px auto;
-            padding: 14px 30px;
-            border: none;
-            background: #2563eb;
+        button {
+            background: #173f5f;
             color: white;
+            border: none;
+            padding: 14px 25px;
+            font-size: 18px;
             border-radius: 8px;
-            font-size: 17px;
-            font-weight: bold;
             cursor: pointer;
         }
 
-        .submit-btn:hover {
-            background: #1d4ed8;
+        button:hover {
+            background: #0f2d43;
         }
 
         #result {
-            display: none;
-            background: white;
-            text-align: center;
-            padding: 30px;
             margin-top: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px #ddd;
-        }
-
-        #score {
-            font-size: 28px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            font-size: 22px;
             font-weight: bold;
-        }
-
-        footer {
-            margin-top: 40px;
-            background: #1e293b;
-            color: white;
             text-align: center;
-            padding: 25px;
         }
 
-        .footer-menu a {
-            color: white;
-            text-decoration: none;
-            margin: 0 8px;
+        .subject {
+            color: #173f5f;
+            margin-top: 35px;
         }
     </style>
 </head>
 
 <body>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="notes.html">Notes</a>
-        <a href="biology.html">Biology</a>
-        <a href="chemistry.html">Chemistry</a>
-        <a href="physics.html">Physics</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<header>
+    <h1>StudyHub 🎯</h1>
+    <p>MDCAT 30 MCQs Practice Test</p>
+</header>
 
-    <div class="container">
+<div class="container">
 
-        <div class="header">
-            <h1>📝 MDCAT Practice Test</h1>
-            <p>Test your Biology, Chemistry and Physics knowledge.</p>
-        </div>
+    <h2 class="subject">🧬 Biology - 10 MCQs</h2>
 
-        <form id="quizForm">
-
-            <div class="question">
-                <h3>1. What is the basic structural and functional unit of life?</h3>
-
-                <label>
-                    <input type="radio" name="q1" value="A">
-                    A) Tissue
-                </label>
-
-                <label>
-                    <input type="radio" name="q1" value="B">
-                    B) Organ
-                </label>
-
-                <label>
-                    <input type="radio" name="q1" value="C">
-                    C) Cell
-                </label>
-
-                <label>
-                    <input type="radio" name="q1" value="D">
-                    D) Organ system
-                </label>
-            </div>
-
-            <div class="question">
-                <h3>2. Which particle has a positive charge?</h3>
-
-                <label>
-                    <input type="radio" name="q2" value="A">
-                    A) Electron
-                </label>
-
-                <label>
-                    <input type="radio" name="q2" value="B">
-                    B) Neutron
-                </label>
-
-                <label>
-                    <input type="radio" name="q2" value="C">
-                    C) Proton
-                </label>
-
-                <label>
-                    <input type="radio" name="q2" value="D">
-                    D) Atom
-                </label>
-            </div>
-
-            <div class="question">
-                <h3>3. What is the SI unit of length?</h3>
-
-                <label>
-                    <input type="radio" name="q3" value="A">
-                    A) Kilogram
-                </label>
-
-                <label>
-                    <input type="radio" name="q3" value="B">
-                    B) Metre
-                </label>
-
-                <label>
-                    <input type="radio" name="q3" value="C">
-                    C) Second
-                </label>
-
-                <label>
-                    <input type="radio" name="q3" value="D">
-                    D) Ampere
-                </label>
-            </div>
-
-            <div class="question">
-                <h3>4. Which organelle is mainly responsible for protein synthesis?</h3>
-
-                <label>
-                    <input type="radio" name="q4" value="A">
-                    A) Ribosome
-                </label>
-
-                <label>
-                    <input type="radio" name="q4" value="B">
-                    B) Lysosome
-                </label>
-
-                <label>
-                    <input type="radio" name="q4" value="C">
-                    C) Golgi apparatus
-                </label>
-
-                <label>
-                    <input type="radio" name="q4" value="D">
-                    D) Vacuole
-                </label>
-            </div>
-
-            <div class="question">
-                <h3>5. Atomic number is equal to the number of:</h3>
-
-                <label>
-                    <input type="radio" name="q5" value="A">
-                    A) Neutrons
-                </label>
-
-                <label>
-                    <input type="radio" name="q5" value="B">
-                    B) Electrons only
-                </label>
-
-                <label>
-                    <input type="radio" name="q5" value="C">
-                    C) Protons
-                </label>
-
-                <label>
-                    <input type="radio" name="q5" value="D">
-                    D) Protons + neutrons
-                </label>
-            </div>
-
-            <button class="submit-btn" type="submit">
-                Submit Test
-            </button>
-
-        </form>
-
-        <div id="result">
-            <h2>🎯 Your Result</h2>
-            <p id="score"></p>
-            <p>Keep practicing and improve your MDCAT preparation!</p>
-        </div>
-
+    <div class="question">
+        <h3>1. What is the basic unit of life?</h3>
+        <label><input type="radio" name="q1" value="A"> A. Tissue</label>
+        <label><input type="radio" name="q1" value="B"> B. Cell</label>
+        <label><input type="radio" name="q1" value="C"> C. Organ</label>
+        <label><input type="radio" name="q1" value="D"> D. Atom</label>
     </div>
 
-    <footer>
+    <div class="question">
+        <h3>2. Which organelle is known as the powerhouse of the cell?</h3>
+        <label><input type="radio" name="q2" value="A"> A. Nucleus</label>
+        <label><input type="radio" name="q2" value="B"> B. Ribosome</label>
+        <label><input type="radio" name="q2" value="C"> C. Mitochondria</label>
+        <label><input type="radio" name="q2" value="D"> D. Golgi apparatus</label>
+    </div>
 
-        <p>© 2026 StudyHub - Free MDCAT Study Resources</p>
+    <div class="question">
+        <h3>3. Which structure controls most activities of the cell?</h3>
+        <label><input type="radio" name="q3" value="A"> A. Nucleus</label>
+        <label><input type="radio" name="q3" value="B"> B. Cell wall</label>
+        <label><input type="radio" name="q3" value="C"> C. Vacuole</label>
+        <label><input type="radio" name="q3" value="D"> D. Cytoplasm</label>
+    </div>
 
-        <div class="footer-menu">
-            <a href="index.html">Home</a>
-            <a href="notes.html">Notes</a>
-            <a href="contact.html">Contact</a>
-        </div>
+    <div class="question">
+        <h3>4. Which molecule carries genetic information?</h3>
+        <label><input type="radio" name="q4" value="A"> A. Protein</label>
+        <label><input type="radio" name="q4" value="B"> B. Lipid</label>
+        <label><input type="radio" name="q4" value="C"> C. DNA</label>
+        <label><input type="radio" name="q4" value="D"> D. Glucose</label>
+    </div>
 
-    </footer>
+    <div class="question">
+        <h3>5. Photosynthesis mainly occurs in which organelle?</h3>
+        <label><input type="radio" name="q5" value="A"> A. Chloroplast</label>
+        <label><input type="radio" name="q5" value="B"> B. Nucleus</label>
+        <label><input type="radio" name="q5" value="C"> C. Ribosome</label>
+        <label><input type="radio" name="q5" value="D"> D. Lysosome</label>
+    </div>
 
-    <script>
-        document.getElementById("quizForm").addEventListener("submit", function(event) {
+    <div class="question">
+        <h3>6. Which blood cells fight infections?</h3>
+        <label><input type="radio" name="q6" value="A"> A. Red blood cells</label>
+        <label><input type="radio" name="q6" value="B"> B. White blood cells</label>
+        <label><input type="radio" name="q6" value="C"> C. Platelets</label>
+        <label><input type="radio" name="q6" value="D"> D. Plasma</label>
+    </div>
 
-            event.preventDefault();
+    <div class="question">
+        <h3>7. Which organ pumps blood throughout the body?</h3>
+        <label><input type="radio" name="q7" value="A"> A. Liver</label>
+        <label><input type="radio" name="q7" value="B"> B. Kidney</label>
+        <label><input type="radio" name="q7" value="C"> C. Heart</label>
+        <label><input type="radio" name="q7" value="D"> D. Lung</label>
+    </div>
 
-            const answers = {
-                q1: "C",
-                q2: "C",
-                q3: "B",
-                q4: "A",
-                q5: "C"
-            };
+    <div class="question">
+        <h3>8. What is the process by which plants make food?</h3>
+        <label><input type="radio" name="q8" value="A"> A. Respiration</label>
+        <label><input type="radio" name="q8" value="B"> B. Digestion</label>
+        <label><input type="radio" name="q8" value="C"> C. Photosynthesis</label>
+        <label><input type="radio" name="q8" value="D"> D. Excretion</label>
+    </div>
 
-            let score = 0;
+    <div class="question">
+        <h3>9. Which gas is required for cellular respiration?</h3>
+        <label><input type="radio" name="q9" value="A"> A. Oxygen</label>
+        <label><input type="radio" name="q9" value="B"> B. Nitrogen</label>
+        <label><input type="radio" name="q9" value="C"> C. Hydrogen</label>
+        <label><input type="radio" name="q9" value="D"> D. Helium</label>
+    </div>
 
-            for (let question in answers) {
+    <div class="question">
+        <h3>10. Which organ is mainly responsible for filtering blood?</h3>
+        <label><input type="radio" name="q10" value="A"> A. Heart</label>
+        <label><input type="radio" name="q10" value="B"> B. Kidney</label>
+        <label><input type="radio" name="q10" value="C"> C. Stomach</label>
+        <label><input type="radio" name="q10" value="D"> D. Brain</label>
+    </div>
 
-                const selected = document.querySelector(
-                    'input[name="' + question + '"]:checked'
-                );
 
-                if (selected && selected.value === answers[question]) {
-                    score++;
-                }
-            }
+    <h2 class="subject">⚗️ Chemistry - 10 MCQs</h2>
 
-            document.getElementById("result").style.display = "block";
+    <div class="question">
+        <h3>11. What is the smallest unit of an element?</h3>
+        <label><input type="radio" name="q11" value="A"> A. Molecule</label>
+        <label><input type="radio" name="q11" value="B"> B. Atom</label>
+        <label><input type="radio" name="q11" value="C"> C. Cell</label>
+        <label><input type="radio" name="q11" value="D"> D. Compound</label>
+    </div>
 
-            document.getElementById("score").textContent =
-                "You scored " + score + " / 5";
+    <div class="question">
+        <h3>12. What is the charge of a proton?</h3>
+        <label><input type="radio" name="q12" value="A"> A. Negative</label>
+        <label><input type="radio" name="q12" value="B"> B. Positive</label>
+        <label><input type="radio" name="q12" value="C"> C. Neutral</label>
+        <label><input type="radio" name="q12" value="D"> D. Zero only</label>
+    </div>
 
-            document.getElementById("result").scrollIntoView({
-                behavior: "smooth"
-            });
+    <div class="question">
+        <h3>13. What is the charge of an electron?</h3>
+        <label><input type="radio" name="q13" value="A"> A. Positive</label>
+        <label><input type="radio" name="q13" value="B"> B. Negative</label>
+        <label><input type="radio" name="q13" value="C"> C. Neutral</label>
+        <label><input type="radio" name="q13" value="D"> D. No charge</label>
+    </div>
 
-        });
-    </script>
+    <div class="question">
+        <h3>14. Atomic number represents the number of:</h3>
+        <label><input type="radio" name="q14" value="A"> A. Neutrons</label>
+        <label><input type="radio" name="q14" value="B"> B. Protons</label>
+        <label><input type="radio" name="q14" value="C"> C. Electrons + neutrons</label>
+        <label><input type="radio" name="q14" value="D"> D. Molecules</label>
+    </div>
+
+    <div class="question">
+        <h3>15. What is H₂O commonly known as?</h3>
+        <label><input type="radio" name="q15" value="A"> A. Hydrogen peroxide</label>
+        <label><input type="radio" name="q15" value="B"> B. Water</label>
+        <label><input type="radio" name="q15" value="C"> C. Oxygen</label>
+        <label><input type="radio" name="q15" value="D"> D. Salt</label>
+    </div>
+
+    <div class="question">
+        <h3>16. Which gas is most abundant in Earth's atmosphere?</h3>
+        <label><input type="radio" name="q16" value="A"> A. Oxygen</label>
+        <label><input type="radio" name="q16" value="B"> B. Carbon dioxide</label>
+        <label><input type="radio" name="q16" value="C"> C. Nitrogen</label>
+        <label><input type="radio" name="q16" value="D"> D. Hydrogen</label>
+    </div>
+
+    <div class="question">
+        <h3>17. A substance with pH less than 7 is:</h3>
+        <label><input type="radio" name="q17" value="A"> A. Acidic</label>
+        <label><input type="radio" name="q17" value="B"> B. Basic</label>
+        <label><input type="radio" name="q17" value="C"> C. Neutral</label>
+        <label><input type="radio" name="q17" value="D"> D. Metallic</label>
+    </div>
+
+    <div class="question">
+        <h3>18. Which particle has no electrical charge?</h3>
+        <label><input type="radio" name="q18" value="A"> A. Proton</label>
+        <label><input type="radio" name="q18" value="B"> B. Electron</label>
+        <label><input type="radio" name="q18" value="C"> C. Neutron</label>
+        <label><input type="radio" name="q18" value="D"> D. Ion</label>
+    </div>
+
+    <div class="question">
+        <h3>19. NaCl is commonly called:</h3>
+        <label><input type="radio" name="q19" value="A"> A. Baking soda</label>
+        <label><input type="radio" name="q19" value="B"> B. Common salt</label>
+        <label><input type="radio" name="q19" value="C"> C. Sugar</label>
+        <label><input type="radio" name="q19" value="D"> D. Water</label>
+    </div>
+
+    <div class="question">
+        <h3>20. Which element has the chemical symbol O?</h3>
+        <label><input type="radio" name="q20" value="A"> A. Gold</label>
+        <label><input type="radio" name="q20" value="B"> B. Oxygen</label>
+        <label><input type="radio" name="q20" value="C"> C. Osmium only</label>
+        <label><input type="radio" name="q20" value="D"> D. Hydrogen</label>
+    </div>
+
+
+    <h2 class="subject">⚡ Physics - 10 MCQs</h2>
+
+    <div class="question">
+        <h3>21. What is the SI unit of length?</h3>
+        <label><input type="radio" name="q21" value="A"> A. Kilogram</label>
+        <label><input type="radio" name="q21" value="B"> B. Meter</label>
+        <label><input type="radio" name="q21" value="C"> C. Second</label>
+        <label><input type="radio" name="q21" value="D"> D. Newton</label>
+    </div>
+
+    <div class="question">
+        <h3>22. What is the SI unit of time?</h3>
+        <label><input type="radio" name="q22" value="A"> A. Meter</label>
+        <label><input type="radio" name="q22" value="B"> B. Second</label>
+        <label><input type="radio" name="q22" value="C"> C. Joule</label>
+        <label><input type="radio" name="q22" value="D"> D. Watt</label>
+    </div>
+
+    <div class="question">
+        <h3>23. What is the formula for speed?</h3>
+        <label><input type="radio" name="q23" value="A"> A. Time ÷ Distance</label>
+        <label><input type="radio" name="q23" value="B"> B. Distance ÷ Time</label>
+        <label><input type="radio" name="q23" value="C"> C. Distance × Time</label>
+        <label><input type="radio" name="q23" value="D"> D. Mass × Acceleration</label>
+    </div>
+
+    <div class="question">
+        <h3>24. What is the SI unit of force?</h3>
+        <label><input type="radio" name="q24" value="A"> A. Joule</label>
+        <label><input type="radio" name="q24" value="B"> B. Watt</label>
+        <label><input type="radio" name="q24" value="C"> C. Newton</label>
+        <label><input type="radio" name="q24" value="D"> D. Pascal</label>
+    </div>
+
+    <div class="question">
+        <h3>25. What is the SI unit of mass?</h3>
+        <label><input type="radio" name="q25" value="A"> A. Meter</label>
+        <label><input type="radio" name="q25" value="B"> B. Kilogram</label>
+        <label><input type="radio" name="q25" value="C"> C. Newton</label>
+        <label><input type="radio" name="q25" value="D"> D. Second</label>
+    </div>
+
+    <div class="question">
+        <h3>26. What force attracts objects toward Earth?</h3>
+        <label><input type="radio" name="q26" value="A"> A. Friction</label>
+        <label><input type="radio" name="q26" value="B"> B. Gravity</label>
+        <label><input type="radio" name="q26" value="C"> C. Magnetism</label>
+        <label><input type="radio" name="q26" value="D"> D. Electricity</label>
+    </div>
+
+    <div class="question">
+        <h3>27. What is the SI unit of energy?</h3>
+        <label><input type="radio" name="q27" value="A"> A. Joule</label>
+        <label><input type="radio" name="q27" value="B"> B. Newton</label>
+        <label><input type="radio" name="q27" value="C"> C. Watt</label>
+        <label><input type="radio" name="q27" value="D"> D. Meter</label>
+    </div>
+
+    <div class="question">
+        <h3>28. Which device measures temperature?</h3>
+        <label><input type="radio" name="q28" value="A"> A. Barometer</label>
+        <label><input type="radio" name="q28" value="B"> B. Thermometer</label>
+        <label><input type="radio" name="q28" value="C"> C. Ammeter</label>
+        <label><input type="radio" name="q28" value="D"> D. Speedometer</label>
+    </div>
+
+    <div class="question">
+        <h3>29. What is the SI unit of electric current?</h3>
+        <label><input type="radio" name="q29" value="A"> A. Volt</label>
+        <label><input type="radio" name="q29" value="B"> B. Ohm</label>
+        <label><input type="radio" name="q29" value="C"> C. Ampere</label>
+        <label><input type="radio" name="q29" value="D"> D. Watt</label>
+    </div>
+
+    <div class="question">
+        <h3>30. Which type of energy is stored in a stretched spring?</h3>
+        <label><input type="radio" name="q30" value="A"> A. Chemical energy</label>
+        <label><input type="radio" name="q30" value="B"> B. Elastic potential energy</label>
+        <label><input type="radio" name="q30" value="C"> C. Nuclear energy</label>
+        <label><input type="radio" name="q30" value="D"> D. Sound energy</label>
+    </div>
+
+    <button onclick="checkAnswers()">Submit Test</button>
+
+    <div id="result"></div>
+
+</div>
+
+<script>
+
+function checkAnswers() {
+
+    const answers = {
+        q1: "B",
+        q2: "C",
+        q3: "A",
+        q4: "C",
+        q5: "A",
+        q6: "B",
+        q7: "C",
+        q8: "C",
+        q9: "A",
+        q10: "B",
+
+        q11: "B",
+        q12: "B",
+        q13: "B",
+        q14: "B",
+        q15: "B",
+        q16: "C",
+        q17: "A",
+        q18: "C",
+        q19: "B",
+        q20: "B",
+
+        q21: "B",
+        q22: "B",
+        q23: "B",
+        q24: "C",
+        q25: "B",
+        q26: "B",
+        q27: "A",
+        q28: "B",
+        q29: "C",
+        q30: "B"
+    };
+
+    let score = 0;
+
+    for (let question in answers) {
+
+        const selected = document.querySelector(
+            'input[name="' + question + '"]:checked'
+        );
+
+        if (selected && selected.value === answers[question]) {
+            score++;
+        }
+    }
+
+    let percentage = (score / 30) * 100;
+
+    document.getElementById("result").innerHTML =
+        "🎉 Your Score: " + score + " / 30<br>" +
+        "📊 Percentage: " + percentage.toFixed(1) + "%";
+}
+
+</script>
 
 </body>
 </html>
-```
