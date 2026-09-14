@@ -1,270 +1,293 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>StudyHub - MDCAT Biology Notes</title>
+    <title>StudyHub - MDCAT Biology Notes | Cell Biology</title>
 
-    <meta name="description" content="Free MDCAT Biology notes covering cell biology, important concepts and practice MCQs for students.">
+    <meta name="description" content="MDCAT Biology notes covering Cell Biology, cell structure, organelles, prokaryotic and eukaryotic cells with quick revision.">
 
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
+            margin: 0;
             background: #f4f7fb;
             color: #222;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
-        nav {
-            background: #1e293b;
-            padding: 18px;
-            text-align: center;
-        }
-
-        nav a {
+        header {
+            background: #173f5f;
             color: white;
-            text-decoration: none;
-            margin: 0 12px;
-            font-weight: bold;
+            text-align: center;
+            padding: 30px 20px;
         }
 
         .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 40px 20px;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
         }
 
-        .header {
-            text-align: center;
+        .box {
             background: white;
-            padding: 35px 20px;
+            padding: 25px;
+            margin-bottom: 25px;
             border-radius: 12px;
-            box-shadow: 0 4px 15px #ddd;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
 
-        .header h1 {
-            font-size: 38px;
-            margin: 0 0 10px;
+        h2 {
+            color: #173f5f;
         }
 
-        .header p {
-            color: #555;
+        h3 {
+            color: #245b7a;
         }
 
-        .lesson {
-            background: white;
-            margin-top: 25px;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px #ddd;
-        }
-
-        .lesson h2 {
-            color: #1e293b;
-        }
-
-        .lesson h3 {
-            color: #2563eb;
+        .important {
+            background: #eef5fa;
+            padding: 15px;
+            border-left: 5px solid #173f5f;
+            border-radius: 6px;
         }
 
         .mcq {
-            background: #f8fafc;
-            padding: 20px;
             margin-top: 15px;
+            padding: 15px;
+            background: #f8fafc;
             border-radius: 8px;
-            border-left: 4px solid #2563eb;
-        }
-
-        .answer {
-            margin-top: 10px;
-            font-weight: bold;
-        }
-
-        .back {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 12px 22px;
-            background: #2563eb;
-            color: white;
-            text-decoration: none;
-            border-radius: 7px;
         }
 
         footer {
-            margin-top: 40px;
-            background: #1e293b;
+            background: #173f5f;
             color: white;
             text-align: center;
-            padding: 25px;
+            padding: 20px;
+            margin-top: 40px;
         }
 
-        .footer-menu a {
-            color: white;
-            text-decoration: none;
-            margin: 0 8px;
+        a {
+            color: #173f5f;
+            font-weight: bold;
         }
     </style>
 </head>
 
 <body>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="notes.html">Notes</a>
-        <a href="biology.html">Biology</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<header>
+    <h1>🧬 MDCAT Biology Notes</h1>
+    <p>Chapter 1: Cell Biology</p>
+</header>
 
-    <div class="container">
+<div class="container">
 
-        <div class="header">
-            <h1>🧬 MDCAT Biology</h1>
-            <p>Chapter 1: Cell Biology</p>
+    <div class="box">
+        <h2>📚 What is a Cell?</h2>
+
+        <p>
+            A cell is the basic structural and functional unit of life.
+            All living organisms are made up of one or more cells.
+        </p>
+
+        <div class="important">
+            <strong>Important:</strong>
+            The cell is considered the basic unit of life.
         </div>
-
-        <div class="lesson">
-
-            <h2>What is a Cell?</h2>
-
-            <p>
-                A cell is the basic structural and functional unit of life.
-                All living organisms are made up of one or more cells.
-            </p>
-
-            <h3>Types of Cells</h3>
-
-            <p>
-                Cells can broadly be divided into two major types:
-            </p>
-
-            <ul>
-                <li><strong>Prokaryotic cells:</strong> They do not have a true membrane-bound nucleus.</li>
-                <li><strong>Eukaryotic cells:</strong> They contain a membrane-bound nucleus.</li>
-            </ul>
-
-            <h3>Important Cell Organelles</h3>
-
-            <ul>
-                <li><strong>Nucleus:</strong> Contains genetic material and controls many cell activities.</li>
-                <li><strong>Mitochondria:</strong> Produce ATP through cellular respiration.</li>
-                <li><strong>Ribosomes:</strong> Responsible for protein synthesis.</li>
-                <li><strong>Endoplasmic Reticulum:</strong> Helps in synthesis and transport of cellular materials.</li>
-                <li><strong>Golgi Apparatus:</strong> Modifies, sorts and packages certain cell products.</li>
-                <li><strong>Lysosomes:</strong> Contain digestive enzymes that help break down cellular materials.</li>
-                <li><strong>Chloroplasts:</strong> Found in plants and are involved in photosynthesis.</li>
-            </ul>
-
-        </div>
-
-        <div class="lesson">
-
-            <h2>📝 Practice MCQs</h2>
-
-            <div class="mcq">
-                <p>
-                    <strong>1. What is the basic structural and functional unit of life?</strong>
-                </p>
-
-                <p>A) Tissue</p>
-                <p>B) Organ</p>
-                <p>C) Cell</p>
-                <p>D) Organ system</p>
-
-                <p class="answer">Answer: C) Cell</p>
-            </div>
-
-            <div class="mcq">
-                <p>
-                    <strong>2. Which organelle is mainly responsible for protein synthesis?</strong>
-                </p>
-
-                <p>A) Ribosome</p>
-                <p>B) Lysosome</p>
-                <p>C) Golgi apparatus</p>
-                <p>D) Vacuole</p>
-
-                <p class="answer">Answer: A) Ribosome</p>
-            </div>
-
-            <div class="mcq">
-                <p>
-                    <strong>3. Which organelle is commonly known as the site of ATP production?</strong>
-                </p>
-
-                <p>A) Nucleus</p>
-                <p>B) Mitochondrion</p>
-                <p>C) Ribosome</p>
-                <p>D) Golgi apparatus</p>
-
-                <p class="answer">Answer: B) Mitochondrion</p>
-            </div>
-
-            <div class="mcq">
-                <p>
-                    <strong>4. Which type of cell lacks a membrane-bound nucleus?</strong>
-                </p>
-
-                <p>A) Eukaryotic cell</p>
-                <p>B) Prokaryotic cell</p>
-                <p>C) Plant cell only</p>
-                <p>D) Animal cell only</p>
-
-                <p class="answer">Answer: B) Prokaryotic cell</p>
-            </div>
-
-            <div class="mcq">
-                <p>
-                    <strong>5. Which organelle is involved in photosynthesis?</strong>
-                </p>
-
-                <p>A) Chloroplast</p>
-                <p>B) Lysosome</p>
-                <p>C) Ribosome</p>
-                <p>D) Nucleus</p>
-
-                <p class="answer">Answer: A) Chloroplast</p>
-            </div>
-
-        </div>
-
-        <div class="lesson">
-
-            <h2>🎯 Quick Revision</h2>
-
-            <ul>
-                <li>Cell = basic unit of life.</li>
-                <li>Prokaryotic = no membrane-bound nucleus.</li>
-                <li>Eukaryotic = membrane-bound nucleus.</li>
-                <li>Ribosome = protein synthesis.</li>
-                <li>Mitochondria = major site of ATP production.</li>
-                <li>Chloroplast = photosynthesis in plants.</li>
-            </ul>
-
-        </div>
-
-        <a class="back" href="notes.html">← Back to Notes</a>
-
     </div>
 
-    <footer>
 
-        <p>© 2026 StudyHub - Free MDCAT Study Resources</p>
+    <div class="box">
+        <h2>🔬 Types of Cells</h2>
 
-        <div class="footer-menu">
-            <a href="index.html">Home</a>
-            <a href="notes.html">Notes</a>
-            <a href="contact.html">Contact</a>
+        <h3>1. Prokaryotic Cells</h3>
+
+        <p>
+            Prokaryotic cells are generally simple cells that do not have
+            a membrane-bound nucleus.
+        </p>
+
+        <ul>
+            <li>They do not have a true nucleus.</li>
+            <li>Their genetic material is present in the nucleoid region.</li>
+            <li>Bacteria are examples of prokaryotic organisms.</li>
+        </ul>
+
+        <h3>2. Eukaryotic Cells</h3>
+
+        <p>
+            Eukaryotic cells have a true nucleus surrounded by a nuclear membrane.
+            They also contain membrane-bound organelles.
+        </p>
+
+        <ul>
+            <li>Have a true nucleus.</li>
+            <li>Contain membrane-bound organelles.</li>
+            <li>Animals and plants have eukaryotic cells.</li>
+        </ul>
+    </div>
+
+
+    <div class="box">
+        <h2>🧩 Important Cell Organelles</h2>
+
+        <h3>1. Nucleus</h3>
+        <p>
+            The nucleus contains genetic material and controls many activities
+            of the cell.
+        </p>
+
+        <h3>2. Mitochondria</h3>
+        <p>
+            Mitochondria are involved in cellular respiration and production
+            of ATP, which is an important energy currency of the cell.
+        </p>
+
+        <h3>3. Ribosomes</h3>
+        <p>
+            Ribosomes are the sites of protein synthesis.
+        </p>
+
+        <h3>4. Endoplasmic Reticulum</h3>
+        <p>
+            The endoplasmic reticulum helps in the synthesis and transport
+            of various substances within the cell.
+        </p>
+
+        <h3>5. Golgi Apparatus</h3>
+        <p>
+            The Golgi apparatus modifies, sorts and packages certain
+            cellular products.
+        </p>
+
+        <h3>6. Lysosomes</h3>
+        <p>
+            Lysosomes contain digestive enzymes and can break down
+            unwanted materials inside cells.
+        </p>
+
+        <h3>7. Chloroplasts</h3>
+        <p>
+            Chloroplasts are found in plant cells and are the main sites
+            of photosynthesis.
+        </p>
+    </div>
+
+
+    <div class="box">
+        <h2>🌱 Plant Cell vs Animal Cell</h2>
+
+        <p><strong>Plant cells:</strong></p>
+
+        <ul>
+            <li>Have a cell wall.</li>
+            <li>Usually contain chloroplasts.</li>
+            <li>Usually have a large central vacuole.</li>
+        </ul>
+
+        <p><strong>Animal cells:</strong></p>
+
+        <ul>
+            <li>Do not have a cell wall.</li>
+            <li>Do not contain chloroplasts.</li>
+            <li>Usually have smaller vacuoles.</li>
+        </ul>
+    </div>
+
+
+    <div class="box">
+        <h2>⚡ Quick Revision</h2>
+
+        <ul>
+            <li>Cell = basic unit of life.</li>
+            <li>Prokaryotes = no true nucleus.</li>
+            <li>Eukaryotes = true nucleus.</li>
+            <li>Mitochondria = cellular respiration and ATP production.</li>
+            <li>Ribosomes = protein synthesis.</li>
+            <li>Nucleus = contains genetic material.</li>
+            <li>Chloroplast = photosynthesis.</li>
+            <li>Plant cells have a cell wall.</li>
+        </ul>
+    </div>
+
+
+    <div class="box">
+        <h2>📝 Practice MCQs</h2>
+
+        <div class="mcq">
+            <strong>1. What is the basic unit of life?</strong>
+            <p>A. Tissue<br>
+            B. Cell<br>
+            C. Organ<br>
+            D. Atom</p>
+
+            <strong>Answer: B. Cell</strong>
         </div>
 
-    </footer>
+        <div class="mcq">
+            <strong>2. Which organelle is mainly associated with ATP production?</strong>
+            <p>A. Ribosome<br>
+            B. Nucleus<br>
+            C. Mitochondria<br>
+            D. Golgi apparatus</p>
+
+            <strong>Answer: C. Mitochondria</strong>
+        </div>
+
+        <div class="mcq">
+            <strong>3. Which cells do not have a true nucleus?</strong>
+            <p>A. Eukaryotic cells<br>
+            B. Prokaryotic cells<br>
+            C. Plant cells only<br>
+            D. Animal cells only</p>
+
+            <strong>Answer: B. Prokaryotic cells</strong>
+        </div>
+
+        <div class="mcq">
+            <strong>4. Where does protein synthesis occur?</strong>
+            <p>A. Ribosomes<br>
+            B. Lysosomes<br>
+            C. Vacuoles<br>
+            D. Chloroplasts</p>
+
+            <strong>Answer: A. Ribosomes</strong>
+        </div>
+
+        <div class="mcq">
+            <strong>5. Which organelle is responsible for photosynthesis?</strong>
+            <p>A. Nucleus<br>
+            B. Chloroplast<br>
+            C. Mitochondria<br>
+            D. Ribosome</p>
+
+            <strong>Answer: B. Chloroplast</strong>
+        </div>
+    </div>
+
+
+    <div class="box">
+        <h2>🎯 MDCAT Tip</h2>
+
+        <p>
+            For MDCAT preparation, remember the functions of important
+            organelles and the major differences between prokaryotic and
+            eukaryotic cells. These concepts are useful for solving
+            basic Biology MCQs.
+        </p>
+
+        <p>
+            <a href="notes.html">← Back to MDCAT Notes</a>
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 StudyHub | MDCAT Study Material</p>
+</footer>
 
 </body>
 </html>
-```
