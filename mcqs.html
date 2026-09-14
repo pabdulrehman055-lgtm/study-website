@@ -410,7 +410,26 @@ function checkAnswers() {
         "🎉 Your Score: " + score + " / 30<br>" +
         "📊 Percentage: " + percentage.toFixed(1) + "%";
 }
+let timeLeft = 30 * 60;
 
+const timer = setInterval(function () {
+    let minutes = Math.floor(timeLeft / 60);
+    let seconds = timeLeft % 60;
+
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    document.getElementById("timer").innerHTML =
+        "⏱️ Time Left: " + minutes + ":" + seconds;
+
+    if (timeLeft <= 0) {
+        clearInterval(timer);
+        checkAnswers();
+        document.getElementById("timer").innerHTML =
+            "⏰ Time Over! Test Submitted.";
+    }
+
+    timeLeft--;
+}, 1000);
 </script>
 
 </body>
