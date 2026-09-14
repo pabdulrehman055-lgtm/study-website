@@ -1,13 +1,16 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="description" content="StudyHub provides free study material, notes, subjects and useful educational resources for students.">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudyHub - Free Study Material</title>
-<meta name="description" content="StudyHub provides free Mathematics, English and Computer Science notes, practice questions and study material for students.">
 
-<meta name="keywords" content="free study notes, mathematics notes, English notes, computer science notes, study material">
+    <title>StudyHub - MDCAT Notes, MCQs & Practice Tests</title>
+
+    <meta name="description" content="StudyHub provides free MDCAT notes, Biology, Chemistry and Physics MCQs, practice questions and study resources for Pakistani students.">
+
+    <meta name="keywords" content="MDCAT notes, MDCAT MCQs, MDCAT preparation, Biology notes, Chemistry notes, Physics notes, MDCAT practice tests">
+
     <style>
         * {
             box-sizing: border-box;
@@ -29,8 +32,12 @@
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 12px;
             font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
         }
 
         .hero {
@@ -47,20 +54,23 @@
         .hero p {
             font-size: 20px;
             color: #555;
+            max-width: 700px;
+            margin: auto;
         }
 
         .btn {
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 25px;
             padding: 14px 28px;
             background: #2563eb;
             color: white;
             text-decoration: none;
             border-radius: 8px;
+            font-weight: bold;
         }
 
         .section {
-            padding: 40px 20px;
+            padding: 45px 20px;
             text-align: center;
         }
 
@@ -73,7 +83,7 @@
 
         .card {
             background: white;
-            width: 220px;
+            width: 230px;
             padding: 25px;
             border-radius: 12px;
             box-shadow: 0 4px 15px #ddd;
@@ -83,12 +93,41 @@
             margin-top: 0;
         }
 
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            background: white;
+            width: 230px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #ddd;
+        }
+
         footer {
             margin-top: 30px;
             background: #1e293b;
             color: white;
             text-align: center;
             padding: 25px;
+        }
+
+        .footer-menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 8px;
         }
     </style>
 </head>
@@ -106,47 +145,82 @@
     </nav>
 
     <section class="hero">
-        <h1>Welcome to StudyHub 📚</h1>
+        <h1>Welcome to StudyHub 🎯</h1>
 
-        <p>Free study material to help students learn better.</p>
+        <p>
+            Free MDCAT study material, notes, MCQs and practice resources
+            to help students prepare better.
+        </p>
 
-        <a class="btn" href="#subjects">Start Learning</a>
+        <a class="btn" href="#subjects">Start MDCAT Preparation</a>
     </section>
 
     <section class="section" id="subjects">
-        <h2>Our Subjects</h2>
+        <h2>MDCAT Subjects 📚</h2>
 
         <div class="subjects">
 
             <div class="card">
-                <h3>Mathematics</h3>
-                <p>Notes, questions and practice material.</p>
+                <h3>🧬 Biology</h3>
+                <p>Biology notes, important concepts and MCQs.</p>
+                <a href="notes.html">Study Biology</a>
             </div>
 
             <div class="card">
-                <h3>English</h3>
-                <p>Grammar, vocabulary and study notes.</p>
+                <h3>⚗️ Chemistry</h3>
+                <p>Chemistry notes, concepts and practice questions.</p>
+                <a href="notes.html">Study Chemistry</a>
             </div>
 
             <div class="card">
-                <h3>Computer Science</h3>
-                <p>Computer notes and important questions.</p>
+                <h3>⚡ Physics</h3>
+                <p>Physics concepts, formulas and practice questions.</p>
+                <a href="notes.html">Study Physics</a>
             </div>
 
         </div>
     </section>
 
-   <footer>
-    <p>© 2026 StudyHub - Free Study Material</p>
+    <section class="section">
+        <h2>Prepare Smarter 🚀</h2>
 
-    <div class="footer-menu">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms & Conditions</a>
-    </div>
-</footer>
+        <div class="features">
+
+            <div class="feature">
+                <h3>📝 MCQs</h3>
+                <p>Practice MDCAT-style multiple choice questions.</p>
+            </div>
+
+            <div class="feature">
+                <h3>⏱️ Mock Tests</h3>
+                <p>Test your preparation with practice tests.</p>
+            </div>
+
+            <div class="feature">
+                <h3>📖 Notes</h3>
+                <p>Easy-to-understand study notes for revision.</p>
+            </div>
+
+            <div class="feature">
+                <h3>🎯 Past Papers</h3>
+                <p>Practice with previous exam questions where available.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 StudyHub - Free MDCAT Study Resources</p>
+
+        <div class="footer-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+        </div>
+    </footer>
 
 </body>
 </html>
+```
