@@ -1,15 +1,26 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudyHub - Notes</title>
+
+    <title>StudyHub - MDCAT Notes</title>
+
+    <meta name="description" content="Free MDCAT Biology, Chemistry and Physics notes, concepts and practice material for students.">
+
+    <meta name="keywords" content="MDCAT notes, Biology notes, Chemistry notes, Physics notes, MDCAT preparation">
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             background: #f4f7fb;
+            color: #222;
         }
 
         nav {
@@ -21,33 +32,39 @@
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 12px;
             font-weight: bold;
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: auto;
-            padding: 40px 20px;
+            padding: 45px 20px;
             text-align: center;
         }
 
         h1 {
             font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .intro {
+            color: #555;
+            font-size: 18px;
         }
 
         .notes {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 25px;
             flex-wrap: wrap;
-            margin-top: 30px;
+            margin-top: 35px;
         }
 
         .card {
             background: white;
-            width: 250px;
-            padding: 25px;
+            width: 280px;
+            padding: 28px;
             border-radius: 12px;
             box-shadow: 0 4px 15px #ddd;
         }
@@ -56,22 +73,46 @@
             margin-top: 0;
         }
 
+        .card p {
+            color: #555;
+            line-height: 1.5;
+        }
+
         .btn {
             display: inline-block;
-            margin-top: 10px;
-            padding: 10px 20px;
+            margin-top: 12px;
+            padding: 11px 22px;
             background: #2563eb;
             color: white;
             text-decoration: none;
             border-radius: 7px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+        }
+
+        .extra {
+            margin-top: 45px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #ddd;
         }
 
         footer {
             margin-top: 50px;
             background: #1e293b;
             color: white;
-            padding: 20px;
+            padding: 25px;
             text-align: center;
+        }
+
+        .footer-menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 8px;
         }
     </style>
 </head>
@@ -82,41 +123,80 @@
         <a href="index.html">Home</a>
         <a href="notes.html">Notes</a>
         <a href="contact.html">Contact</a>
+        <a href="about.html">About Us</a>
     </nav>
 
     <div class="container">
 
-        <h1>📚 Study Notes</h1>
+        <h1>📚 MDCAT Notes</h1>
 
-        <p>Free notes and study material for students.</p>
+        <p class="intro">
+            Free study notes and preparation material for MDCAT students.
+        </p>
 
         <div class="notes">
 
             <div class="card">
-                <h2>Mathematics</h2>
-                <p>Important formulas and practice questions.</p>
-               <a class="btn" href="class9-math.html">Class 9 Notes</a>
+                <h2>🧬 Biology</h2>
+                <p>
+                    Biology concepts, important topics and
+                    revision material for MDCAT preparation.
+                </p>
+
+                <a class="btn" href="biology.html">Biology Notes</a>
             </div>
 
             <div class="card">
-                <h2>English</h2>
-                <p>Grammar and vocabulary notes.</p>
-               <a class="btn" href="class9-english.html">Class 9 Notes</a>
+                <h2>⚗️ Chemistry</h2>
+                <p>
+                    Chemistry concepts, formulas and
+                    practice material for MDCAT preparation.
+                </p>
+
+                <a class="btn" href="chemistry.html">Chemistry Notes</a>
             </div>
 
             <div class="card">
-                <h2>Computer Science</h2>
-                <p>Computer concepts and important questions.</p>
-              <a class="btn" href="class9-computer.html">Class 9 Notes</a>
+                <h2>⚡ Physics</h2>
+                <p>
+                    Physics concepts, formulas and
+                    important practice material.
+                </p>
+
+                <a class="btn" href="physics.html">Physics Notes</a>
             </div>
+
+        </div>
+
+        <div class="extra">
+
+            <h2>🎯 MDCAT Practice</h2>
+
+            <p>
+                Practice MCQs and test your preparation
+                with MDCAT-style questions.
+            </p>
+
+            <a class="btn" href="mcqs.html">Practice MCQs</a>
 
         </div>
 
     </div>
 
     <footer>
-        <p>© 2026 StudyHub</p>
+
+        <p>© 2026 StudyHub - Free MDCAT Study Resources</p>
+
+        <div class="footer-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+        </div>
+
     </footer>
 
 </body>
 </html>
+```
