@@ -1,0 +1,340 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyHub - MDCAT MCQs Practice Test</title>
+
+    <meta name="description" content="Practice MDCAT Biology, Chemistry and Physics MCQs with an instant score.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        nav {
+            background: #1e293b;
+            padding: 18px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            background: white;
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #ddd;
+        }
+
+        .header h1 {
+            margin-top: 0;
+            font-size: 36px;
+        }
+
+        .question {
+            background: white;
+            margin-top: 20px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #ddd;
+        }
+
+        .question h3 {
+            margin-top: 0;
+        }
+
+        label {
+            display: block;
+            padding: 10px;
+            margin: 7px 0;
+            background: #f8fafc;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+
+        label:hover {
+            background: #eef2ff;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .submit-btn {
+            display: block;
+            margin: 30px auto;
+            padding: 14px 30px;
+            border: none;
+            background: #2563eb;
+            color: white;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background: #1d4ed8;
+        }
+
+        #result {
+            display: none;
+            background: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #ddd;
+        }
+
+        #score {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 40px;
+            background: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .footer-menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="notes.html">Notes</a>
+        <a href="biology.html">Biology</a>
+        <a href="chemistry.html">Chemistry</a>
+        <a href="physics.html">Physics</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>📝 MDCAT Practice Test</h1>
+            <p>Test your Biology, Chemistry and Physics knowledge.</p>
+        </div>
+
+        <form id="quizForm">
+
+            <div class="question">
+                <h3>1. What is the basic structural and functional unit of life?</h3>
+
+                <label>
+                    <input type="radio" name="q1" value="A">
+                    A) Tissue
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="B">
+                    B) Organ
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="C">
+                    C) Cell
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="D">
+                    D) Organ system
+                </label>
+            </div>
+
+            <div class="question">
+                <h3>2. Which particle has a positive charge?</h3>
+
+                <label>
+                    <input type="radio" name="q2" value="A">
+                    A) Electron
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="B">
+                    B) Neutron
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="C">
+                    C) Proton
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="D">
+                    D) Atom
+                </label>
+            </div>
+
+            <div class="question">
+                <h3>3. What is the SI unit of length?</h3>
+
+                <label>
+                    <input type="radio" name="q3" value="A">
+                    A) Kilogram
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="B">
+                    B) Metre
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="C">
+                    C) Second
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="D">
+                    D) Ampere
+                </label>
+            </div>
+
+            <div class="question">
+                <h3>4. Which organelle is mainly responsible for protein synthesis?</h3>
+
+                <label>
+                    <input type="radio" name="q4" value="A">
+                    A) Ribosome
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="B">
+                    B) Lysosome
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="C">
+                    C) Golgi apparatus
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="D">
+                    D) Vacuole
+                </label>
+            </div>
+
+            <div class="question">
+                <h3>5. Atomic number is equal to the number of:</h3>
+
+                <label>
+                    <input type="radio" name="q5" value="A">
+                    A) Neutrons
+                </label>
+
+                <label>
+                    <input type="radio" name="q5" value="B">
+                    B) Electrons only
+                </label>
+
+                <label>
+                    <input type="radio" name="q5" value="C">
+                    C) Protons
+                </label>
+
+                <label>
+                    <input type="radio" name="q5" value="D">
+                    D) Protons + neutrons
+                </label>
+            </div>
+
+            <button class="submit-btn" type="submit">
+                Submit Test
+            </button>
+
+        </form>
+
+        <div id="result">
+            <h2>🎯 Your Result</h2>
+            <p id="score"></p>
+            <p>Keep practicing and improve your MDCAT preparation!</p>
+        </div>
+
+    </div>
+
+    <footer>
+
+        <p>© 2026 StudyHub - Free MDCAT Study Resources</p>
+
+        <div class="footer-menu">
+            <a href="index.html">Home</a>
+            <a href="notes.html">Notes</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </footer>
+
+    <script>
+        document.getElementById("quizForm").addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            const answers = {
+                q1: "C",
+                q2: "C",
+                q3: "B",
+                q4: "A",
+                q5: "C"
+            };
+
+            let score = 0;
+
+            for (let question in answers) {
+
+                const selected = document.querySelector(
+                    'input[name="' + question + '"]:checked'
+                );
+
+                if (selected && selected.value === answers[question]) {
+                    score++;
+                }
+            }
+
+            document.getElementById("result").style.display = "block";
+
+            document.getElementById("score").textContent =
+                "You scored " + score + " / 5";
+
+            document.getElementById("result").scrollIntoView({
+                behavior: "smooth"
+            });
+
+        });
+    </script>
+
+</body>
+</html>
+```
