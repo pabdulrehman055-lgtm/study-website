@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +6,9 @@
 
     <title>StudyHub - MDCAT Notes, MCQs & Practice Tests</title>
 
-    <meta name="description" content="StudyHub provides free MDCAT notes, Biology, Chemistry and Physics MCQs, practice questions and study resources for Pakistani students.">
+    <meta name="description" content="StudyHub provides free MDCAT notes, Biology, Chemistry, Physics, English and Logical Reasoning MCQs, practice tests and study resources.">
 
-    <meta name="keywords" content="MDCAT notes, MDCAT MCQs, MDCAT preparation, Biology notes, Chemistry notes, Physics notes, MDCAT practice tests">
+    <meta name="keywords" content="MDCAT notes, MDCAT MCQs, MDCAT preparation, Biology, Chemistry, Physics, English, Logical Reasoning, MDCAT practice tests">
 
     <style>
         * {
@@ -54,8 +53,9 @@
         .hero p {
             font-size: 20px;
             color: #555;
-            max-width: 700px;
+            max-width: 750px;
             margin: auto;
+            line-height: 1.6;
         }
 
         .btn {
@@ -69,9 +69,18 @@
             font-weight: bold;
         }
 
+        .btn:hover {
+            background: #1d4ed8;
+        }
+
         .section {
             padding: 45px 20px;
             text-align: center;
+        }
+
+        .section h2 {
+            margin-bottom: 30px;
+            font-size: 30px;
         }
 
         .subjects {
@@ -87,10 +96,21 @@
             padding: 25px;
             border-radius: 12px;
             box-shadow: 0 4px 15px #ddd;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
         }
 
         .card h3 {
             margin-top: 0;
+            font-size: 21px;
+        }
+
+        .card p {
+            line-height: 1.5;
+            color: #555;
         }
 
         .card a {
@@ -99,6 +119,10 @@
             color: #2563eb;
             text-decoration: none;
             font-weight: bold;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
         }
 
         .features {
@@ -116,6 +140,15 @@
             box-shadow: 0 4px 15px #ddd;
         }
 
+        .feature h3 {
+            margin-top: 0;
+        }
+
+        .feature p {
+            color: #555;
+            line-height: 1.5;
+        }
+
         footer {
             margin-top: 30px;
             background: #1e293b;
@@ -129,98 +162,225 @@
             text-decoration: none;
             margin: 0 8px;
         }
+
+        .footer-menu a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .card,
+            .feature {
+                width: 100%;
+                max-width: 320px;
+            }
+        }
     </style>
 </head>
 
 <body>
 
+    <!-- Navigation -->
     <nav>
         <a href="index.html">Home</a>
         <a href="#subjects">Subjects</a>
         <a href="notes.html">Notes</a>
+        <a href="#practice">Practice</a>
         <a href="contact.html">Contact</a>
         <a href="about.html">About Us</a>
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms & Conditions</a>
     </nav>
 
+
+    <!-- Hero Section -->
     <section class="hero">
+
         <h1>Welcome to StudyHub 🎯</h1>
 
         <p>
-            Free MDCAT study material, notes, MCQs and practice resources
-            to help students prepare better.
+            Free MDCAT study material, notes, MCQs, practice questions
+            and mock tests to help students prepare for the medical entrance test.
         </p>
 
-        <a class="btn" href="#subjects">Start MDCAT Preparation</a>
+        <a class="btn" href="#subjects">
+            Start MDCAT Preparation
+        </a>
+
     </section>
 
+
+    <!-- MDCAT Subjects -->
     <section class="section" id="subjects">
+
         <h2>MDCAT Subjects 📚</h2>
 
         <div class="subjects">
 
+            <!-- Biology -->
             <div class="card">
                 <h3>🧬 Biology</h3>
-                <p>Biology notes, important concepts and MCQs.</p>
-                <a href="notes.html">Study Biology</a>
+
+                <p>
+                    Biology notes, important concepts,
+                    MCQs and practice questions.
+                </p>
+
+                <a href="biology.html">
+                    Study Biology →
+                </a>
             </div>
 
+
+            <!-- Chemistry -->
             <div class="card">
                 <h3>⚗️ Chemistry</h3>
-                <p>Chemistry notes, concepts and practice questions.</p>
-                <a href="notes.html">Study Chemistry</a>
+
+                <p>
+                    Chemistry concepts, notes,
+                    formulas and MDCAT MCQs.
+                </p>
+
+                <a href="chemistry.html">
+                    Study Chemistry →
+                </a>
             </div>
 
+
+            <!-- Physics -->
             <div class="card">
                 <h3>⚡ Physics</h3>
-                <p>Physics concepts, formulas and practice questions.</p>
-                <a href="notes.html">Study Physics</a>
+
+                <p>
+                    Physics concepts, formulas,
+                    numerical problems and MCQs.
+                </p>
+
+                <a href="physics.html">
+                    Study Physics →
+                </a>
+            </div>
+
+
+            <!-- English -->
+            <div class="card">
+                <h3>📖 English</h3>
+
+                <p>
+                    English vocabulary, grammar,
+                    comprehension and practice questions.
+                </p>
+
+                <a href="english.html">
+                    Study English →
+                </a>
+            </div>
+
+
+            <!-- Logical Reasoning -->
+            <div class="card">
+                <h3>🧠 Logical Reasoning</h3>
+
+                <p>
+                    Logical reasoning concepts,
+                    practice questions and MCQs.
+                </p>
+
+                <a href="logical-reasoning.html">
+                    Practice Reasoning →
+                </a>
             </div>
 
         </div>
+
     </section>
 
-    <section class="section">
+
+    <!-- Practice Section -->
+    <section class="section" id="practice">
+
         <h2>Prepare Smarter 🚀</h2>
 
         <div class="features">
 
             <div class="feature">
                 <h3>📝 MCQs</h3>
-                <p>Practice MDCAT-style multiple choice questions.</p>
+
+                <p>
+                    Practice MDCAT-style multiple
+                    choice questions.
+                </p>
             </div>
+
 
             <div class="feature">
                 <h3>⏱️ Mock Tests</h3>
-                <p>Test your preparation with practice tests.</p>
+
+                <p>
+                    Test your preparation with
+                    timed practice tests.
+                </p>
             </div>
+
 
             <div class="feature">
                 <h3>📖 Notes</h3>
-                <p>Easy-to-understand study notes for revision.</p>
+
+                <p>
+                    Easy-to-understand notes for
+                    quick revision.
+                </p>
             </div>
+
 
             <div class="feature">
-                <h3>🎯 Past Papers</h3>
-                <p>Practice with previous exam questions where available.</p>
+                <h3>🎯 Practice</h3>
+
+                <p>
+                    Improve your preparation with
+                    topic-wise questions.
+                </p>
             </div>
 
         </div>
+
     </section>
 
+
+    <!-- Footer -->
     <footer>
-        <p>© 2026 StudyHub - Free MDCAT Study Resources</p>
+
+        <p>
+            © 2026 StudyHub - Free MDCAT Study Resources
+        </p>
 
         <div class="footer-menu">
+
             <a href="index.html">Home</a>
+
             <a href="about.html">About Us</a>
+
             <a href="contact.html">Contact</a>
+
             <a href="privacy.html">Privacy Policy</a>
+
             <a href="terms.html">Terms & Conditions</a>
+
         </div>
+
     </footer>
 
 </body>
 </html>
-```
