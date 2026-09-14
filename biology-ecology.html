@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biology Chapter 8 - Ecology | StudyHub</title>
+
+    <title>Ecology - MDCAT Biology Chapter 8 | StudyHub</title>
+
+    <meta name="description" content="MDCAT Biology Chapter 8 Ecology notes covering ecosystem, population, community, food chains, energy flow, ecological pyramids, nutrient cycles, biodiversity and conservation.">
 
     <style>
         body {
@@ -15,14 +18,23 @@
         }
 
         header {
-            background: #0b3d91;
+            background: #0b2d4d;
             color: white;
             padding: 25px 15px;
             text-align: center;
         }
 
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        header p {
+            margin: 8px 0 0;
+        }
+
         nav {
-            background: #082f6b;
+            background: #08243d;
             text-align: center;
             padding: 12px;
         }
@@ -30,7 +42,7 @@
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 12px;
+            margin: 0 10px;
             font-weight: bold;
         }
 
@@ -48,41 +60,38 @@
             background: white;
             padding: 25px;
             margin-bottom: 20px;
-            border-radius: 12px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-        }
-
-        h1 {
-            margin-bottom: 5px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
 
         h2 {
-            color: #0b3d91;
-            border-bottom: 2px solid #e6edf7;
+            color: #0b2d4d;
+            border-bottom: 2px solid #e5eaf0;
             padding-bottom: 8px;
         }
 
         h3 {
             color: #087f8c;
+            margin-top: 25px;
         }
 
         .important {
-            background: #eaf3ff;
-            border-left: 5px solid #0b3d91;
+            background: #eaf4ff;
+            border-left: 5px solid #0b2d4d;
             padding: 15px;
             margin: 15px 0;
         }
 
         .tip {
-            background: #e9f8ef;
-            border-left: 5px solid #168a45;
+            background: #eafaf1;
+            border-left: 5px solid #159957;
             padding: 15px;
             margin: 15px 0;
         }
 
         .warning {
             background: #fff4e5;
-            border-left: 5px solid #f39c12;
+            border-left: 5px solid #f0a000;
             padding: 15px;
             margin: 15px 0;
         }
@@ -90,26 +99,26 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 15px 0;
+            margin-top: 15px;
         }
 
         th, td {
-            border: 1px solid #ccc;
+            border: 1px solid #ddd;
             padding: 10px;
             text-align: left;
         }
 
         th {
-            background: #0b3d91;
+            background: #0b2d4d;
             color: white;
         }
 
         .mcq {
             background: #f8fafc;
-            border: 1px solid #dce3ec;
-            border-radius: 10px;
-            padding: 15px;
+            border: 1px solid #dfe5eb;
+            padding: 18px;
             margin: 15px 0;
+            border-radius: 8px;
         }
 
         .answer {
@@ -120,20 +129,20 @@
 
         .back {
             display: inline-block;
-            background: #0b3d91;
+            background: #0b2d4d;
             color: white;
             text-decoration: none;
-            padding: 12px 20px;
-            border-radius: 8px;
-            font-weight: bold;
+            padding: 12px 18px;
+            border-radius: 6px;
+            margin-top: 10px;
         }
 
         .back:hover {
-            background: #082f6b;
+            background: #164d78;
         }
 
         footer {
-            background: #0b3d91;
+            background: #0b2d4d;
             color: white;
             text-align: center;
             padding: 20px;
@@ -141,9 +150,13 @@
         }
 
         @media (max-width: 600px) {
+            header h1 {
+                font-size: 25px;
+            }
+
             nav a {
                 display: inline-block;
-                margin: 5px 7px;
+                margin: 5px 6px;
             }
 
             section {
@@ -161,13 +174,16 @@
 
 <header>
     <h1>StudyHub</h1>
-    <p>MDCAT Biology - Chapter 8: Ecology</p>
+    <p>MDCAT Biology — Chapter 8: Ecology</p>
 </header>
 
 <nav>
     <a href="index.html">Home</a>
-    <a href="notes.html">Notes</a>
-    <a href="mcqs.html">MCQs Test</a>
+    <a href="biology.html">Biology</a>
+    <a href="chemistry.html">Chemistry</a>
+    <a href="physics.html">Physics</a>
+    <a href="english.html">English</a>
+    <a href="logical-reasoning.html">Logical Reasoning</a>
 </nav>
 
 <div class="container">
@@ -176,16 +192,18 @@
         <h2>Chapter 8: Ecology</h2>
 
         <p>
-            Ecology is the branch of biology that studies the relationships
-            between organisms and their environment.
+            <strong>Ecology</strong> is the branch of biology that studies
+            interactions among organisms and between organisms and their
+            physical environment.
         </p>
 
         <div class="important">
             <strong>MDCAT Definition:</strong>
-            Ecology is the study of interactions among organisms and between
-            organisms and their physical environment.
+            Ecology = study of interactions among organisms and between
+            organisms and their environment.
         </div>
     </section>
+
 
     <section>
         <h2>1. Levels of Ecological Organization</h2>
@@ -194,49 +212,66 @@
 
         <ol>
             <li><strong>Organism:</strong> A single living individual.</li>
-            <li><strong>Population:</strong> Members of the same species living in the same area.</li>
-            <li><strong>Community:</strong> Different populations living and interacting in an area.</li>
-            <li><strong>Ecosystem:</strong> A community plus its non-living environment.</li>
-            <li><strong>Biosphere:</strong> The global zone where life exists.</li>
+
+            <li>
+                <strong>Population:</strong>
+                Individuals of the same species living in the same area.
+            </li>
+
+            <li>
+                <strong>Community:</strong>
+                Different populations living and interacting in an area.
+            </li>
+
+            <li>
+                <strong>Ecosystem:</strong>
+                A community interacting with its non-living environment.
+            </li>
+
+            <li>
+                <strong>Biosphere:</strong>
+                The global zone of Earth where life exists.
+            </li>
         </ol>
 
         <div class="tip">
-            <strong>Remember:</strong>
+            <strong>Remember:</strong><br>
             Organism → Population → Community → Ecosystem → Biosphere
         </div>
     </section>
+
 
     <section>
         <h2>2. Habitat and Niche</h2>
 
         <h3>Habitat</h3>
-        <p>
-            A habitat is the place or environment where an organism normally
-            lives.
-        </p>
 
         <p>
-            Example: A pond can be the habitat of fish and aquatic plants.
+            A <strong>habitat</strong> is the place or environment where an
+            organism normally lives.
         </p>
 
         <h3>Niche</h3>
+
         <p>
-            A niche describes the role and position of an organism in its
-            environment, including how it obtains resources and interacts
-            with other organisms.
+            A <strong>niche</strong> describes the role and position of an
+            organism in its environment, including how it uses resources
+            and interacts with other organisms.
         </p>
 
         <div class="important">
-            <strong>Exam Point:</strong>
+            <strong>Exam Point:</strong><br>
             Habitat = where an organism lives.<br>
-            Niche = the role an organism performs in its ecosystem.
+            Niche = the role of an organism in its ecosystem.
         </div>
     </section>
+
 
     <section>
         <h2>3. Biotic and Abiotic Factors</h2>
 
         <h3>Biotic Factors</h3>
+
         <p>
             Biotic factors are the living components of an ecosystem.
         </p>
@@ -250,6 +285,7 @@
         </ul>
 
         <h3>Abiotic Factors</h3>
+
         <p>
             Abiotic factors are the non-living physical and chemical
             components of the environment.
@@ -264,7 +300,13 @@
             <li>pH</li>
             <li>Minerals</li>
         </ul>
+
+        <div class="tip">
+            <strong>Easy Trick:</strong>
+            Biotic = living. Abiotic = non-living.
+        </div>
     </section>
+
 
     <section>
         <h2>4. Population</h2>
@@ -274,19 +316,34 @@
             in the same geographical area at the same time.
         </p>
 
-        <h3>Population Growth</h3>
+        <h3>Factors Affecting Population Size</h3>
 
-        <p>
-            Population size can change because of births, deaths,
-            immigration and emigration.
-        </p>
+        <table>
+            <tr>
+                <th>Factor</th>
+                <th>Meaning</th>
+            </tr>
 
-        <ul>
-            <li><strong>Birth rate:</strong> Number of individuals born.</li>
-            <li><strong>Death rate:</strong> Number of individuals that die.</li>
-            <li><strong>Immigration:</strong> Individuals entering a population.</li>
-            <li><strong>Emigration:</strong> Individuals leaving a population.</li>
-        </ul>
+            <tr>
+                <td>Birth rate</td>
+                <td>Number of individuals born in a population.</td>
+            </tr>
+
+            <tr>
+                <td>Death rate</td>
+                <td>Number of individuals that die.</td>
+            </tr>
+
+            <tr>
+                <td>Immigration</td>
+                <td>Movement of individuals into a population.</td>
+            </tr>
+
+            <tr>
+                <td>Emigration</td>
+                <td>Movement of individuals out of a population.</td>
+            </tr>
+        </table>
 
         <h3>Carrying Capacity</h3>
 
@@ -296,11 +353,11 @@
         </p>
 
         <div class="warning">
-            <strong>Important:</strong>
             Limited food, water, space and other resources can restrict
             population growth.
         </div>
     </section>
+
 
     <section>
         <h2>5. Community Interactions</h2>
@@ -313,41 +370,42 @@
         <table>
             <tr>
                 <th>Interaction</th>
-                <th>Description</th>
+                <th>Effect</th>
                 <th>Example</th>
             </tr>
 
             <tr>
                 <td>Competition</td>
                 <td>Organisms compete for limited resources.</td>
-                <td>Plants competing for sunlight</td>
+                <td>Plants competing for sunlight.</td>
             </tr>
 
             <tr>
                 <td>Predation</td>
                 <td>One organism kills and eats another.</td>
-                <td>Cat eating a mouse</td>
+                <td>Snake eating a mouse.</td>
             </tr>
 
             <tr>
                 <td>Mutualism</td>
                 <td>Both organisms benefit.</td>
-                <td>Bees and flowering plants</td>
+                <td>Bees and flowering plants.</td>
             </tr>
 
             <tr>
                 <td>Commensalism</td>
                 <td>One benefits while the other is generally unaffected.</td>
-                <td>Epiphytes growing on trees</td>
+                <td>Epiphytes growing on trees.</td>
             </tr>
 
             <tr>
                 <td>Parasitism</td>
                 <td>One benefits while the host is harmed.</td>
-                <td>Tapeworm in humans</td>
+                <td>Tapeworm in humans.</td>
             </tr>
         </table>
     </section>
+
 
     <section>
         <h2>6. Ecosystem</h2>
@@ -357,18 +415,25 @@
             another and with the non-living environment.
         </p>
 
-        <h3>Components of an Ecosystem</h3>
+        <h3>Components</h3>
 
         <ul>
-            <li><strong>Biotic components:</strong> Living organisms.</li>
-            <li><strong>Abiotic components:</strong> Non-living environmental factors.</li>
+            <li>
+                <strong>Biotic components:</strong>
+                Living organisms.
+            </li>
+
+            <li>
+                <strong>Abiotic components:</strong>
+                Non-living environmental factors.
+            </li>
         </ul>
 
         <h3>Producers</h3>
 
         <p>
             Producers make their own food, usually through photosynthesis.
-            Green plants are the major producers in many ecosystems.
+            Green plants are major producers in many ecosystems.
         </p>
 
         <h3>Consumers</h3>
@@ -378,9 +443,9 @@
         </p>
 
         <ul>
-            <li>Primary consumers - usually herbivores</li>
-            <li>Secondary consumers - feed on primary consumers</li>
-            <li>Tertiary consumers - may feed on secondary consumers</li>
+            <li>Primary consumers — usually herbivores</li>
+            <li>Secondary consumers — feed on primary consumers</li>
+            <li>Tertiary consumers — may feed on secondary consumers</li>
         </ul>
 
         <h3>Decomposers</h3>
@@ -395,12 +460,13 @@
         </p>
     </section>
 
+
     <section>
         <h2>7. Food Chain</h2>
 
         <p>
-            A food chain shows the transfer of food and energy from one
-            organism to another.
+            A food chain shows a pathway through which food and energy
+            pass from one organism to another.
         </p>
 
         <div class="important">
@@ -409,7 +475,7 @@
         </div>
 
         <p>
-            The arrow shows the direction of energy transfer.
+            The arrow indicates the direction of energy transfer.
         </p>
 
         <h3>Trophic Levels</h3>
@@ -422,25 +488,27 @@
         </ol>
     </section>
 
+
     <section>
         <h2>8. Food Web</h2>
 
         <p>
-            A food web is a network of interconnected food chains in an
-            ecosystem.
+            A <strong>food web</strong> is a network of interconnected
+            food chains in an ecosystem.
         </p>
 
         <p>
-            Because organisms often eat more than one type of food, several
-            food chains can be connected to form a food web.
+            Because organisms may consume more than one type of food,
+            several food chains can be connected.
         </p>
 
         <div class="tip">
-            <strong>Exam Tip:</strong>
-            Food chain = usually one pathway of energy transfer.<br>
+            <strong>Exam Tip:</strong><br>
+            Food chain = one main pathway.<br>
             Food web = many interconnected pathways.
         </div>
     </section>
+
 
     <section>
         <h2>9. Energy Flow in an Ecosystem</h2>
@@ -451,8 +519,8 @@
         </p>
 
         <p>
-            Energy then passes from producers to consumers and eventually
-            through decomposers.
+            Energy passes from producers to consumers through feeding
+            relationships.
         </p>
 
         <h3>10% Rule</h3>
@@ -460,88 +528,92 @@
         <p>
             On average, only about 10% of the energy at one trophic level
             becomes available to the next trophic level. The exact amount
-            varies in real ecosystems.
+            varies among ecosystems.
         </p>
 
         <div class="important">
             <strong>Example:</strong><br>
-            If producers contain approximately 10,000 units of energy,
-            the next trophic level may receive about 1,000 units.
+            10,000 energy units in producers → approximately
+            1,000 units available to the next trophic level.
         </div>
 
         <p>
-            Much energy is lost as heat through metabolic processes.
+            Much energy is lost as heat during metabolic processes.
         </p>
     </section>
+
 
     <section>
         <h2>10. Ecological Pyramids</h2>
 
         <p>
-            Ecological pyramids represent relationships between trophic
-            levels.
-        </p>
-
-        <h3>Pyramid of Energy</h3>
-
-        <p>
-            It represents the amount of energy available at different
+            Ecological pyramids represent relationships between different
             trophic levels.
         </p>
 
-        <p>
-            The energy pyramid is normally upright because energy decreases
-            at higher trophic levels.
-        </p>
+        <table>
+            <tr>
+                <th>Pyramid</th>
+                <th>Represents</th>
+            </tr>
 
-        <h3>Pyramid of Biomass</h3>
+            <tr>
+                <td>Pyramid of Energy</td>
+                <td>Energy available at each trophic level.</td>
+            </tr>
 
-        <p>
-            It represents the total mass of living organisms at different
-            trophic levels.
-        </p>
+            <tr>
+                <td>Pyramid of Biomass</td>
+                <td>Total mass of living organisms at each trophic level.</td>
+            </tr>
 
-        <h3>Pyramid of Numbers</h3>
+            <tr>
+                <td>Pyramid of Numbers</td>
+                <td>Number of organisms at each trophic level.</td>
+            </tr>
+        </table>
 
-        <p>
-            It represents the number of organisms present at different
-            trophic levels.
-        </p>
+        <div class="important">
+            <strong>MDCAT Point:</strong>
+            The pyramid of energy is normally upright because energy
+            decreases at higher trophic levels.
+        </div>
     </section>
+
 
     <section>
         <h2>11. Water Cycle</h2>
 
         <p>
-            Water continuously moves between the atmosphere, land and living
-            organisms.
+            Water continuously moves between the atmosphere, land,
+            water bodies and living organisms.
         </p>
 
         <ol>
             <li>Evaporation</li>
             <li>Condensation</li>
             <li>Precipitation</li>
-            <li>Collection and runoff</li>
+            <li>Runoff and collection</li>
             <li>Infiltration and groundwater movement</li>
         </ol>
 
         <div class="tip">
-            Plants also release water vapor into the atmosphere through
-            <strong>transpiration</strong>.
+            <strong>Transpiration:</strong>
+            Plants release water vapour into the atmosphere through
+            their aerial parts, mainly leaves.
         </div>
     </section>
+
 
     <section>
         <h2>12. Carbon Cycle</h2>
 
         <p>
-            Carbon is an essential element found in carbohydrates, proteins,
-            lipids and nucleic acids.
+            Carbon is an essential element found in carbohydrates,
+            proteins, lipids and nucleic acids.
         </p>
 
-        <p>
-            Important processes in the carbon cycle include:
-        </p>
+        <h3>Important Processes</h3>
 
         <ul>
             <li>Photosynthesis</li>
@@ -554,84 +626,124 @@
             Photosynthesis removes carbon dioxide from the atmosphere,
             while respiration and combustion release carbon dioxide.
         </p>
+
+        <div class="important">
+            <strong>Remember:</strong><br>
+            Photosynthesis → removes CO₂<br>
+            Respiration → releases CO₂<br>
+            Combustion → releases CO₂
+        </div>
     </section>
+
 
     <section>
         <h2>13. Nitrogen Cycle</h2>
 
         <p>
-            Nitrogen is required for important biological molecules such as
-            proteins and nucleic acids.
+            Nitrogen is required for important biological molecules,
+            especially proteins and nucleic acids.
         </p>
 
         <p>
-            Atmospheric nitrogen cannot be directly used by most organisms.
-            Nitrogen-fixing bacteria help convert atmospheric nitrogen into
-            usable nitrogen compounds.
+            Most organisms cannot directly use atmospheric nitrogen gas.
+            Nitrogen-fixing bacteria help convert nitrogen into forms
+            that can enter biological systems.
         </p>
 
         <h3>Important Processes</h3>
 
         <ul>
-            <li>Nitrogen fixation</li>
-            <li>Nitrification</li>
-            <li>Assimilation</li>
-            <li>Ammonification</li>
-            <li>Denitrification</li>
+            <li><strong>Nitrogen fixation</strong></li>
+            <li><strong>Nitrification</strong></li>
+            <li><strong>Assimilation</strong></li>
+            <li><strong>Ammonification</strong></li>
+            <li><strong>Denitrification</strong></li>
         </ul>
     </section>
+
 
     <section>
         <h2>14. Biodiversity</h2>
 
         <p>
-            Biodiversity refers to the variety of life present in an area or
-            on Earth.
+            <strong>Biodiversity</strong> refers to the variety of life
+            present in an area or on Earth.
         </p>
 
         <p>
-            It includes diversity of genes, species and ecosystems.
+            Biodiversity includes genetic diversity, species diversity
+            and ecosystem diversity.
         </p>
 
-        <h3>Importance of Biodiversity</h3>
+        <h3>Importance</h3>
 
         <ul>
-            <li>Provides food and medicines</li>
-            <li>Supports ecosystem stability</li>
-            <li>Provides useful biological resources</li>
-            <li>Maintains ecological relationships</li>
+            <li>Provides food and medicines.</li>
+            <li>Supports ecosystem stability.</li>
+            <li>Provides biological resources.</li>
+            <li>Maintains ecological relationships.</li>
         </ul>
     </section>
 
+
     <section>
-        <h2>15. Pollution</h2>
+        <h2>15. Pollution and Environmental Problems</h2>
 
         <p>
-            Pollution is the introduction of harmful substances or forms of
-            energy into the environment.
+            Pollution is the introduction of harmful substances or forms
+            of energy into the environment.
         </p>
 
         <h3>Types of Pollution</h3>
 
-        <ul>
-            <li><strong>Air pollution:</strong> Harmful gases and particles in air.</li>
-            <li><strong>Water pollution:</strong> Harmful substances entering water.</li>
-            <li><strong>Soil pollution:</strong> Contamination of soil.</li>
-            <li><strong>Noise pollution:</strong> Excessive unwanted sound.</li>
-        </ul>
+        <table>
+            <tr>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+
+            <tr>
+                <td>Air pollution</td>
+                <td>Harmful gases and particles in the atmosphere.</td>
+            </tr>
+
+            <tr>
+                <td>Water pollution</td>
+                <td>Harmful substances entering water bodies.</td>
+            </tr>
+
+            <tr>
+                <td>Soil pollution</td>
+                <td>Contamination of soil by harmful substances.</td>
+            </tr>
+
+            <tr>
+                <td>Noise pollution</td>
+                <td>Excessive unwanted sound.</td>
+            </tr>
+        </table>
+
+        <h3>Global Warming</h3>
+
+        <p>
+            An increase in the average temperature of Earth's climate
+            system is called global warming. Increased concentrations
+            of greenhouse gases contribute to this warming.
+        </p>
 
         <div class="warning">
-            Pollution can harm organisms, reduce biodiversity and disturb
-            ecosystem balance.
+            Pollution and environmental changes can damage ecosystems
+            and reduce biodiversity.
         </div>
     </section>
+
 
     <section>
         <h2>16. Conservation</h2>
 
         <p>
-            Conservation means protecting natural resources, organisms and
-            ecosystems for present and future generations.
+            Conservation means protecting organisms, natural resources
+            and ecosystems for present and future generations.
         </p>
 
         <h3>Methods of Conservation</h3>
@@ -639,13 +751,14 @@
         <ul>
             <li>Protection of forests</li>
             <li>Wildlife conservation</li>
-            <li>Establishment of national parks</li>
+            <li>National parks</li>
             <li>Reducing pollution</li>
             <li>Recycling</li>
-            <li>Using resources responsibly</li>
-            <li>Protecting endangered species</li>
+            <li>Responsible use of resources</li>
+            <li>Protection of endangered species</li>
         </ul>
     </section>
+
 
     <section>
         <h2>17. Renewable and Non-Renewable Resources</h2>
@@ -673,19 +786,20 @@
 
             <tr>
                 <td>Biomass</td>
-                <td>Minerals that are available in limited amounts</td>
+                <td>Many mineral resources</td>
             </tr>
         </table>
 
         <p>
-            Renewable resources can naturally replenish over relatively short
-            periods, while non-renewable resources are limited and generally
-            form much more slowly.
+            Renewable resources can naturally replenish over relatively
+            short periods, while non-renewable resources are limited
+            and generally form much more slowly.
         </p>
     </section>
 
+
     <section>
-        <h2>Quick Revision</h2>
+        <h2>18. Quick Revision</h2>
 
         <table>
             <tr>
@@ -695,61 +809,67 @@
 
             <tr>
                 <td>Ecology</td>
-                <td>Study of organisms and their environment</td>
+                <td>Study of organisms and their environment.</td>
             </tr>
 
             <tr>
                 <td>Population</td>
-                <td>Same species in the same area</td>
+                <td>Same species living in the same area.</td>
             </tr>
 
             <tr>
                 <td>Community</td>
-                <td>Different populations interacting</td>
+                <td>Different populations interacting.</td>
             </tr>
 
             <tr>
                 <td>Ecosystem</td>
-                <td>Community plus physical environment</td>
+                <td>Community plus physical environment.</td>
             </tr>
 
             <tr>
                 <td>Producer</td>
-                <td>Makes its own food</td>
+                <td>Makes its own food.</td>
             </tr>
 
             <tr>
                 <td>Consumer</td>
-                <td>Obtains food from other organisms</td>
+                <td>Obtains food from other organisms.</td>
             </tr>
 
             <tr>
                 <td>Decomposer</td>
-                <td>Breaks down dead organic matter</td>
+                <td>Breaks down dead organic matter.</td>
             </tr>
 
             <tr>
                 <td>Food chain</td>
-                <td>Pathway of energy transfer</td>
+                <td>Pathway of energy transfer.</td>
+            </tr>
+
+            <tr>
+                <td>Food web</td>
+                <td>Interconnected food chains.</td>
             </tr>
 
             <tr>
                 <td>10% rule</td>
-                <td>Approximately 10% energy passes to next trophic level</td>
+                <td>Approximately 10% energy passes to the next trophic level.</td>
             </tr>
 
             <tr>
                 <td>Biodiversity</td>
-                <td>Variety of life</td>
+                <td>Variety of life.</td>
             </tr>
         </table>
     </section>
 
+
     <section>
-        <h2>MDCAT Practice MCQs</h2>
+        <h2>19. MDCAT Practice MCQs</h2>
 
         <div class="mcq">
-            <p><strong>1. Ecology is the study of:</strong></p>
+            <strong>1. Ecology is the study of:</strong>
             <p>A) Cells only</p>
             <p>B) Organisms and their environment</p>
             <p>C) DNA only</p>
@@ -758,7 +878,7 @@
         </div>
 
         <div class="mcq">
-            <p><strong>2. A group of individuals of the same species living in an area is called:</strong></p>
+            <strong>2. A group of individuals of the same species living in an area is called:</strong>
             <p>A) Community</p>
             <p>B) Ecosystem</p>
             <p>C) Population</p>
@@ -767,7 +887,7 @@
         </div>
 
         <div class="mcq">
-            <p><strong>3. Which is an abiotic factor?</strong></p>
+            <strong>3. Which is an abiotic factor?</strong>
             <p>A) Bacteria</p>
             <p>B) Grass</p>
             <p>C) Temperature</p>
@@ -776,7 +896,7 @@
         </div>
 
         <div class="mcq">
-            <p><strong>4. Which organisms are the major producers in many ecosystems?</strong></p>
+            <strong>4. Which organisms are major producers in many ecosystems?</strong>
             <p>A) Green plants</p>
             <p>B) Carnivores</p>
             <p>C) Fungi</p>
@@ -785,7 +905,7 @@
         </div>
 
         <div class="mcq">
-            <p><strong>5. Which organisms are important decomposers?</strong></p>
+            <strong>5. Which organisms are important decomposers?</strong>
             <p>A) Birds and mammals</p>
             <p>B) Bacteria and fungi</p>
             <p>C) Fish and reptiles</p>
@@ -794,16 +914,16 @@
         </div>
 
         <div class="mcq">
-            <p><strong>6. In mutualism:</strong></p>
+            <strong>6. In mutualism:</strong>
             <p>A) Both organisms benefit</p>
             <p>B) Both organisms are harmed</p>
             <p>C) One benefits and the other is harmed</p>
-            <p>D) Neither organism is affected</p>
+            <p>D) Neither is affected</p>
             <p class="answer">Answer: A) Both organisms benefit</p>
         </div>
 
         <div class="mcq">
-            <p><strong>7. Approximately what percentage of energy is transferred to the next trophic level?</strong></p>
+            <strong>7. Approximately what percentage of energy is transferred to the next trophic level?</strong>
             <p>A) 1%</p>
             <p>B) 10%</p>
             <p>C) 50%</p>
@@ -812,7 +932,7 @@
         </div>
 
         <div class="mcq">
-            <p><strong>8. Which process removes carbon dioxide from the atmosphere?</strong></p>
+            <strong>8. Which process removes carbon dioxide from the atmosphere?</strong>
             <p>A) Photosynthesis</p>
             <p>B) Respiration</p>
             <p>C) Combustion</p>
@@ -821,62 +941,136 @@
         </div>
 
         <div class="mcq">
-            <p><strong>9. Which gas is especially important in the nitrogen cycle?</strong></p>
-            <p>A) Oxygen</p>
-            <p>B) Nitrogen</p>
-            <p>C) Hydrogen</p>
-            <p>D) Helium</p>
-            <p class="answer">Answer: B) Nitrogen</p>
+            <strong>9. Nitrogen-fixing bacteria help convert:</strong>
+            <p>A) Atmospheric nitrogen into usable nitrogen compounds</p>
+            <p>B) Oxygen into carbon dioxide</p>
+            <p>C) Carbon dioxide into oxygen</p>
+            <p>D) Water into glucose</p>
+            <p class="answer">Answer: A) Atmospheric nitrogen into usable nitrogen compounds</p>
         </div>
 
         <div class="mcq">
-            <p><strong>10. The variety of life in an area is called:</strong></p>
-            <p>A) Population density</p>
+            <strong>10. The variety of life in an area is called:</strong>
+            <p>A) Population</p>
             <p>B) Biodiversity</p>
             <p>C) Carrying capacity</p>
-            <p>D) Succession</p>
+            <p>D) Habitat</p>
             <p class="answer">Answer: B) Biodiversity</p>
         </div>
-    </section>
 
-    <section>
-        <h2>MDCAT Exam Tip</h2>
+        <div class="mcq">
+            <strong>11. Which interaction benefits both organisms?</strong>
+            <p>A) Parasitism</p>
+            <p>B) Competition</p>
+            <p>C) Mutualism</p>
+            <p>D) Predation</p>
+            <p class="answer">Answer: C) Mutualism</p>
+        </div>
 
-        <div class="tip">
-            Ecology MCQs often test definitions and differences.
-            Remember these especially:
-            <br><br>
+        <div class="mcq">
+            <strong>12. Which ecological pyramid is normally upright?</strong>
+            <p>A) Pyramid of energy</p>
+            <p>B) Every pyramid of numbers</p>
+            <p>C) Every pyramid of biomass</p>
+            <p>D) None</p>
+            <p class="answer">Answer: A) Pyramid of energy</p>
+        </div>
 
-            <strong>Population:</strong> Same species in an area.<br>
-            <strong>Community:</strong> Different populations interacting.<br>
-            <strong>Ecosystem:</strong> Community + abiotic environment.<br>
-            <strong>Producer:</strong> Makes food.<br>
-            <strong>Consumer:</strong> Gets food from other organisms.<br>
-            <strong>Decomposer:</strong> Breaks down dead matter.<br>
-            <strong>Energy:</strong> Generally decreases at higher trophic levels.
+        <div class="mcq">
+            <strong>13. Which process releases carbon dioxide?</strong>
+            <p>A) Photosynthesis</p>
+            <p>B) Cellular respiration</p>
+            <p>C) Nitrogen fixation</p>
+            <p>D) Transpiration</p>
+            <p class="answer">Answer: B) Cellular respiration</p>
+        </div>
+
+        <div class="mcq">
+            <strong>14. The maximum population size an environment can sustainably support is called:</strong>
+            <p>A) Population density</p>
+            <p>B) Carrying capacity</p>
+            <p>C) Community</p>
+            <p>D) Niche</p>
+            <p class="answer">Answer: B) Carrying capacity</p>
+        </div>
+
+        <div class="mcq">
+            <strong>15. Which of the following is a renewable resource?</strong>
+            <p>A) Coal</p>
+            <p>B) Oil</p>
+            <p>C) Solar energy</p>
+            <p>D) Natural gas</p>
+            <p class="answer">Answer: C) Solar energy</p>
         </div>
     </section>
 
+
     <section>
-        <h2>Biology Chapters Complete 🎉</h2>
+        <h2>20. MDCAT Exam Tip</h2>
+
+        <div class="tip">
+            <strong>Important concepts to memorize:</strong>
+
+            <p>
+                Population = same species in the same area.
+            </p>
+
+            <p>
+                Community = different populations interacting.
+            </p>
+
+            <p>
+                Ecosystem = community + abiotic environment.
+            </p>
+
+            <p>
+                Producer = makes its own food.
+            </p>
+
+            <p>
+                Consumer = obtains food from other organisms.
+            </p>
+
+            <p>
+                Decomposer = breaks down dead organic matter.
+            </p>
+
+            <p>
+                Food chain = pathway of energy transfer.
+            </p>
+
+            <p>
+                Food web = interconnected food chains.
+            </p>
+
+            <p>
+                Energy generally decreases at higher trophic levels.
+            </p>
+        </div>
+    </section>
+
+
+    <section>
+        <h2>Biology Chapters Progress 🎉</h2>
 
         <p>
-            You have now completed the Biology chapter pages for this
-            StudyHub MDCAT section.
+            Chapters 1–8 of the StudyHub Biology section are now organized
+            for MDCAT preparation.
         </p>
 
         <p>
-            Next, we will update the main Biology Notes page so all these
-            chapters appear together in one place.
+            More Biology topics can be added after completing the main
+            chapter structure.
         </p>
 
-        <a class="back" href="notes.html">← Back to Biology Notes</a>
+        <a class="back" href="biology.html">← Back to Biology Chapters</a>
     </section>
 
 </div>
 
+
 <footer>
-    <p>© 2026 StudyHub - MDCAT Study Material</p>
+    <p>© 2026 StudyHub | MDCAT Study Material</p>
 </footer>
 
 </body>
