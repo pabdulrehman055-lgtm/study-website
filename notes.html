@@ -4,98 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>StudyHub - Complete MDCAT Notes</title>
-
-    <meta name="description" content="Complete MDCAT notes for Biology, Chemistry and Physics with chapter-wise study material, important concepts, formulas and practice MCQs.">
+    <title>MDCAT Biology Notes | StudyHub</title>
 
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
+            margin: 0;
             background: #f4f7fb;
             color: #222;
             line-height: 1.6;
         }
 
         header {
-            background: #173f5f;
+            background: #0b3d91;
             color: white;
             text-align: center;
-            padding: 35px 20px;
+            padding: 30px 15px;
         }
 
         header h1 {
-            margin: 0 0 10px;
-            font-size: 36px;
-        }
-
-        header p {
-            margin: 0;
-            font-size: 18px;
+            margin: 0 0 8px;
         }
 
         nav {
-            background: white;
-            padding: 15px;
+            background: #082f6b;
             text-align: center;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 12px;
         }
 
         nav a {
-            color: #173f5f;
+            color: white;
             text-decoration: none;
-            font-weight: bold;
             margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
         }
 
         .container {
-            max-width: 1000px;
-            margin: 30px auto;
-            padding: 20px;
+            max-width: 950px;
+            margin: 25px auto;
+            padding: 0 15px;
         }
 
         .intro {
             background: white;
             padding: 25px;
             border-radius: 12px;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            text-align: center;
-        }
-
-        .subject {
-            margin-top: 35px;
-            margin-bottom: 20px;
-            padding: 15px 20px;
-            border-radius: 10px;
-            background: #173f5f;
-            color: white;
-        }
-
-        .chapter-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            margin-bottom: 25px;
         }
 
         .chapter {
             background: white;
             padding: 22px;
+            margin-bottom: 18px;
             border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            transition: transform 0.2s;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
         }
 
-        .chapter:hover {
-            transform: translateY(-3px);
-        }
-
-        .chapter h3 {
-            color: #173f5f;
+        .chapter h2 {
+            color: #0b3d91;
             margin-top: 0;
         }
 
@@ -103,47 +74,68 @@
             color: #555;
         }
 
-        .chapter a {
+        .study-btn {
             display: inline-block;
-            margin-top: 10px;
-            background: #173f5f;
+            background: #0b3d91;
             color: white;
             text-decoration: none;
-            padding: 9px 15px;
+            padding: 10px 18px;
             border-radius: 7px;
-        }
-
-        .mcq-section {
-            background: white;
-            text-align: center;
-            padding: 30px;
-            margin-top: 40px;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
-
-        .mcq-section a {
-            display: inline-block;
-            background: #173f5f;
-            color: white;
-            text-decoration: none;
-            padding: 12px 22px;
-            border-radius: 8px;
             font-weight: bold;
         }
 
-        footer {
-            background: #173f5f;
-            color: white;
-            text-align: center;
-            padding: 25px;
-            margin-top: 50px;
+        .study-btn:hover {
+            background: #082f6b;
         }
 
-        footer a {
+        .important {
+            background: #eaf3ff;
+            border-left: 5px solid #0b3d91;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .test-box {
+            background: #e9f8ef;
+            border-left: 5px solid #168a45;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 25px;
+        }
+
+        .test-btn {
+            display: inline-block;
+            background: #168a45;
             color: white;
             text-decoration: none;
-            margin: 0 8px;
+            padding: 11px 20px;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        .test-btn:hover {
+            background: #116b35;
+        }
+
+        footer {
+            background: #0b3d91;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 5px 7px;
+            }
+
+            .chapter,
+            .intro {
+                padding: 18px;
+            }
         }
     </style>
 </head>
@@ -151,297 +143,187 @@
 <body>
 
 <header>
-    <h1>📚 StudyHub</h1>
-    <p>Complete MDCAT Notes — Biology, Chemistry & Physics</p>
+    <h1>StudyHub</h1>
+    <p>MDCAT Biology Notes</p>
 </header>
 
 <nav>
     <a href="index.html">Home</a>
     <a href="notes.html">Notes</a>
-    <a href="mcqs.html">MCQs</a>
+    <a href="mcqs.html">MCQs Test</a>
 </nav>
 
 <div class="container">
 
     <div class="intro">
-        <h2>🎯 MDCAT Study Material</h2>
-        <p>
-            Study important MDCAT concepts chapter by chapter.
-            Use these notes for revision and practice.
-        </p>
-        <p>
-            Start with a subject below and open the available chapter notes.
-        </p>
-    </div>
-
-
-    <!-- BIOLOGY -->
-
-    <h2 class="subject">🧬 Biology Notes</h2>
-
-    <div class="chapter-grid">
-
-        <div class="chapter">
-            <h3>Chapter 1: Cell Biology</h3>
-            <p>
-                Cell structure, prokaryotic and eukaryotic cells,
-                organelles and their functions.
-            </p>
-            <a href="biology.html">Open Notes →</a>
-        </div>
-
-        <div class="chapter">
-            <h3>Chapter 2: Biomolecules</h3>
-            <p>
-                Carbohydrates, lipids, proteins, nucleic acids
-                and their basic functions.
-            </p>
-            <a href="biology.html">Study Topic →</a>
-        </div>
-
-        <div class="chapter">
-            <h3>Chapter 3: Enzymes</h3>
-            <p>
-                Enzyme structure, properties, mechanism and factors
-                affecting enzyme activity.
-            </p>
-            <a href="biology.html">Study Topic →</a>
-        </div>
-
-        <div class="chapter">
-            <h3>Chapter 4: Bioenergetics</h3>
-            <p>
-                ATP, cellular respiration, photosynthesis and
-                energy transfer in living organisms.
-            </p>
-            <a href="biology.html">Study Topic →</a>
-        </div>
-
-        <div class="chapter">
-            <h3>Chapter 5: Genetics</h3>
-            <p>
-                DNA, genes, chromosomes, inheritance and
-                basic genetic concepts.
-            </p>
-            <a href="biology.html">Study Topic →</a>
-        </div>
-
-        <div class="chapter">
-            <h3>Chapter 6: Human Physiology</h3>
-            <p>
-                Digestive, respiratory, circulatory and other
-                important human body systems.
-            </p>
-            <a href="biology.html">Study Topic →</a>
-        </div>
-
-        <div class="chapter">
-            <h3>Chapter 7: Reproduction</h3>
-            <p>
-                Reproductive systems, gametes, fertilization and
-                basic reproductive processes.
-            </p>
-            <a href="biology.html">Study Topic →</a>
-        </div>
-
-        <div class="chapter">
-            <h3>Chapter 8: Ecology</h3>
-            <p>
-                Ecosystems, populations, communities, food chains
-                and environmental relationships.
-            </p>
-            <a href="biology.html">Study Topic →</a>
-        </div>
-
-    </div>
-
-
-    <!-- CHEMISTRY -->
-
-    <h2 class="subject">⚗️ Chemistry Notes</h2>
-
-    <div class="chapter-grid">
-
-        <div class="chapter">
-            <h3>Chapter 1: Atomic Structure</h3>
-            <p>
-                Atoms, subatomic particles, atomic number,
-                mass number and isotopes.
-            </p>
-            <a href="chemistry.html">Open Notes →</a>
-        </div>
-
-        <div class="chapter">
-            <h3>Chapter 2: Chemical Bonding</h3>
-            <p>
-                Ionic bonds, covalent bonds, metallic bonds
-                and basic molecular structure.
-            </p>
-            <a href="chemistry.html">Study Topic →</a>
-        </div>
-
-        <div class="chapter">
-            <h3>Chapter 3: States of Matter</h3>
-            <p>
-                Solids, liquids, gases, properties of matter
-                and particle movement.
-            </p>
-            <a href="chemistry.html">Study Topic →</a>
-        </div>
-
-        <div class="chapter">
-            <h3>Chapter 4: Thermochemistry</h3>
-            <p>
-                Heat, energy changes, exothermic and
-                endothermic reactions.
-            </p>
-            <a href="chemistry.html">Study Topic →</a>
-        </div>
-
-        <div class="chapter">
-            <h3>Chapter 5: Chemical Equilibrium</h3>
-            <p>
-                Reversible reactions, equilibrium and
-                factors affecting equilibrium.
-            </p>
-            <a href="chemistry.html">Study Topic →</a>
-        </div>
-
-        <div class="chapter">
-            <h3>Chapter 6: Solutions</h3>
-            <p>
-                Solutes, solvents, concentration and
-                properties of solutions.
-            </p>
-            <a href="chemistry.html">Study Topic →</a>
-        </div>
-
-        <div class="chapter">
-            <h3>Chapter 7: Organic Chemistry</h3>
-            <p>
-                Carbon compounds, hydrocarbons and
-                basic organic chemistry concepts.
-            </p>
-            <a href="chemistry.html">Study Topic →</a>
-        </div>
-
-        <div class="chapter">
-            <h3>Chapter 8: Functional Groups</h3>
-            <p>
-                Important organic functional groups and
-                their basic properties.
-            </p>
-            <a href="chemistry.html">Study Topic →</a>
-        </div>
-
-    </div>
-
-
-    <!-- PHYSICS -->
-
-    <h2 class="subject">⚡ Physics Notes</h2>
-
-    <div class="chapter-grid">
-
-        <div class="chapter">
-            <h3>Chapter 1: Measurements</h3>
-            <p>
-                Physical quantities, SI units, dimensions
-                and measurement basics.
-            </p>
-            <a href="physics.html">Open Notes →</a>
-        </div>
-
-        <div class="chapter">
-            <h3>Chapter 2: Vectors</h3>
-            <p>
-                Scalars, vectors, vector addition and
-                basic vector concepts.
-            </p>
-            <a href="physics.html">Study Topic →</a>
-        </div>
-
-        <div class="chapter">
-            <h3>Chapter 3: Motion</h3>
-            <p>
-                Distance, displacement, speed, velocity
-                and acceleration.
-            </p>
-            <a href="physics.html">Study Topic →</a>
-        </div>
-
-        <div class="chapter">
-            <h3>Chapter 4: Force & Momentum</h3>
-            <p>
-                Newton's laws, force, momentum and
-                basic applications.
-            </p>
-            <a href="physics.html">Study Topic →</a>
-        </div>
-
-        <div class="chapter">
-            <h3>Chapter 5: Work & Energy</h3>
-            <p>
-                Work, kinetic energy, potential energy,
-                power and conservation of energy.
-            </p>
-            <a href="physics.html">Study Topic →</a>
-        </div>
-
-        <div class="chapter">
-            <h3>Chapter 6: Waves</h3>
-            <p>
-                Wave motion, frequency, wavelength,
-                sound and basic wave properties.
-            </p>
-            <a href="physics.html">Study Topic →</a>
-        </div>
-
-        <div class="chapter">
-            <h3>Chapter 7: Electricity</h3>
-            <p>
-                Electric charge, current, voltage,
-                resistance and simple circuits.
-            </p>
-            <a href="physics.html">Study Topic →</a>
-        </div>
-
-        <div class="chapter">
-            <h3>Chapter 8: Modern Physics</h3>
-            <p>
-                Atomic physics, photons, nuclear concepts
-                and introduction to modern physics.
-            </p>
-            <a href="physics.html">Study Topic →</a>
-        </div>
-
-    </div>
-
-
-    <!-- MCQS -->
-
-    <div class="mcq-section">
-        <h2>📝 Practice MDCAT MCQs</h2>
+        <h2>📚 MDCAT Biology Notes</h2>
 
         <p>
-            Test your Biology, Chemistry and Physics knowledge
-            with our 30-question practice test.
+            Welcome to the StudyHub Biology section. Here you can study
+            important Biology topics chapter by chapter for MDCAT preparation.
         </p>
 
-        <a href="mcqs.html">Start 30 MCQs Test →</a>
+        <div class="important">
+            <strong>Study Tip:</strong>
+            Read each chapter carefully, revise the important points, and
+            then practice the MCQs at the end of the chapter.
+        </div>
+    </div>
+
+
+    <!-- Chapter 1 -->
+
+    <div class="chapter">
+        <h2>Chapter 1 — Cell Biology</h2>
+
+        <p>
+            Learn about cells, cell theory, prokaryotic and eukaryotic cells,
+            cell organelles, cell membrane, nucleus, mitochondria, ribosomes,
+            Golgi apparatus and plant vs animal cells.
+        </p>
+
+        <a class="study-btn" href="biology.html">
+            Study Chapter 1 →
+        </a>
+    </div>
+
+
+    <!-- Chapter 2 -->
+
+    <div class="chapter">
+        <h2>Chapter 2 — Biomolecules</h2>
+
+        <p>
+            Study carbohydrates, lipids, proteins, amino acids, nucleic acids,
+            DNA, RNA and the major biological molecules found in living organisms.
+        </p>
+
+        <a class="study-btn" href="biology-biomolecules.html">
+            Study Chapter 2 →
+        </a>
+    </div>
+
+
+    <!-- Chapter 3 -->
+
+    <div class="chapter">
+        <h2>Chapter 3 — Enzymes</h2>
+
+        <p>
+            Learn about enzymes, activation energy, active sites, enzyme
+            specificity, factors affecting enzyme activity, inhibition,
+            cofactors and denaturation.
+        </p>
+
+        <a class="study-btn" href="biology-enzymes.html">
+            Study Chapter 3 →
+        </a>
+    </div>
+
+
+    <!-- Chapter 4 -->
+
+    <div class="chapter">
+        <h2>Chapter 4 — Bioenergetics</h2>
+
+        <p>
+            Study ATP, cellular respiration, glycolysis, Krebs cycle,
+            electron transport chain, fermentation, NADH, FADH₂ and energy
+            production in cells.
+        </p>
+
+        <a class="study-btn" href="biology-bioenergetics.html">
+            Study Chapter 4 →
+        </a>
+    </div>
+
+
+    <!-- Chapter 5 -->
+
+    <div class="chapter">
+        <h2>Chapter 5 — Genetics</h2>
+
+        <p>
+            Learn genetics, heredity, DNA, genes, chromosomes, Mendel's laws,
+            Punnett squares, monohybrid and dihybrid crosses, blood groups,
+            sex determination, mutations and protein synthesis.
+        </p>
+
+        <a class="study-btn" href="biology-genetics.html">
+            Study Chapter 5 →
+        </a>
+    </div>
+
+
+    <!-- Chapter 6 -->
+
+    <div class="chapter">
+        <h2>Chapter 6 — Human Physiology</h2>
+
+        <p>
+            Study digestion, respiration, circulation, blood, excretion,
+            kidneys, nervous system, brain, hormones and homeostasis.
+        </p>
+
+        <a class="study-btn" href="biology-human-physiology.html">
+            Study Chapter 6 →
+        </a>
+    </div>
+
+
+    <!-- Chapter 7 -->
+
+    <div class="chapter">
+        <h2>Chapter 7 — Reproduction</h2>
+
+        <p>
+            Learn about male and female reproductive systems, gametes,
+            spermatogenesis, oogenesis, menstrual cycle, fertilization,
+            pregnancy, placenta, hormones and reproductive health.
+        </p>
+
+        <a class="study-btn" href="biology-reproduction.html">
+            Study Chapter 7 →
+        </a>
+    </div>
+
+
+    <!-- Chapter 8 -->
+
+    <div class="chapter">
+        <h2>Chapter 8 — Ecology</h2>
+
+        <p>
+            Study ecology, populations, communities, ecosystems, food chains,
+            food webs, energy flow, ecological pyramids, carbon and nitrogen
+            cycles, biodiversity, pollution and conservation.
+        </p>
+
+        <a class="study-btn" href="biology-ecology.html">
+            Study Chapter 8 →
+        </a>
+    </div>
+
+
+    <!-- MCQs -->
+
+    <div class="test-box">
+        <h2>📝 MDCAT Biology Practice Test</h2>
+
+        <p>
+            After completing the chapters, test your preparation with the
+            StudyHub MDCAT MCQ test.
+        </p>
+
+        <a class="test-btn" href="mcqs.html">
+            Start MCQs Test →
+        </a>
     </div>
 
 </div>
 
-
 <footer>
-    <p>© 2026 StudyHub | MDCAT Study Material</p>
-
-    <p>
-        <a href="index.html">Home</a> |
-        <a href="notes.html">Notes</a> |
-        <a href="mcqs.html">MCQs</a>
-    </p>
+    <p>© 2026 StudyHub - MDCAT Study Material</p>
 </footer>
 
 </body>
