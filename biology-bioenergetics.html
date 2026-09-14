@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Bioenergetics - MDCAT Biology Notes | StudyHub</title>
-    <meta name="description" content="Complete MDCAT Biology notes on bioenergetics, ATP, cellular respiration, glycolysis, Krebs cycle, electron transport chain and fermentation.">
+
+    <meta name="description" content="MDCAT Biology Bioenergetics notes covering ATP, metabolism, cellular respiration, glycolysis, Krebs cycle, electron transport chain, fermentation and energy production.">
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -20,17 +25,23 @@
             background: #12355b;
             color: white;
             text-align: center;
-            padding: 25px 15px;
+            padding: 28px 15px;
         }
 
         header h1 {
             margin: 0;
+            font-size: 32px;
+        }
+
+        header p {
+            margin: 8px 0 0;
+            font-size: 17px;
         }
 
         nav {
             background: #0b2545;
             text-align: center;
-            padding: 12px;
+            padding: 14px;
         }
 
         nav a {
@@ -40,16 +51,20 @@
             font-weight: bold;
         }
 
+        nav a:hover {
+            text-decoration: underline;
+        }
+
         .container {
-            max-width: 950px;
+            max-width: 1000px;
             margin: 25px auto;
             padding: 0 15px;
         }
 
         section {
             background: white;
-            padding: 22px;
-            margin-bottom: 20px;
+            padding: 24px;
+            margin-bottom: 22px;
             border-radius: 10px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
@@ -62,38 +77,43 @@
 
         h3 {
             color: #176b87;
+            margin-top: 20px;
         }
 
         .important {
             background: #fff4cc;
-            padding: 15px;
+            padding: 16px;
             border-left: 5px solid #e0a800;
-            margin: 15px 0;
+            margin: 18px 0;
+            border-radius: 5px;
         }
 
         .tip {
             background: #e8f5e9;
-            padding: 15px;
+            padding: 16px;
             border-left: 5px solid #2e7d32;
-            margin: 15px 0;
+            margin: 18px 0;
+            border-radius: 5px;
         }
 
         .warning {
             background: #fdecec;
-            padding: 15px;
+            padding: 16px;
             border-left: 5px solid #c62828;
-            margin: 15px 0;
+            margin: 18px 0;
+            border-radius: 5px;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 15px;
+            margin-top: 18px;
         }
 
-        th, td {
+        th,
+        td {
             border: 1px solid #ccc;
-            padding: 10px;
+            padding: 11px;
             text-align: left;
         }
 
@@ -101,47 +121,83 @@
             background: #e9eef5;
         }
 
+        .formula {
+            background: #f1f5f9;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
         .mcq {
             background: #f8f9fa;
-            padding: 15px;
-            margin: 15px 0;
+            padding: 17px;
+            margin: 16px 0;
             border-radius: 8px;
+            border: 1px solid #e1e5ea;
+        }
+
+        .mcq p {
+            margin: 7px 0;
         }
 
         .answer {
             color: #176b2c;
             font-weight: bold;
+            margin-top: 12px !important;
         }
 
         .back {
             display: inline-block;
             background: #12355b;
             color: white;
-            padding: 10px 16px;
+            padding: 11px 17px;
             text-decoration: none;
             border-radius: 6px;
+        }
+
+        .back:hover {
+            background: #0b2545;
         }
 
         footer {
             background: #12355b;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 25px 15px;
             margin-top: 30px;
         }
 
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
         @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 26px;
+            }
+
             nav a {
                 display: block;
                 margin: 8px;
             }
 
             section {
-                padding: 16px;
+                padding: 17px;
             }
 
             table {
                 font-size: 14px;
+            }
+
+            th,
+            td {
+                padding: 8px;
             }
         }
     </style>
@@ -150,25 +206,30 @@
 <body>
 
 <header>
-    <h1>StudyHub</h1>
+    <h1>StudyHub 🧬</h1>
     <p>MDCAT Biology Notes</p>
 </header>
 
 <nav>
     <a href="index.html">Home</a>
-    <a href="notes.html">Notes</a>
-    <a href="mcqs.html">MCQs Test</a>
+    <a href="biology.html">Biology</a>
+    <a href="chemistry.html">Chemistry</a>
+    <a href="physics.html">Physics</a>
+    <a href="english.html">English</a>
+    <a href="logical-reasoning.html">Logical Reasoning</a>
 </nav>
 
 <div class="container">
 
+    <!-- INTRODUCTION -->
+
     <section>
-        <h2>Biology Chapter 4: Bioenergetics</h2>
+        <h2>Biology Chapter 2: Bioenergetics</h2>
 
         <p>
             Bioenergetics is the study of energy transformations in living
-            organisms. Cells need energy for growth, movement, transport,
-            synthesis and many other activities.
+            organisms. Living cells require energy for growth, movement,
+            active transport, synthesis and many other cellular activities.
         </p>
 
         <div class="important">
@@ -177,32 +238,45 @@
         </div>
     </section>
 
+
+    <!-- ENERGY -->
+
     <section>
-        <h2>1. What is Energy?</h2>
+        <h2>1. Energy</h2>
 
         <p>
-            Energy is the capacity to do work. Living cells continuously
-            transform energy from one form to another.
+            Energy is the capacity to do work. Living organisms continuously
+            transform energy from one form into another.
         </p>
 
         <ul>
             <li>Plants capture light energy during photosynthesis.</li>
-            <li>Cells convert chemical energy into usable forms.</li>
-            <li>ATP provides readily usable energy for cellular work.</li>
+            <li>Food contains chemical energy.</li>
+            <li>Cells transform chemical energy into usable forms.</li>
+            <li>ATP transfers energy for cellular activities.</li>
         </ul>
+
+        <div class="tip">
+            <strong>Remember:</strong>
+            Energy is required for almost every important activity performed
+            by a living cell.
+        </div>
     </section>
 
+
+    <!-- ATP -->
+
     <section>
-        <h2>2. ATP - The Energy Currency</h2>
+        <h2>2. ATP - Energy Currency of the Cell</h2>
 
         <p>
-            ATP stands for adenosine triphosphate. It is a nucleotide that
-            stores and transfers energy within cells.
+            ATP stands for <strong>adenosine triphosphate</strong>. It is a
+            nucleotide that stores and transfers usable energy within cells.
         </p>
 
-        <p>
-            ATP consists of:
-        </p>
+        <h3>Structure of ATP</h3>
+
+        <p>ATP consists of:</p>
 
         <ul>
             <li>Adenine</li>
@@ -211,13 +285,13 @@
         </ul>
 
         <p>
-            Energy can be released when ATP is hydrolyzed to ADP and inorganic
-            phosphate.
+            Energy can be released when ATP is hydrolyzed to ADP and
+            inorganic phosphate.
         </p>
 
-        <p>
-            <strong>ATP → ADP + Pi + energy</strong>
-        </p>
+        <div class="formula">
+            ATP → ADP + Pi + Energy
+        </div>
 
         <div class="tip">
             ATP is continuously produced and used by cells rather than being
@@ -225,8 +299,16 @@
         </div>
     </section>
 
+
+    <!-- METABOLISM -->
+
     <section>
-        <h2>3. Anabolism and Catabolism</h2>
+        <h2>3. Metabolism</h2>
+
+        <p>
+            Metabolism is the sum of all chemical reactions occurring within
+            a living organism or cell.
+        </p>
 
         <h3>Anabolism</h3>
 
@@ -247,8 +329,7 @@
         </p>
 
         <p>
-            Catabolic reactions often release energy that can be captured in
-            ATP or other energy carriers.
+            Catabolic reactions often release energy.
         </p>
 
         <table>
@@ -260,7 +341,7 @@
 
             <tr>
                 <td>Function</td>
-                <td>Builds molecules</td>
+                <td>Builds larger molecules</td>
                 <td>Breaks molecules down</td>
             </tr>
 
@@ -271,6 +352,9 @@
             </tr>
         </table>
     </section>
+
+
+    <!-- CELLULAR RESPIRATION -->
 
     <section>
         <h2>4. Cellular Respiration</h2>
@@ -285,19 +369,18 @@
             converted into carbon dioxide and water.
         </p>
 
-        <p>
-            <strong>Overall simplified equation:</strong>
-        </p>
-
-        <p>
-            Glucose + Oxygen → Carbon dioxide + Water + Energy
-        </p>
+        <div class="formula">
+            Glucose + Oxygen → Carbon Dioxide + Water + Energy
+        </div>
 
         <div class="important">
-            Cellular respiration does not occur in only one step. It consists
+            Cellular respiration does not occur in a single step. It consists
             of several stages.
         </div>
     </section>
+
+
+    <!-- STAGES -->
 
     <section>
         <h2>5. Major Stages of Aerobic Respiration</h2>
@@ -314,21 +397,24 @@
             </tr>
 
             <tr>
-                <td>Pyruvate oxidation</td>
-                <td>Mitochondrial matrix</td>
+                <td>Pyruvate Oxidation</td>
+                <td>Mitochondrial Matrix</td>
             </tr>
 
             <tr>
-                <td>Krebs cycle</td>
-                <td>Mitochondrial matrix</td>
+                <td>Krebs Cycle</td>
+                <td>Mitochondrial Matrix</td>
             </tr>
 
             <tr>
-                <td>Electron transport chain</td>
-                <td>Inner mitochondrial membrane</td>
+                <td>Electron Transport Chain</td>
+                <td>Inner Mitochondrial Membrane</td>
             </tr>
         </table>
     </section>
+
+
+    <!-- GLYCOLYSIS -->
 
     <section>
         <h2>6. Glycolysis</h2>
@@ -342,7 +428,7 @@
             <li>One glucose molecule contains six carbon atoms.</li>
             <li>Glucose is converted into two molecules of pyruvate.</li>
             <li>ATP is produced.</li>
-            <li>NADH is also produced.</li>
+            <li>NADH is produced.</li>
         </ul>
 
         <div class="tip">
@@ -351,31 +437,39 @@
         </div>
     </section>
 
+
+    <!-- PYRUVATE -->
+
     <section>
         <h2>7. Pyruvate Oxidation</h2>
 
         <p>
-            Under aerobic conditions, pyruvate enters the mitochondrion and is
-            converted into acetyl-CoA.
+            Under aerobic conditions, pyruvate enters the mitochondrion and
+            is converted into acetyl-CoA.
         </p>
 
-        <p>
-            During this process:
-        </p>
+        <p>During this process:</p>
 
         <ul>
             <li>Carbon dioxide is released.</li>
             <li>NADH is produced.</li>
             <li>Acetyl-CoA is formed.</li>
         </ul>
+
+        <div class="important">
+            Pyruvate oxidation connects glycolysis with the Krebs cycle.
+        </div>
     </section>
+
+
+    <!-- KREBS -->
 
     <section>
         <h2>8. Krebs Cycle</h2>
 
         <p>
-            The Krebs cycle, also called the citric acid cycle, occurs in the
-            mitochondrial matrix in eukaryotic cells.
+            The Krebs cycle, also called the citric acid cycle, occurs mainly
+            in the mitochondrial matrix of eukaryotic cells.
         </p>
 
         <p>
@@ -391,11 +485,13 @@
 
         <div class="important">
             <strong>Remember:</strong>
-            The Krebs cycle produces reduced electron carriers, especially
-            NADH and FADH₂, which later donate electrons to the electron
+            NADH and FADH₂ carry high-energy electrons to the electron
             transport chain.
         </div>
     </section>
+
+
+    <!-- ETC -->
 
     <section>
         <h2>9. Electron Transport Chain</h2>
@@ -411,10 +507,22 @@
         </p>
 
         <p>
-            The energy released is used to pump protons across the inner
-            mitochondrial membrane, creating a proton gradient.
+            The energy released during electron transfer is used to pump
+            protons across the inner mitochondrial membrane.
         </p>
+
+        <p>
+            This creates a proton gradient across the membrane.
+        </p>
+
+        <div class="tip">
+            The electron transport chain helps create the proton gradient
+            used for ATP production.
+        </div>
     </section>
+
+
+    <!-- CHEMIOSMOSIS -->
 
     <section>
         <h2>10. Chemiosmosis and ATP Synthase</h2>
@@ -429,12 +537,19 @@
             and inorganic phosphate.
         </p>
 
+        <div class="formula">
+            ADP + Pi → ATP
+        </div>
+
         <div class="tip">
             <strong>Key Concept:</strong>
-            Electron transport creates the proton gradient, while ATP synthase
-            uses the gradient to produce ATP.
+            Electron transport creates the proton gradient, while ATP
+            synthase uses proton flow to produce ATP.
         </div>
     </section>
+
+
+    <!-- OXYGEN -->
 
     <section>
         <h2>11. Role of Oxygen</h2>
@@ -454,12 +569,15 @@
         </div>
     </section>
 
+
+    <!-- NADH FADH2 -->
+
     <section>
         <h2>12. NADH and FADH₂</h2>
 
         <p>
-            NADH and FADH₂ are electron carriers. They transport high-energy
-            electrons to the electron transport chain.
+            NADH and FADH₂ are important electron carriers. They transport
+            high-energy electrons to the electron transport chain.
         </p>
 
         <table>
@@ -470,15 +588,18 @@
 
             <tr>
                 <td>NADH</td>
-                <td>Transfers high-energy electrons to the ETC</td>
+                <td>Transfers high-energy electrons to the ETC.</td>
             </tr>
 
             <tr>
                 <td>FADH₂</td>
-                <td>Transfers high-energy electrons to the ETC</td>
+                <td>Transfers high-energy electrons to the ETC.</td>
             </tr>
         </table>
     </section>
+
+
+    <!-- FERMENTATION -->
 
     <section>
         <h2>13. Fermentation</h2>
@@ -505,29 +626,32 @@
         <table>
             <tr>
                 <th>Type</th>
-                <th>Main Products</th>
+                <th>Main Product(s)</th>
             </tr>
 
             <tr>
-                <td>Lactic acid fermentation</td>
+                <td>Lactic Acid Fermentation</td>
                 <td>Lactate</td>
             </tr>
 
             <tr>
-                <td>Alcoholic fermentation</td>
+                <td>Alcoholic Fermentation</td>
                 <td>Ethanol + CO₂</td>
             </tr>
         </table>
     </section>
 
+
+    <!-- AEROBIC ANAEROBIC -->
+
     <section>
-        <h2>14. Aerobic vs Anaerobic Respiration</h2>
+        <h2>14. Aerobic vs Anaerobic Processes</h2>
 
         <table>
             <tr>
                 <th>Feature</th>
-                <th>Aerobic</th>
-                <th>Anaerobic / Fermentation</th>
+                <th>Aerobic Respiration</th>
+                <th>Fermentation</th>
             </tr>
 
             <tr>
@@ -537,27 +661,94 @@
             </tr>
 
             <tr>
-                <td>Glucose breakdown</td>
+                <td>Glucose Breakdown</td>
                 <td>More complete</td>
                 <td>Incomplete</td>
             </tr>
 
             <tr>
-                <td>Energy yield</td>
+                <td>Energy Yield</td>
                 <td>Much greater</td>
                 <td>Much lower</td>
             </tr>
 
             <tr>
-                <td>End products</td>
+                <td>End Products</td>
                 <td>CO₂ and H₂O</td>
                 <td>Depends on pathway</td>
             </tr>
         </table>
     </section>
 
+
+    <!-- CARBOHYDRATES FATS PROTEINS -->
+
     <section>
-        <h2>15. Photosynthesis and Respiration</h2>
+        <h2>15. Respiration of Carbohydrates, Fats and Proteins</h2>
+
+        <p>
+            Carbohydrates, fats and proteins can all contribute to energy
+            production. They enter metabolic pathways at different points.
+        </p>
+
+        <h3>Carbohydrates</h3>
+
+        <p>
+            Glucose enters glycolysis and is converted into pyruvate.
+            Under aerobic conditions, its products can enter mitochondrial
+            pathways for further energy production.
+        </p>
+
+        <h3>Fats</h3>
+
+        <p>
+            Fatty acids can be broken down through beta-oxidation to form
+            acetyl-CoA, which can enter the Krebs cycle.
+        </p>
+
+        <h3>Proteins</h3>
+
+        <p>
+            Proteins are first broken down into amino acids. After removal of
+            the amino group, their carbon skeletons can enter different
+            metabolic pathways and contribute to energy production.
+        </p>
+
+        <table>
+            <tr>
+                <th>Nutrient</th>
+                <th>Important Point</th>
+            </tr>
+
+            <tr>
+                <td>Carbohydrates</td>
+                <td>Glucose enters glycolysis.</td>
+            </tr>
+
+            <tr>
+                <td>Fats</td>
+                <td>Fatty acids can undergo beta-oxidation and form acetyl-CoA.</td>
+            </tr>
+
+            <tr>
+                <td>Proteins</td>
+                <td>Amino acids can contribute to energy-producing pathways.</td>
+            </tr>
+        </table>
+
+        <div class="important">
+            <strong>MDCAT Point:</strong>
+            Carbohydrates, fats and proteins can all contribute to cellular
+            respiration and energy production, but they enter the pathways
+            at different points.
+        </div>
+    </section>
+
+
+    <!-- PHOTOSYNTHESIS -->
+
+    <section>
+        <h2>16. Photosynthesis and Respiration</h2>
 
         <p>
             Photosynthesis and cellular respiration are closely related
@@ -571,24 +762,27 @@
             </tr>
 
             <tr>
-                <td>Stores energy in organic molecules</td>
-                <td>Releases energy from organic molecules</td>
+                <td>Stores energy in organic molecules.</td>
+                <td>Releases energy from organic molecules.</td>
             </tr>
 
             <tr>
-                <td>Occurs in chloroplasts of plant cells</td>
-                <td>Glycolysis occurs in cytoplasm; aerobic stages occur in mitochondria</td>
+                <td>Occurs in chloroplasts of plant cells.</td>
+                <td>Glycolysis occurs in cytoplasm; aerobic stages occur mainly in mitochondria.</td>
             </tr>
 
             <tr>
-                <td>Uses CO₂ and H₂O</td>
-                <td>Produces CO₂ and H₂O in aerobic respiration</td>
+                <td>Uses CO₂ and H₂O.</td>
+                <td>Aerobic respiration produces CO₂ and H₂O.</td>
             </tr>
         </table>
     </section>
 
+
+    <!-- QUICK REVISION -->
+
     <section>
-        <h2>16. Quick Revision</h2>
+        <h2>17. Quick Revision</h2>
 
         <table>
             <tr>
@@ -598,48 +792,81 @@
 
             <tr>
                 <td>ATP</td>
-                <td>Major immediate energy currency</td>
+                <td>Major immediate energy currency of the cell.</td>
+            </tr>
+
+            <tr>
+                <td>Metabolism</td>
+                <td>Sum of chemical reactions in an organism or cell.</td>
+            </tr>
+
+            <tr>
+                <td>Anabolism</td>
+                <td>Builds larger molecules.</td>
+            </tr>
+
+            <tr>
+                <td>Catabolism</td>
+                <td>Breaks molecules down.</td>
             </tr>
 
             <tr>
                 <td>Glycolysis</td>
-                <td>Occurs in cytoplasm</td>
+                <td>Occurs in cytoplasm.</td>
             </tr>
 
             <tr>
-                <td>Pyruvate oxidation</td>
-                <td>Forms acetyl-CoA</td>
+                <td>Pyruvate Oxidation</td>
+                <td>Forms acetyl-CoA.</td>
             </tr>
 
             <tr>
-                <td>Krebs cycle</td>
-                <td>Occurs in mitochondrial matrix</td>
+                <td>Krebs Cycle</td>
+                <td>Occurs mainly in mitochondrial matrix.</td>
             </tr>
 
             <tr>
                 <td>ETC</td>
-                <td>Located in inner mitochondrial membrane</td>
+                <td>Located in inner mitochondrial membrane.</td>
             </tr>
 
             <tr>
-                <td>ATP synthase</td>
-                <td>Produces ATP using proton flow</td>
+                <td>ATP Synthase</td>
+                <td>Uses proton flow to help produce ATP.</td>
             </tr>
 
             <tr>
                 <td>Oxygen</td>
-                <td>Final electron acceptor in aerobic respiration</td>
+                <td>Final electron acceptor in aerobic respiration.</td>
+            </tr>
+
+            <tr>
+                <td>NADH & FADH₂</td>
+                <td>Carry high-energy electrons to the ETC.</td>
+            </tr>
+
+            <tr>
+                <td>Fats</td>
+                <td>Fatty acids can undergo beta-oxidation.</td>
+            </tr>
+
+            <tr>
+                <td>Proteins</td>
+                <td>Amino acids can enter energy-producing pathways.</td>
             </tr>
 
             <tr>
                 <td>Fermentation</td>
-                <td>Anaerobic pathway allowing glycolysis to continue</td>
+                <td>Anaerobic pathway that allows glycolysis to continue.</td>
             </tr>
         </table>
     </section>
 
+
+    <!-- MCQs -->
+
     <section>
-        <h2>17. MDCAT Practice MCQs</h2>
+        <h2>18. MDCAT Practice MCQs</h2>
 
         <div class="mcq">
             <p><strong>1. The major immediate energy currency of the cell is:</strong></p>
@@ -660,10 +887,10 @@
         </div>
 
         <div class="mcq">
-            <p><strong>3. Glycolysis converts glucose into:</strong></p>
-            <p>A) Acetyl-CoA directly</p>
+            <p><strong>3. Glycolysis converts one glucose molecule into:</strong></p>
+            <p>A) One pyruvate molecule</p>
             <p>B) Two pyruvate molecules</p>
-            <p>C) Carbon dioxide only</p>
+            <p>C) Two glucose molecules</p>
             <p>D) Oxygen</p>
             <p class="answer">Answer: B) Two pyruvate molecules</p>
         </div>
@@ -696,7 +923,7 @@
         </div>
 
         <div class="mcq">
-            <p><strong>7. Which enzyme uses the proton gradient to produce ATP?</strong></p>
+            <p><strong>7. Which enzyme uses proton flow to help produce ATP?</strong></p>
             <p>A) Amylase</p>
             <p>B) ATP synthase</p>
             <p>C) Pepsin</p>
@@ -730,35 +957,80 @@
             <p>D) Protein synthesis only</p>
             <p class="answer">Answer: B) Breaking down molecules</p>
         </div>
+
+        <div class="mcq">
+            <p><strong>11. Fatty acids can be converted into acetyl-CoA through:</strong></p>
+            <p>A) Glycolysis</p>
+            <p>B) Beta-oxidation</p>
+            <p>C) Translation</p>
+            <p>D) Replication</p>
+            <p class="answer">Answer: B) Beta-oxidation</p>
+        </div>
+
+        <div class="mcq">
+            <p><strong>12. Proteins can contribute to cellular respiration after being broken down into:</strong></p>
+            <p>A) Amino acids</p>
+            <p>B) Nucleotides only</p>
+            <p>C) Oxygen</p>
+            <p>D) ATP only</p>
+            <p class="answer">Answer: A) Amino acids</p>
+        </div>
     </section>
+
+
+    <!-- EXAM TIP -->
 
     <section>
         <h2>🎯 MDCAT Exam Tip</h2>
 
         <div class="tip">
-            Focus especially on:
+
+            <strong>Focus especially on:</strong>
+
             <br><br>
-            ✔ ATP<br>
+
+            ✔ ATP and its role<br>
+            ✔ Anabolism and catabolism<br>
             ✔ Glycolysis and its location<br>
             ✔ Pyruvate oxidation<br>
             ✔ Krebs cycle<br>
             ✔ NADH and FADH₂<br>
             ✔ Electron transport chain<br>
+            ✔ Chemiosmosis<br>
             ✔ ATP synthase<br>
             ✔ Role of oxygen<br>
             ✔ Fermentation<br>
-            ✔ Aerobic vs anaerobic respiration
+            ✔ Carbohydrates, fats and proteins in respiration
+
         </div>
     </section>
 
+
+    <!-- BACK -->
+
     <section>
-        <a class="back" href="notes.html">← Back to MDCAT Notes</a>
+        <a class="back" href="biology.html">
+            ← Back to MDCAT Biology
+        </a>
     </section>
 
 </div>
 
+
 <footer>
+
     <p>© 2026 StudyHub | MDCAT Study Material</p>
+
+    <p>
+        <a href="index.html">Home</a>
+        |
+        <a href="biology.html">Biology</a>
+        |
+        <a href="chemistry.html">Chemistry</a>
+        |
+        <a href="physics.html">Physics</a>
+    </p>
+
 </footer>
 
 </body>
