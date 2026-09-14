@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>StudyHub - MDCAT Biology Notes | Cell Biology</title>
-
-    <meta name="description" content="MDCAT Biology notes covering Cell Biology, cell structure, organelles, prokaryotic and eukaryotic cells with quick revision.">
+    <title>Cell Biology - MDCAT Notes | StudyHub</title>
+    <meta name="description" content="Complete MDCAT Cell Biology notes covering cell structure, organelles, prokaryotic and eukaryotic cells, plant and animal cells, and practice MCQs.">
 
     <style>
         body {
@@ -18,59 +17,133 @@
         }
 
         header {
-            background: #173f5f;
+            background: #12355b;
             color: white;
             text-align: center;
-            padding: 30px 20px;
+            padding: 25px 15px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background: #0b2545;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
         }
 
         .container {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 20px;
+            max-width: 950px;
+            margin: 25px auto;
+            padding: 0 15px;
         }
 
-        .box {
+        section {
             background: white;
-            padding: 25px;
-            margin-bottom: 25px;
-            border-radius: 12px;
+            padding: 22px;
+            margin-bottom: 20px;
+            border-radius: 10px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
 
         h2 {
-            color: #173f5f;
+            color: #12355b;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 8px;
         }
 
         h3 {
-            color: #245b7a;
+            color: #176b87;
         }
 
         .important {
-            background: #eef5fa;
+            background: #fff4cc;
             padding: 15px;
-            border-left: 5px solid #173f5f;
-            border-radius: 6px;
+            border-left: 5px solid #e0a800;
+            margin: 15px 0;
+        }
+
+        .tip {
+            background: #e8f5e9;
+            padding: 15px;
+            border-left: 5px solid #2e7d32;
+            margin: 15px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #e9eef5;
         }
 
         .mcq {
-            margin-top: 15px;
+            background: #f8f9fa;
             padding: 15px;
-            background: #f8fafc;
+            margin: 15px 0;
             border-radius: 8px;
         }
 
+        .answer {
+            color: #176b2c;
+            font-weight: bold;
+        }
+
+        .back {
+            display: inline-block;
+            background: #12355b;
+            color: white;
+            padding: 10px 16px;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .back:hover {
+            background: #0b2545;
+        }
+
         footer {
-            background: #173f5f;
+            background: #12355b;
             color: white;
             text-align: center;
             padding: 20px;
-            margin-top: 40px;
+            margin-top: 30px;
         }
 
-        a {
-            color: #173f5f;
-            font-weight: bold;
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+            section {
+                padding: 16px;
+            }
+
+            table {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
@@ -78,210 +151,502 @@
 <body>
 
 <header>
-    <h1>🧬 MDCAT Biology Notes</h1>
-    <p>Chapter 1: Cell Biology</p>
+    <h1>StudyHub</h1>
+    <p>MDCAT Biology Notes</p>
 </header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="notes.html">Notes</a>
+    <a href="mcqs.html">MCQs Test</a>
+</nav>
 
 <div class="container">
 
-    <div class="box">
-        <h2>📚 What is a Cell?</h2>
-
+    <section>
+        <h2>Biology Chapter 1: Cell Biology</h2>
         <p>
-            A cell is the basic structural and functional unit of life.
+            The cell is the basic structural and functional unit of life.
             All living organisms are made up of one or more cells.
         </p>
 
         <div class="important">
-            <strong>Important:</strong>
-            The cell is considered the basic unit of life.
+            <strong>MDCAT Important:</strong>
+            Cell theory is one of the most important concepts in Cell Biology.
         </div>
-    </div>
+    </section>
 
-
-    <div class="box">
-        <h2>🔬 Types of Cells</h2>
-
-        <h3>1. Prokaryotic Cells</h3>
-
-        <p>
-            Prokaryotic cells are generally simple cells that do not have
-            a membrane-bound nucleus.
-        </p>
+    <section>
+        <h2>1. Cell Theory</h2>
 
         <ul>
-            <li>They do not have a true nucleus.</li>
-            <li>Their genetic material is present in the nucleoid region.</li>
-            <li>Bacteria are examples of prokaryotic organisms.</li>
+            <li>All living organisms are composed of cells.</li>
+            <li>The cell is the basic structural and functional unit of life.</li>
+            <li>All cells arise from pre-existing cells.</li>
         </ul>
 
-        <h3>2. Eukaryotic Cells</h3>
-
         <p>
-            Eukaryotic cells have a true nucleus surrounded by a nuclear membrane.
-            They also contain membrane-bound organelles.
+            The cell theory was developed through the work of scientists
+            including Matthias Schleiden, Theodor Schwann and Rudolf Virchow.
         </p>
+    </section>
 
+    <section>
+        <h2>2. Types of Cells</h2>
+
+        <h3>Prokaryotic Cells</h3>
         <ul>
-            <li>Have a true nucleus.</li>
+            <li>Usually smaller and simpler cells.</li>
+            <li>Do not have a true membrane-bound nucleus.</li>
+            <li>DNA is present in the nucleoid region.</li>
+            <li>Membrane-bound organelles are absent.</li>
+            <li>Bacteria are examples of prokaryotes.</li>
+        </ul>
+
+        <h3>Eukaryotic Cells</h3>
+        <ul>
+            <li>Generally larger and more complex.</li>
+            <li>Have a true nucleus surrounded by a nuclear membrane.</li>
             <li>Contain membrane-bound organelles.</li>
-            <li>Animals and plants have eukaryotic cells.</li>
+            <li>Plants, animals, fungi and protists have eukaryotic cells.</li>
         </ul>
-    </div>
 
+        <table>
+            <tr>
+                <th>Feature</th>
+                <th>Prokaryotic</th>
+                <th>Eukaryotic</th>
+            </tr>
 
-    <div class="box">
-        <h2>🧩 Important Cell Organelles</h2>
+            <tr>
+                <td>True nucleus</td>
+                <td>Absent</td>
+                <td>Present</td>
+            </tr>
 
-        <h3>1. Nucleus</h3>
+            <tr>
+                <td>Membrane-bound organelles</td>
+                <td>Absent</td>
+                <td>Present</td>
+            </tr>
+
+            <tr>
+                <td>DNA location</td>
+                <td>Nucleoid</td>
+                <td>Nucleus</td>
+            </tr>
+
+            <tr>
+                <td>Examples</td>
+                <td>Bacteria</td>
+                <td>Plants and animals</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>3. Cell Membrane</h2>
+
         <p>
-            The nucleus contains genetic material and controls many activities
-            of the cell.
+            The cell membrane surrounds the cell and separates the internal
+            environment from the external environment.
         </p>
-
-        <h3>2. Mitochondria</h3>
-        <p>
-            Mitochondria are involved in cellular respiration and production
-            of ATP, which is an important energy currency of the cell.
-        </p>
-
-        <h3>3. Ribosomes</h3>
-        <p>
-            Ribosomes are the sites of protein synthesis.
-        </p>
-
-        <h3>4. Endoplasmic Reticulum</h3>
-        <p>
-            The endoplasmic reticulum helps in the synthesis and transport
-            of various substances within the cell.
-        </p>
-
-        <h3>5. Golgi Apparatus</h3>
-        <p>
-            The Golgi apparatus modifies, sorts and packages certain
-            cellular products.
-        </p>
-
-        <h3>6. Lysosomes</h3>
-        <p>
-            Lysosomes contain digestive enzymes and can break down
-            unwanted materials inside cells.
-        </p>
-
-        <h3>7. Chloroplasts</h3>
-        <p>
-            Chloroplasts are found in plant cells and are the main sites
-            of photosynthesis.
-        </p>
-    </div>
-
-
-    <div class="box">
-        <h2>🌱 Plant Cell vs Animal Cell</h2>
-
-        <p><strong>Plant cells:</strong></p>
 
         <ul>
-            <li>Have a cell wall.</li>
-            <li>Usually contain chloroplasts.</li>
-            <li>Usually have a large central vacuole.</li>
+            <li>It is mainly composed of phospholipids and proteins.</li>
+            <li>It is selectively permeable.</li>
+            <li>It controls movement of substances into and out of the cell.</li>
+            <li>It helps maintain the internal environment of the cell.</li>
         </ul>
 
-        <p><strong>Animal cells:</strong></p>
-
-        <ul>
-            <li>Do not have a cell wall.</li>
-            <li>Do not contain chloroplasts.</li>
-            <li>Usually have smaller vacuoles.</li>
-        </ul>
-    </div>
-
-
-    <div class="box">
-        <h2>⚡ Quick Revision</h2>
-
-        <ul>
-            <li>Cell = basic unit of life.</li>
-            <li>Prokaryotes = no true nucleus.</li>
-            <li>Eukaryotes = true nucleus.</li>
-            <li>Mitochondria = cellular respiration and ATP production.</li>
-            <li>Ribosomes = protein synthesis.</li>
-            <li>Nucleus = contains genetic material.</li>
-            <li>Chloroplast = photosynthesis.</li>
-            <li>Plant cells have a cell wall.</li>
-        </ul>
-    </div>
-
-
-    <div class="box">
-        <h2>📝 Practice MCQs</h2>
-
-        <div class="mcq">
-            <strong>1. What is the basic unit of life?</strong>
-            <p>A. Tissue<br>
-            B. Cell<br>
-            C. Organ<br>
-            D. Atom</p>
-
-            <strong>Answer: B. Cell</strong>
+        <div class="important">
+            <strong>Remember:</strong>
+            The cell membrane is selectively permeable, meaning it allows
+            certain substances to pass more easily than others.
         </div>
+    </section>
 
-        <div class="mcq">
-            <strong>2. Which organelle is mainly associated with ATP production?</strong>
-            <p>A. Ribosome<br>
-            B. Nucleus<br>
-            C. Mitochondria<br>
-            D. Golgi apparatus</p>
-
-            <strong>Answer: C. Mitochondria</strong>
-        </div>
-
-        <div class="mcq">
-            <strong>3. Which cells do not have a true nucleus?</strong>
-            <p>A. Eukaryotic cells<br>
-            B. Prokaryotic cells<br>
-            C. Plant cells only<br>
-            D. Animal cells only</p>
-
-            <strong>Answer: B. Prokaryotic cells</strong>
-        </div>
-
-        <div class="mcq">
-            <strong>4. Where does protein synthesis occur?</strong>
-            <p>A. Ribosomes<br>
-            B. Lysosomes<br>
-            C. Vacuoles<br>
-            D. Chloroplasts</p>
-
-            <strong>Answer: A. Ribosomes</strong>
-        </div>
-
-        <div class="mcq">
-            <strong>5. Which organelle is responsible for photosynthesis?</strong>
-            <p>A. Nucleus<br>
-            B. Chloroplast<br>
-            C. Mitochondria<br>
-            D. Ribosome</p>
-
-            <strong>Answer: B. Chloroplast</strong>
-        </div>
-    </div>
-
-
-    <div class="box">
-        <h2>🎯 MDCAT Tip</h2>
+    <section>
+        <h2>4. Nucleus</h2>
 
         <p>
-            For MDCAT preparation, remember the functions of important
-            organelles and the major differences between prokaryotic and
-            eukaryotic cells. These concepts are useful for solving
-            basic Biology MCQs.
+            The nucleus is a major control center of the eukaryotic cell.
+        </p>
+
+        <ul>
+            <li>Contains genetic material (DNA).</li>
+            <li>Controls many cellular activities.</li>
+            <li>Surrounded by a nuclear envelope.</li>
+            <li>Contains the nucleolus.</li>
+        </ul>
+
+        <h3>Nucleolus</h3>
+        <p>
+            The nucleolus is involved in the production of ribosomal components.
+        </p>
+    </section>
+
+    <section>
+        <h2>5. Mitochondria</h2>
+
+        <p>
+            Mitochondria are organelles involved in cellular respiration and
+            ATP production.
+        </p>
+
+        <ul>
+            <li>Have a double membrane.</li>
+            <li>The inner membrane forms folds called cristae.</li>
+            <li>The internal fluid-filled region is called the matrix.</li>
+            <li>Contain their own DNA and ribosomes.</li>
+            <li>ATP is produced during cellular respiration.</li>
+        </ul>
+
+        <div class="tip">
+            <strong>MDCAT Tip:</strong>
+            Mitochondria are often called the "powerhouses" of the cell because
+            they are major sites of ATP production.
+        </div>
+    </section>
+
+    <section>
+        <h2>6. Ribosomes</h2>
+
+        <ul>
+            <li>Ribosomes are the sites of protein synthesis.</li>
+            <li>They are not surrounded by a membrane.</li>
+            <li>They may be free in the cytoplasm.</li>
+            <li>They may also be attached to rough endoplasmic reticulum.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>7. Endoplasmic Reticulum</h2>
+
+        <h3>Rough Endoplasmic Reticulum (RER)</h3>
+
+        <p>
+            Rough ER has ribosomes attached to its surface and is involved
+            mainly in the synthesis and transport of proteins.
+        </p>
+
+        <h3>Smooth Endoplasmic Reticulum (SER)</h3>
+
+        <p>
+            Smooth ER lacks ribosomes and is involved in lipid synthesis and
+            other cellular functions.
+        </p>
+    </section>
+
+    <section>
+        <h2>8. Golgi Apparatus</h2>
+
+        <p>
+            The Golgi apparatus consists of flattened membrane-bound sacs.
+        </p>
+
+        <ul>
+            <li>Modifies proteins and lipids.</li>
+            <li>Sorts and packages cellular products.</li>
+            <li>Helps form secretory vesicles.</li>
+            <li>Participates in the formation of lysosomes.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>9. Lysosomes</h2>
+
+        <p>
+            Lysosomes contain digestive enzymes that can break down various
+            materials inside cells.
+        </p>
+
+        <ul>
+            <li>Contain hydrolytic digestive enzymes.</li>
+            <li>Help digest damaged cellular components.</li>
+            <li>Can break down certain foreign materials.</li>
+        </ul>
+
+        <div class="important">
+            <strong>Remember:</strong>
+            Lysosomes are associated with intracellular digestion.
+        </div>
+    </section>
+
+    <section>
+        <h2>10. Vacuoles</h2>
+
+        <p>
+            Vacuoles are membrane-bound compartments used for storage and
+            other functions.
+        </p>
+
+        <ul>
+            <li>Plant cells usually have a large central vacuole.</li>
+            <li>They can store water, ions, nutrients and waste materials.</li>
+            <li>The central vacuole contributes to maintaining plant cell pressure.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>11. Chloroplasts</h2>
+
+        <p>
+            Chloroplasts are found in plants and other photosynthetic organisms.
+            They are the main sites of photosynthesis in plant cells.
+        </p>
+
+        <ul>
+            <li>Have a double membrane.</li>
+            <li>Contain chlorophyll and other pigments.</li>
+            <li>Contain internal structures called thylakoids.</li>
+            <li>Stacks of thylakoids are called grana.</li>
+            <li>The surrounding fluid is called stroma.</li>
+            <li>Contain their own DNA and ribosomes.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>12. Cell Wall</h2>
+
+        <p>
+            Plant cells have a cell wall outside the cell membrane.
+        </p>
+
+        <ul>
+            <li>Provides support and protection.</li>
+            <li>Helps maintain cell shape.</li>
+            <li>Plant cell walls are mainly composed of cellulose.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>13. Cytoplasm</h2>
+
+        <p>
+            Cytoplasm includes the cytosol and the structures suspended within
+            it, excluding the nucleus in a typical eukaryotic cell.
         </p>
 
         <p>
-            <a href="notes.html">← Back to MDCAT Notes</a>
+            Many metabolic reactions occur in the cytoplasm.
         </p>
-    </div>
+    </section>
+
+    <section>
+        <h2>14. Plant Cell vs Animal Cell</h2>
+
+        <table>
+            <tr>
+                <th>Feature</th>
+                <th>Plant Cell</th>
+                <th>Animal Cell</th>
+            </tr>
+
+            <tr>
+                <td>Cell wall</td>
+                <td>Present</td>
+                <td>Absent</td>
+            </tr>
+
+            <tr>
+                <td>Chloroplast</td>
+                <td>Present in photosynthetic plant cells</td>
+                <td>Absent</td>
+            </tr>
+
+            <tr>
+                <td>Large central vacuole</td>
+                <td>Usually present</td>
+                <td>Usually absent</td>
+            </tr>
+
+            <tr>
+                <td>Cell membrane</td>
+                <td>Present</td>
+                <td>Present</td>
+            </tr>
+
+            <tr>
+                <td>Nucleus</td>
+                <td>Present</td>
+                <td>Present</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>15. Important Organelles - Quick Revision</h2>
+
+        <table>
+            <tr>
+                <th>Organelle</th>
+                <th>Main Function</th>
+            </tr>
+
+            <tr>
+                <td>Nucleus</td>
+                <td>Contains DNA and controls cellular activities</td>
+            </tr>
+
+            <tr>
+                <td>Ribosome</td>
+                <td>Protein synthesis</td>
+            </tr>
+
+            <tr>
+                <td>Mitochondria</td>
+                <td>Major site of ATP production</td>
+            </tr>
+
+            <tr>
+                <td>Rough ER</td>
+                <td>Protein synthesis and transport</td>
+            </tr>
+
+            <tr>
+                <td>Smooth ER</td>
+                <td>Lipid synthesis and other functions</td>
+            </tr>
+
+            <tr>
+                <td>Golgi apparatus</td>
+                <td>Modification, sorting and packaging</td>
+            </tr>
+
+            <tr>
+                <td>Lysosome</td>
+                <td>Intracellular digestion</td>
+            </tr>
+
+            <tr>
+                <td>Chloroplast</td>
+                <td>Photosynthesis</td>
+            </tr>
+
+            <tr>
+                <td>Vacuole</td>
+                <td>Storage</td>
+            </tr>
+
+            <tr>
+                <td>Cell wall</td>
+                <td>Support and protection</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>16. MDCAT Practice MCQs</h2>
+
+        <div class="mcq">
+            <p><strong>1. Which organelle is the major site of ATP production?</strong></p>
+            <p>A) Ribosome</p>
+            <p>B) Golgi apparatus</p>
+            <p>C) Mitochondrion</p>
+            <p>D) Lysosome</p>
+            <p class="answer">Answer: C) Mitochondrion</p>
+        </div>
+
+        <div class="mcq">
+            <p><strong>2. Which structure controls the movement of substances into and out of the cell?</strong></p>
+            <p>A) Cell wall</p>
+            <p>B) Cell membrane</p>
+            <p>C) Nucleolus</p>
+            <p>D) Ribosome</p>
+            <p class="answer">Answer: B) Cell membrane</p>
+        </div>
+
+        <div class="mcq">
+            <p><strong>3. Ribosomes are primarily responsible for:</strong></p>
+            <p>A) Photosynthesis</p>
+            <p>B) Protein synthesis</p>
+            <p>C) ATP storage</p>
+            <p>D) DNA digestion</p>
+            <p class="answer">Answer: B) Protein synthesis</p>
+        </div>
+
+        <div class="mcq">
+            <p><strong>4. Which structure is characteristic of plant cells?</strong></p>
+            <p>A) Cell wall</p>
+            <p>B) Ribosome</p>
+            <p>C) Cell membrane</p>
+            <p>D) Cytoplasm</p>
+            <p class="answer">Answer: A) Cell wall</p>
+        </div>
+
+        <div class="mcq">
+            <p><strong>5. The site of photosynthesis in plant cells is the:</strong></p>
+            <p>A) Lysosome</p>
+            <p>B) Chloroplast</p>
+            <p>C) Golgi apparatus</p>
+            <p>D) Nucleus</p>
+            <p class="answer">Answer: B) Chloroplast</p>
+        </div>
+
+        <div class="mcq">
+            <p><strong>6. Which type of cell lacks a true nucleus?</strong></p>
+            <p>A) Plant cell</p>
+            <p>B) Animal cell</p>
+            <p>C) Prokaryotic cell</p>
+            <p>D) Fungal cell</p>
+            <p class="answer">Answer: C) Prokaryotic cell</p>
+        </div>
+
+        <div class="mcq">
+            <p><strong>7. Which organelle modifies and packages proteins?</strong></p>
+            <p>A) Golgi apparatus</p>
+            <p>B) Ribosome</p>
+            <p>C) Nucleus</p>
+            <p>D) Chloroplast</p>
+            <p class="answer">Answer: A) Golgi apparatus</p>
+        </div>
+
+        <div class="mcq">
+            <p><strong>8. The folds of the inner mitochondrial membrane are called:</strong></p>
+            <p>A) Grana</p>
+            <p>B) Cristae</p>
+            <p>C) Thylakoids</p>
+            <p>D) Cisternae</p>
+            <p class="answer">Answer: B) Cristae</p>
+        </div>
+
+        <div class="mcq">
+            <p><strong>9. The main component of a plant cell wall is:</strong></p>
+            <p>A) Glycogen</p>
+            <p>B) Cellulose</p>
+            <p>C) Cholesterol</p>
+            <p>D) Protein</p>
+            <p class="answer">Answer: B) Cellulose</p>
+        </div>
+
+        <div class="mcq">
+            <p><strong>10. Which organelle contains digestive enzymes?</strong></p>
+            <p>A) Lysosome</p>
+            <p>B) Ribosome</p>
+            <p>C) Chloroplast</p>
+            <p>D) Nucleolus</p>
+            <p class="answer">Answer: A) Lysosome</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🎯 MDCAT Exam Tip</h2>
+
+        <div class="tip">
+            Learn the function of every major organelle.
+            MDCAT questions often test the relationship between an organelle
+            and its function.
+            <br><br>
+            <strong>Most important:</strong>
+            Nucleus, mitochondria, ribosomes, ER, Golgi apparatus, lysosomes,
+            chloroplasts, vacuoles, cell membrane and cell wall.
+        </div>
+    </section>
+
+    <section>
+        <a class="back" href="notes.html">← Back to MDCAT Notes</a>
+    </section>
 
 </div>
 
