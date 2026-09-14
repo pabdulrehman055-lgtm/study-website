@@ -5,39 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Enzymes - MDCAT Biology Notes | StudyHub</title>
-    <meta name="description" content="Complete MDCAT Biology notes on enzymes, enzyme structure, active site, factors affecting enzyme activity, inhibition and cofactors.">
+
+    <meta name="description" content="MDCAT Biology Enzymes notes covering enzyme structure, active site, activation energy, factors affecting enzyme activity, inhibition, cofactors and practice MCQs.">
+
+    <meta name="keywords" content="MDCAT Biology, Enzymes, enzyme notes, active site, enzyme inhibition, cofactors, MDCAT MCQs, StudyHub">
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
+            font-family: Arial, sans-serif;
             background: #f4f7fb;
             color: #222;
             line-height: 1.7;
         }
 
         header {
-            background: #12355b;
+            background: #173f5f;
             color: white;
             text-align: center;
-            padding: 25px 15px;
+            padding: 35px 20px;
         }
 
         header h1 {
+            margin: 0 0 8px;
+            font-size: 32px;
+        }
+
+        header p {
             margin: 0;
+            font-size: 18px;
         }
 
         nav {
-            background: #0b2545;
+            background: white;
+            padding: 15px;
             text-align: center;
-            padding: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
 
         nav a {
-            color: white;
+            color: #173f5f;
             text-decoration: none;
-            margin: 0 10px;
             font-weight: bold;
+            margin: 0 8px;
+            display: inline-block;
         }
 
         nav a:hover {
@@ -46,47 +61,59 @@
 
         .container {
             max-width: 950px;
-            margin: 25px auto;
-            padding: 0 15px;
+            margin: 30px auto;
+            padding: 20px;
         }
 
-        section {
+        .box {
             background: white;
-            padding: 22px;
-            margin-bottom: 20px;
-            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
 
         h2 {
-            color: #12355b;
+            color: #173f5f;
             border-bottom: 2px solid #ddd;
             padding-bottom: 8px;
         }
 
         h3 {
-            color: #176b87;
+            color: #245b7a;
         }
 
         .important {
-            background: #fff4cc;
+            background: #eef5fa;
             padding: 15px;
-            border-left: 5px solid #e0a800;
-            margin: 15px 0;
+            border-left: 5px solid #173f5f;
+            border-radius: 6px;
+            margin-top: 15px;
         }
 
         .tip {
             background: #e8f5e9;
             padding: 15px;
             border-left: 5px solid #2e7d32;
-            margin: 15px 0;
+            border-radius: 6px;
+            margin-top: 15px;
         }
 
         .warning {
             background: #fdecec;
             padding: 15px;
             border-left: 5px solid #c62828;
-            margin: 15px 0;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+
+        .formula {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 15px;
         }
 
         table {
@@ -95,31 +122,38 @@
             margin-top: 15px;
         }
 
-        th, td {
-            border: 1px solid #ccc;
-            padding: 10px;
+        th,
+        td {
+            border: 1px solid #d9e2ec;
+            padding: 12px;
             text-align: left;
         }
 
         th {
-            background: #e9eef5;
+            background: #173f5f;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f8fafc;
         }
 
         .mcq {
-            background: #f8f9fa;
-            padding: 15px;
-            margin: 15px 0;
+            background: #f8fafc;
+            padding: 18px;
+            margin-top: 15px;
             border-radius: 8px;
+            border: 1px solid #e2e8f0;
         }
 
         .answer {
-            color: #176b2c;
             font-weight: bold;
+            margin-top: 10px;
         }
 
         .back {
             display: inline-block;
-            background: #12355b;
+            background: #173f5f;
             color: white;
             padding: 10px 16px;
             text-decoration: none;
@@ -127,25 +161,32 @@
         }
 
         .back:hover {
-            background: #0b2545;
+            background: #245b7a;
         }
 
         footer {
-            background: #12355b;
+            background: #173f5f;
             color: white;
             text-align: center;
-            padding: 20px;
-            margin-top: 30px;
+            padding: 25px;
+            margin-top: 40px;
         }
 
-        @media (max-width: 600px) {
-            nav a {
-                display: block;
-                margin: 8px;
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 26px;
             }
 
-            section {
-                padding: 16px;
+            nav a {
+                margin: 5px;
+            }
+
+            .container {
+                padding: 12px;
+            }
+
+            .box {
+                padding: 18px;
             }
 
             table {
@@ -158,298 +199,424 @@
 <body>
 
 <header>
-    <h1>StudyHub</h1>
-    <p>MDCAT Biology Notes</p>
+    <h1>🧬 MDCAT Biology</h1>
+    <p>Chapter 4: Enzymes</p>
 </header>
 
 <nav>
     <a href="index.html">Home</a>
-    <a href="notes.html">Notes</a>
-    <a href="mcqs.html">MCQs Test</a>
+    <a href="biology.html">Biology</a>
+    <a href="chemistry.html">Chemistry</a>
+    <a href="physics.html">Physics</a>
+    <a href="english.html">English</a>
+    <a href="logical-reasoning.html">Logical Reasoning</a>
 </nav>
 
 <div class="container">
 
-    <section>
-        <h2>Biology Chapter 3: Enzymes</h2>
+    <!-- INTRODUCTION -->
+
+    <div class="box">
+        <h2>📚 What Are Enzymes?</h2>
 
         <p>
-            Enzymes are biological catalysts that speed up chemical reactions
-            in living organisms without being permanently consumed in the reaction.
+            Enzymes are biological catalysts that increase the rate of
+            biochemical reactions without being permanently consumed
+            during the reaction.
         </p>
 
         <div class="important">
             <strong>MDCAT Important:</strong>
-            Enzymes lower the activation energy required for a chemical reaction.
+            Enzymes lower the activation energy required for a reaction.
         </div>
-    </section>
+    </div>
 
-    <section>
-        <h2>1. What Are Enzymes?</h2>
+
+    <!-- BIOLOGICAL CATALYST -->
+
+    <div class="box">
+        <h2>1. Enzymes as Biological Catalysts</h2>
 
         <p>
-            An enzyme is a biological catalyst that increases the rate of a
-            biochemical reaction without undergoing permanent chemical change.
+            A catalyst is a substance that increases the rate of a
+            chemical reaction without being permanently consumed.
+            Enzymes act as biological catalysts inside living organisms.
         </p>
 
         <ul>
             <li>Most enzymes are proteins.</li>
             <li>Some RNA molecules can also act as catalysts; these are called ribozymes.</li>
-            <li>Enzymes are highly specific.</li>
-            <li>Enzymes are not permanently consumed during the reaction.</li>
-            <li>Enzyme activity is affected by temperature and pH.</li>
+            <li>Enzymes are generally highly specific.</li>
+            <li>Enzymes are not permanently consumed during reactions.</li>
+            <li>Enzyme activity depends on suitable conditions.</li>
         </ul>
-    </section>
+    </div>
 
-    <section>
+
+    <!-- ACTIVATION ENERGY -->
+
+    <div class="box">
         <h2>2. Activation Energy</h2>
 
         <p>
-            Activation energy is the minimum energy required for reactants to
-            reach the transition state and begin a chemical reaction.
+            Activation energy is the minimum energy required for reactants
+            to reach the transition state and start a chemical reaction.
         </p>
 
         <p>
-            Enzymes speed up reactions by lowering the activation energy.
+            Enzymes make biochemical reactions easier by lowering the
+            activation energy.
         </p>
+
+        <div class="formula">
+            Enzyme → Lowers Activation Energy → Faster Reaction
+        </div>
 
         <div class="tip">
             <strong>Remember:</strong>
-            Enzymes lower activation energy, but they do not change the overall
-            energy released or absorbed by the reaction.
+            An enzyme lowers activation energy but does not change the
+            overall energy change of the reaction.
         </div>
-    </section>
+    </div>
 
-    <section>
+
+    <!-- ENZYME STRUCTURE -->
+
+    <div class="box">
         <h2>3. Enzyme Structure</h2>
 
         <p>
-            The three-dimensional shape of an enzyme is very important because
-            it determines how the enzyme interacts with its substrate.
+            The three-dimensional structure of an enzyme is important
+            for its function. The shape and chemical properties of its
+            active site allow it to interact with particular substrates.
         </p>
 
         <h3>Active Site</h3>
 
         <p>
-            The active site is the specific region of an enzyme where the
-            substrate binds and the reaction takes place.
+            The active site is the specific region of an enzyme where
+            the substrate binds and where catalysis occurs.
         </p>
 
         <ul>
-            <li>It has a specific three-dimensional shape.</li>
+            <li>It has a specific three-dimensional arrangement.</li>
             <li>The substrate binds to the active site.</li>
-            <li>Catalysis occurs at or near the active site.</li>
+            <li>The reaction occurs at or near the active site.</li>
         </ul>
-    </section>
 
-    <section>
-        <h2>4. Substrate</h2>
+        <div class="important">
+            <strong>MDCAT Point:</strong>
+            The active site is responsible for much of an enzyme's specificity.
+        </div>
+    </div>
+
+
+    <!-- SUBSTRATE -->
+
+    <div class="box">
+        <h2>4. Substrate and Enzyme-Substrate Complex</h2>
 
         <p>
             A substrate is the reactant molecule upon which an enzyme acts.
         </p>
 
         <p>
-            The enzyme binds to its substrate to form an enzyme-substrate complex.
+            When a substrate binds to an enzyme, an enzyme-substrate
+            complex is formed.
         </p>
 
-        <p><strong>Basic sequence:</strong></p>
-
-        <p>
+        <div class="formula">
             Enzyme + Substrate → Enzyme-Substrate Complex → Enzyme + Products
-        </p>
-    </section>
+        </div>
+    </div>
 
-    <section>
+
+    <!-- LOCK AND KEY -->
+
+    <div class="box">
         <h2>5. Lock-and-Key Model</h2>
 
         <p>
-            According to the lock-and-key model, the active site of an enzyme
-            has a shape complementary to its substrate.
+            The lock-and-key model explains enzyme specificity by suggesting
+            that the active site has a shape complementary to the substrate.
         </p>
 
         <p>
-            The substrate fits into the active site in a way similar to a key
-            fitting into a lock.
+            The substrate fits into the active site in a way similar to
+            a key fitting into a lock.
         </p>
 
         <div class="important">
             <strong>MDCAT Point:</strong>
-            The lock-and-key model helps explain enzyme specificity.
+            Lock-and-key model → specific complementary shape.
         </div>
-    </section>
+    </div>
 
-    <section>
+
+    <!-- INDUCED FIT -->
+
+    <div class="box">
         <h2>6. Induced-Fit Model</h2>
 
         <p>
-            The induced-fit model states that the active site can undergo a
-            slight change in shape when the substrate binds.
+            According to the induced-fit model, the active site can undergo
+            a slight conformational change when the substrate binds.
         </p>
 
         <p>
-            This helps the enzyme interact more effectively with the substrate
-            and promote the reaction.
+            This allows the enzyme and substrate to interact effectively
+            and promotes catalysis.
+        </p>
+
+        <table>
+            <tr>
+                <th>Model</th>
+                <th>Main Idea</th>
+            </tr>
+
+            <tr>
+                <td>Lock-and-Key</td>
+                <td>Active site is considered complementary to the substrate.</td>
+            </tr>
+
+            <tr>
+                <td>Induced-Fit</td>
+                <td>Active site adjusts its shape when substrate binds.</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!-- SPECIFICITY -->
+
+    <div class="box">
+        <h2>7. Enzyme Specificity</h2>
+
+        <p>
+            Enzymes are generally specific because their active sites
+            interact with particular substrates.
+        </p>
+
+        <p>
+            The shape and chemical properties of the active site determine
+            which substrate can interact effectively with the enzyme.
         </p>
 
         <div class="tip">
             <strong>Exam Tip:</strong>
-            Lock-and-key = pre-existing complementary shape.
-            <br>
-            Induced fit = active site adjusts when substrate binds.
+            Remember: enzyme specificity is closely related to the
+            structure and properties of the active site.
         </div>
-    </section>
+    </div>
 
-    <section>
-        <h2>7. Enzyme Specificity</h2>
 
-        <p>
-            Enzymes are generally specific because their active sites interact
-            with particular substrates.
-        </p>
+    <!-- TEMPERATURE -->
+
+    <div class="box">
+        <h2>8. Effect of Temperature on Enzyme Activity</h2>
 
         <p>
-            The shape, chemical properties and arrangement of groups in the
-            active site contribute to this specificity.
-        </p>
-    </section>
-
-    <section>
-        <h2>8. Factors Affecting Enzyme Activity</h2>
-
-        <h3>A. Temperature</h3>
-
-        <p>
-            Increasing temperature generally increases the rate of enzyme
-            activity up to an optimum temperature.
+            Increasing temperature generally increases enzyme activity
+            up to an optimum temperature because molecules move faster
+            and collisions become more frequent.
         </p>
 
         <p>
             Above the optimum temperature, many enzymes lose their normal
-            three-dimensional structure and activity decreases.
+            three-dimensional structure and their activity decreases.
         </p>
 
         <div class="warning">
             <strong>Denaturation:</strong>
-            Excessive heat can disrupt the structure of an enzyme and cause
-            loss of its activity.
+            Excessive heat can disrupt the structure of an enzyme and
+            cause a loss of activity.
         </div>
+    </div>
 
-        <h3>B. pH</h3>
 
-        <p>
-            Each enzyme has a pH range in which it works most effectively.
-            Extreme pH can alter the structure of an enzyme and reduce its activity.
-        </p>
+    <!-- PH -->
 
-        <h3>C. Substrate Concentration</h3>
+    <div class="box">
+        <h2>9. Effect of pH on Enzyme Activity</h2>
 
         <p>
-            When substrate concentration increases, enzyme activity generally
-            increases until the available active sites become occupied.
-        </p>
-
-        <p>
-            After saturation, adding more substrate does not produce a
-            proportional increase in reaction rate.
-        </p>
-    </section>
-
-    <section>
-        <h2>9. Enzyme Saturation</h2>
-
-        <p>
-            At high substrate concentration, most or all available active sites
-            may be occupied by substrate molecules.
+            Every enzyme has a pH range in which it works most effectively.
+            This is called its optimum pH range.
         </p>
 
         <p>
-            At this point, the enzyme is said to be saturated and the reaction
-            approaches its maximum rate under those conditions.
+            Extreme pH can alter the structure and chemical properties
+            of an enzyme and reduce its activity.
         </p>
-    </section>
 
-    <section>
-        <h2>10. Enzyme Inhibitors</h2>
+        <div class="important">
+            <strong>Remember:</strong>
+            Different enzymes can have different optimum pH values.
+        </div>
+    </div>
+
+
+    <!-- SUBSTRATE CONCENTRATION -->
+
+    <div class="box">
+        <h2>10. Effect of Substrate Concentration</h2>
 
         <p>
-            An inhibitor is a substance that decreases the activity of an enzyme.
+            Increasing substrate concentration generally increases the
+            reaction rate when enzyme active sites are available.
+        </p>
+
+        <p>
+            As substrate concentration becomes very high, most available
+            active sites become occupied.
+        </p>
+
+        <p>
+            The reaction rate then approaches a maximum under those conditions.
+        </p>
+
+        <div class="formula">
+            More Substrate → More Enzyme-Substrate Complexes → Higher Rate
+            <br><br>
+            Until Enzyme Saturation
+        </div>
+    </div>
+
+
+    <!-- ENZYME SATURATION -->
+
+    <div class="box">
+        <h2>11. Enzyme Saturation</h2>
+
+        <p>
+            Enzyme saturation occurs when most or all available active
+            sites are occupied by substrate molecules.
+        </p>
+
+        <p>
+            At saturation, adding more substrate does not produce a
+            proportional increase in reaction rate because the available
+            enzyme molecules are already working at or near their maximum rate.
+        </p>
+
+        <div class="important">
+            <strong>MDCAT Point:</strong>
+            Saturation depends on the availability of enzyme active sites.
+        </div>
+    </div>
+
+
+    <!-- INHIBITION -->
+
+    <div class="box">
+        <h2>12. Enzyme Inhibition</h2>
+
+        <p>
+            An inhibitor is a substance that decreases the activity
+            of an enzyme.
         </p>
 
         <h3>Competitive Inhibition</h3>
 
         <p>
-            A competitive inhibitor competes with the substrate for the active site.
+            A competitive inhibitor competes with the substrate for
+            the enzyme's active site.
         </p>
 
         <ul>
-            <li>It resembles the substrate in some way.</li>
-            <li>It binds to the active site.</li>
-            <li>It prevents or reduces substrate binding.</li>
+            <li>It binds at the active site.</li>
+            <li>It competes with the substrate.</li>
+            <li>It reduces substrate binding.</li>
             <li>Increasing substrate concentration can reduce its effect in many cases.</li>
         </ul>
 
         <h3>Non-Competitive Inhibition</h3>
 
         <p>
-            A non-competitive inhibitor binds at a site other than the active site
-            and can alter the enzyme's shape and activity.
+            A non-competitive inhibitor binds at a site other than the
+            active site and can change enzyme shape or activity.
         </p>
 
-        <div class="important">
-            <strong>Remember:</strong>
-            Competitive inhibitor → competes for active site.
-            <br>
-            Non-competitive inhibitor → binds at another site and affects enzyme activity.
-        </div>
-    </section>
+        <table>
+            <tr>
+                <th>Competitive</th>
+                <th>Non-Competitive</th>
+            </tr>
 
-    <section>
-        <h2>11. Cofactors</h2>
+            <tr>
+                <td>Competes for active site</td>
+                <td>Binds at another site</td>
+            </tr>
+
+            <tr>
+                <td>Competes with substrate</td>
+                <td>Can alter enzyme shape and activity</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!-- COFACTORS -->
+
+    <div class="box">
+        <h2>13. Cofactors and Coenzymes</h2>
+
+        <h3>Cofactors</h3>
 
         <p>
-            Some enzymes require non-protein components called cofactors for
-            proper activity.
+            Some enzymes require non-protein components called cofactors
+            for proper activity.
         </p>
 
         <p>
-            Cofactors may include inorganic ions such as metal ions.
+            Cofactors can include inorganic ions such as metal ions.
         </p>
 
         <h3>Coenzymes</h3>
 
         <p>
-            Coenzymes are organic molecules that assist enzymes in carrying out
+            Coenzymes are organic molecules that assist enzymes during
             biochemical reactions. Many coenzymes are derived from vitamins.
         </p>
-    </section>
 
-    <section>
-        <h2>12. Apoenzyme and Holoenzyme</h2>
+        <div class="important">
+            <strong>Remember:</strong>
+            Cofactor = non-protein helper.
+            <br>
+            Coenzyme = organic type of enzyme helper.
+        </div>
+    </div>
+
+
+    <!-- APOENZYME -->
+
+    <div class="box">
+        <h2>14. Apoenzyme and Holoenzyme</h2>
 
         <h3>Apoenzyme</h3>
 
         <p>
-            The protein part of an enzyme that requires a non-protein component
-            is called the apoenzyme.
+            The protein component of an enzyme that requires a non-protein
+            component is called the apoenzyme.
         </p>
 
         <h3>Holoenzyme</h3>
 
         <p>
-            The complete, active enzyme consisting of the apoenzyme together
+            The complete active enzyme consisting of the apoenzyme together
             with its required cofactor is called a holoenzyme.
         </p>
 
-        <p><strong>Simple formula:</strong></p>
-
-        <p>
+        <div class="formula">
             Apoenzyme + Cofactor = Holoenzyme
-        </p>
-    </section>
+        </div>
+    </div>
 
-    <section>
-        <h2>13. Denaturation of Enzymes</h2>
+
+    <!-- DENATURATION -->
+
+    <div class="box">
+        <h2>15. Denaturation of Enzymes</h2>
 
         <p>
             Denaturation is the disruption of the normal three-dimensional
@@ -457,8 +624,8 @@
         </p>
 
         <p>
-            Because enzyme activity depends on its structure, denaturation can
-            cause loss of enzyme activity.
+            Since enzyme activity depends on its structure, denaturation
+            can cause loss of enzyme activity.
         </p>
 
         <ul>
@@ -466,41 +633,49 @@
             <li>Extreme pH can cause denaturation.</li>
             <li>The active site may lose its proper shape.</li>
         </ul>
-    </section>
+    </div>
 
-    <section>
-        <h2>14. Intracellular and Extracellular Enzymes</h2>
+
+    <!-- INTRACELLULAR -->
+
+    <div class="box">
+        <h2>16. Intracellular and Extracellular Enzymes</h2>
 
         <h3>Intracellular Enzymes</h3>
 
         <p>
-            These enzymes function inside cells.
+            Intracellular enzymes function inside cells.
         </p>
 
         <h3>Extracellular Enzymes</h3>
 
         <p>
-            These enzymes are secreted outside the cells where they perform
-            their functions.
+            Extracellular enzymes are released outside cells and function
+            in the surrounding environment.
         </p>
 
-        <p>
-            Digestive enzymes are common examples of extracellular enzymes.
-        </p>
-    </section>
+        <div class="important">
+            <strong>Example:</strong>
+            Digestive enzymes released into the digestive tract are
+            examples of extracellular enzymes.
+        </div>
+    </div>
 
-    <section>
-        <h2>15. Important Enzymes</h2>
+
+    <!-- IMPORTANT ENZYMES -->
+
+    <div class="box">
+        <h2>17. Important Digestive Enzymes</h2>
 
         <table>
             <tr>
                 <th>Enzyme</th>
-                <th>Major Function</th>
+                <th>Major Action</th>
             </tr>
 
             <tr>
                 <td>Amylase</td>
-                <td>Breaks down starch</td>
+                <td>Acts on starch</td>
             </tr>
 
             <tr>
@@ -515,7 +690,7 @@
 
             <tr>
                 <td>Lipase</td>
-                <td>Breaks down lipids</td>
+                <td>Digests lipids</td>
             </tr>
 
             <tr>
@@ -528,10 +703,13 @@
                 <td>Breaks down lactose</td>
             </tr>
         </table>
-    </section>
+    </div>
 
-    <section>
-        <h2>16. Quick Revision</h2>
+
+    <!-- QUICK REVISION -->
+
+    <div class="box">
+        <h2>⚡ Quick Revision</h2>
 
         <table>
             <tr>
@@ -550,18 +728,28 @@
             </tr>
 
             <tr>
-                <td>Active site</td>
+                <td>Active Site</td>
                 <td>Region where substrate binds</td>
             </tr>
 
             <tr>
-                <td>Activation energy</td>
-                <td>Energy barrier for a reaction</td>
+                <td>Activation Energy</td>
+                <td>Minimum energy needed to start a reaction</td>
             </tr>
 
             <tr>
-                <td>Competitive inhibitor</td>
-                <td>Competes for the active site</td>
+                <td>Lock-and-Key</td>
+                <td>Complementary active-site and substrate shape</td>
+            </tr>
+
+            <tr>
+                <td>Induced Fit</td>
+                <td>Active site adjusts when substrate binds</td>
+            </tr>
+
+            <tr>
+                <td>Competitive Inhibitor</td>
+                <td>Competes for active site</td>
             </tr>
 
             <tr>
@@ -575,130 +763,240 @@
             </tr>
 
             <tr>
+                <td>Apoenzyme</td>
+                <td>Protein part of a complex enzyme</td>
+            </tr>
+
+            <tr>
+                <td>Holoenzyme</td>
+                <td>Complete active enzyme</td>
+            </tr>
+
+            <tr>
                 <td>Denaturation</td>
-                <td>Loss/disruption of normal protein structure</td>
+                <td>Disruption of normal protein structure</td>
             </tr>
         </table>
-    </section>
+    </div>
 
-    <section>
-        <h2>17. MDCAT Practice MCQs</h2>
 
-        <div class="mcq">
-            <p><strong>1. Enzymes are biological:</strong></p>
-            <p>A) Hormones</p>
-            <p>B) Catalysts</p>
-            <p>C) Vitamins</p>
-            <p>D) Lipids</p>
-            <p class="answer">Answer: B) Catalysts</p>
-        </div>
+    <!-- MCQs -->
+
+    <div class="box">
+        <h2>📝 MDCAT Practice MCQs</h2>
 
         <div class="mcq">
-            <p><strong>2. Enzymes mainly speed up reactions by:</strong></p>
-            <p>A) Increasing activation energy</p>
-            <p>B) Decreasing activation energy</p>
-            <p>C) Increasing product energy</p>
-            <p>D) Changing the final products</p>
-            <p class="answer">Answer: B) Decreasing activation energy</p>
+            <strong>1. Enzymes are biological:</strong>
+
+            <p>
+                A. Hormones<br>
+                B. Catalysts<br>
+                C. Vitamins<br>
+                D. Lipids
+            </p>
+
+            <p class="answer">Answer: B. Catalysts</p>
         </div>
+
 
         <div class="mcq">
-            <p><strong>3. The region where a substrate binds to an enzyme is called:</strong></p>
-            <p>A) Nucleus</p>
-            <p>B) Active site</p>
-            <p>C) Matrix</p>
-            <p>D) Cell wall</p>
-            <p class="answer">Answer: B) Active site</p>
+            <strong>2. Enzymes speed up reactions mainly by:</strong>
+
+            <p>
+                A. Increasing activation energy<br>
+                B. Decreasing activation energy<br>
+                C. Increasing product concentration<br>
+                D. Changing the final products
+            </p>
+
+            <p class="answer">Answer: B. Decreasing activation energy</p>
         </div>
+
 
         <div class="mcq">
-            <p><strong>4. A substance upon which an enzyme acts is called:</strong></p>
-            <p>A) Cofactor</p>
-            <p>B) Product</p>
-            <p>C) Substrate</p>
-            <p>D) Inhibitor</p>
-            <p class="answer">Answer: C) Substrate</p>
+            <strong>3. The region of an enzyme where the substrate binds is called:</strong>
+
+            <p>
+                A. Nucleus<br>
+                B. Active site<br>
+                C. Cell wall<br>
+                D. Cytoplasm
+            </p>
+
+            <p class="answer">Answer: B. Active site</p>
         </div>
+
 
         <div class="mcq">
-            <p><strong>5. Which model describes the active site as adjusting its shape when the substrate binds?</strong></p>
-            <p>A) Lock-and-key model</p>
-            <p>B) Induced-fit model</p>
-            <p>C) Cell theory</p>
-            <p>D) Fluid mosaic model</p>
-            <p class="answer">Answer: B) Induced-fit model</p>
+            <strong>4. The molecule upon which an enzyme acts is called:</strong>
+
+            <p>
+                A. Product<br>
+                B. Cofactor<br>
+                C. Substrate<br>
+                D. Coenzyme
+            </p>
+
+            <p class="answer">Answer: C. Substrate</p>
         </div>
+
 
         <div class="mcq">
-            <p><strong>6. High temperature can reduce enzyme activity because it may cause:</strong></p>
-            <p>A) Replication</p>
-            <p>B) Denaturation</p>
-            <p>C) Photosynthesis</p>
-            <p>D) Diffusion</p>
-            <p class="answer">Answer: B) Denaturation</p>
+            <strong>5. Which model suggests that the active site adjusts its shape when the substrate binds?</strong>
+
+            <p>
+                A. Lock-and-key model<br>
+                B. Induced-fit model<br>
+                C. Fluid mosaic model<br>
+                D. Cell theory
+            </p>
+
+            <p class="answer">Answer: B. Induced-fit model</p>
         </div>
+
 
         <div class="mcq">
-            <p><strong>7. A competitive inhibitor generally binds to the:</strong></p>
-            <p>A) Active site</p>
-            <p>B) Nucleus</p>
-            <p>C) Cell wall</p>
-            <p>D) Ribosome</p>
-            <p class="answer">Answer: A) Active site</p>
+            <strong>6. Excessive heat can reduce enzyme activity by causing:</strong>
+
+            <p>
+                A. Replication<br>
+                B. Denaturation<br>
+                C. Translation<br>
+                D. Diffusion
+            </p>
+
+            <p class="answer">Answer: B. Denaturation</p>
         </div>
+
 
         <div class="mcq">
-            <p><strong>8. Which enzyme digests starch?</strong></p>
-            <p>A) Lipase</p>
-            <p>B) Amylase</p>
-            <p>C) Pepsin</p>
-            <p>D) Lactase</p>
-            <p class="answer">Answer: B) Amylase</p>
+            <strong>7. A competitive inhibitor competes with the substrate for the:</strong>
+
+            <p>
+                A. Nucleus<br>
+                B. Active site<br>
+                C. Cell wall<br>
+                D. Ribosome
+            </p>
+
+            <p class="answer">Answer: B. Active site</p>
         </div>
+
 
         <div class="mcq">
-            <p><strong>9. The protein part of a complex enzyme is called:</strong></p>
-            <p>A) Coenzyme</p>
-            <p>B) Apoenzyme</p>
-            <p>C) Substrate</p>
-            <p>D) Product</p>
-            <p class="answer">Answer: B) Apoenzyme</p>
+            <strong>8. Which enzyme acts on starch?</strong>
+
+            <p>
+                A. Lipase<br>
+                B. Amylase<br>
+                C. Lactase<br>
+                D. Pepsin
+            </p>
+
+            <p class="answer">Answer: B. Amylase</p>
         </div>
+
 
         <div class="mcq">
-            <p><strong>10. Apoenzyme plus its required cofactor forms a:</strong></p>
-            <p>A) Substrate</p>
-            <p>B) Holoenzyme</p>
-            <p>C) Product</p>
-            <p>D) Inhibitor</p>
-            <p class="answer">Answer: B) Holoenzyme</p>
-        </div>
-    </section>
+            <strong>9. The protein component of a complex enzyme is called:</strong>
 
-    <section>
-        <h2>🎯 MDCAT Exam Tip</h2>
+            <p>
+                A. Apoenzyme<br>
+                B. Coenzyme<br>
+                C. Substrate<br>
+                D. Product
+            </p>
+
+            <p class="answer">Answer: A. Apoenzyme</p>
+        </div>
+
+
+        <div class="mcq">
+            <strong>10. Apoenzyme combined with its required cofactor forms:</strong>
+
+            <p>
+                A. Substrate<br>
+                B. Holoenzyme<br>
+                C. Product<br>
+                D. Inhibitor
+            </p>
+
+            <p class="answer">Answer: B. Holoenzyme</p>
+        </div>
+
+
+        <div class="mcq">
+            <strong>11. Which factor can strongly affect enzyme activity?</strong>
+
+            <p>
+                A. Temperature<br>
+                B. pH<br>
+                C. Substrate concentration<br>
+                D. All of the above
+            </p>
+
+            <p class="answer">Answer: D. All of the above</p>
+        </div>
+
+
+        <div class="mcq">
+            <strong>12. What happens when an enzyme becomes saturated with substrate?</strong>
+
+            <p>
+                A. All enzymes disappear<br>
+                B. Most active sites are occupied<br>
+                C. Activation energy becomes infinite<br>
+                D. Substrate stops existing
+            </p>
+
+            <p class="answer">Answer: B. Most active sites are occupied</p>
+        </div>
+    </div>
+
+
+    <!-- EXAM TIPS -->
+
+    <div class="box">
+        <h2>🎯 MDCAT Exam Tips</h2>
 
         <div class="tip">
-            Focus especially on:
+            <strong>Must Remember:</strong>
             <br><br>
-            ✔ Active site<br>
-            ✔ Substrate<br>
-            ✔ Activation energy<br>
-            ✔ Lock-and-key model<br>
-            ✔ Induced-fit model<br>
-            ✔ Temperature and pH<br>
-            ✔ Competitive inhibition<br>
-            ✔ Cofactors and coenzymes<br>
-            ✔ Apoenzyme and holoenzyme<br>
-            ✔ Denaturation
-        </div>
-    </section>
 
-    <section>
-        <a class="back" href="notes.html">← Back to MDCAT Notes</a>
-    </section>
+            ✔ Enzymes are biological catalysts.<br>
+            ✔ Enzymes lower activation energy.<br>
+            ✔ Substrate binds to the active site.<br>
+            ✔ Lock-and-key explains enzyme specificity.<br>
+            ✔ Induced-fit model involves adjustment of the active site.<br>
+            ✔ Temperature affects enzyme activity.<br>
+            ✔ pH affects enzyme activity.<br>
+            ✔ High temperature can cause denaturation.<br>
+            ✔ Competitive inhibitors compete for the active site.<br>
+            ✔ Cofactors help some enzymes function.<br>
+            ✔ Apoenzyme + cofactor = holoenzyme.
+        </div>
+    </div>
+
+
+    <!-- BACK -->
+
+    <div class="box">
+
+        <h2>📚 Continue Biology</h2>
+
+        <p>
+            Go back to the Biology chapter list and continue your
+            MDCAT preparation.
+        </p>
+
+        <a class="back" href="biology.html">
+            ← Back to Biology Chapters
+        </a>
+
+    </div>
 
 </div>
+
 
 <footer>
     <p>© 2026 StudyHub | MDCAT Study Material</p>
