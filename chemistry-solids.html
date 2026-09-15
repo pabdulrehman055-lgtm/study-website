@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Solid - StudyHub</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #0b3d91;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        header p {
+            margin: 8px 0 0;
+            font-size: 17px;
+        }
+
+        nav {
+            background: #082f6d;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 25px 15px;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #0b3d91;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .back:hover {
+            text-decoration: underline;
+        }
+
+        .intro {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            margin-bottom: 25px;
+        }
+
+        .intro h2 {
+            color: #0b3d91;
+            margin-top: 0;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 22px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        section h2 {
+            color: #0b3d91;
+            border-bottom: 2px solid #e5eaf2;
+            padding-bottom: 8px;
+        }
+
+        section h3 {
+            color: #164e9c;
+        }
+
+        .definition {
+            background: #eaf3ff;
+            border-left: 5px solid #0b3d91;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+
+        .important {
+            background: #fff8d9;
+            border-left: 5px solid #e0ad00;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+
+        .formula {
+            background: #eaf8ed;
+            border-left: 5px solid #2e8b57;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        th, td {
+            border: 1px solid #d5dce5;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #0b3d91;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f7f9fc;
+        }
+
+        .mcq {
+            background: #f7f9fc;
+            border: 1px solid #dce3ec;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .mcq strong {
+            color: #0b3d91;
+        }
+
+        .answer {
+            color: #16733b;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+        }
+
+        .topic-badge {
+            display: inline-block;
+            background: #0b3d91;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #082f6d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 25px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            section,
+            .intro {
+                padding: 18px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>StudyHub 🧪</h1>
+    <p>Free MDCAT Notes & Preparation</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="biology.html">Biology</a>
+    <a href="chemistry.html">Chemistry</a>
+    <a href="physics.html">Physics</a>
+    <a href="english.html">English</a>
+    <a href="logical-reasoning.html">Logical Reasoning</a>
+</nav>
+
+<main class="container">
+
+    <a class="back" href="chemistry.html">← Back to Chemistry</a>
+
+    <div class="intro">
+        <span class="topic-badge">Official Chemistry Unit 5</span>
+
+        <h2>Solid</h2>
+
+        <p>
+            This StudyHub topic covers the important concepts of solid state
+            chemistry for MDCAT preparation, including crystalline solids,
+            ionic and molecular crystals, crystal lattice and lattice energy.
+        </p>
+
+        <div class="important">
+            <strong>MDCAT Focus:</strong>
+            Understand the difference between crystalline and molecular
+            solids, crystal lattice, ionic crystal structure and lattice energy.
+        </div>
+    </div>
+
+
+    <section>
+        <h2>1. What is a Solid?</h2>
+
+        <p>
+            A solid is a state of matter in which particles are closely packed
+            and have relatively fixed positions.
+        </p>
+
+        <p>
+            Solids have both a definite shape and a definite volume.
+        </p>
+
+        <h3>Important Properties of Solids</h3>
+
+        <ul>
+            <li>Definite shape</li>
+            <li>Definite volume</li>
+            <li>Particles are closely packed</li>
+            <li>Strong attractive forces between particles</li>
+            <li>Very low compressibility</li>
+            <li>Particles mainly vibrate around fixed positions</li>
+        </ul>
+
+        <div class="definition">
+            <strong>Solid:</strong>
+            A state of matter having a definite shape and definite volume
+            because its particles are strongly held together.
+        </div>
+    </section>
+
+
+    <section>
+        <h2>2. Crystalline Solids</h2>
+
+        <p>
+            A crystalline solid has particles arranged in a regular,
+            repeating three-dimensional pattern.
+        </p>
+
+        <div class="definition">
+            <strong>Crystalline solid:</strong>
+            A solid in which particles have an ordered and repeating
+            arrangement.
+        </div>
+
+        <h3>Examples</h3>
+
+        <ul>
+            <li>Sodium chloride (NaCl)</li>
+            <li>Diamond</li>
+            <li>Quartz</li>
+            <li>Many metals</li>
+        </ul>
+
+        <h3>Characteristics</h3>
+
+        <ul>
+            <li>Regular arrangement of particles</li>
+            <li>Definite geometric structure</li>
+            <li>Usually have a sharp melting point</li>
+            <li>Long-range order</li>
+        </ul>
+
+        <div class="important">
+            Crystalline solids have an organized arrangement of particles,
+            unlike amorphous solids which do not have long-range order.
+        </div>
+    </section>
+
+
+    <section>
+        <h2>3. Crystal Lattice</h2>
+
+        <p>
+            A crystal lattice is the regular three-dimensional arrangement
+            of particles in a crystalline solid.
+        </p>
+
+        <div class="definition">
+            <strong>Crystal lattice:</strong>
+            A regular repeating arrangement of particles throughout a crystal.
+        </div>
+
+        <p>
+            Depending on the type of crystal, the particles in the lattice
+            may be atoms, ions or molecules.
+        </p>
+
+        <h3>Examples</h3>
+
+        <table>
+            <tr>
+                <th>Crystal Type</th>
+                <th>Particles in Lattice</th>
+                <th>Example</th>
+            </tr>
+
+            <tr>
+                <td>Ionic crystal</td>
+                <td>Ions</td>
+                <td>NaCl</td>
+            </tr>
+
+            <tr>
+                <td>Molecular crystal</td>
+                <td>Molecules</td>
+                <td>Ice</td>
+            </tr>
+
+            <tr>
+                <td>Atomic/network crystal</td>
+                <td>Atoms</td>
+                <td>Diamond</td>
+            </tr>
+        </table>
+    </section>
+
+
+    <section>
+        <h2>4. Ionic Crystals</h2>
+
+        <p>
+            Ionic crystals consist of positively charged ions (cations)
+            and negatively charged ions (anions) arranged in a regular lattice.
+        </p>
+
+        <p>
+            The ions are held together by strong electrostatic attractions.
+        </p>
+
+        <div class="definition">
+            <strong>Ionic crystal:</strong>
+            A crystalline solid made up of oppositely charged ions
+            arranged in a regular pattern.
+        </div>
+
+        <h3>Example: Sodium Chloride</h3>
+
+        <p>
+            Sodium chloride contains Na⁺ and Cl⁻ ions.
+            Each ion is surrounded by oppositely charged ions in the crystal.
+        </p>
+
+        <div class="formula">
+            NaCl → Na⁺ + Cl⁻
+        </div>
+
+        <h3>Properties of Ionic Crystals</h3>
+
+        <ul>
+            <li>High melting points</li>
+            <li>Hard and brittle</li>
+            <li>Strong electrostatic attractions</li>
+            <li>Conduct electricity when molten</li>
+            <li>Conduct electricity when dissolved in water</li>
+            <li>Generally do not conduct electricity in solid form</li>
+        </ul>
+    </section>
+
+
+    <section>
+        <h2>5. Factors Affecting the Shape of Ionic Crystals</h2>
+
+        <p>
+            The arrangement and shape of an ionic crystal depend on several
+            factors, especially the sizes and charges of the ions.
+        </p>
+
+        <h3>Important Factors</h3>
+
+        <ul>
+            <li>Relative sizes of cations and anions</li>
+            <li>Charges on the ions</li>
+            <li>Ratio of cations to anions</li>
+            <li>Electrostatic attractions</li>
+            <li>Coordination of ions in the lattice</li>
+        </ul>
+
+        <div class="important">
+            <strong>Important:</strong>
+            Ionic crystal structures depend strongly on the relative sizes
+            and charges of the ions.
+        </div>
+
+        <h3>Ion Size</h3>
+
+        <p>
+            The size relationship between positive and negative ions affects
+            how efficiently they can fit together in the crystal lattice.
+        </p>
+
+        <p>
+            Larger differences in ionic size can lead to different
+            coordination arrangements and crystal structures.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>6. Molecular Crystals</h2>
+
+        <p>
+            Molecular crystals are solids in which molecules occupy the
+            positions of the crystal lattice.
+        </p>
+
+        <div class="definition">
+            <strong>Molecular crystal:</strong>
+            A crystalline solid whose lattice points are occupied by molecules.
+        </div>
+
+        <h3>Forces in Molecular Crystals</h3>
+
+        <p>
+            Molecules in molecular crystals are held together by
+            intermolecular forces such as:
+        </p>
+
+        <ul>
+            <li>London dispersion forces</li>
+            <li>Dipole-dipole forces</li>
+            <li>Hydrogen bonding</li>
+        </ul>
+
+        <h3>Examples</h3>
+
+        <ul>
+            <li>Ice (solid H₂O)</li>
+            <li>Solid CO₂</li>
+            <li>Iodine (I₂)</li>
+        </ul>
+
+        <h3>General Properties</h3>
+
+        <ul>
+            <li>Usually lower melting points than ionic crystals</li>
+            <li>Generally poor electrical conductors</li>
+            <li>Held together by intermolecular forces</li>
+        </ul>
+    </section>
+
+
+    <section>
+        <h2>7. Ionic Crystals vs Molecular Crystals</h2>
+
+        <table>
+            <tr>
+                <th>Property</th>
+                <th>Ionic Crystals</th>
+                <th>Molecular Crystals</th>
+            </tr>
+
+            <tr>
+                <td>Particles</td>
+                <td>Ions</td>
+                <td>Molecules</td>
+            </tr>
+
+            <tr>
+                <td>Main attraction</td>
+                <td>Electrostatic attraction</td>
+                <td>Intermolecular forces</td>
+            </tr>
+
+            <tr>
+                <td>Melting point</td>
+                <td>Generally high</td>
+                <td>Generally lower</td>
+            </tr>
+
+            <tr>
+                <td>Electrical conductivity</td>
+                <td>Conduct when molten or dissolved</td>
+                <td>Generally poor</td>
+            </tr>
+
+            <tr>
+                <td>Example</td>
+                <td>NaCl</td>
+                <td>Ice</td>
+            </tr>
+        </table>
+    </section>
+
+
+    <section>
+        <h2>8. Lattice Energy</h2>
+
+        <p>
+            Lattice energy is related to the strength of attraction between
+            oppositely charged ions in an ionic crystal.
+        </p>
+
+        <div class="definition">
+            <strong>Lattice energy:</strong>
+            The energy associated with the formation or separation of an
+            ionic crystal lattice from its gaseous ions.
+        </div>
+
+        <p>
+            Different textbooks may define the sign of lattice energy
+            differently depending on whether lattice formation or separation
+            is being considered. For MDCAT, focus on its relationship with
+            the strength of ionic attraction.
+        </p>
+
+        <h3>Factors Affecting Lattice Energy</h3>
+
+        <ul>
+            <li>Charge of the ions</li>
+            <li>Distance between the ions</li>
+            <li>Size of the ions</li>
+        </ul>
+
+        <div class="formula">
+            Higher ionic charges → Stronger attraction → Greater lattice energy
+        </div>
+
+        <div class="formula">
+            Smaller ionic size → Smaller ion-to-ion distance →
+            Stronger attraction
+        </div>
+    </section>
+
+
+    <section>
+        <h2>9. Effect of Ionic Charge</h2>
+
+        <p>
+            Greater ionic charges produce stronger electrostatic attractions.
+        </p>
+
+        <p>
+            For example, attractions involving ions with charges +2 and −2
+            are generally stronger than those involving +1 and −1,
+            when other factors are comparable.
+        </p>
+
+        <div class="important">
+            Higher charges on ions generally lead to stronger ionic attraction
+            and higher lattice energy.
+        </div>
+    </section>
+
+
+    <section>
+        <h2>10. Effect of Ionic Size</h2>
+
+        <p>
+            When ions are smaller, their centers can be closer together.
+            This generally increases electrostatic attraction.
+        </p>
+
+        <p>
+            When ions are larger, the distance between their centers is
+            generally greater, reducing the attraction when charge is constant.
+        </p>
+
+        <div class="formula">
+            Smaller ions → stronger attraction → generally higher lattice energy
+        </div>
+    </section>
+
+
+    <section>
+        <h2>11. Quick Revision</h2>
+
+        <ul>
+            <li>Solids have definite shape and definite volume.</li>
+            <li>Crystalline solids have an ordered repeating arrangement.</li>
+            <li>A crystal lattice is a regular three-dimensional arrangement.</li>
+            <li>Ionic crystals contain cations and anions.</li>
+            <li>NaCl is an example of an ionic crystal.</li>
+            <li>Molecular crystals contain molecules in their lattice.</li>
+            <li>Ice is a molecular crystal.</li>
+            <li>Ionic crystals are held together by electrostatic attractions.</li>
+            <li>Molecular crystals are held together by intermolecular forces.</li>
+            <li>Ionic crystal structure depends on ion size and charge.</li>
+            <li>Lattice energy is related to ionic attraction.</li>
+            <li>Higher ionic charge generally increases lattice energy.</li>
+            <li>Smaller ions generally have stronger ionic attraction.</li>
+        </ul>
+    </section>
+
+
+    <section>
+        <h2>12. MDCAT Practice MCQs</h2>
+
+        <div class="mcq">
+            <strong>1. A solid has:</strong>
+            <ol type="A">
+                <li>No definite shape or volume</li>
+                <li>Definite shape and definite volume</li>
+                <li>Definite shape but no volume</li>
+                <li>Definite volume but no shape</li>
+            </ol>
+            <div class="answer">Answer: B</div>
+        </div>
+
+        <div class="mcq">
+            <strong>2. A crystalline solid has particles arranged in:</strong>
+            <ol type="A">
+                <li>A completely random pattern</li>
+                <li>A regular repeating pattern</li>
+                <li>A gaseous pattern</li>
+                <li>No pattern</li>
+            </ol>
+            <div class="answer">Answer: B</div>
+        </div>
+
+        <div class="mcq">
+            <strong>3. The regular arrangement of particles in a crystal is called:</strong>
+            <ol type="A">
+                <li>Gas pressure</li>
+                <li>Crystal lattice</li>
+                <li>Evaporation</li>
+                <li>Vapor pressure</li>
+            </ol>
+            <div class="answer">Answer: B</div>
+        </div>
+
+        <div class="mcq">
+            <strong>4. NaCl is an example of a:</strong>
+            <ol type="A">
+                <li>Molecular crystal</li>
+                <li>Ionic crystal</li>
+                <li>Liquid crystal only</li>
+                <li>Gas crystal</li>
+            </ol>
+            <div class="answer">Answer: B</div>
+        </div>
+
+        <div class="mcq">
+            <strong>5. An ionic crystal contains:</strong>
+            <ol type="A">
+                <li>Only neutral molecules</li>
+                <li>Cations and anions</li>
+                <li>Only electrons</li>
+                <li>Only neutrons</li>
+            </ol>
+            <div class="answer">Answer: B</div>
+        </div>
+
+        <div class="mcq">
+            <strong>6. The main attraction in an ionic crystal is:</strong>
+            <ol type="A">
+                <li>Electrostatic attraction</li>
+                <li>Gravitational force</li>
+                <li>Nuclear force</li>
+                <li>Magnetic force only</li>
+            </ol>
+            <div class="answer">Answer: A</div>
+        </div>
+
+        <div class="mcq">
+            <strong>7. Which is a molecular crystal?</strong>
+            <ol type="A">
+                <li>NaCl</li>
+                <li>Ice</li>
+                <li>MgO</li>
+                <li>KCl</li>
+            </ol>
+            <div class="answer">Answer: B</div>
+        </div>
+
+        <div class="mcq">
+            <strong>8. Molecular crystals are mainly held together by:</strong>
+            <ol type="A">
+                <li>Intermolecular forces</li>
+                <li>Nuclear forces</li>
+                <li>Metallic bonds only</li>
+                <li>Gravitational forces</li>
+            </ol>
+            <div class="answer">Answer: A</div>
+        </div>
+
+        <div class="mcq">
+            <strong>9. Increasing ionic charge generally causes lattice energy to:</strong>
+            <ol type="A">
+                <li>Decrease</li>
+                <li>Increase</li>
+                <li>Become zero</li>
+                <li>Remain unrelated</li>
+            </ol>
+            <div class="answer">Answer: B</div>
+        </div>
+
+        <div class="mcq">
+            <strong>10. Smaller ions generally produce:</strong>
+            <ol type="A">
+                <li>Weaker ionic attraction</li>
+                <li>Stronger ionic attraction</li>
+                <li>No attraction</li>
+                <li>Only molecular attraction</li>
+            </ol>
+            <div class="answer">Answer: B</div>
+        </div>
+
+        <div class="mcq">
+            <strong>11. Which factor affects the shape and arrangement of ionic crystals?</strong>
+            <ol type="A">
+                <li>Ionic size</li>
+                <li>Ion charge</li>
+                <li>Ratio of ions</li>
+                <li>All of these</li>
+            </ol>
+            <div class="answer">Answer: D</div>
+        </div>
+
+        <div class="mcq">
+            <strong>12. Ionic solids generally have:</strong>
+            <ol type="A">
+                <li>Very low melting points</li>
+                <li>High melting points</li>
+                <li>No melting point</li>
+                <li>Only gaseous properties</li>
+            </ol>
+            <div class="answer">Answer: B</div>
+        </div>
+
+        <div class="mcq">
+            <strong>13. Solid ionic compounds generally conduct electricity:</strong>
+            <ol type="A">
+                <li>Very well in the solid state</li>
+                <li>When molten or dissolved</li>
+                <li>Never</li>
+                <li>Only at 0°C</li>
+            </ol>
+            <div class="answer">Answer: B</div>
+        </div>
+
+        <div class="mcq">
+            <strong>14. Which particles occupy the lattice positions in an ionic crystal?</strong>
+            <ol type="A">
+                <li>Positive and negative ions</li>
+                <li>Only molecules</li>
+                <li>Only electrons</li>
+                <li>Only atoms of hydrogen</li>
+            </ol>
+            <div class="answer">Answer: A</div>
+        </div>
+
+        <div class="mcq">
+            <strong>15. Lattice energy is strongly affected by:</strong>
+            <ol type="A">
+                <li>Ionic charge and ionic size</li>
+                <li>Color only</li>
+                <li>Shape of container</li>
+                <li>Atmospheric humidity only</li>
+            </ol>
+            <div class="answer">Answer: A</div>
+        </div>
+    </section>
+
+
+    <section>
+        <h2>13. MDCAT Exam Tips</h2>
+
+        <ul>
+            <li>Remember the definition of a crystal lattice.</li>
+            <li>Know the difference between ionic and molecular crystals.</li>
+            <li>NaCl is an important example of an ionic crystal.</li>
+            <li>Ice is an important example of a molecular crystal.</li>
+            <li>Higher ionic charge generally means stronger attraction.</li>
+            <li>Smaller ions generally give stronger ionic attraction.</li>
+            <li>Know the factors affecting ionic crystal structure.</li>
+            <li>Remember that ionic compounds conduct electricity when molten or dissolved.</li>
+        </ul>
+
+        <div class="important">
+            <strong>Golden Point:</strong>
+            Lattice energy mainly depends on the
+            <strong>charges and sizes of the ions</strong>.
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 StudyHub - Free MDCAT Preparation</p>
+    <p>Study Smart • Practice More • Achieve Your Goal 🎯</p>
+</footer>
+
+</body>
+</html>
