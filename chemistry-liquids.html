@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Liquids - StudyHub</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #0b3d91;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        header p {
+            margin: 8px 0 0;
+            font-size: 17px;
+        }
+
+        nav {
+            background: #082f6d;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 25px 15px;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #0b3d91;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .back:hover {
+            text-decoration: underline;
+        }
+
+        .intro {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            margin-bottom: 25px;
+        }
+
+        .intro h2 {
+            color: #0b3d91;
+            margin-top: 0;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 22px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        section h2 {
+            color: #0b3d91;
+            border-bottom: 2px solid #e5eaf2;
+            padding-bottom: 8px;
+        }
+
+        section h3 {
+            color: #164e9c;
+        }
+
+        .definition {
+            background: #eaf3ff;
+            border-left: 5px solid #0b3d91;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+
+        .important {
+            background: #fff8d9;
+            border-left: 5px solid #e0ad00;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+
+        .formula {
+            background: #eaf8ed;
+            border-left: 5px solid #2e8b57;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        th, td {
+            border: 1px solid #d5dce5;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #0b3d91;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f7f9fc;
+        }
+
+        .mcq {
+            background: #f7f9fc;
+            border: 1px solid #dce3ec;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .mcq strong {
+            color: #0b3d91;
+        }
+
+        .answer {
+            color: #16733b;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+        }
+
+        .topic-badge {
+            display: inline-block;
+            background: #0b3d91;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #082f6d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 25px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            section,
+            .intro {
+                padding: 18px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>StudyHub 🧪</h1>
+    <p>Free MDCAT Notes & Preparation</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="biology.html">Biology</a>
+    <a href="chemistry.html">Chemistry</a>
+    <a href="physics.html">Physics</a>
+    <a href="english.html">English</a>
+    <a href="logical-reasoning.html">Logical Reasoning</a>
+</nav>
+
+<main class="container">
+
+    <a class="back" href="chemistry.html">← Back to Chemistry</a>
+
+    <div class="intro">
+        <span class="topic-badge">Official Chemistry Unit 4</span>
+
+        <h2>Liquids</h2>
+
+        <p>
+            This StudyHub topic covers the important concepts of liquids
+            for MDCAT preparation, including evaporation, vapor pressure,
+            boiling point, hydrogen bonding and the unusual behavior of water.
+        </p>
+
+        <div class="important">
+            <strong>MDCAT Focus:</strong>
+            Learn the relationship between intermolecular forces,
+            evaporation, vapor pressure and boiling point.
+            Water's maximum density at 4°C is especially important.
+        </div>
+    </div>
+
+
+    <section>
+        <h2>1. Properties of Liquids</h2>
+
+        <p>
+            A liquid is a state of matter in which particles are close together
+            but can move past one another.
+        </p>
+
+        <p>
+            Liquids have a definite volume but do not have a definite shape.
+            They take the shape of their container.
+        </p>
+
+        <h3>Important Properties</h3>
+
+        <ul>
+            <li>Liquids have a definite volume.</li>
+            <li>Liquids do not have a definite shape.</li>
+            <li>Particles are relatively close together.</li>
+            <li>Particles can move from one place to another.</li>
+            <li>Liquids are generally much less compressible than gases.</li>
+            <li>Intermolecular forces affect liquid properties.</li>
+        </ul>
+
+        <div class="definition">
+            <strong>Intermolecular forces:</strong>
+            Forces of attraction between molecules.
+            Stronger intermolecular forces generally result in
+            higher boiling points.
+        </div>
+    </section>
+
+
+    <section>
+        <h2>2. Evaporation</h2>
+
+        <p>
+            <strong>Evaporation</strong> is the process in which molecules
+            escape from the surface of a liquid and enter the gaseous state.
+        </p>
+
+        <p>
+            Evaporation can occur at temperatures below the boiling point.
+        </p>
+
+        <h3>Why Does Evaporation Occur?</h3>
+
+        <p>
+            Liquid molecules have different kinetic energies.
+            Some molecules at the surface have enough energy to overcome
+            intermolecular attractions and escape into the gas phase.
+        </p>
+
+        <div class="important">
+            <strong>Important:</strong>
+            Evaporation is a surface phenomenon.
+        </div>
+
+        <h3>Factors Affecting Evaporation</h3>
+
+        <ul>
+            <li><strong>Temperature:</strong> Higher temperature increases evaporation.</li>
+            <li><strong>Surface area:</strong> Larger surface area increases evaporation.</li>
+            <li><strong>Wind speed:</strong> Faster moving air increases evaporation.</li>
+            <li><strong>Intermolecular forces:</strong> Stronger forces decrease evaporation.</li>
+        </ul>
+    </section>
+
+
+    <section>
+        <h2>3. Vapor Pressure</h2>
+
+        <p>
+            When a liquid is kept in a closed container, some molecules
+            escape from the liquid and form vapor.
+        </p>
+
+        <p>
+            Eventually, a dynamic equilibrium can develop between evaporation
+            and condensation.
+        </p>
+
+        <div class="definition">
+            <strong>Vapor pressure:</strong>
+            The pressure exerted by the vapor of a liquid when the vapor
+            and liquid are in dynamic equilibrium at a particular temperature.
+        </div>
+
+        <h3>Effect of Temperature</h3>
+
+        <p>
+            As temperature increases, more molecules have sufficient kinetic
+            energy to escape from the liquid.
+            Therefore, vapor pressure increases.
+        </p>
+
+        <div class="formula">
+            Higher temperature → Higher vapor pressure
+        </div>
+
+        <h3>Effect of Intermolecular Forces</h3>
+
+        <p>
+            Strong intermolecular forces make it harder for molecules
+            to escape from the liquid.
+        </p>
+
+        <div class="formula">
+            Stronger intermolecular forces → Lower vapor pressure
+        </div>
+    </section>
+
+
+    <section>
+        <h2>4. Boiling Point</h2>
+
+        <p>
+            The boiling point is the temperature at which the vapor pressure
+            of a liquid becomes equal to the external pressure.
+        </p>
+
+        <div class="definition">
+            <strong>Boiling point:</strong>
+            The temperature at which the vapor pressure of a liquid
+            becomes equal to the surrounding external pressure.
+        </div>
+
+        <h3>Effect of External Pressure</h3>
+
+        <p>
+            When external pressure decreases, a liquid can boil at a lower
+            temperature.
+        </p>
+
+        <p>
+            When external pressure increases, the boiling point increases.
+        </p>
+
+        <div class="formula">
+            Lower external pressure → Lower boiling point
+            <br>
+            Higher external pressure → Higher boiling point
+        </div>
+
+        <h3>Relationship with Intermolecular Forces</h3>
+
+        <p>
+            Stronger intermolecular forces require more energy to separate
+            molecules.
+        </p>
+
+        <div class="important">
+            Strong intermolecular forces generally mean a
+            <strong>higher boiling point</strong>.
+        </div>
+    </section>
+
+
+    <section>
+        <h2>5. Hydrogen Bonding</h2>
+
+        <p>
+            Hydrogen bonding is a particularly strong intermolecular attraction
+            involving hydrogen attached to a highly electronegative atom,
+            especially nitrogen, oxygen or fluorine.
+        </p>
+
+        <div class="definition">
+            <strong>Hydrogen bond:</strong>
+            An attractive interaction involving hydrogen attached to an
+            electronegative atom such as N, O or F and another electronegative
+            atom.
+        </div>
+
+        <h3>Important Elements</h3>
+
+        <ul>
+            <li>Nitrogen (N)</li>
+            <li>Oxygen (O)</li>
+            <li>Fluorine (F)</li>
+        </ul>
+
+        <p>
+            Hydrogen bonding is responsible for many unusual physical
+            properties of substances such as water.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>6. Hydrogen Bonding in H₂O</h2>
+
+        <p>
+            Water molecules form strong hydrogen bonds with one another.
+            Oxygen is highly electronegative and attracts the shared
+            electrons strongly.
+        </p>
+
+        <p>
+            This gives water molecules partial positive and partial negative
+            regions, allowing hydrogen bonding between neighboring molecules.
+        </p>
+
+        <div class="important">
+            <strong>MDCAT Point:</strong>
+            Hydrogen bonding gives water unusually high boiling point
+            compared with many molecules of similar molecular mass.
+        </div>
+
+        <h3>Effects of Hydrogen Bonding in Water</h3>
+
+        <ul>
+            <li>High boiling point</li>
+            <li>High surface tension</li>
+            <li>Strong cohesion between water molecules</li>
+            <li>Unusual density behavior</li>
+        </ul>
+    </section>
+
+
+    <section>
+        <h2>7. Hydrogen Bonding in NH₃</h2>
+
+        <p>
+            Ammonia (NH₃) can form hydrogen bonds because hydrogen is attached
+            to electronegative nitrogen.
+        </p>
+
+        <p>
+            Nitrogen also has a lone pair of electrons that can participate
+            in hydrogen bonding.
+        </p>
+
+        <div class="definition">
+            <strong>NH₃:</strong>
+            Hydrogen bonding occurs between the hydrogen of one ammonia
+            molecule and the nitrogen of another molecule.
+        </div>
+    </section>
+
+
+    <section>
+        <h2>8. Hydrogen Bonding in HF</h2>
+
+        <p>
+            Hydrogen fluoride (HF) shows strong hydrogen bonding because
+            fluorine is extremely electronegative.
+        </p>
+
+        <p>
+            The H–F bond is highly polar, producing strong attractions
+            between HF molecules.
+        </p>
+
+        <div class="important">
+            <strong>Remember:</strong>
+            Hydrogen bonding is particularly important in compounds
+            containing H bonded to N, O or F.
+        </div>
+    </section>
+
+
+    <section>
+        <h2>9. Anomalous Behavior of Water</h2>
+
+        <p>
+            Most substances contract when cooled. Water behaves differently
+            over a certain temperature range.
+        </p>
+
+        <p>
+            When water is cooled from higher temperatures toward 4°C,
+            its volume decreases and density increases.
+        </p>
+
+        <p>
+            However, when water is cooled below 4°C, its volume increases
+            and its density decreases.
+        </p>
+
+        <div class="important">
+            <strong>Very Important MDCAT Fact:</strong>
+            Water has its <strong>maximum density at 4°C</strong>.
+        </div>
+    </section>
+
+
+    <section>
+        <h2>10. Why Does Water Have Maximum Density at 4°C?</h2>
+
+        <p>
+            Hydrogen bonding plays an important role in the unusual behavior
+            of water.
+        </p>
+
+        <p>
+            As water cools below 4°C, hydrogen bonds arrange molecules into
+            a more open structure. This structure occupies more space.
+        </p>
+
+        <p>
+            Therefore, the density of water decreases below 4°C.
+        </p>
+
+        <div class="formula">
+            Maximum density of water = 4°C
+        </div>
+
+        <h3>Important Comparison</h3>
+
+        <table>
+            <tr>
+                <th>Temperature Change</th>
+                <th>Effect on Water</th>
+            </tr>
+
+            <tr>
+                <td>Above 4°C → cooling</td>
+                <td>Density increases</td>
+            </tr>
+
+            <tr>
+                <td>At 4°C</td>
+                <td>Maximum density</td>
+            </tr>
+
+            <tr>
+                <td>Below 4°C → cooling</td>
+                <td>Density decreases</td>
+            </tr>
+        </table>
+
+        <div class="important">
+            This unusual expansion below 4°C helps explain why ice floats
+            on liquid water.
+        </div>
+    </section>
+
+
+    <section>
+        <h2>11. Quick Revision</h2>
+
+        <ul>
+            <li>Liquids have definite volume but no definite shape.</li>
+            <li>Evaporation occurs at the surface of a liquid.</li>
+            <li>Evaporation increases with temperature.</li>
+            <li>Greater surface area increases evaporation.</li>
+            <li>Vapor pressure increases with temperature.</li>
+            <li>Strong intermolecular forces lower vapor pressure.</li>
+            <li>Boiling occurs when vapor pressure equals external pressure.</li>
+            <li>Lower external pressure lowers boiling point.</li>
+            <li>Strong intermolecular forces generally increase boiling point.</li>
+            <li>Hydrogen bonding is important when H is bonded to N, O or F.</li>
+            <li>Water, ammonia and hydrogen fluoride show hydrogen bonding.</li>
+            <li>Water has maximum density at 4°C.</li>
+            <li>Water expands when cooled below 4°C.</li>
+        </ul>
+    </section>
+
+
+    <section>
+        <h2>12. MDCAT Practice MCQs</h2>
+
+        <div class="mcq">
+            <strong>1. Liquids have:</strong>
+            <ol type="A">
+                <li>Definite shape and definite volume</li>
+                <li>Definite volume but no definite shape</li>
+                <li>No volume and no shape</li>
+                <li>Definite shape but no volume</li>
+            </ol>
+            <div class="answer">Answer: B</div>
+        </div>
+
+        <div class="mcq">
+            <strong>2. Evaporation is mainly a:</strong>
+            <ol type="A">
+                <li>Bulk phenomenon</li>
+                <li>Surface phenomenon</li>
+                <li>Solid phenomenon</li>
+                <li>Gas-only phenomenon</li>
+            </ol>
+            <div class="answer">Answer: B</div>
+        </div>
+
+        <div class="mcq">
+            <strong>3. Increasing temperature generally causes vapor pressure to:</strong>
+            <ol type="A">
+                <li>Decrease</li>
+                <li>Remain constant</li>
+                <li>Increase</li>
+                <li>Become zero</li>
+            </ol>
+            <div class="answer">Answer: C</div>
+        </div>
+
+        <div class="mcq">
+            <strong>4. Stronger intermolecular forces generally produce:</strong>
+            <ol type="A">
+                <li>Higher vapor pressure</li>
+                <li>Lower boiling point</li>
+                <li>Lower vapor pressure</li>
+                <li>Faster evaporation</li>
+            </ol>
+            <div class="answer">Answer: C</div>
+        </div>
+
+        <div class="mcq">
+            <strong>5. A liquid boils when its vapor pressure becomes equal to:</strong>
+            <ol type="A">
+                <li>Zero pressure</li>
+                <li>External pressure</li>
+                <li>Internal pressure of solid</li>
+                <li>Atmospheric temperature</li>
+            </ol>
+            <div class="answer">Answer: B</div>
+        </div>
+
+        <div class="mcq">
+            <strong>6. Which element is NOT normally associated with hydrogen bonding?</strong>
+            <ol type="A">
+                <li>Nitrogen</li>
+                <li>Oxygen</li>
+                <li>Fluorine</li>
+                <li>Sodium</li>
+            </ol>
+            <div class="answer">Answer: D</div>
+        </div>
+
+        <div class="mcq">
+            <strong>7. Hydrogen bonding is especially important in:</strong>
+            <ol type="A">
+                <li>H₂O</li>
+                <li>CH₄</li>
+                <li>NaCl</li>
+                <li>CO₂</li>
+            </ol>
+            <div class="answer">Answer: A</div>
+        </div>
+
+        <div class="mcq">
+            <strong>8. The vapor pressure of a liquid increases when:</strong>
+            <ol type="A">
+                <li>Temperature decreases</li>
+                <li>Temperature increases</li>
+                <li>Intermolecular forces increase</li>
+                <li>Molecular motion stops</li>
+            </ol>
+            <div class="answer">Answer: B</div>
+        </div>
+
+        <div class="mcq">
+            <strong>9. Water has maximum density at:</strong>
+            <ol type="A">
+                <li>0°C</li>
+                <li>2°C</li>
+                <li>4°C</li>
+                <li>100°C</li>
+            </ol>
+            <div class="answer">Answer: C</div>
+        </div>
+
+        <div class="mcq">
+            <strong>10. Below 4°C, cooling water causes its density to:</strong>
+            <ol type="A">
+                <li>Increase</li>
+                <li>Decrease</li>
+                <li>Remain exactly the same</li>
+                <li>Become infinite</li>
+            </ol>
+            <div class="answer">Answer: B</div>
+        </div>
+
+        <div class="mcq">
+            <strong>11. Which substance can form strong hydrogen bonding?</strong>
+            <ol type="A">
+                <li>HF</li>
+                <li>CH₄</li>
+                <li>Cl₂</li>
+                <li>CO₂</li>
+            </ol>
+            <div class="answer">Answer: A</div>
+        </div>
+
+        <div class="mcq">
+            <strong>12. Decreasing external pressure causes the boiling point to:</strong>
+            <ol type="A">
+                <li>Increase</li>
+                <li>Decrease</li>
+                <li>Remain unchanged</li>
+                <li>Become 1000°C</li>
+            </ol>
+            <div class="answer">Answer: B</div>
+        </div>
+
+        <div class="mcq">
+            <strong>13. Which factor increases the rate of evaporation?</strong>
+            <ol type="A">
+                <li>Lower temperature</li>
+                <li>Smaller surface area</li>
+                <li>Higher temperature</li>
+                <li>Stronger intermolecular forces</li>
+            </ol>
+            <div class="answer">Answer: C</div>
+        </div>
+
+        <div class="mcq">
+            <strong>14. Ammonia can form hydrogen bonds because it contains:</strong>
+            <ol type="A">
+                <li>Hydrogen bonded to nitrogen</li>
+                <li>Hydrogen bonded to carbon</li>
+                <li>Sodium ions</li>
+                <li>Chlorine atoms only</li>
+            </ol>
+            <div class="answer">Answer: A</div>
+        </div>
+
+        <div class="mcq">
+            <strong>15. The unusual behavior of water is strongly related to:</strong>
+            <ol type="A">
+                <li>Metallic bonding</li>
+                <li>Hydrogen bonding</li>
+                <li>Only ionic bonding</li>
+                <li>Nuclear forces</li>
+            </ol>
+            <div class="answer">Answer: B</div>
+        </div>
+    </section>
+
+
+    <section>
+        <h2>13. MDCAT Exam Tips</h2>
+
+        <ul>
+            <li>Remember: <strong>water has maximum density at 4°C</strong>.</li>
+            <li>Know the difference between evaporation and boiling.</li>
+            <li>Evaporation occurs at the surface.</li>
+            <li>Boiling occurs when vapor pressure equals external pressure.</li>
+            <li>Higher temperature means higher vapor pressure.</li>
+            <li>Strong intermolecular forces usually mean higher boiling point.</li>
+            <li>Remember the hydrogen-bonding elements: <strong>N, O and F</strong>.</li>
+            <li>Understand why water expands below 4°C.</li>
+        </ul>
+
+        <div class="important">
+            <strong>Golden Point:</strong>
+            For MDCAT, never forget:
+            <strong>Maximum density of water = 4°C.</strong>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 StudyHub - Free MDCAT Preparation</p>
+    <p>Study Smart • Practice More • Achieve Your Goal 🎯</p>
+</footer>
+
+</body>
+</html>
