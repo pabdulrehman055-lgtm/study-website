@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction Kinetics - StudyHub</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f7fb;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #0b3d91;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 17px;
+        }
+
+        nav {
+            background: #082f6d;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 25px 15px;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #0b3d91;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .back:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #0b3d91;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #082f6d;
+        }
+
+        .definition {
+            background: #eaf3ff;
+            border-left: 5px solid #0b3d91;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .important {
+            background: #fff7d6;
+            border-left: 5px solid #f0b400;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .formula {
+            background: #e9f8ed;
+            border-left: 5px solid #198754;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-size: 17px;
+        }
+
+        .example {
+            background: #f3ecff;
+            border-left: 5px solid #7040c0;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .mcq {
+            background: #f8fafc;
+            border: 1px solid #dbe3ec;
+            padding: 18px;
+            margin: 15px 0;
+            border-radius: 10px;
+        }
+
+        .mcq p {
+            margin-top: 0;
+            font-weight: bold;
+        }
+
+        .answer {
+            color: #198754;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        th, td {
+            border: 1px solid #ccd6e0;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #eaf3ff;
+            color: #082f6d;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        footer {
+            background: #082f6d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 25px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            section {
+                padding: 18px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>StudyHub 🧪</h1>
+    <p>Free MDCAT Chemistry Notes & Preparation</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="biology.html">Biology</a>
+    <a href="chemistry.html">Chemistry</a>
+    <a href="physics.html">Physics</a>
+    <a href="english.html">English</a>
+    <a href="logical-reasoning.html">Logical Reasoning</a>
+</nav>
+
+<div class="container">
+
+    <a class="back" href="chemistry.html">← Back to Chemistry</a>
+
+    <section>
+        <h2>Unit 7: Reaction Kinetics</h2>
+
+        <div class="definition">
+            <strong>Definition:</strong>
+            Chemical kinetics is the branch of chemistry that deals with the
+            rate of chemical reactions and the factors that affect the rate.
+        </div>
+
+        <p>
+            Some chemical reactions occur very quickly, while others are slow.
+            For example, an explosion occurs rapidly, whereas rusting of iron
+            takes a much longer time.
+        </p>
+
+        <div class="important">
+            <strong>MDCAT Focus:</strong>
+            Learn rate of reaction, rate equation, factors affecting rate,
+            order of reaction, rate constant, activation energy and activated complex.
+        </div>
+    </section>
+
+    <section>
+        <h2>1. Rate of Reaction</h2>
+
+        <p>
+            The rate of a reaction tells us how quickly reactants are consumed
+            or products are formed.
+        </p>
+
+        <div class="formula">
+            <strong>General idea:</strong><br>
+            Rate = Change in concentration ÷ Change in time
+        </div>
+
+        <p>
+            For a reactant, concentration decreases with time. For a product,
+            concentration increases with time.
+        </p>
+
+        <div class="example">
+            <strong>Example:</strong><br>
+            If the concentration of a reactant decreases by 0.20 mol/L in
+            10 seconds, the average rate is:
+            <br><br>
+            Rate = 0.20 ÷ 10 = <strong>0.02 mol L⁻¹ s⁻¹</strong>
+        </div>
+    </section>
+
+    <section>
+        <h2>2. Average Rate and Instantaneous Rate</h2>
+
+        <h3>Average Rate</h3>
+
+        <p>
+            Average rate is calculated over a particular time interval.
+        </p>
+
+        <div class="formula">
+            Average rate = Change in concentration / Change in time
+        </div>
+
+        <h3>Instantaneous Rate</h3>
+
+        <p>
+            Instantaneous rate is the rate of reaction at a particular moment
+            in time.
+        </p>
+
+        <div class="important">
+            <strong>Remember:</strong>
+            Average rate considers a time interval, while instantaneous rate
+            considers the rate at one specific moment.
+        </div>
+    </section>
+
+    <section>
+        <h2>3. Rate Equation</h2>
+
+        <p>
+            The rate equation shows how the rate of a reaction depends on the
+            concentration of reactants.
+        </p>
+
+        <div class="formula">
+            <strong>General form:</strong><br><br>
+            Rate = k[A]<sup>m</sup>[B]<sup>n</sup>
+        </div>
+
+        <p>Where:</p>
+
+        <ul>
+            <li><strong>k</strong> = rate constant</li>
+            <li><strong>[A]</strong> = concentration of reactant A</li>
+            <li><strong>[B]</strong> = concentration of reactant B</li>
+            <li><strong>m and n</strong> = orders with respect to A and B</li>
+        </ul>
+
+        <div class="important">
+            The powers in the rate equation determine the order of the reaction.
+        </div>
+    </section>
+
+    <section>
+        <h2>4. Factors Affecting Rate of Reaction</h2>
+
+        <h3>1. Concentration</h3>
+
+        <p>
+            Increasing the concentration of reactants generally increases
+            the reaction rate because particles collide more frequently.
+        </p>
+
+        <h3>2. Temperature</h3>
+
+        <p>
+            Increasing temperature generally increases the reaction rate.
+            Particles move faster and more particles have enough energy to
+            overcome the activation energy.
+        </p>
+
+        <h3>3. Surface Area</h3>
+
+        <p>
+            A powdered solid usually reacts faster than a large piece of the
+            same solid because powder has a greater surface area.
+        </p>
+
+        <h3>4. Catalyst</h3>
+
+        <p>
+            A catalyst increases the rate of a reaction by providing an
+            alternative pathway with lower activation energy.
+        </p>
+
+        <h3>5. Nature of Reactants</h3>
+
+        <p>
+            Different substances react at different rates because their
+            chemical properties and bonding are different.
+        </p>
+
+        <table>
+            <tr>
+                <th>Factor</th>
+                <th>General Effect</th>
+            </tr>
+
+            <tr>
+                <td>Concentration</td>
+                <td>Higher concentration usually increases rate</td>
+            </tr>
+
+            <tr>
+                <td>Temperature</td>
+                <td>Higher temperature usually increases rate</td>
+            </tr>
+
+            <tr>
+                <td>Surface area</td>
+                <td>Greater surface area usually increases rate</td>
+            </tr>
+
+            <tr>
+                <td>Catalyst</td>
+                <td>Increases rate by lowering activation energy</td>
+            </tr>
+
+            <tr>
+                <td>Nature of reactants</td>
+                <td>Different substances react at different rates</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>5. Order of Reaction</h2>
+
+        <p>
+            The order of a reaction is the sum of the powers of the reactant
+            concentrations in the experimentally determined rate equation.
+        </p>
+
+        <div class="formula">
+            If:<br><br>
+            Rate = k[A]<sup>m</sup>[B]<sup>n</sup>
+            <br><br>
+            Overall order = <strong>m + n</strong>
+        </div>
+
+        <div class="example">
+            <strong>Example:</strong><br>
+            If Rate = k[A]<sup>2</sup>[B], then:
+            <br><br>
+            Order = 2 + 1 = <strong>3</strong>
+            <br>
+            Therefore, it is a third-order reaction.
+        </div>
+    </section>
+
+    <section>
+        <h2>6. Zero-Order Reaction</h2>
+
+        <p>
+            In a zero-order reaction, the rate does not depend on the
+            concentration of the reactant.
+        </p>
+
+        <div class="formula">
+            Rate = k[A]<sup>0</sup>
+            <br><br>
+            Since A<sup>0</sup> = 1:
+            <br><br>
+            <strong>Rate = k</strong>
+        </div>
+
+        <div class="important">
+            <strong>Key Point:</strong>
+            Increasing reactant concentration does not change the rate of an
+            ideal zero-order reaction.
+        </div>
+    </section>
+
+    <section>
+        <h2>7. First-Order Reaction</h2>
+
+        <p>
+            In a first-order reaction, the rate is directly proportional to
+            the concentration of one reactant.
+        </p>
+
+        <div class="formula">
+            <strong>Rate = k[A]</strong>
+        </div>
+
+        <p>
+            If the concentration of A doubles, the rate also doubles.
+        </p>
+
+        <div class="example">
+            <strong>Example:</strong><br>
+            If Rate = k[A], then:
+            <br><br>
+            [A] doubles → Rate doubles
+        </div>
+    </section>
+
+    <section>
+        <h2>8. Second-Order Reaction</h2>
+
+        <p>
+            In a second-order reaction, the total power of reactant
+            concentrations in the rate equation is 2.
+        </p>
+
+        <div class="formula">
+            Example:<br><br>
+            Rate = k[A]<sup>2</sup>
+            <br><br>
+            Overall order = <strong>2</strong>
+        </div>
+
+        <div class="important">
+            If [A] doubles in Rate = k[A]², the rate becomes four times greater.
+        </div>
+    </section>
+
+    <section>
+        <h2>9. Rate Constant (k)</h2>
+
+        <p>
+            The rate constant is represented by <strong>k</strong>.
+            It is a proportionality constant in the rate equation.
+        </p>
+
+        <div class="definition">
+            <strong>Important:</strong>
+            The numerical value and units of k depend on the overall order
+            of the reaction.
+        </div>
+
+        <p>
+            For a given reaction at a particular temperature, the rate
+            constant has a characteristic value.
+        </p>
+    </section>
+
+    <section>
+        <h2>10. Activation Energy</h2>
+
+        <div class="definition">
+            <strong>Activation energy (E<sub>a</sub>)</strong> is the minimum
+            energy that reacting particles must possess for an effective
+            collision and successful reaction.
+        </div>
+
+        <p>
+            Not every collision between particles produces a reaction.
+            Particles must collide with sufficient energy and suitable
+            orientation.
+        </p>
+
+        <div class="important">
+            Higher activation energy generally means that fewer particles
+            can overcome the energy barrier at a given temperature.
+        </div>
+    </section>
+
+    <section>
+        <h2>11. Activated Complex / Transition State</h2>
+
+        <p>
+            During a chemical reaction, reactants pass through a very
+            high-energy unstable state called the activated complex or
+            transition state.
+        </p>
+
+        <div class="definition">
+            <strong>Activated Complex:</strong>
+            A temporary, unstable, high-energy arrangement of atoms formed
+            during a chemical reaction.
+        </div>
+
+        <p>
+            The activated complex exists for a very short time before forming
+            products or returning to reactants.
+        </p>
+    </section>
+
+    <section>
+        <h2>12. Effect of Catalyst</h2>
+
+        <p>
+            A catalyst changes the rate of a chemical reaction without being
+            permanently consumed in the overall reaction.
+        </p>
+
+        <div class="formula">
+            <strong>Catalyst → Alternative pathway → Lower activation energy → Faster reaction</strong>
+        </div>
+
+        <div class="important">
+            <strong>MDCAT Point:</strong>
+            A catalyst lowers activation energy. It does not change the overall
+            energy difference between reactants and products.
+        </div>
+    </section>
+
+    <section>
+        <h2>13. Temperature and Reaction Rate</h2>
+
+        <p>
+            When temperature increases, particles have greater average kinetic
+            energy.
+        </p>
+
+        <p>
+            As a result, more particles can reach or exceed the activation
+            energy required for reaction.
+        </p>
+
+        <div class="example">
+            <strong>Simple idea:</strong><br><br>
+            Higher temperature → More energetic particles →
+            More successful collisions → Faster reaction
+        </div>
+    </section>
+
+    <section>
+        <h2>14. Collision Theory</h2>
+
+        <p>
+            Collision theory explains chemical reactions in terms of collisions
+            between reacting particles.
+        </p>
+
+        <p>For a collision to produce a reaction:</p>
+
+        <ul>
+            <li>Particles must collide.</li>
+            <li>They must have sufficient energy.</li>
+            <li>They must have suitable orientation.</li>
+        </ul>
+
+        <div class="important">
+            <strong>Effective collision</strong> = collision with sufficient
+            energy and suitable orientation that can lead to product formation.
+        </div>
+    </section>
+
+    <section>
+        <h2>15. Quick Revision</h2>
+
+        <ul>
+            <li>Chemical kinetics studies the rate of chemical reactions.</li>
+            <li>Reaction rate describes how quickly concentration changes.</li>
+            <li>Rate equation relates rate to reactant concentrations.</li>
+            <li>k represents the rate constant.</li>
+            <li>Reaction order is obtained from powers in the rate equation.</li>
+            <li>Zero-order: Rate = k.</li>
+            <li>First-order: Rate = k[A].</li>
+            <li>Second-order example: Rate = k[A]².</li>
+            <li>Higher temperature generally increases reaction rate.</li>
+            <li>Greater surface area generally increases rate for solids.</li>
+            <li>A catalyst provides an alternative pathway.</li>
+            <li>A catalyst lowers activation energy.</li>
+            <li>Activated complex is a temporary high-energy state.</li>
+            <li>Effective collisions require sufficient energy and proper orientation.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>16. MDCAT Practice MCQs</h2>
+
+        <div class="mcq">
+            <p>1. Chemical kinetics deals with:</p>
+            A. Atomic structure<br>
+            B. Rate of chemical reactions<br>
+            C. Nuclear structure<br>
+            D. Periodic classification
+            <p class="answer">Answer: B. Rate of chemical reactions</p>
+        </div>
+
+        <div class="mcq">
+            <p>2. The rate constant is represented by:</p>
+            A. R<br>
+            B. K<br>
+            C. k<br>
+            D. E
+            <p class="answer">Answer: C. k</p>
+        </div>
+
+        <div class="mcq">
+            <p>3. In Rate = k[A]², the order with respect to A is:</p>
+            A. Zero<br>
+            B. One<br>
+            C. Two<br>
+            D. Three
+            <p class="answer">Answer: C. Two</p>
+        </div>
+
+        <div class="mcq">
+            <p>4. If Rate = k[A][B]², the overall order is:</p>
+            A. 1<br>
+            B. 2<br>
+            C. 3<br>
+            D. 4
+            <p class="answer">Answer: C. 3</p>
+        </div>
+
+        <div class="mcq">
+            <p>5. In a zero-order reaction, the rate is:</p>
+            A. k[A]<br>
+            B. k[A]²<br>
+            C. k<br>
+            D. k/[A]
+            <p class="answer">Answer: C. k</p>
+        </div>
+
+        <div class="mcq">
+            <p>6. Activation energy is the:</p>
+            A. Energy released by products<br>
+            B. Minimum energy required for an effective reaction<br>
+            C. Energy of the catalyst only<br>
+            D. Energy of the solvent
+            <p class="answer">Answer: B. Minimum energy required for an effective reaction</p>
+        </div>
+
+        <div class="mcq">
+            <p>7. A catalyst generally:</p>
+            A. Increases activation energy<br>
+            B. Lowers activation energy<br>
+            C. Stops the reaction<br>
+            D. Changes reactants into elements
+            <p class="answer">Answer: B. Lowers activation energy</p>
+        </div>
+
+        <div class="mcq">
+            <p>8. Increasing temperature generally causes reaction rate to:</p>
+            A. Decrease<br>
+            B. Increase<br>
+            C. Become zero<br>
+            D. Remain exactly unchanged
+            <p class="answer">Answer: B. Increase</p>
+        </div>
+
+        <div class="mcq">
+            <p>9. Powdering a solid reactant generally increases its:</p>
+            A. Mass<br>
+            B. Surface area<br>
+            C. Molecular mass<br>
+            D. Density
+            <p class="answer">Answer: B. Surface area</p>
+        </div>
+
+        <div class="mcq">
+            <p>10. The temporary high-energy state during a reaction is called:</p>
+            A. Catalyst<br>
+            B. Product<br>
+            C. Activated complex<br>
+            D. Solvent
+            <p class="answer">Answer: C. Activated complex</p>
+        </div>
+
+        <div class="mcq">
+            <p>11. For a first-order reaction, the rate equation is:</p>
+            A. Rate = k<br>
+            B. Rate = k[A]<br>
+            C. Rate = k[A]²<br>
+            D. Rate = k/[A]
+            <p class="answer">Answer: B. Rate = k[A]</p>
+        </div>
+
+        <div class="mcq">
+            <p>12. If the concentration of A doubles in Rate = k[A], the rate:</p>
+            A. Becomes half<br>
+            B. Doubles<br>
+            C. Becomes four times<br>
+            D. Becomes zero
+            <p class="answer">Answer: B. Doubles</p>
+        </div>
+
+        <div class="mcq">
+            <p>13. If the concentration of A doubles in Rate = k[A]², the rate becomes:</p>
+            A. 2 times<br>
+            B. 3 times<br>
+            C. 4 times<br>
+            D. 8 times
+            <p class="answer">Answer: C. 4 times</p>
+        </div>
+
+        <div class="mcq">
+            <p>14. An effective collision requires:</p>
+            A. Low energy only<br>
+            B. Sufficient energy and suitable orientation<br>
+            C. No collision<br>
+            D. Only high pressure
+            <p class="answer">Answer: B. Sufficient energy and suitable orientation</p>
+        </div>
+
+        <div class="mcq">
+            <p>15. Which factor can increase reaction rate by providing a lower-energy pathway?</p>
+            A. Catalyst<br>
+            B. Product<br>
+            C. Solvent only<br>
+            D. Inert gas
+            <p class="answer">Answer: A. Catalyst</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>17. MDCAT Exam Tips</h2>
+
+        <div class="important">
+            <ul>
+                <li>Memorize the general rate equation: <strong>Rate = k[A]<sup>m</sup>[B]<sup>n</sup></strong>.</li>
+                <li>Overall order = sum of the powers in the rate equation.</li>
+                <li>Remember zero, first and second-order rate equations.</li>
+                <li>Activation energy is the minimum energy needed for effective reaction.</li>
+                <li>A catalyst lowers activation energy.</li>
+                <li>Higher temperature generally means a faster reaction.</li>
+                <li>Greater surface area generally increases the rate of reaction of solids.</li>
+                <li>Do not confuse activated complex with catalyst.</li>
+                <li>Practice numerical questions involving rate equations.</li>
+                <li>Understand concepts instead of memorizing definitions only.</li>
+            </ul>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 StudyHub - MDCAT Notes & Preparation</p>
+    <p>Learn • Practice • Succeed 🎯</p>
+</footer>
+
+</body>
+</html>
