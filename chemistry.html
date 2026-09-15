@@ -1,198 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Chemistry - MDCAT Notes, MCQs & Practice | StudyHub</title>
+<title>Chemistry - MDCAT Notes & MCQs | StudyHub</title>
 
-    <meta name="description" content="Free MDCAT Chemistry notes, important concepts, formulas and practice MCQs for medical entrance test preparation.">
+<meta name="description" content="Detailed MDCAT Chemistry notes, concepts, formulas, important points and practice MCQs.">
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+<style>
+*{
+    box-sizing:border-box;
+}
 
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f8fc;
-            color: #222;
-            line-height: 1.7;
-        }
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f4f8fc;
+    color:#222;
+    line-height:1.7;
+}
 
-        header {
-            background: #1565c0;
-            color: white;
-            padding: 25px 15px;
-            text-align: center;
-        }
+header{
+    background:linear-gradient(135deg,#1565c0,#0d47a1);
+    color:white;
+    text-align:center;
+    padding:35px 15px;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 32px;
-        }
+header h1{
+    margin:0;
+    font-size:34px;
+}
 
-        header p {
-            margin: 5px 0 0;
-        }
+header p{
+    margin:8px 0 0;
+    font-size:17px;
+}
 
-        nav {
-            background: #0d47a1;
-            padding: 12px;
-            text-align: center;
-        }
+nav{
+    background:#08306b;
+    padding:13px 10px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 8px;
-            font-weight: bold;
-        }
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 8px;
+    font-weight:bold;
+    font-size:14px;
+}
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+nav a:hover{
+    color:#ffeb3b;
+}
 
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 25px 15px;
-        }
+.container{
+    max-width:1050px;
+    margin:auto;
+    padding:25px 15px;
+}
 
-        .back {
-            display: inline-block;
-            margin-bottom: 20px;
-            color: #1565c0;
-            text-decoration: none;
-            font-weight: bold;
-        }
+.back{
+    display:inline-block;
+    color:#1565c0;
+    text-decoration:none;
+    font-weight:bold;
+    margin-bottom:20px;
+}
 
-        section {
-            background: white;
-            margin-bottom: 25px;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-        }
+.hero{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    margin-bottom:25px;
+}
 
-        h2 {
-            color: #1565c0;
-            border-bottom: 2px solid #e3f2fd;
-            padding-bottom: 8px;
-        }
+.hero h2{
+    color:#0d47a1;
+    margin-top:0;
+}
 
-        h3 {
-            color: #0d47a1;
-        }
+.badges{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:20px;
+}
 
-        .topic {
-            display: block;
-            background: #e3f2fd;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 8px;
-            color: #0d47a1;
-            text-decoration: none;
-            font-weight: bold;
-        }
+.badge{
+    background:#e3f2fd;
+    color:#0d47a1;
+    padding:8px 14px;
+    border-radius:20px;
+    font-weight:bold;
+}
 
-        .topic:hover {
-            background: #bbdefb;
-        }
+section{
+    background:white;
+    margin-bottom:25px;
+    padding:28px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,.07);
+}
 
-        .important {
-            background: #fff8d6;
-            border-left: 5px solid #fbc02d;
-            padding: 15px;
-            margin: 15px 0;
-        }
+h2{
+    color:#1565c0;
+    border-bottom:3px solid #e3f2fd;
+    padding-bottom:10px;
+}
 
-        .definition {
-            background: #e8f5e9;
-            border-left: 5px solid #43a047;
-            padding: 15px;
-            margin: 15px 0;
-        }
+h3{
+    color:#0d47a1;
+    margin-top:25px;
+}
 
-        .formula {
-            background: #f3e5f5;
-            border-left: 5px solid #8e24aa;
-            padding: 15px;
-            margin: 15px 0;
-            font-weight: bold;
-        }
+.topic-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
 
-        .mcq {
-            background: #f8f9fa;
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 8px;
-        }
+.topic{
+    display:block;
+    padding:18px;
+    background:#f1f8ff;
+    border:1px solid #d5e8fa;
+    border-radius:12px;
+    color:#0d47a1;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.2s;
+}
 
-        .answer {
-            color: #2e7d32;
-            font-weight: bold;
-        }
+.topic:hover{
+    transform:translateY(-3px);
+    background:#e3f2fd;
+}
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 15px 0;
-        }
+.topic span{
+    display:block;
+    font-size:13px;
+    color:#666;
+    margin-top:5px;
+    font-weight:normal;
+}
 
-        th, td {
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: left;
-        }
+.important{
+    background:#fff8d7;
+    border-left:5px solid #fbc02d;
+    padding:17px;
+    border-radius:7px;
+    margin:18px 0;
+}
 
-        th {
-            background: #e3f2fd;
-            color: #0d47a1;
-        }
+.definition{
+    background:#e8f5e9;
+    border-left:5px solid #43a047;
+    padding:17px;
+    border-radius:7px;
+    margin:18px 0;
+}
 
-        footer {
-            background: #0d47a1;
-            color: white;
-            text-align: center;
-            padding: 25px 15px;
-            margin-top: 30px;
-        }
+.formula{
+    background:#f3e5f5;
+    border-left:5px solid #8e24aa;
+    padding:17px;
+    border-radius:7px;
+    margin:18px 0;
+    font-weight:bold;
+}
 
-        footer a {
-            color: white;
-            text-decoration: none;
-            margin: 0 6px;
-        }
+.example{
+    background:#eef7ff;
+    border-left:5px solid #1976d2;
+    padding:17px;
+    border-radius:7px;
+    margin:18px 0;
+}
 
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 25px;
-            }
+.mcq{
+    background:#fafafa;
+    border:1px solid #ddd;
+    padding:18px;
+    margin:15px 0;
+    border-radius:10px;
+}
 
-            nav a {
-                display: inline-block;
-                margin: 5px;
-            }
+.answer{
+    color:#2e7d32;
+    font-weight:bold;
+    margin-bottom:0;
+}
 
-            section {
-                padding: 18px;
-            }
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin:18px 0;
+}
 
-            table {
-                font-size: 14px;
-            }
-        }
-    </style>
+th,td{
+    border:1px solid #ccc;
+    padding:11px;
+    text-align:left;
+}
+
+th{
+    background:#e3f2fd;
+    color:#0d47a1;
+}
+
+.quick{
+    background:#e8f5e9;
+    padding:20px;
+    border-radius:10px;
+}
+
+footer{
+    background:#08306b;
+    color:white;
+    text-align:center;
+    padding:30px 15px;
+}
+
+footer a{
+    color:white;
+    text-decoration:none;
+    margin:0 6px;
+}
+
+@media(max-width:600px){
+    header h1{
+        font-size:27px;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:4px;
+    }
+
+    section,.hero{
+        padding:20px;
+    }
+
+    table{
+        font-size:13px;
+    }
+}
+</style>
 </head>
 
 <body>
 
 <header>
     <h1>StudyHub 🎯</h1>
-    <p>Free MDCAT Chemistry Notes, MCQs & Practice</p>
+    <p>Detailed MDCAT Chemistry Notes, MCQs & Practice</p>
 </header>
 
 <nav>
@@ -206,720 +273,981 @@
 
 <div class="container">
 
-    <a class="back" href="index.html">← Back to Home</a>
-
-    <section>
-        <h2>🧪 MDCAT Chemistry</h2>
-
-        <p>
-            Welcome to the StudyHub Chemistry section. Here you will find
-            easy-to-understand Chemistry notes, important concepts, formulas
-            and MDCAT-style practice MCQs.
-        </p>
-
-        <div class="important">
-            <strong>🎯 MDCAT Focus:</strong>
-            Focus on concepts, formulas, chemical equations, calculations
-            and repeated exam-style questions.
-        </div>
-    </section>
-
-    <section>
-        <h2>📚 Chemistry Topics</h2>
+<a class="back" href="index.html">← Back to Home</a>
+
+<div class="hero">
+    <h2>🧪 MDCAT Chemistry</h2>
+
+    <p>
+        Welcome to the StudyHub Chemistry section. This page is designed
+        for students preparing for the MDCAT. Learn important Chemistry
+        concepts with simple explanations, formulas, examples and
+        practice MCQs.
+    </p>
+
+    <div class="badges">
+        <div class="badge">📖 Detailed Notes</div>
+        <div class="badge">🧠 Important Concepts</div>
+        <div class="badge">📐 Formulas</div>
+        <div class="badge">📝 MCQs</div>
+        <div class="badge">🎯 MDCAT Focus</div>
+    </div>
+</div>
+
+<section>
+<h2>📚 Chemistry Study Plan</h2>
+
+<div class="topic-grid">
+
+<a class="topic" href="#fundamental">
+🧮 Fundamental Concepts
+<span>Moles, stoichiometry, yield & calculations</span>
+</a>
+
+<a class="topic" href="#atomic">
+⚛️ Atomic Structure
+<span>Particles, models, electronic configuration</span>
+</a>
+
+<a class="topic" href="#periodic">
+📊 Periodic Table
+<span>Groups, periods and periodic trends</span>
+</a>
+
+<a class="topic" href="#bonding">
+🔗 Chemical Bonding
+<span>Ionic, covalent and intermolecular forces</span>
+</a>
+
+<a class="topic" href="#states">
+💨 States of Matter
+<span>Solids, liquids, gases and gas laws</span>
+</a>
+
+<a class="topic" href="#solutions">
+💧 Solutions
+<span>Concentration, molarity and solubility</span>
+</a>
+
+<a class="topic" href="#kinetics">
+⚡ Chemical Kinetics
+<span>Rate of reaction and factors affecting it</span>
+</a>
+
+<a class="topic" href="#equilibrium">
+⚖️ Chemical Equilibrium
+<span>Dynamic equilibrium and Le Chatelier</span>
+</a>
+
+<a class="topic" href="#acids">
+🧪 Acids, Bases & Salts
+<span>pH, indicators and neutralization</span>
+</a>
+
+<a class="topic" href="#electrochemistry">
+🔋 Electrochemistry
+<span>Oxidation, reduction and cells</span>
+</a>
+
+<a class="topic" href="#thermochemistry">
+🔥 Thermochemistry
+<span>Heat, enthalpy and energy changes</span>
+</a>
+
+<a class="topic" href="#organic">
+🧬 Organic Chemistry
+<span>Carbon compounds and reactions</span>
+</a>
+
+<a class="topic" href="#hydrocarbons">
+⛓️ Hydrocarbons
+<span>Alkanes, alkenes and alkynes</span>
+</a>
+
+<a class="topic" href="#functional">
+🧪 Functional Groups
+<span>Alcohols, aldehydes, ketones and acids</span>
+</a>
+
+<a class="topic" href="#biochemistry">
+🧬 Biochemistry
+<span>Carbohydrates, proteins, lipids and nucleic acids</span>
+</a>
+
+<a class="topic" href="#environment">
+🌍 Environmental Chemistry
+<span>Pollution, ozone and greenhouse gases</span>
+</a>
 
-        <a class="topic" href="#unit1">
-            1. Fundamental Concepts of Chemistry
-        </a>
+</div>
+</section>
 
-        <a class="topic" href="#atomic">
-            2. Atomic Structure
-        </a>
-
-        <a class="topic" href="#periodic">
-            3. Periodic Table & Periodicity
-        </a>
-
-        <a class="topic" href="#bonding">
-            4. Chemical Bonding
-        </a>
-
-        <a class="topic" href="#states">
-            5. States of Matter
-        </a>
-
-        <a class="topic" href="#solutions">
-            6. Solutions
-        </a>
-
-        <a class="topic" href="#kinetics">
-            7. Chemical Kinetics
-        </a>
-
-        <a class="topic" href="#equilibrium">
-            8. Chemical Equilibrium
-        </a>
-
-        <a class="topic" href="#acids">
-            9. Acids, Bases & Salts
-        </a>
-
-        <a class="topic" href="#electrochemistry">
-            10. Electrochemistry
-        </a>
-
-        <a class="topic" href="#thermochemistry">
-            11. Thermochemistry
-        </a>
-
-        <a class="topic" href="#organic">
-            12. Organic Chemistry
-        </a>
-
-        <a class="topic" href="#hydrocarbons">
-            13. Hydrocarbons
-        </a>
-
-        <a class="topic" href="#functional">
-            14. Functional Groups & Organic Compounds
-        </a>
-
-        <a class="topic" href="#biochemistry">
-            15. Biochemistry
-        </a>
-
-        <a class="topic" href="#environment">
-            16. Environmental Chemistry
-        </a>
-    </section>
-
-    <section id="unit1">
-        <h2>1. Fundamental Concepts of Chemistry</h2>
-
-        <h3>🔹 Mole</h3>
-
-        <div class="definition">
-            A mole is the amount of substance containing
-            <strong>6.022 × 10²³ particles</strong>.
-        </div>
-
-        <p>
-            The particles may be atoms, molecules, ions or other microscopic
-            particles.
-        </p>
-
-        <div class="formula">
-            Avogadro's Number = 6.022 × 10²³ particles/mol
-        </div>
-
-        <h3>🔹 Molar Mass</h3>
-
-        <p>
-            Molar mass is the mass of one mole of a substance.
-            Its unit is <strong>g/mol</strong>.
-        </p>
-
-        <div class="formula">
-            Number of moles = Mass ÷ Molar Mass
-            <br><br>
-            n = m / M
-        </div>
-
-        <h3>🔹 Example</h3>
-
-        <p>
-            Molecular mass of H₂O:
-        </p>
-
-        <p>
-            H = 1 × 2 = 2
-            <br>
-            O = 16
-            <br>
-            Total = <strong>18 g/mol</strong>
-        </p>
-
-        <p>
-            Therefore, 18 g of water = 1 mole of H₂O.
-        </p>
-
-        <h3>🔹 Stoichiometry</h3>
-
-        <p>
-            Stoichiometry deals with the quantitative relationship between
-            reactants and products in a chemical reaction.
-        </p>
-
-        <div class="formula">
-            Moles → Mole Ratio → Required Quantity
-        </div>
-
-        <h3>🔹 Limiting Reactant</h3>
-
-        <p>
-            The reactant that is completely consumed first and limits the
-            amount of product formed is called the
-            <strong>limiting reactant</strong>.
-        </p>
-
-        <h3>🔹 Excess Reactant</h3>
-
-        <p>
-            A reactant that remains after the limiting reactant has been
-            completely consumed is called the
-            <strong>excess reactant</strong>.
-        </p>
-
-        <h3>🔹 Percentage Yield</h3>
-
-        <div class="formula">
-            Percentage Yield =
-            (Actual Yield ÷ Theoretical Yield) × 100
-        </div>
-    </section>
-
-    <section id="atomic">
-        <h2>2. Atomic Structure</h2>
-
-        <p>
-            An atom is the basic unit of an element.
-        </p>
-
-        <table>
-            <tr>
-                <th>Particle</th>
-                <th>Charge</th>
-                <th>Location</th>
-            </tr>
-            <tr>
-                <td>Proton</td>
-                <td>+1</td>
-                <td>Nucleus</td>
-            </tr>
-            <tr>
-                <td>Neutron</td>
-                <td>0</td>
-                <td>Nucleus</td>
-            </tr>
-            <tr>
-                <td>Electron</td>
-                <td>-1</td>
-                <td>Outside nucleus</td>
-            </tr>
-        </table>
-
-        <div class="important">
-            <strong>Atomic Number:</strong>
-            Number of protons in an atom.
-        </div>
-
-        <div class="important">
-            <strong>Mass Number:</strong>
-            Number of protons + number of neutrons.
-        </div>
-    </section>
-
-    <section id="periodic">
-        <h2>3. Periodic Table & Periodicity</h2>
-
-        <p>
-            The periodic table arranges elements according to their atomic
-            numbers and recurring chemical properties.
-        </p>
-
-        <h3>Important Trends</h3>
-
-        <ul>
-            <li>Atomic radius</li>
-            <li>Ionization energy</li>
-            <li>Electron affinity</li>
-            <li>Electronegativity</li>
-            <li>Metallic character</li>
-        </ul>
-
-        <div class="important">
-            MDCAT tip: Learn the periodic trends and their reasons,
-            not just the direction of arrows.
-        </div>
-    </section>
-
-    <section id="bonding">
-        <h2>4. Chemical Bonding</h2>
-
-        <p>
-            Chemical bonding is the force that holds atoms together.
-        </p>
-
-        <h3>Main Types</h3>
-
-        <ul>
-            <li>Ionic bond</li>
-            <li>Covalent bond</li>
-            <li>Coordinate covalent bond</li>
-            <li>Hydrogen bonding</li>
-            <li>Metallic bonding</li>
-        </ul>
-
-        <div class="definition">
-            <strong>Ionic bond:</strong>
-            Formed through transfer of electrons between atoms.
-        </div>
-
-        <div class="definition">
-            <strong>Covalent bond:</strong>
-            Formed through sharing of electrons.
-        </div>
-    </section>
-
-    <section id="states">
-        <h2>5. States of Matter</h2>
-
-        <table>
-            <tr>
-                <th>State</th>
-                <th>Shape</th>
-                <th>Volume</th>
-            </tr>
-            <tr>
-                <td>Solid</td>
-                <td>Fixed</td>
-                <td>Fixed</td>
-            </tr>
-            <tr>
-                <td>Liquid</td>
-                <td>Not fixed</td>
-                <td>Fixed</td>
-            </tr>
-            <tr>
-                <td>Gas</td>
-                <td>Not fixed</td>
-                <td>Not fixed</td>
-            </tr>
-        </table>
-    </section>
-
-    <section id="solutions">
-        <h2>6. Solutions</h2>
-
-        <p>
-            A solution is a homogeneous mixture of solute and solvent.
-        </p>
-
-        <div class="formula">
-            Molarity = Moles of solute ÷ Volume of solution in litres
-        </div>
-
-        <p>
-            <strong>Solute:</strong> substance that is dissolved.
-        </p>
-
-        <p>
-            <strong>Solvent:</strong> substance that dissolves the solute.
-        </p>
-    </section>
-
-    <section id="kinetics">
-        <h2>7. Chemical Kinetics</h2>
-
-        <p>
-            Chemical kinetics is the study of the rate of chemical reactions.
-        </p>
-
-        <h3>Factors Affecting Reaction Rate</h3>
-
-        <ul>
-            <li>Temperature</li>
-            <li>Concentration</li>
-            <li>Surface area</li>
-            <li>Catalyst</li>
-            <li>Nature of reactants</li>
-        </ul>
-    </section>
-
-    <section id="equilibrium">
-        <h2>8. Chemical Equilibrium</h2>
-
-        <p>
-            Chemical equilibrium occurs when the forward and reverse reactions
-            occur at equal rates.
-        </p>
-
-        <div class="important">
-            At equilibrium, the concentrations of reactants and products
-            remain constant, but the reactions continue.
-        </div>
-    </section>
-
-    <section id="acids">
-        <h2>9. Acids, Bases & Salts</h2>
-
-        <div class="definition">
-            <strong>Acid:</strong> A substance that can donate H⁺ ions.
-        </div>
-
-        <div class="definition">
-            <strong>Base:</strong> A substance that can accept H⁺ ions
-            or produce OH⁻ ions in aqueous solution.
-        </div>
-
-        <div class="formula">
-            pH = -log[H⁺]
-        </div>
-
-        <p>
-            pH less than 7 → acidic
-            <br>
-            pH = 7 → neutral
-            <br>
-            pH greater than 7 → basic
-        </p>
-    </section>
-
-    <section id="electrochemistry">
-        <h2>10. Electrochemistry</h2>
-
-        <p>
-            Electrochemistry deals with the relationship between chemical
-            reactions and electrical energy.
-        </p>
-
-        <ul>
-            <li>Oxidation</li>
-            <li>Reduction</li>
-            <li>Redox reactions</li>
-            <li>Electrochemical cells</li>
-        </ul>
-
-        <div class="important">
-            <strong>OIL:</strong> Oxidation Is Loss of electrons.
-            <br>
-            <strong>RIG:</strong> Reduction Is Gain of electrons.
-        </div>
-    </section>
-
-    <section id="thermochemistry">
-        <h2>11. Thermochemistry</h2>
-
-        <p>
-            Thermochemistry is the study of heat changes during chemical
-            reactions.
-        </p>
-
-        <div class="definition">
-            <strong>Exothermic reaction:</strong>
-            Releases heat.
-        </div>
-
-        <div class="definition">
-            <strong>Endothermic reaction:</strong>
-            Absorbs heat.
-        </div>
-    </section>
-
-    <section id="organic">
-        <h2>12. Organic Chemistry</h2>
-
-        <p>
-            Organic chemistry is mainly the study of carbon-containing
-            compounds.
-        </p>
-
-        <h3>Important Areas</h3>
-
-        <ul>
-            <li>Carbon bonding</li>
-            <li>Structural formulas</li>
-            <li>Isomerism</li>
-            <li>Functional groups</li>
-            <li>Organic reactions</li>
-        </ul>
-    </section>
-
-    <section id="hydrocarbons">
-        <h2>13. Hydrocarbons</h2>
-
-        <p>
-            Hydrocarbons contain only carbon and hydrogen.
-        </p>
-
-        <table>
-            <tr>
-                <th>Family</th>
-                <th>General Formula</th>
-            </tr>
-            <tr>
-                <td>Alkanes</td>
-                <td>CₙH₂ₙ₊₂</td>
-            </tr>
-            <tr>
-                <td>Alkenes</td>
-                <td>CₙH₂ₙ</td>
-            </tr>
-            <tr>
-                <td>Alkynes</td>
-                <td>CₙH₂ₙ₋₂</td>
-            </tr>
-        </table>
-    </section>
-
-    <section id="functional">
-        <h2>14. Functional Groups & Organic Compounds</h2>
-
-        <table>
-            <tr>
-                <th>Compound</th>
-                <th>Functional Group</th>
-            </tr>
-            <tr>
-                <td>Alcohol</td>
-                <td>-OH</td>
-            </tr>
-            <tr>
-                <td>Aldehyde</td>
-                <td>-CHO</td>
-            </tr>
-            <tr>
-                <td>Ketone</td>
-                <td>&gt;C=O</td>
-            </tr>
-            <tr>
-                <td>Carboxylic acid</td>
-                <td>-COOH</td>
-            </tr>
-            <tr>
-                <td>Amine</td>
-                <td>-NH₂</td>
-            </tr>
-        </table>
-    </section>
-
-    <section id="biochemistry">
-        <h2>15. Biochemistry</h2>
-
-        <p>
-            Biochemistry deals with chemical substances and reactions
-            occurring in living organisms.
-        </p>
-
-        <ul>
-            <li>Carbohydrates</li>
-            <li>Proteins</li>
-            <li>Lipids</li>
-            <li>Nucleic acids</li>
-            <li>Enzymes</li>
-        </ul>
-    </section>
-
-    <section id="environment">
-        <h2>16. Environmental Chemistry</h2>
-
-        <p>
-            Environmental chemistry studies chemical processes occurring
-            in the environment.
-        </p>
-
-        <ul>
-            <li>Air pollution</li>
-            <li>Water pollution</li>
-            <li>Greenhouse gases</li>
-            <li>Acid rain</li>
-            <li>Ozone layer</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>📝 MDCAT Chemistry Practice MCQs</h2>
-
-        <div class="mcq">
-            <strong>1. One mole contains:</strong>
-            <p>A) 6.022 × 10²³ particles</p>
-            <p>B) 3.011 × 10²³ particles</p>
-            <p>C) 9.8 × 10²³ particles</p>
-            <p>D) 1.66 × 10⁻²⁴ particles</p>
-            <p class="answer">Answer: A</p>
-        </div>
-
-        <div class="mcq">
-            <strong>2. The charge on an electron is:</strong>
-            <p>A) +1</p>
-            <p>B) 0</p>
-            <p>C) -1</p>
-            <p>D) +2</p>
-            <p class="answer">Answer: C</p>
-        </div>
-
-        <div class="mcq">
-            <strong>3. Atomic number represents the number of:</strong>
-            <p>A) Neutrons</p>
-            <p>B) Protons</p>
-            <p>C) Electrons + neutrons</p>
-            <p>D) Nucleons</p>
-            <p class="answer">Answer: B</p>
-        </div>
-
-        <div class="mcq">
-            <strong>4. Which bond involves sharing of electrons?</strong>
-            <p>A) Ionic</p>
-            <p>B) Covalent</p>
-            <p>C) Metallic</p>
-            <p>D) Hydrogen</p>
-            <p class="answer">Answer: B</p>
-        </div>
-
-        <div class="mcq">
-            <strong>5. A solution contains:</strong>
-            <p>A) Only solute</p>
-            <p>B) Only solvent</p>
-            <p>C) Solute and solvent</p>
-            <p>D) Only water</p>
-            <p class="answer">Answer: C</p>
-        </div>
-
-        <div class="mcq">
-            <strong>6. A catalyst generally:</strong>
-            <p>A) Increases activation energy</p>
-            <p>B) Decreases activation energy</p>
-            <p>C) Stops the reaction</p>
-            <p>D) Is always consumed</p>
-            <p class="answer">Answer: B</p>
-        </div>
-
-        <div class="mcq">
-            <strong>7. A solution with pH 3 is:</strong>
-            <p>A) Acidic</p>
-            <p>B) Basic</p>
-            <p>C) Neutral</p>
-            <p>D) Salt</p>
-            <p class="answer">Answer: A</p>
-        </div>
-
-        <div class="mcq">
-            <strong>8. Oxidation involves:</strong>
-            <p>A) Gain of electrons</p>
-            <p>B) Loss of electrons</p>
-            <p>C) Gain of neutrons</p>
-            <p>D) Loss of protons</p>
-            <p class="answer">Answer: B</p>
-        </div>
-
-        <div class="mcq">
-            <strong>9. General formula of alkanes is:</strong>
-            <p>A) CₙH₂ₙ</p>
-            <p>B) CₙH₂ₙ₋₂</p>
-            <p>C) CₙH₂ₙ₊₂</p>
-            <p>D) CₙHₙ</p>
-            <p class="answer">Answer: C</p>
-        </div>
-
-        <div class="mcq">
-            <strong>10. Which functional group is present in alcohols?</strong>
-            <p>A) -COOH</p>
-            <p>B) -OH</p>
-            <p>C) -CHO</p>
-            <p>D) -NH₂</p>
-            <p class="answer">Answer: B</p>
-        </div>
-
-        <div class="mcq">
-            <strong>11. An exothermic reaction:</strong>
-            <p>A) Absorbs heat</p>
-            <p>B) Releases heat</p>
-            <p>C) Produces no energy</p>
-            <p>D) Always requires light</p>
-            <p class="answer">Answer: B</p>
-        </div>
-
-        <div class="mcq">
-            <strong>12. The limiting reactant is the reactant that:</strong>
-            <p>A) Remains in excess</p>
-            <p>B) Is consumed first</p>
-            <p>C) Is never used</p>
-            <p>D) Acts as a catalyst</p>
-            <p class="answer">Answer: B</p>
-        </div>
-
-        <div class="mcq">
-            <strong>13. The nucleus contains:</strong>
-            <p>A) Electrons only</p>
-            <p>B) Protons and neutrons</p>
-            <p>C) Electrons and neutrons</p>
-            <p>D) Electrons and protons</p>
-            <p class="answer">Answer: B</p>
-        </div>
-
-        <div class="mcq">
-            <strong>14. Which is a hydrocarbon?</strong>
-            <p>A) CH₄</p>
-            <p>B) H₂O</p>
-            <p>C) NH₃</p>
-            <p>D) NaCl</p>
-            <p class="answer">Answer: A</p>
-        </div>
-
-        <div class="mcq">
-            <strong>15. The pH of a neutral solution at 25°C is:</strong>
-            <p>A) 0</p>
-            <p>B) 5</p>
-            <p>C) 7</p>
-            <p>D) 14</p>
-            <p class="answer">Answer: C</p>
-        </div>
-    </section>
-
-    <section>
-        <h2>🎯 Chemistry MDCAT Quick Revision</h2>
-
-        <ul>
-            <li>1 mole = 6.022 × 10²³ particles</li>
-            <li>Moles = Mass ÷ Molar Mass</li>
-            <li>Atomic number = Number of protons</li>
-            <li>Mass number = Protons + Neutrons</li>
-            <li>Ionic bond = electron transfer</li>
-            <li>Covalent bond = electron sharing</li>
-            <li>pH &lt; 7 = acidic</li>
-            <li>pH = 7 = neutral</li>
-            <li>pH &gt; 7 = basic</li>
-            <li>Oxidation = loss of electrons</li>
-            <li>Reduction = gain of electrons</li>
-            <li>Alkanes = CₙH₂ₙ₊₂</li>
-            <li>Alkenes = CₙH₂ₙ</li>
-            <li>Alkynes = CₙH₂ₙ₋₂</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>💡 MDCAT Chemistry Preparation Tips</h2>
-
-        <ol>
-            <li>Understand concepts instead of only memorizing.</li>
-            <li>Memorize important formulas.</li>
-            <li>Practice numerical questions regularly.</li>
-            <li>Learn periodic trends carefully.</li>
-            <li>Practice chemical equations.</li>
-            <li>Solve MDCAT-style MCQs.</li>
-            <li>Revise weak topics repeatedly.</li>
-        </ol>
-    </section>
+
+<!-- FUNDAMENTAL CONCEPTS -->
+
+<section id="fundamental">
+
+<h2>1. 🧮 Fundamental Concepts of Chemistry</h2>
+
+<h3>What is Chemistry?</h3>
+
+<p>
+Chemistry is the branch of science that deals with the composition,
+structure, properties and transformations of matter.
+</p>
+
+<h3>🔹 Mole</h3>
+
+<div class="definition">
+A mole is the amount of substance containing
+<strong>6.022 × 10²³ particles</strong>.
+This number is called Avogadro's number.
+</div>
+
+<div class="formula">
+Nₐ = 6.022 × 10²³ mol⁻¹
+<br><br>
+Number of particles = moles × 6.022 × 10²³
+</div>
+
+<h3>🔹 Molar Mass</h3>
+
+<p>
+Molar mass is the mass of one mole of a substance and is expressed
+in g/mol.
+</p>
+
+<div class="formula">
+Number of moles = Mass ÷ Molar Mass
+<br><br>
+n = m / M
+</div>
+
+<div class="example">
+<strong>Example:</strong><br>
+Calculate the number of moles in 36 g of H₂O.
+<br><br>
+Molar mass of H₂O = 18 g/mol
+<br>
+n = 36 ÷ 18
+<br>
+<strong>n = 2 mol</strong>
+</div>
+
+<h3>🔹 Stoichiometry</h3>
+
+<p>
+Stoichiometry deals with the quantitative relationship between
+reactants and products in a chemical reaction.
+</p>
+
+<h3>🔹 Limiting Reactant</h3>
+
+<div class="important">
+The reactant that is completely consumed first and determines the
+maximum amount of product formed is called the
+<strong>limiting reactant</strong>.
+</div>
+
+<h3>🔹 Excess Reactant</h3>
+
+<p>
+The reactant that remains after the limiting reactant has been
+completely consumed is called the excess reactant.
+</p>
+
+<h3>🔹 Percentage Yield</h3>
+
+<div class="formula">
+Percentage Yield =
+(Actual Yield ÷ Theoretical Yield) × 100
+</div>
+
+</section>
+
+
+<!-- ATOMIC STRUCTURE -->
+
+<section id="atomic">
+
+<h2>2. ⚛️ Atomic Structure</h2>
+
+<p>
+An atom is the smallest unit of an element that retains the chemical
+properties of that element.
+</p>
+
+<table>
+<tr>
+<th>Particle</th>
+<th>Charge</th>
+<th>Relative Mass</th>
+<th>Location</th>
+</tr>
+
+<tr>
+<td>Proton</td>
+<td>+1</td>
+<td>1</td>
+<td>Nucleus</td>
+</tr>
+
+<tr>
+<td>Neutron</td>
+<td>0</td>
+<td>1</td>
+<td>Nucleus</td>
+</tr>
+
+<tr>
+<td>Electron</td>
+<td>-1</td>
+<td>Very small</td>
+<td>Outside nucleus</td>
+</tr>
+</table>
+
+<div class="important">
+<strong>Atomic Number = Number of Protons</strong>
+<br>
+For a neutral atom, number of protons = number of electrons.
+</div>
+
+<div class="formula">
+Mass Number = Protons + Neutrons
+</div>
+
+<h3>🔹 Isotopes</h3>
+
+<p>
+Isotopes are atoms of the same element having the same atomic number
+but different numbers of neutrons.
+</p>
+
+<h3>🔹 Electronic Configuration</h3>
+
+<p>
+Electrons are arranged in shells and subshells around the nucleus.
+The electronic configuration helps determine the chemical behavior
+of an element.
+</p>
+
+</section>
+
+
+<!-- PERIODIC -->
+
+<section id="periodic">
+
+<h2>3. 📊 Periodic Table & Periodicity</h2>
+
+<p>
+The periodic table arranges elements according to increasing atomic
+number and their recurring chemical properties.
+</p>
+
+<h3>Important Periodic Trends</h3>
+
+<table>
+<tr>
+<th>Property</th>
+<th>Across a Period</th>
+<th>Down a Group</th>
+</tr>
+
+<tr>
+<td>Atomic Radius</td>
+<td>Generally decreases</td>
+<td>Generally increases</td>
+</tr>
+
+<tr>
+<td>Ionization Energy</td>
+<td>Generally increases</td>
+<td>Generally decreases</td>
+</tr>
+
+<tr>
+<td>Electronegativity</td>
+<td>Generally increases</td>
+<td>Generally decreases</td>
+</tr>
+
+<tr>
+<td>Metallic Character</td>
+<td>Generally decreases</td>
+<td>Generally increases</td>
+</tr>
+</table>
+
+<div class="important">
+<strong>MDCAT Tip:</strong>
+Do not only memorize the arrows. Understand why the trends occur.
+</div>
+
+</section>
+
+
+<!-- BONDING -->
+
+<section id="bonding">
+
+<h2>4. 🔗 Chemical Bonding</h2>
+
+<p>
+Chemical bonds are attractive forces that hold atoms or ions together.
+</p>
+
+<h3>🔹 Ionic Bond</h3>
+
+<div class="definition">
+An ionic bond is formed through the transfer of electrons,
+usually from a metal to a non-metal.
+</div>
+
+<p>
+Example: NaCl
+</p>
+
+<h3>🔹 Covalent Bond</h3>
+
+<div class="definition">
+A covalent bond is formed when atoms share electrons.
+</div>
+
+<p>
+Example: H₂, Cl₂ and CH₄.
+</p>
+
+<h3>🔹 Hydrogen Bond</h3>
+
+<p>
+Hydrogen bonding is a relatively strong intermolecular attraction
+involving hydrogen bonded to highly electronegative atoms such as
+oxygen or nitrogen.
+</p>
+
+</section>
+
+
+<!-- STATES -->
+
+<section id="states">
+
+<h2>5. 💨 States of Matter</h2>
+
+<table>
+<tr>
+<th>Property</th>
+<th>Solid</th>
+<th>Liquid</th>
+<th>Gas</th>
+</tr>
+
+<tr>
+<td>Shape</td>
+<td>Fixed</td>
+<td>Not fixed</td>
+<td>Not fixed</td>
+</tr>
+
+<tr>
+<td>Volume</td>
+<td>Fixed</td>
+<td>Fixed</td>
+<td>Not fixed</td>
+</tr>
+
+<tr>
+<td>Particle Movement</td>
+<td>Very limited</td>
+<td>Moderate</td>
+<td>High</td>
+</tr>
+</table>
+
+<h3>🔹 Gas Laws</h3>
+
+<div class="formula">
+Boyle's Law:
+P₁V₁ = P₂V₂
+<br><br>
+Charles's Law:
+V₁/T₁ = V₂/T₂
+<br><br>
+Ideal Gas Equation:
+PV = nRT
+</div>
+
+<div class="important">
+Temperature in gas-law calculations should normally be expressed
+in Kelvin.
+</div>
+
+</section>
+
+
+<!-- SOLUTIONS -->
+
+<section id="solutions">
+
+<h2>6. 💧 Solutions</h2>
+
+<p>
+A solution is a homogeneous mixture containing a solute and a solvent.
+</p>
+
+<div class="definition">
+<strong>Solute:</strong> Substance being dissolved.
+<br>
+<strong>Solvent:</strong> Substance that dissolves the solute.
+</div>
+
+<h3>🔹 Molarity</h3>
+
+<div class="formula">
+Molarity = Moles of Solute ÷ Volume of Solution in Litres
+</div>
+
+<h3>🔹 Solubility</h3>
+
+<p>
+Solubility is the maximum amount of a substance that can dissolve
+in a specified amount of solvent under given conditions.
+</p>
+
+</section>
+
+
+<!-- KINETICS -->
+
+<section id="kinetics">
+
+<h2>7. ⚡ Chemical Kinetics</h2>
+
+<p>
+Chemical kinetics is the study of the rate of chemical reactions
+and the factors affecting reaction rate.
+</p>
+
+<h3>Factors Affecting Reaction Rate</h3>
+
+<ul>
+<li>Temperature</li>
+<li>Concentration</li>
+<li>Surface area</li>
+<li>Pressure for gases</li>
+<li>Catalyst</li>
+<li>Nature of reactants</li>
+</ul>
+
+<div class="important">
+A catalyst provides an alternative pathway with lower activation
+energy and is not permanently consumed in the overall reaction.
+</div>
+
+</section>
+
+
+<!-- EQUILIBRIUM -->
+
+<section id="equilibrium">
+
+<h2>8. ⚖️ Chemical Equilibrium</h2>
+
+<p>
+Dynamic equilibrium occurs in a reversible reaction when the forward
+and reverse reactions occur at equal rates.
+</p>
+
+<div class="definition">
+At equilibrium, concentrations of reactants and products remain
+constant, although the reactions continue.
+</div>
+
+<h3>Le Chatelier's Principle</h3>
+
+<p>
+When a system at equilibrium is disturbed, it tends to shift in a
+direction that opposes the disturbance.
+</p>
+
+</section>
+
+
+<!-- ACIDS -->
+
+<section id="acids">
+
+<h2>9. 🧪 Acids, Bases & Salts</h2>
+
+<div class="definition">
+<strong>Acid:</strong> A substance that donates H⁺ according to
+the Brønsted-Lowry concept.
+</div>
+
+<div class="definition">
+<strong>Base:</strong> A substance that accepts H⁺ according to
+the Brønsted-Lowry concept.
+</div>
+
+<h3>pH Scale</h3>
+
+<div class="formula">
+pH = -log[H⁺]
+</div>
+
+<table>
+<tr>
+<th>pH</th>
+<th>Nature</th>
+</tr>
+
+<tr>
+<td>Less than 7</td>
+<td>Acidic</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td>Neutral</td>
+</tr>
+
+<tr>
+<td>Greater than 7</td>
+<td>Basic</td>
+</tr>
+</table>
+
+</section>
+
+
+<!-- ELECTROCHEMISTRY -->
+
+<section id="electrochemistry">
+
+<h2>10. 🔋 Electrochemistry</h2>
+
+<p>
+Electrochemistry deals with chemical reactions involving the transfer
+of electrons and their relationship with electrical energy.
+</p>
+
+<div class="important">
+<strong>Oxidation:</strong> Loss of electrons.
+<br>
+<strong>Reduction:</strong> Gain of electrons.
+</div>
+
+<div class="formula">
+OIL = Oxidation Is Loss
+<br>
+RIG = Reduction Is Gain
+</div>
+
+</section>
+
+
+<!-- THERMOCHEMISTRY -->
+
+<section id="thermochemistry">
+
+<h2>11. 🔥 Thermochemistry</h2>
+
+<p>
+Thermochemistry deals with heat changes associated with chemical
+reactions and physical changes.
+</p>
+
+<div class="definition">
+<strong>Exothermic:</strong> Releases heat to surroundings.
+</div>
+
+<div class="definition">
+<strong>Endothermic:</strong> Absorbs heat from surroundings.
+</div>
+
+</section>
+
+
+<!-- ORGANIC -->
+
+<section id="organic">
+
+<h2>12. 🧬 Organic Chemistry</h2>
+
+<p>
+Organic chemistry is the study of carbon compounds and their
+reactions.
+</p>
+
+<h3>Important Concepts</h3>
+
+<ul>
+<li>Carbon bonding</li>
+<li>Structural formulas</li>
+<li>Isomerism</li>
+<li>Homologous series</li>
+<li>Functional groups</li>
+<li>Organic reactions</li>
+</ul>
+
+</section>
+
+
+<!-- HYDROCARBONS -->
+
+<section id="hydrocarbons">
+
+<h2>13. ⛓️ Hydrocarbons</h2>
+
+<p>
+Hydrocarbons are compounds containing only carbon and hydrogen.
+</p>
+
+<table>
+<tr>
+<th>Family</th>
+<th>General Formula</th>
+<th>Bond</th>
+</tr>
+
+<tr>
+<td>Alkanes</td>
+<td>CₙH₂ₙ₊₂</td>
+<td>Single</td>
+</tr>
+
+<tr>
+<td>Alkenes</td>
+<td>CₙH₂ₙ</td>
+<td>Double</td>
+</tr>
+
+<tr>
+<td>Alkynes</td>
+<td>CₙH₂ₙ₋₂</td>
+<td>Triple</td>
+</tr>
+</table>
+
+</section>
+
+
+<!-- FUNCTIONAL -->
+
+<section id="functional">
+
+<h2>14. 🧪 Functional Groups</h2>
+
+<table>
+<tr>
+<th>Class</th>
+<th>Functional Group</th>
+<th>Example</th>
+</tr>
+
+<tr>
+<td>Alcohol</td>
+<td>-OH</td>
+<td>Ethanol</td>
+</tr>
+
+<tr>
+<td>Aldehyde</td>
+<td>-CHO</td>
+<td>Ethanal</td>
+</tr>
+
+<tr>
+<td>Ketone</td>
+<td>&gt;C=O</td>
+<td>Propanone</td>
+</tr>
+
+<tr>
+<td>Carboxylic Acid</td>
+<td>-COOH</td>
+<td>Ethanoic acid</td>
+</tr>
+
+<tr>
+<td>Amine</td>
+<td>-NH₂</td>
+<td>Methylamine</td>
+</tr>
+</table>
+
+</section>
+
+
+<!-- BIOCHEMISTRY -->
+
+<section id="biochemistry">
+
+<h2>15. 🧬 Biochemistry</h2>
+
+<p>
+Biochemistry studies the chemical substances and reactions occurring
+in living organisms.
+</p>
+
+<ul>
+<li>Carbohydrates</li>
+<li>Proteins</li>
+<li>Lipids</li>
+<li>Nucleic acids</li>
+<li>Enzymes</li>
+</ul>
+
+<div class="important">
+Biochemistry is especially important for understanding the chemical
+basis of biological processes.
+</div>
+
+</section>
+
+
+<!-- ENVIRONMENT -->
+
+<section id="environment">
+
+<h2>16. 🌍 Environmental Chemistry</h2>
+
+<p>
+Environmental chemistry studies chemical processes occurring in air,
+water, soil and living systems.
+</p>
+
+<h3>Important Topics</h3>
+
+<ul>
+<li>Air pollution</li>
+<li>Water pollution</li>
+<li>Greenhouse effect</li>
+<li>Global warming</li>
+<li>Acid rain</li>
+<li>Ozone depletion</li>
+</ul>
+
+</section>
+
+
+<!-- MCQS -->
+
+<section>
+
+<h2>📝 MDCAT Chemistry Practice MCQs</h2>
+
+<div class="mcq">
+<strong>1. One mole contains:</strong>
+<p>A) 6.022 × 10²³ particles</p>
+<p>B) 3.011 × 10²³ particles</p>
+<p>C) 9.8 × 10²³ particles</p>
+<p>D) 1.66 × 10⁻²⁴ particles</p>
+<p class="answer">✅ Answer: A</p>
+</div>
+
+<div class="mcq">
+<strong>2. Atomic number is equal to the number of:</strong>
+<p>A) Neutrons</p>
+<p>B) Protons</p>
+<p>C) Nucleons</p>
+<p>D) Protons + neutrons</p>
+<p class="answer">✅ Answer: B</p>
+</div>
+
+<div class="mcq">
+<strong>3. Which particle has a negative charge?</strong>
+<p>A) Proton</p>
+<p>B) Neutron</p>
+<p>C) Electron</p>
+<p>D) Nucleus</p>
+<p class="answer">✅ Answer: C</p>
+</div>
+
+<div class="mcq">
+<strong>4. Which bond involves sharing of electrons?</strong>
+<p>A) Ionic</p>
+<p>B) Covalent</p>
+<p>C) Metallic</p>
+<p>D) Coordinate only</p>
+<p class="answer">✅ Answer: B</p>
+</div>
+
+<div class="mcq">
+<strong>5. The general formula of alkanes is:</strong>
+<p>A) CₙH₂ₙ</p>
+<p>B) CₙH₂ₙ₋₂</p>
+<p>C) CₙH₂ₙ₊₂</p>
+<p>D) CₙHₙ</p>
+<p class="answer">✅ Answer: C</p>
+</div>
+
+<div class="mcq">
+<strong>6. A solution with pH 2 is:</strong>
+<p>A) Basic</p>
+<p>B) Neutral</p>
+<p>C) Acidic</p>
+<p>D) Amphoteric</p>
+<p class="answer">✅ Answer: C</p>
+</div>
+
+<div class="mcq">
+<strong>7. Oxidation is:</strong>
+<p>A) Gain of electrons</p>
+<p>B) Loss of electrons</p>
+<p>C) Gain of protons</p>
+<p>D) Loss of neutrons</p>
+<p class="answer">✅ Answer: B</p>
+</div>
+
+<div class="mcq">
+<strong>8. Which factor can increase reaction rate?</strong>
+<p>A) Lowering temperature</p>
+<p>B) Increasing suitable concentration</p>
+<p>C) Removing all reactants</p>
+<p>D) Always decreasing surface area</p>
+<p class="answer">✅ Answer: B</p>
+</div>
+
+<div class="mcq">
+<strong>9. The formula PV = nRT represents:</strong>
+<p>A) Boyle's law only</p>
+<p>B) Charles's law only</p>
+<p>C) Ideal gas equation</p>
+<p>D) Avogadro's number</p>
+<p class="answer">✅ Answer: C</p>
+</div>
+
+<div class="mcq">
+<strong>10. The limiting reactant is:</strong>
+<p>A) Present in unlimited amount</p>
+<p>B) Consumed first</p>
+<p>C) Always a catalyst</p>
+<p>D) Never involved in the reaction</p>
+<p class="answer">✅ Answer: B</p>
+</div>
+
+<div class="mcq">
+<strong>11. An exothermic reaction:</strong>
+<p>A) Absorbs heat</p>
+<p>B) Releases heat</p>
+<p>C) Has no energy change</p>
+<p>D) Stops at equilibrium</p>
+<p class="answer">✅ Answer: B</p>
+</div>
+
+<div class="mcq">
+<strong>12. Which functional group belongs to alcohols?</strong>
+<p>A) -COOH</p>
+<p>B) -CHO</p>
+<p>C) -OH</p>
+<p>D) -NH₂</p>
+<p class="answer">✅ Answer: C</p>
+</div>
+
+<div class="mcq">
+<strong>13. Which is a hydrocarbon?</strong>
+<p>A) CH₄</p>
+<p>B) H₂O</p>
+<p>C) NH₃</p>
+<p>D) NaCl</p>
+<p class="answer">✅ Answer: A</p>
+</div>
+
+<div class="mcq">
+<strong>14. At 25°C, a neutral solution has pH:</strong>
+<p>A) 1</p>
+<p>B) 5</p>
+<p>C) 7</p>
+<p>D) 14</p>
+<p class="answer">✅ Answer: C</p>
+</div>
+
+<div class="mcq">
+<strong>15. A catalyst generally:</strong>
+<p>A) Increases activation energy</p>
+<p>B) Lowers activation energy</p>
+<p>C) Is completely consumed</p>
+<p>D) Stops equilibrium</p>
+<p class="answer">✅ Answer: B</p>
+</div>
+
+</section>
+
+
+<!-- QUICK REVISION -->
+
+<section>
+
+<h2>🎯 Chemistry Quick Revision</h2>
+
+<div class="quick">
+
+<ul>
+<li>1 mole = 6.022 × 10²³ particles</li>
+<li>Moles = Mass ÷ Molar Mass</li>
+<li>Atomic Number = Number of Protons</li>
+<li>Mass Number = Protons + Neutrons</li>
+<li>Ionic bond = Electron transfer</li>
+<li>Covalent bond = Electron sharing</li>
+<li>pH &lt; 7 = Acidic</li>
+<li>pH = 7 = Neutral</li>
+<li>pH &gt; 7 = Basic</li>
+<li>Oxidation = Loss of electrons</li>
+<li>Reduction = Gain of electrons</li>
+<li>Alkanes = CₙH₂ₙ₊₂</li>
+<li>Alkenes = CₙH₂ₙ</li>
+<li>Alkynes = CₙH₂ₙ₋₂</li>
+<li>PV = nRT</li>
+</ul>
 
 </div>
 
+</section>
+
+
+<section>
+
+<h2>💡 MDCAT Chemistry Tips</h2>
+
+<ol>
+<li>Concepts ko samjho, sirf ratta na lagao.</li>
+<li>Important formulas ko daily revise karo.</li>
+<li>Numerical questions ki practice karo.</li>
+<li>Periodic trends ko reason ke saath yaad karo.</li>
+<li>Organic chemistry ke functional groups strong karo.</li>
+<li>Chemical equations ki practice karo.</li>
+<li>Har topic ke baad MCQs solve karo.</li>
+<li>Weak topics ki separate revision karo.</li>
+</ol>
+
+</section>
+
+</div>
+
+
 <footer>
-    <p>© 2026 StudyHub - Free MDCAT Study Material</p>
 
-    <p>
-        <a href="index.html">Home</a> |
-        <a href="biology.html">Biology</a> |
-        <a href="chemistry.html">Chemistry</a> |
-        <a href="physics.html">Physics</a> |
-        <a href="english.html">English</a> |
-        <a href="logical-reasoning.html">Logical Reasoning</a>
-    </p>
+<p>© 2026 StudyHub - Free MDCAT Study Material</p>
 
-    <p>
-        <a href="about.html">About Us</a> |
-        <a href="contact.html">Contact</a> |
-        <a href="privacy.html">Privacy Policy</a> |
-        <a href="terms.html">Terms & Conditions</a>
-    </p>
+<p>
+<a href="index.html">Home</a> |
+<a href="biology.html">Biology</a> |
+<a href="chemistry.html">Chemistry</a> |
+<a href="physics.html">Physics</a> |
+<a href="english.html">English</a> |
+<a href="logical-reasoning.html">Logical Reasoning</a>
+</p>
+
+<p>
+<a href="about.html">About Us</a> |
+<a href="contact.html">Contact</a> |
+<a href="privacy.html">Privacy Policy</a> |
+<a href="terms.html">Terms & Conditions</a>
+</p>
+
 </footer>
 
 </body>
