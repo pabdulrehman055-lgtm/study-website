@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudyHub - Chemistry MCQs</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f4f7fb;
+        color: #222;
+    }
+
+    header {
+        background: #0b3d91;
+        color: white;
+        text-align: center;
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 32px;
+    }
+
+    header p {
+        margin: 8px 0 0;
+        font-size: 17px;
+    }
+
+    nav {
+        background: #082f6d;
+        text-align: center;
+        padding: 12px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 12px;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+
+    .intro {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        margin-bottom: 25px;
+    }
+
+    .intro h2 {
+        color: #0b3d91;
+        margin-top: 0;
+    }
+
+    .quiz-box {
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .question-number {
+        color: #0b3d91;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .question {
+        font-size: 21px;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+
+    .option {
+        display: block;
+        width: 100%;
+        padding: 14px;
+        margin: 10px 0;
+        border: 2px solid #d9e2f2;
+        background: #f8faff;
+        border-radius: 8px;
+        text-align: left;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .option:hover {
+        background: #eaf1ff;
+    }
+
+    .option.correct {
+        background: #d4edda;
+        border-color: #28a745;
+    }
+
+    .option.wrong {
+        background: #f8d7da;
+        border-color: #dc3545;
+    }
+
+    .option:disabled {
+        cursor: not-allowed;
+    }
+
+    .explanation {
+        display: none;
+        margin-top: 20px;
+        padding: 15px;
+        background: #eef5ff;
+        border-left: 5px solid #0b3d91;
+        border-radius: 6px;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        gap: 10px;
+    }
+
+    button.control {
+        border: none;
+        background: #0b3d91;
+        color: white;
+        padding: 12px 22px;
+        border-radius: 7px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    button.control:hover {
+        background: #082f6d;
+    }
+
+    button.control:disabled {
+        background: #aaa;
+        cursor: not-allowed;
+    }
+
+    .result {
+        display: none;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .result h2 {
+        color: #0b3d91;
+    }
+
+    .score {
+        font-size: 30px;
+        font-weight: bold;
+        margin: 20px 0;
+    }
+
+    .restart {
+        background: #0b3d91;
+        color: white;
+        border: none;
+        padding: 14px 25px;
+        border-radius: 7px;
+        cursor: pointer;
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    footer {
+        margin-top: 40px;
+        background: #082f6d;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+        header h1 {
+            font-size: 25px;
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 5px 7px;
+        }
+
+        .quiz-box {
+            padding: 20px;
+        }
+
+        .question {
+            font-size: 18px;
+        }
+
+        .buttons {
+            flex-direction: column;
+        }
+
+        button.control {
+            width: 100%;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>StudyHub 🧪</h1>
+    <p>Chemistry MDCAT MCQs & Practice</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="chemistry.html">Chemistry</a>
+    <a href="biology.html">Biology</a>
+    <a href="physics.html">Physics</a>
+    <a href="english.html">English</a>
+</nav>
+
+<div class="container">
+
+    <div class="intro">
+        <h2>Chemistry MDCAT MCQs</h2>
+        <p>Test your Chemistry preparation with MDCAT-style multiple choice questions.</p>
+        <p><strong>15 Questions</strong> • Instant Answers • Score Tracking</p>
+    </div>
+
+    <div class="quiz-box">
+
+        <div id="quiz">
+
+            <div class="question-number" id="questionNumber"></div>
+
+            <div class="question" id="question"></div>
+
+            <div id="options"></div>
+
+            <div class="explanation" id="explanation"></div>
+
+            <div class="buttons">
+                <button class="control" id="previousBtn" onclick="previousQuestion()">
+                    Previous
+                </button>
+
+                <button class="control" id="nextBtn" onclick="nextQuestion()">
+                    Next
+                </button>
+            </div>
+
+        </div>
+
+        <div class="result" id="result">
+
+            <h2>🎉 Test Complete!</h2>
+
+            <div class="score" id="score"></div>
+
+            <p id="message"></p>
+
+            <button class="restart" onclick="restartQuiz()">
+                Restart Test
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 StudyHub | MDCAT Preparation</p>
+</footer>
+
+<script>
+
+const questions = [
+
+    {
+        question: "One mole of any substance contains:",
+        options: [
+            "6.022 × 10²³ particles",
+            "3.011 × 10²³ particles",
+            "9.8 × 10²³ particles",
+            "1.602 × 10⁻¹⁹ particles"
+        ],
+        answer: 0,
+        explanation: "One mole contains Avogadro's number, 6.022 × 10²³ particles."
+    },
+
+    {
+        question: "Which gas law states that pressure is inversely proportional to volume at constant temperature?",
+        options: [
+            "Charles's Law",
+            "Boyle's Law",
+            "Avogadro's Law",
+            "Graham's Law"
+        ],
+        answer: 1,
+        explanation: "Boyle's Law states P ∝ 1/V at constant temperature."
+    },
+
+    {
+        question: "The SI unit of temperature is:",
+        options: [
+            "Celsius",
+            "Fahrenheit",
+            "Kelvin",
+            "Joule"
+        ],
+        answer: 2,
+        explanation: "Kelvin is the SI unit of thermodynamic temperature."
+    },
+
+    {
+        question: "The shape of an s-orbital is:",
+        options: [
+            "Dumbbell",
+            "Spherical",
+            "Linear",
+            "Tetrahedral"
+        ],
+        answer: 1,
+        explanation: "An s-orbital has a spherical shape."
+    },
+
+    {
+        question: "A catalyst increases the rate of a reaction by:",
+        options: [
+            "Increasing temperature",
+            "Increasing pressure",
+            "Lowering activation energy",
+            "Increasing equilibrium constant"
+        ],
+        answer: 2,
+        explanation: "A catalyst provides an alternative pathway with lower activation energy."
+    },
+
+    {
+        question: "A reaction that releases heat is called:",
+        options: [
+            "Endothermic",
+            "Exothermic",
+            "Reversible",
+            "Neutral"
+        ],
+        answer: 1,
+        explanation: "Exothermic reactions release heat to the surroundings."
+    },
+
+    {
+        question: "Oxidation occurs at the:",
+        options: [
+            "Cathode",
+            "Anode",
+            "Salt bridge",
+            "Electrolyte only"
+        ],
+        answer: 1,
+        explanation: "Oxidation always occurs at the anode."
+    },
+
+    {
+        question: "The standard electrode potential of the Standard Hydrogen Electrode is:",
+        options: [
+            "1.00 V",
+            "-1.00 V",
+            "0.00 V",
+            "0.50 V"
+        ],
+        answer: 2,
+        explanation: "The SHE is assigned a standard electrode potential of 0.00 V."
+    },
+
+    {
+        question: "The general formula of alkanes is:",
+        options: [
+            "CₙH₂ₙ",
+            "CₙH₂ₙ₋₂",
+            "CₙH₂ₙ₊₂",
+            "CₙHₙ"
+        ],
+        answer: 2,
+        explanation: "Acyclic alkanes have the general formula CₙH₂ₙ₊₂."
+    },
+
+    {
+        question: "The functional group of alcohols is:",
+        options: [
+            "−COOH",
+            "−OH",
+            "−CHO",
+            "−CO−"
+        ],
+        answer: 1,
+        explanation: "Alcohols contain the hydroxyl functional group, −OH."
+    },
+
+    {
+        question: "The functional group present in aldehydes is:",
+        options: [
+            "−OH",
+            "−COOH",
+            "−CHO",
+            "−NH₂"
+        ],
+        answer: 2,
+        explanation: "Aldehydes contain the terminal −CHO group."
+    },
+
+    {
+        question: "Benzene has the molecular formula:",
+        options: [
+            "C₆H₆",
+            "C₆H₁₂",
+            "C₆H₁₄",
+            "C₅H₆"
+        ],
+        answer: 0,
+        explanation: "The molecular formula of benzene is C₆H₆."
+    },
+
+    {
+        question: "The bond formed between amino acids in proteins is called:",
+        options: [
+            "Ionic bond",
+            "Hydrogen bond",
+            "Peptide bond",
+            "Glycosidic bond"
+        ],
+        answer: 2,
+        explanation: "Amino acids are linked by peptide bonds."
+    },
+
+    {
+        question: "A solution that resists changes in pH is called:",
+        options: [
+            "Salt",
+            "Buffer",
+            "Strong acid",
+            "Strong base"
+        ],
+        answer: 1,
+        explanation: "A buffer solution resists significant changes in pH when small amounts of acid or base are added."
+    },
+
+    {
+        question: "The process in which a liquid changes into vapour at its surface is:",
+        options: [
+            "Condensation",
+            "Freezing",
+            "Evaporation",
+            "Sublimation"
+        ],
+        answer: 2,
+        explanation: "Evaporation is the conversion of liquid into vapour from the surface."
+    }
+
+];
+
+let currentQuestion = 0;
+let score = 0;
+let answered = false;
+
+function loadQuestion() {
+
+    answered = false;
+
+    const q = questions[currentQuestion];
+
+    document.getElementById("questionNumber").textContent =
+        "Question " + (currentQuestion + 1) + " of " + questions.length;
+
+    document.getElementById("question").textContent = q.question;
+
+    const optionsDiv = document.getElementById("options");
+    optionsDiv.innerHTML = "";
+
+    q.options.forEach((option, index) => {
+
+        const button = document.createElement("button");
+
+        button.className = "option";
+        button.textContent = option;
+
+        button.onclick = function() {
+            selectAnswer(index);
+        };
+
+        optionsDiv.appendChild(button);
+
+    });
+
+    document.getElementById("explanation").style.display = "none";
+    document.getElementById("explanation").textContent = "";
+
+    document.getElementById("previousBtn").disabled =
+        currentQuestion === 0;
+
+    document.getElementById("nextBtn").textContent =
+        currentQuestion === questions.length - 1
+        ? "Finish Test"
+        : "Next";
+}
+
+
+function selectAnswer(selectedIndex) {
+
+    if (answered) return;
+
+    answered = true;
+
+    const q = questions[currentQuestion];
+
+    const options = document.querySelectorAll(".option");
+
+    options.forEach((button, index) => {
+
+        button.disabled = true;
+
+        if (index === q.answer) {
+            button.classList.add("correct");
+        }
+
+        if (index === selectedIndex && selectedIndex !== q.answer) {
+            button.classList.add("wrong");
+        }
+
+    });
+
+    if (selectedIndex === q.answer) {
+        score++;
+    }
+
+    const explanation = document.getElementById("explanation");
+
+    explanation.textContent =
+        (selectedIndex === q.answer ? "✅ Correct! " : "❌ Incorrect. ")
+        + q.explanation;
+
+    explanation.style.display = "block";
+}
+
+
+function nextQuestion() {
+
+    if (currentQuestion === questions.length - 1) {
+
+        showResult();
+
+        return;
+    }
+
+    currentQuestion++;
+
+    loadQuestion();
+}
+
+
+function previousQuestion() {
+
+    if (currentQuestion > 0) {
+
+        currentQuestion--;
+
+        loadQuestion();
+    }
+}
+
+
+function showResult() {
+
+    document.getElementById("quiz").style.display = "none";
+
+    document.getElementById("result").style.display = "block";
+
+    document.getElementById("score").textContent =
+        "Your Score: " + score + " / " + questions.length;
+
+    const percentage =
+        (score / questions.length) * 100;
+
+    let message = "";
+
+    if (percentage >= 80) {
+        message = "Excellent! 🔥 Your Chemistry preparation is strong.";
+    }
+    else if (percentage >= 60) {
+        message = "Good job! 👍 Keep practicing to improve further.";
+    }
+    else {
+        message = "Keep studying! 📚 Review the chapters and try again.";
+    }
+
+    document.getElementById("message").textContent = message;
+}
+
+
+function restartQuiz() {
+
+    currentQuestion = 0;
+    score = 0;
+
+    document.getElementById("quiz").style.display = "block";
+
+    document.getElementById("result").style.display = "none";
+
+    loadQuestion();
+}
+
+
+loadQuestion();
+
+</script>
+
+</body>
+</html>
