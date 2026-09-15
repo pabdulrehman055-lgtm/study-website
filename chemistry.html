@@ -1,183 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>StudyHub - MDCAT Chemistry</title>
+    <title>MDCAT Chemistry - Notes & Chapters | StudyHub</title>
 
-<style>
-*{
-    box-sizing:border-box;
-}
+    <meta name="description" content="StudyHub MDCAT Chemistry notes, chapters, concepts and practice material for MDCAT preparation.">
 
-body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#f3f6fa;
-    color:#222;
-    line-height:1.7;
-}
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-header{
-    background:#0645ad;
-    color:white;
-    text-align:center;
-    padding:22px 15px;
-}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
 
-header h1{
-    margin:0;
-    font-size:30px;
-}
+        header {
+            background: #0b3d91;
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+        }
 
-header p{
-    margin:5px 0 0;
-}
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
 
-nav{
-    background:#063b91;
-    text-align:center;
-    padding:12px;
-}
+        header p {
+            margin: 8px 0 0;
+            font-size: 17px;
+        }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 9px;
-    font-weight:bold;
-}
+        nav {
+            background: #082f6d;
+            padding: 12px;
+            text-align: center;
+        }
 
-.container{
-    max-width:1000px;
-    margin:30px auto;
-    padding:0 15px;
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
 
-.back{
-    color:#0645ad;
-    font-weight:bold;
-    text-decoration:none;
-}
+        nav a:hover {
+            text-decoration: underline;
+        }
 
-.intro{
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 4px 15px rgba(0,0,0,.08);
-    margin:20px 0;
-}
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
 
-.intro h2{
-    color:#1261ff;
-}
+        .intro {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
 
-/* CHAPTER CARDS */
+        .intro h2 {
+            color: #0b3d91;
+            margin-top: 0;
+        }
 
-.chapter{
-    background:white;
-    border-radius:15px;
-    padding:25px;
-    margin:25px 0;
-    box-shadow:0 4px 15px rgba(0,0,0,.08);
-}
+        .chapters {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
 
-.chapter h2{
-    color:#0645ad;
-    margin-top:0;
-    border-bottom:2px solid #e5ecf8;
-    padding-bottom:10px;
-}
+        .chapter {
+            background: white;
+            padding: 22px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: 0.2s;
+        }
 
-.chapter h3{
-    color:#1261ff;
-}
+        .chapter:hover {
+            transform: translateY(-4px);
+        }
 
-.important{
-    background:#fff2c9;
-    border-left:5px solid #ffb000;
-    padding:15px;
-    border-radius:7px;
-    margin:18px 0;
-}
+        .chapter h3 {
+            color: #0b3d91;
+            margin-top: 0;
+        }
 
-.definition{
-    background:#eaf5ff;
-    border-left:5px solid #1683ff;
-    padding:15px;
-    border-radius:7px;
-    margin:18px 0;
-}
+        .chapter p {
+            color: #555;
+        }
 
-.revision{
-    background:#eaffef;
-    border-left:5px solid #159447;
-    padding:15px;
-    border-radius:7px;
-    margin-top:18px;
-}
+        .chapter a {
+            display: inline-block;
+            background: #0b3d91;
+            color: white;
+            text-decoration: none;
+            padding: 10px 16px;
+            border-radius: 6px;
+            margin-top: 8px;
+        }
 
-table{
-    width:100%;
-    border-collapse:collapse;
-    margin:18px 0;
-}
+        .chapter a:hover {
+            background: #082f6d;
+        }
 
-th,td{
-    border:1px solid #ccc;
-    padding:10px;
-    text-align:left;
-}
+        .new-chapter {
+            border-top: 4px solid #159447;
+        }
 
-th{
-    background:#eaf2ff;
-    color:#0645ad;
-}
+        .new-badge {
+            display: inline-block;
+            background: #159447;
+            color: white;
+            padding: 4px 9px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
 
-.mcq{
-    background:#f7f9fc;
-    padding:15px;
-    border-left:4px solid #0645ad;
-    border-radius:8px;
-    margin:15px 0;
-}
+        .official-badge {
+            display: inline-block;
+            background: #1565c0;
+            color: white;
+            padding: 4px 9px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
 
-.answer{
-    color:#087d32;
-    font-weight:bold;
-}
+        footer {
+            background: #082f6d;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+            margin-top: 40px;
+        }
 
-footer{
-    background:#063b91;
-    color:white;
-    text-align:center;
-    padding:25px;
-    margin-top:40px;
-}
+        footer a {
+            color: white;
+            margin: 0 8px;
+            text-decoration: none;
+        }
 
-footer a{
-    color:white;
-    margin:0 8px;
-}
+        @media (max-width: 600px) {
 
-@media(max-width:600px){
-    nav a{
-        display:inline-block;
-        margin:5px;
-    }
+            header h1 {
+                font-size: 25px;
+            }
 
-    .chapter{
-        padding:18px;
-    }
-}
-</style>
+            nav a {
+                display: inline-block;
+                margin: 5px 7px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
-    <h1>StudyHub 🎯</h1>
-    <p>Free MDCAT Chemistry Notes, MCQs & Practice</p>
+    <h1>StudyHub 🧪</h1>
+    <p>MDCAT Chemistry Notes & Preparation</p>
 </header>
 
 <nav>
@@ -191,476 +187,439 @@ footer a{
 
 <div class="container">
 
-<a class="back" href="index.html">← Back to Home</a>
+    <section class="intro">
 
-<div class="intro">
+        <h2>📚 MDCAT Chemistry</h2>
 
-<h2>🧪 MDCAT Chemistry Notes</h2>
+        <p>
+            Welcome to the StudyHub MDCAT Chemistry section.
+            Here you can study important Chemistry topics, revise concepts
+            and prepare for MDCAT-style questions.
+        </p>
 
-<p>
-Complete Chemistry preparation for MDCAT with chapter-wise
-notes, important concepts, formulas and practice MCQs.
-</p>
+        <p>
+            Start with a topic below and study the notes step by step.
+        </p>
 
-<div class="important">
-<strong>Important:</strong>
-Chemistry topics are organized according to the PM&DC MDCAT
-curriculum.
-</div>
+        <div class="official-badge">
+            PM&DC MDCAT Chemistry Topics
+        </div>
 
-</div>
+        <p>
+            StudyHub is organizing Chemistry material according to the
+            official MDCAT Chemistry syllabus.
+        </p>
 
+    </section>
 
-<!-- CHAPTER 1 -->
 
-<div class="chapter">
+    <!-- OFFICIAL MDCAT CHEMISTRY TOPICS -->
 
-<h2>1. Fundamentals of Chemistry</h2>
+    <section>
 
-<h3>What is Chemistry?</h3>
+        <h2>🧪 Official MDCAT Chemistry Topics</h2>
 
-<p>
-Chemistry is the branch of science that deals with the composition,
-structure, properties and transformations of matter.
-</p>
+        <div class="chapters">
 
-<div class="definition">
-<strong>Definition:</strong>
-Matter is anything that has mass and occupies space.
-</div>
 
-<h3>Mole Concept</h3>
+            <!-- Unit 1 -->
 
-<p>
-The mole is the SI unit used to express the amount of a substance.
-One mole contains approximately
-<strong>6.022 × 10<sup>23</sup></strong> particles.
-</p>
+            <div class="chapter new-chapter">
 
-<div class="important">
-<strong>Important:</strong>
-6.022 × 10<sup>23</sup> is called Avogadro's number.
-</div>
+                <span class="new-badge">NEW</span>
 
-<h3>Important Formulae</h3>
+                <h3>1. Fundamentals of Chemistry</h3>
 
-<table>
+                <p>
+                    Study moles, Avogadro's number, stoichiometry,
+                    limiting and excess reactants and percentage yield.
+                </p>
 
-<tr>
-<th>Quantity</th>
-<th>Formula</th>
-</tr>
+                <a href="chemistry-fundamentals.html">
+                    Open Topic
+                </a>
 
-<tr>
-<td>Number of moles</td>
-<td>n = mass / molar mass</td>
-</tr>
+            </div>
 
-<tr>
-<td>Number of particles</td>
-<td>Particles = moles × 6.022 × 10<sup>23</sup></td>
-</tr>
 
-<tr>
-<td>Percentage yield</td>
-<td>(Actual yield / Theoretical yield) × 100</td>
-</tr>
+            <!-- Unit 2 -->
 
-</table>
+            <div class="chapter">
 
-<h3>Limiting Reactant</h3>
+                <h3>2. Atomic Structure</h3>
 
-<p>
-The limiting reactant is the reactant that is completely consumed
-first in a chemical reaction. It determines the maximum amount of
-product that can be formed.
-</p>
+                <p>
+                    Study atomic structure, quantum theory, quantum numbers,
+                    orbitals, hydrogen spectrum and electronic configuration.
+                </p>
 
-<h3>Excess Reactant</h3>
+                <a href="chemistry-atomic-structure.html">
+                    Open Topic
+                </a>
 
-<p>
-The reactant that remains after the limiting reactant has been
-completely consumed is called the excess reactant.
-</p>
+            </div>
 
-<h3>Percentage Yield</h3>
 
-<p>
-The actual amount of product obtained in an experiment may be less
-than the theoretical amount. Percentage yield compares these two
-values.
-</p>
+            <!-- Unit 3 -->
 
-<div class="revision">
+            <div class="chapter">
 
-<strong>⚡ Quick Revision</strong>
+                <h3>3. Gases</h3>
 
-<ul>
-<li>1 mole = 6.022 × 10<sup>23</sup> particles.</li>
-<li>Moles = mass ÷ molar mass.</li>
-<li>Limiting reactant controls product formation.</li>
-<li>Excess reactant remains after the reaction.</li>
-<li>Percentage yield = actual yield ÷ theoretical yield × 100.</li>
-</ul>
+                <p>
+                    Study kinetic molecular theory and important concepts
+                    related to gases.
+                </p>
 
-</div>
+                <a href="chemistry-gases.html">
+                    Open Topic
+                </a>
 
-<h3>📝 Practice MCQs</h3>
+            </div>
 
-<div class="mcq">
 
-<strong>1. One mole contains approximately:</strong><br>
+            <!-- Unit 4 -->
 
-A. 6.022 × 10<sup>20</sup><br>
-B. 6.022 × 10<sup>23</sup><br>
-C. 3.011 × 10<sup>23</sup><br>
-D. 9.8 × 10<sup>23</sup>
+            <div class="chapter">
 
-<p class="answer">Answer: B</p>
+                <h3>4. Liquids</h3>
 
-</div>
+                <p>
+                    Learn important properties of liquids, vapor pressure,
+                    boiling point and intermolecular forces.
+                </p>
 
-<div class="mcq">
+                <a href="chemistry-liquids.html">
+                    Open Topic
+                </a>
 
-<strong>2. The reactant that is consumed first is called:</strong><br>
+            </div>
 
-A. Excess reactant<br>
-B. Product<br>
-C. Limiting reactant<br>
-D. Catalyst
 
-<p class="answer">Answer: C</p>
+            <!-- Unit 5 -->
 
-</div>
+            <div class="chapter">
 
-<div class="mcq">
+                <h3>5. Solids</h3>
 
-<strong>3. Avogadro's number is:</strong><br>
+                <p>
+                    Study solid states, crystalline structures and
+                    important types of solids.
+                </p>
 
-A. 6.022 × 10<sup>23</sup><br>
-B. 6.022 × 10<sup>10</sup><br>
-C. 3.011 × 10<sup>23</sup><br>
-D. 9.81 × 10<sup>23</sup>
+                <a href="chemistry-solids.html">
+                    Open Topic
+                </a>
 
-<p class="answer">Answer: A</p>
+            </div>
 
-</div>
 
-<div class="mcq">
+            <!-- Unit 6 -->
 
-<strong>4. Moles can be calculated using:</strong><br>
+            <div class="chapter">
 
-A. mass × molar mass<br>
-B. mass ÷ molar mass<br>
-C. molar mass ÷ mass<br>
-D. mass + molar mass
+                <h3>6. Chemical Equilibrium</h3>
 
-<p class="answer">Answer: B</p>
+                <p>
+                    Study reversible reactions, equilibrium,
+                    equilibrium constant and Le Chatelier's principle.
+                </p>
 
-</div>
+                <a href="chemistry-equilibrium.html">
+                    Open Topic
+                </a>
 
-<div class="mcq">
+            </div>
 
-<strong>5. Percentage yield compares actual yield with:</strong><br>
 
-A. Atomic mass<br>
-B. Molecular mass<br>
-C. Theoretical yield<br>
-D. Limiting mass
+            <!-- Unit 7 -->
 
-<p class="answer">Answer: C</p>
+            <div class="chapter">
 
-</div>
+                <h3>7. Reaction Kinetics</h3>
 
-</div>
+                <p>
+                    Learn reaction rates, factors affecting reaction rate,
+                    activation energy and catalysts.
+                </p>
 
+                <a href="chemistry-kinetics.html">
+                    Open Topic
+                </a>
 
-<!-- CHAPTER 2 START -->
+            </div>
 
-<div class="chapter">
 
-<h2>2. Atomic Structure</h2>
+            <!-- Unit 8 -->
 
-<h3>Introduction</h3>
+            <div class="chapter">
 
-<p>
-Atomic structure deals with the arrangement of subatomic particles
-inside an atom and the behavior of electrons around the nucleus.
-</p>
+                <h3>8. Thermochemistry & Energetics</h3>
 
-<div class="important">
-<strong>Important:</strong>
-The three main subatomic particles are protons, neutrons and
-electrons.
-</div>
+                <p>
+                    Study heat changes, enthalpy, exothermic and
+                    endothermic reactions and energy changes.
+                </p>
 
-<h3>Subatomic Particles</h3>
+                <a href="chemistry-thermochemistry.html">
+                    Open Topic
+                </a>
 
-<table>
+            </div>
 
-<tr>
-<th>Particle</th>
-<th>Charge</th>
-<th>Location</th>
-</tr>
 
-<tr>
-<td>Proton</td>
-<td>Positive (+1)</td>
-<td>Nucleus</td>
-</tr>
+            <!-- Unit 9 -->
 
-<tr>
-<td>Neutron</td>
-<td>Neutral (0)</td>
-<td>Nucleus</td>
-</tr>
+            <div class="chapter">
 
-<tr>
-<td>Electron</td>
-<td>Negative (-1)</td>
-<td>Outside nucleus</td>
-</tr>
+                <h3>9. Electrochemistry</h3>
 
-</table>
+                <p>
+                    Study oxidation-reduction reactions, electrochemical
+                    cells and important electrochemical concepts.
+                </p>
 
-<h3>Quantum Numbers</h3>
+                <a href="chemistry-electrochemistry.html">
+                    Open Topic
+                </a>
 
-<p>
-Quantum numbers describe the state and location of an electron in
-an atom.
-</p>
+            </div>
 
-<table>
 
-<tr>
-<th>Quantum Number</th>
-<th>Symbol</th>
-<th>Purpose</th>
-</tr>
+            <!-- Unit 10 -->
 
-<tr>
-<td>Principal</td>
-<td>n</td>
-<td>Energy level</td>
-</tr>
+            <div class="chapter">
 
-<tr>
-<td>Azimuthal</td>
-<td>l</td>
-<td>Subshell</td>
-</tr>
+                <h3>10. Chemical Bonding</h3>
 
-<tr>
-<td>Magnetic</td>
-<td>m</td>
-<td>Orbital orientation</td>
-</tr>
+                <p>
+                    Learn ionic and covalent bonding, molecular shapes,
+                    polarity and hybridization.
+                </p>
 
-<tr>
-<td>Spin</td>
-<td>s</td>
-<td>Electron spin</td>
-</tr>
+                <a href="chemistry-bonding.html">
+                    Open Topic
+                </a>
 
-</table>
+            </div>
 
-<h3>Orbitals</h3>
 
-<ul>
-<li>s orbital is spherical.</li>
-<li>p orbitals have dumbbell-like shapes.</li>
-<li>Electrons occupy orbitals according to their energy.</li>
-</ul>
+            <!-- Unit 11 -->
 
-<h3>Electronic Configuration</h3>
+            <div class="chapter">
 
-<p>
-Electrons are arranged in orbitals according to their energy.
-The Aufbau principle, Pauli exclusion principle and Hund's rule
-help determine electronic configurations.
-</p>
+                <h3>11. S- and P-Block Elements</h3>
 
-<div class="revision">
+                <p>
+                    Study important properties, electronic configurations
+                    and periodic trends of s- and p-block elements.
+                </p>
 
-<strong>⚡ Quick Revision</strong>
+                <a href="chemistry-s-p-block.html">
+                    Open Topic
+                </a>
 
-<ul>
-<li>Protons and neutrons are in the nucleus.</li>
-<li>Electrons occupy orbitals outside the nucleus.</li>
-<li>n = principal quantum number.</li>
-<li>l = azimuthal quantum number.</li>
-<li>m = magnetic quantum number.</li>
-<li>s = spin quantum number.</li>
-</ul>
+            </div>
 
-</div>
 
-</div>
+            <!-- Unit 12 -->
 
+            <div class="chapter">
 
-<!-- CHAPTER 3 -->
+                <h3>12. Transition Elements</h3>
 
-<div class="chapter">
+                <p>
+                    Study transition elements, electronic structure,
+                    oxidation states and important properties.
+                </p>
 
-<h2>3. Gases</h2>
+                <a href="chemistry-transition-elements.html">
+                    Open Topic
+                </a>
 
-<h3>Introduction</h3>
+            </div>
 
-<p>
-Gases have no fixed shape or volume. Their particles are relatively
-far apart and move continuously.
-</p>
 
-<div class="important">
-<strong>Important:</strong>
-The kinetic molecular theory explains the behavior of gases in terms
-of the motion of their particles.
-</div>
+            <!-- Unit 13 -->
 
-<h3>Kinetic Molecular Theory</h3>
+            <div class="chapter">
 
-<ul>
-<li>Gas particles are in continuous random motion.</li>
-<li>Collisions between particles are treated as elastic.</li>
-<li>The particles are separated by relatively large spaces.</li>
-<li>Average kinetic energy increases with temperature.</li>
-</ul>
+                <h3>13. Fundamental Principles of Organic Chemistry</h3>
 
-<h3>Important Gas Laws</h3>
+                <p>
+                    Learn basic organic chemistry, carbon compounds,
+                    nomenclature and functional groups.
+                </p>
 
-<table>
+                <a href="chemistry-organic-principles.html">
+                    Open Topic
+                </a>
 
-<tr>
-<th>Law</th>
-<th>Relationship</th>
-</tr>
+            </div>
 
-<tr>
-<td>Boyle's Law</td>
-<td>P ∝ 1/V</td>
-</tr>
 
-<tr>
-<td>Charles's Law</td>
-<td>V ∝ T</td>
-</tr>
+            <!-- Unit 14 -->
 
-<tr>
-<td>Ideal Gas Equation</td>
-<td>PV = nRT</td>
-</tr>
+            <div class="chapter">
 
-</table>
+                <h3>14. Chemistry of Hydrocarbons</h3>
 
-<div class="revision">
+                <p>
+                    Study alkanes, alkenes, alkynes, aromatic compounds
+                    and important hydrocarbon reactions.
+                </p>
 
-<strong>⚡ Quick Revision</strong>
+                <a href="chemistry-hydrocarbons.html">
+                    Open Topic
+                </a>
 
-<ul>
-<li>Increasing temperature increases average kinetic energy.</li>
-<li>Boyle's law relates pressure and volume.</li>
-<li>Charles's law relates volume and temperature.</li>
-<li>PV = nRT is the ideal gas equation.</li>
-</ul>
+            </div>
 
-</div>
 
-</div>
+            <!-- Unit 15 -->
 
+            <div class="chapter">
 
-<!-- MORE CHAPTERS WILL BE ADDED IN THE SAME CARDS -->
+                <h3>15. Alkyl Halides</h3>
 
-<div class="chapter">
+                <p>
+                    Study alkyl halides, their properties and important
+                    substitution and elimination reactions.
+                </p>
 
-<h2>4. Liquids</h2>
+                <a href="chemistry-alkyl-halides.html">
+                    Open Topic
+                </a>
 
-<h3>Introduction</h3>
+            </div>
 
-<p>
-Liquids have a definite volume but take the shape of their container.
-Their particles are close together but can move past each other.
-</p>
 
-<div class="important">
-<strong>Important:</strong>
-Intermolecular forces strongly affect the properties of liquids.
-</div>
+            <!-- Unit 16 -->
 
-<h3>Important Properties</h3>
+            <div class="chapter">
 
-<ul>
-<li>Vapor pressure</li>
-<li>Boiling point</li>
-<li>Surface tension</li>
-<li>Viscosity</li>
-<li>Hydrogen bonding</li>
-</ul>
+                <h3>16. Alcohols and Phenols</h3>
 
-<div class="revision">
-<strong>⚡ Quick Revision:</strong>
-Stronger intermolecular forces generally produce higher boiling
-points and lower vapor pressures.
-</div>
+                <p>
+                    Learn the structure, properties, preparation and
+                    important reactions of alcohols and phenols.
+                </p>
 
-</div>
+                <a href="chemistry-alcohols-phenols.html">
+                    Open Topic
+                </a>
 
+            </div>
 
-<div class="chapter">
 
-<h2>5. Solids</h2>
+            <!-- Unit 17 -->
 
-<h3>Introduction</h3>
+            <div class="chapter">
 
-<p>
-Solids have a definite shape and volume because their particles are
-closely packed.
-</p>
+                <h3>17. Aldehydes and Ketones</h3>
 
-<h3>Types of Solids</h3>
+                <p>
+                    Study carbonyl compounds, their properties,
+                    preparation and important reactions.
+                </p>
 
-<table>
+                <a href="chemistry-aldehydes-ketones.html">
+                    Open Topic
+                </a>
 
-<tr>
-<th>Type</th>
-<th>Particles</th>
-</tr>
+            </div>
 
-<tr>
-<td>Ionic</td>
-<td>Ions</td>
-</tr>
 
-<tr>
-<td>Molecular</td>
-<td>Molecules</td>
-</tr>
+            <!-- Unit 18 -->
 
-<tr>
-<td>Covalent network</td>
-<td>Atoms connected by covalent bonds</td>
-</tr>
+            <div class="chapter">
 
-</table>
+                <h3>18. Carboxylic Acids</h3>
 
-<div class="revision">
-<strong>⚡ Quick Revision:</strong>
-Solids generally have closely packed particles and strong attractive
-forces.
-</div>
+                <p>
+                    Learn carboxylic acids, their properties, acidity
+                    and important chemical reactions.
+                </p>
+
+                <a href="chemistry-carboxylic-acids.html">
+                    Open Topic
+                </a>
+
+            </div>
+
+
+            <!-- Unit 19 -->
+
+            <div class="chapter">
+
+                <h3>19. Macromolecules</h3>
+
+                <p>
+                    Study important biological macromolecules,
+                    including proteins and related concepts.
+                </p>
+
+                <a href="chemistry-macromolecules.html">
+                    Open Topic
+                </a>
+
+            </div>
+
+
+            <!-- Unit 20 -->
+
+            <div class="chapter new-chapter">
+
+                <span class="new-badge">NEW</span>
+
+                <h3>20. Industrial Chemistry</h3>
+
+                <p>
+                    Study important industrial chemistry concepts,
+                    including adhesives, dyes and polymers.
+                </p>
+
+                <a href="chemistry-industrial.html">
+                    Open Topic
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <section class="intro" style="margin-top:30px;">
+
+        <h2>🚀 StudyHub Chemistry Preparation</h2>
+
+        <p>
+            Our goal is to provide complete MDCAT Chemistry preparation
+            with easy notes, important concepts, formulas and MCQs.
+        </p>
+
+        <p>
+            Open each topic above and study the detailed notes step by step.
+        </p>
+
+    </section>
 
 </div>
 
-
-</div>
 
 <footer>
 
-<p>© 2026 StudyHub - Free MDCAT Study Material</p>
+    <p>© 2026 StudyHub - MDCAT Preparation</p>
 
-<a href="index.html">Home</a>
-<a href="biology.html">Biology</a>
-<a href="chemistry.html">Chemistry</a>
+    <p>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="privacy.html">Privacy</a> |
+        <a href="terms.html">Terms</a>
+    </p>
 
 </footer>
 
