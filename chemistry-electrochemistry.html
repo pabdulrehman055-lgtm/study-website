@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrochemistry - StudyHub</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f7fb;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #0b3d91;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 17px;
+        }
+
+        nav {
+            background: #082f6d;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 25px 15px;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #0b3d91;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .back:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #0b3d91;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #082f6d;
+        }
+
+        .definition {
+            background: #eaf3ff;
+            border-left: 5px solid #0b3d91;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .important {
+            background: #fff7d6;
+            border-left: 5px solid #f0b400;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .formula {
+            background: #e9f8ed;
+            border-left: 5px solid #198754;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-size: 17px;
+        }
+
+        .example {
+            background: #f3ecff;
+            border-left: 5px solid #7040c0;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .mcq {
+            background: #f8fafc;
+            border: 1px solid #dbe3ec;
+            padding: 18px;
+            margin: 15px 0;
+            border-radius: 10px;
+        }
+
+        .mcq p {
+            margin-top: 0;
+            font-weight: bold;
+        }
+
+        .answer {
+            color: #198754;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        th, td {
+            border: 1px solid #ccd6e0;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #eaf3ff;
+            color: #082f6d;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        footer {
+            background: #082f6d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 25px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            section {
+                padding: 18px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>StudyHub 🧪</h1>
+    <p>Free MDCAT Chemistry Notes & Preparation</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="biology.html">Biology</a>
+    <a href="chemistry.html">Chemistry</a>
+    <a href="physics.html">Physics</a>
+    <a href="english.html">English</a>
+    <a href="logical-reasoning.html">Logical Reasoning</a>
+</nav>
+
+<div class="container">
+
+    <a class="back" href="chemistry.html">← Back to Chemistry</a>
+
+    <section>
+        <h2>Unit 9: Electrochemistry</h2>
+
+        <div class="definition">
+            <strong>Definition:</strong>
+            Electrochemistry is the branch of chemistry that deals with the
+            relationship between chemical reactions and electrical energy.
+        </div>
+
+        <p>
+            Electrochemical reactions involve the transfer of electrons.
+            These reactions are commonly called <strong>redox reactions</strong>.
+        </p>
+
+        <div class="important">
+            <strong>MDCAT Focus:</strong>
+            Focus on oxidation, reduction, oxidation numbers, balancing redox
+            reactions, anode, cathode, electrode potential and standard
+            electrode potential.
+        </div>
+    </section>
+
+    <section>
+        <h2>1. Oxidation</h2>
+
+        <div class="definition">
+            <strong>Oxidation</strong> is the loss of electrons by a substance.
+        </div>
+
+        <div class="formula">
+            <strong>Oxidation → Loss of electrons</strong>
+            <br><br>
+            Example:
+            <br>
+            Na → Na<sup>+</sup> + e<sup>−</div>
+        </div>
+
+        <p>
+            In oxidation, the oxidation number of an element generally
+            increases.
+        </p>
+
+        <div class="important">
+            <strong>Memory Trick:</strong>
+            OIL = Oxidation Is Loss of electrons.
+        </div>
+    </section>
+
+    <section>
+        <h2>2. Reduction</h2>
+
+        <div class="definition">
+            <strong>Reduction</strong> is the gain of electrons by a substance.
+        </div>
+
+        <div class="formula">
+            <strong>Reduction → Gain of electrons</strong>
+            <br><br>
+            Example:
+            <br>
+            Cu<sup>2+</sup> + 2e<sup>−</sup> → Cu
+        </div>
+
+        <p>
+            In reduction, the oxidation number of an element generally
+            decreases.
+        </p>
+
+        <div class="important">
+            <strong>Memory Trick:</strong>
+            RIG = Reduction Is Gain of electrons.
+        </div>
+    </section>
+
+    <section>
+        <h2>3. Redox Reaction</h2>
+
+        <div class="definition">
+            A <strong>redox reaction</strong> is a reaction in which oxidation
+            and reduction occur simultaneously.
+        </div>
+
+        <div class="example">
+            <strong>Example:</strong><br><br>
+            Zn + Cu<sup>2+</sup> → Zn<sup>2+</sup> + Cu
+            <br><br>
+            Zn loses electrons → oxidation
+            <br>
+            Cu<sup>2+</sup> gains electrons → reduction
+        </div>
+
+        <p>
+            Oxidation and reduction always occur together because electrons
+            lost by one species are gained by another.
+        </p>
+    </section>
+
+    <section>
+        <h2>4. Oxidation Number</h2>
+
+        <div class="definition">
+            <strong>Oxidation number</strong> is a number assigned to an atom
+            to indicate its apparent charge in a compound or ion according to
+            standard rules.
+        </div>
+
+        <h3>Important Rules</h3>
+
+        <ul>
+            <li>The oxidation number of a free element is 0.</li>
+            <li>The oxidation number of a monoatomic ion equals its charge.</li>
+            <li>Oxygen is usually −2.</li>
+            <li>Hydrogen is usually +1 when bonded to nonmetals.</li>
+            <li>The sum of oxidation numbers in a neutral compound is 0.</li>
+            <li>The sum in a polyatomic ion equals the charge of the ion.</li>
+        </ul>
+
+        <div class="example">
+            <strong>Example: H<sub>2</sub>O</strong><br><br>
+            Hydrogen = +1
+            <br>
+            Oxygen = −2
+            <br><br>
+            2(+1) + (−2) = 0
+        </div>
+    </section>
+
+    <section>
+        <h2>5. Oxidation and Reduction Using Oxidation Number</h2>
+
+        <p>
+            A substance is oxidized when its oxidation number increases.
+        </p>
+
+        <p>
+            A substance is reduced when its oxidation number decreases.
+        </p>
+
+        <table>
+            <tr>
+                <th>Process</th>
+                <th>Electrons</th>
+                <th>Oxidation Number</th>
+            </tr>
+
+            <tr>
+                <td>Oxidation</td>
+                <td>Loss</td>
+                <td>Increases</td>
+            </tr>
+
+            <tr>
+                <td>Reduction</td>
+                <td>Gain</td>
+                <td>Decreases</td>
+            </tr>
+        </table>
+
+        <div class="important">
+            Remember:
+            <strong>Oxidation = loss of electrons + increase in oxidation number.</strong>
+            <br>
+            <strong>Reduction = gain of electrons + decrease in oxidation number.</strong>
+        </div>
+    </section>
+
+    <section>
+        <h2>6. Balancing Redox Reactions</h2>
+
+        <p>
+            Redox equations must be balanced so that atoms and electrical
+            charge are conserved.
+        </p>
+
+        <h3>Basic Half-Reaction Method</h3>
+
+        <ol>
+            <li>Separate oxidation and reduction half-reactions.</li>
+            <li>Balance atoms other than H and O first.</li>
+            <li>Balance oxygen using H<sub>2</sub>O.</li>
+            <li>Balance hydrogen using H<sup>+</sup> in acidic solution.</li>
+            <li>Balance charge using electrons.</li>
+            <li>Multiply half-reactions so electrons cancel.</li>
+            <li>Add the half-reactions and simplify.</li>
+        </ol>
+
+        <div class="important">
+            <strong>MDCAT Tip:</strong>
+            The number of electrons lost must equal the number of electrons
+            gained in a balanced redox reaction.
+        </div>
+    </section>
+
+    <section>
+        <h2>7. Electrochemical Cells</h2>
+
+        <div class="definition">
+            An <strong>electrochemical cell</strong> is a system in which
+            chemical and electrical energy are interconverted.
+        </div>
+
+        <p>
+            Electrochemical cells involve oxidation and reduction at separate
+            electrodes.
+        </p>
+
+        <h3>Anode</h3>
+
+        <p>
+            Oxidation always occurs at the <strong>anode</strong>.
+        </p>
+
+        <h3>Cathode</h3>
+
+        <p>
+            Reduction always occurs at the <strong>cathode</strong>.
+        </p>
+
+        <div class="important">
+            <strong>Very Important:</strong><br>
+            Anode = Oxidation
+            <br>
+            Cathode = Reduction
+        </div>
+    </section>
+
+    <section>
+        <h2>8. Anode and Cathode</h2>
+
+        <table>
+            <tr>
+                <th>Anode</th>
+                <th>Cathode</th>
+            </tr>
+
+            <tr>
+                <td>Oxidation occurs</td>
+                <td>Reduction occurs</td>
+            </tr>
+
+            <tr>
+                <td>Electrons are produced</td>
+                <td>Electrons are consumed</td>
+            </tr>
+
+            <tr>
+                <td>Site of oxidation half-reaction</td>
+                <td>Site of reduction half-reaction</td>
+            </tr>
+        </table>
+
+        <div class="formula">
+            <strong>Remember:</strong><br><br>
+            AN OX = Anode Oxidation
+            <br>
+            RED CAT = Reduction Cathode
+        </div>
+    </section>
+
+    <section>
+        <h2>9. Electrode</h2>
+
+        <div class="definition">
+            An <strong>electrode</strong> is a conductor through which
+            electrons enter or leave an electrochemical system.
+        </div>
+
+        <p>
+            Electrodes provide a surface where oxidation or reduction
+            reactions can occur.
+        </p>
+
+        <p>
+            Common electrode materials include metals and other conducting
+            materials.
+        </p>
+    </section>
+
+    <section>
+        <h2>10. Electrode Potential</h2>
+
+        <div class="definition">
+            <strong>Electrode potential</strong> is the potential difference
+            developed between an electrode and the solution with which it is
+            in contact.
+        </div>
+
+        <p>
+            It is related to the tendency of a species to undergo oxidation
+            or reduction.
+        </p>
+
+        <div class="important">
+            Electrode potentials are commonly measured relative to a reference
+            electrode.
+        </div>
+    </section>
+
+    <section>
+        <h2>11. Standard Electrode Potential</h2>
+
+        <div class="definition">
+            <strong>Standard electrode potential (E°)</strong> is the electrode
+            potential measured under standard conditions relative to the
+            Standard Hydrogen Electrode.
+        </div>
+
+        <p>
+            Standard electrode potentials are usually listed as reduction
+            potentials.
+        </p>
+
+        <div class="formula">
+            <strong>Higher positive E° → Greater tendency for reduction</strong>
+        </div>
+
+        <div class="important">
+            A species with a more positive standard reduction potential has a
+            stronger tendency to accept electrons under standard conditions.
+        </div>
+    </section>
+
+    <section>
+        <h2>12. Standard Hydrogen Electrode (SHE)</h2>
+
+        <div class="definition">
+            The <strong>Standard Hydrogen Electrode (SHE)</strong> is a
+            reference electrode assigned a standard electrode potential of
+            <strong>0.00 V</strong>.
+        </div>
+
+        <p>
+            It is used as a reference for measuring the standard electrode
+            potentials of other half-cells.
+        </p>
+
+        <div class="formula">
+            Standard electrode potential of SHE:
+            <br><br>
+            <strong>E° = 0.00 V</strong>
+        </div>
+
+        <p>
+            The hydrogen electrode involves hydrogen gas, hydrogen ions and
+            an inert platinum electrode.
+        </p>
+    </section>
+
+    <section>
+        <h2>13. Cell Potential</h2>
+
+        <p>
+            The potential difference of an electrochemical cell is related to
+            the electrode potentials of its two half-cells.
+        </p>
+
+        <div class="formula">
+            <strong>E°cell = E°cathode − E°anode</strong>
+        </div>
+
+        <div class="example">
+            <strong>Example:</strong><br><br>
+            If:
+            <br>
+            E°cathode = +0.80 V
+            <br>
+            E°anode = −0.76 V
+            <br><br>
+            E°cell = 0.80 − (−0.76)
+            <br>
+            E°cell = <strong>1.56 V</strong>
+        </div>
+    </section>
+
+    <section>
+        <h2>14. Spontaneous Redox Reactions</h2>
+
+        <p>
+            In a galvanic or voltaic cell, a spontaneous redox reaction can
+            produce electrical energy.
+        </p>
+
+        <div class="important">
+            Under standard conditions, a positive E°cell indicates a
+            thermodynamically favorable spontaneous cell reaction.
+        </div>
+
+        <p>
+            Electrons flow through the external circuit from the electrode
+            where oxidation occurs toward the electrode where reduction occurs.
+        </p>
+    </section>
+
+    <section>
+        <h2>15. Galvanic and Electrolytic Cells</h2>
+
+        <table>
+            <tr>
+                <th>Galvanic / Voltaic Cell</th>
+                <th>Electrolytic Cell</th>
+            </tr>
+
+            <tr>
+                <td>Produces electrical energy from a spontaneous reaction</td>
+                <td>Uses electrical energy to drive a non-spontaneous reaction</td>
+            </tr>
+
+            <tr>
+                <td>Chemical energy → Electrical energy</td>
+                <td>Electrical energy → Chemical energy</td>
+            </tr>
+
+            <tr>
+                <td>Oxidation at anode</td>
+                <td>Oxidation at anode</td>
+            </tr>
+
+            <tr>
+                <td>Reduction at cathode</td>
+                <td>Reduction at cathode</td>
+            </tr>
+        </table>
+
+        <div class="important">
+            <strong>Important:</strong>
+            The definitions of anode and cathode do not change:
+            oxidation is always at the anode and reduction is always at the cathode.
+        </div>
+    </section>
+
+    <section>
+        <h2>16. Quick Revision</h2>
+
+        <ul>
+            <li>Electrochemistry connects chemical reactions with electrical energy.</li>
+            <li>Oxidation is loss of electrons.</li>
+            <li>Reduction is gain of electrons.</li>
+            <li>Oxidation number increases during oxidation.</li>
+            <li>Oxidation number decreases during reduction.</li>
+            <li>Oxidation and reduction occur together in redox reactions.</li>
+            <li>Oxidation always occurs at the anode.</li>
+            <li>Reduction always occurs at the cathode.</li>
+            <li>Electrode potential describes the tendency of an electrode system to undergo electron transfer.</li>
+            <li>Standard electrode potentials are measured relative to SHE.</li>
+            <li>SHE has E° = 0.00 V.</li>
+            <li>E°cell = E°cathode − E°anode.</li>
+            <li>A positive E°cell indicates a favorable spontaneous cell reaction under standard conditions.</li>
+            <li>Galvanic cells convert chemical energy into electrical energy.</li>
+            <li>Electrolytic cells use electrical energy to drive chemical reactions.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>17. MDCAT Practice MCQs</h2>
+
+        <div class="mcq">
+            <p>1. Oxidation is the:</p>
+            A. Gain of electrons<br>
+            B. Loss of electrons<br>
+            C. Gain of protons<br>
+            D. Loss of neutrons
+            <p class="answer">Answer: B. Loss of electrons</p>
+        </div>
+
+        <div class="mcq">
+            <p>2. Reduction involves:</p>
+            A. Loss of electrons<br>
+            B. Gain of electrons<br>
+            C. Loss of protons only<br>
+            D. Gain of neutrons
+            <p class="answer">Answer: B. Gain of electrons</p>
+        </div>
+
+        <div class="mcq">
+            <p>3. Oxidation number increases during:</p>
+            A. Reduction<br>
+            B. Oxidation<br>
+            C. Neutralization only<br>
+            D. Precipitation only
+            <p class="answer">Answer: B. Oxidation</p>
+        </div>
+
+        <div class="mcq">
+            <p>4. Reduction always occurs at the:</p>
+            A. Anode<br>
+            B. Cathode<br>
+            C. Salt bridge<br>
+            D. Wire
+            <p class="answer">Answer: B. Cathode</p>
+        </div>
+
+        <div class="mcq">
+            <p>5. Oxidation always occurs at the:</p>
+            A. Cathode<br>
+            B. Anode<br>
+            C. Electrolyte only<br>
+            D. Salt bridge
+            <p class="answer">Answer: B. Anode</p>
+        </div>
+
+        <div class="mcq">
+            <p>6. The standard electrode potential of SHE is:</p>
+            A. 1.00 V<br>
+            B. −1.00 V<br>
+            C. 0.00 V<br>
+            D. 2.00 V
+            <p class="answer">Answer: C. 0.00 V</p>
+        </div>
+
+        <div class="mcq">
+            <p>7. SHE stands for:</p>
+            A. Standard Heat Energy<br>
+            B. Standard Hydrogen Electrode<br>
+            C. Simple Hydrogen Energy<br>
+            D. Standard Halogen Electrode
+            <p class="answer">Answer: B. Standard Hydrogen Electrode</p>
+        </div>
+
+        <div class="mcq">
+            <p>8. The equation for standard cell potential is:</p>
+            A. E°cell = E°anode + E°cathode<br>
+            B. E°cell = E°cathode − E°anode<br>
+            C. E°cell = E°anode − E°cathode<br>
+            D. E°cell = E°cathode × E°anode
+            <p class="answer">Answer: B. E°cell = E°cathode − E°anode</p>
+        </div>
+
+        <div class="mcq">
+            <p>9. A redox reaction involves:</p>
+            A. Only oxidation<br>
+            B. Only reduction<br>
+            C. Oxidation and reduction<br>
+            D. Only neutralization
+            <p class="answer">Answer: C. Oxidation and reduction</p>
+        </div>
+
+        <div class="mcq">
+            <p>10. OIL represents:</p>
+            A. Oxidation Is Loss<br>
+            B. Oxygen Is Large<br>
+            C. Oxidation Is Low<br>
+            D. Oxygen Increases Level
+            <p class="answer">Answer: A. Oxidation Is Loss</p>
+        </div>
+
+        <div class="mcq">
+            <p>11. RIG represents:</p>
+            A. Reduction Is Gain<br>
+            B. Reaction Is Good<br>
+            C. Reduction Is Greater<br>
+            D. Reactants Increase Generally
+            <p class="answer">Answer: A. Reduction Is Gain</p>
+        </div>
+
+        <div class="mcq">
+            <p>12. A more positive standard reduction potential indicates a greater tendency to:</p>
+            A. Lose electrons<br>
+            B. Gain electrons<br>
+            C. Lose protons<br>
+            D. Produce neutrons
+            <p class="answer">Answer: B. Gain electrons</p>
+        </div>
+
+        <div class="mcq">
+            <p>13. A galvanic cell converts:</p>
+            A. Electrical energy into chemical energy<br>
+            B. Chemical energy into electrical energy<br>
+            C. Heat into mass<br>
+            D. Light into sound
+            <p class="answer">Answer: B. Chemical energy into electrical energy</p>
+        </div>
+
+        <div class="mcq">
+            <p>14. In a balanced redox reaction, electrons lost must equal electrons:</p>
+            A. Produced<br>
+            B. Gained<br>
+            C. Destroyed<br>
+            D. Heated
+            <p class="answer">Answer: B. Gained</p>
+        </div>
+
+        <div class="mcq">
+            <p>15. Which statement is correct?</p>
+            A. Oxidation occurs at cathode<br>
+            B. Reduction occurs at anode<br>
+            C. Oxidation occurs at anode<br>
+            D. Neither occurs at electrodes
+            <p class="answer">Answer: C. Oxidation occurs at anode</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>18. MDCAT Exam Tips</h2>
+
+        <div class="important">
+            <ul>
+                <li>Remember <strong>OIL</strong>: Oxidation Is Loss of electrons.</li>
+                <li>Remember <strong>RIG</strong>: Reduction Is Gain of electrons.</li>
+                <li>Oxidation number increases during oxidation.</li>
+                <li>Oxidation number decreases during reduction.</li>
+                <li>Never confuse anode and cathode.</li>
+                <li><strong>Anode = Oxidation.</strong></li>
+                <li><strong>Cathode = Reduction.</strong></li>
+                <li>Memorize SHE = 0.00 V.</li>
+                <li>Learn <strong>E°cell = E°cathode − E°anode</strong>.</li>
+                <li>Practice oxidation-number questions carefully.</li>
+                <li>In redox balancing, electrons lost must equal electrons gained.</li>
+                <li>Remember that anode/cathode definitions remain the same in galvanic and electrolytic cells.</li>
+            </ul>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 StudyHub - MDCAT Notes & Preparation</p>
+    <p>Learn • Practice • Succeed 🎯</p>
+</footer>
+
+</body>
+</html>
