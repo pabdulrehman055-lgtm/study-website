@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>MDCAT Chemistry - StudyHub</title>
+<title>StudyHub - MDCAT Chemistry</title>
 
 <style>
 *{
@@ -13,17 +13,17 @@
 
 body{
     margin:0;
-    font-family:Arial, sans-serif;
+    font-family:Arial,sans-serif;
     background:#f3f6fa;
-    color:#111;
+    color:#222;
     line-height:1.7;
 }
 
 header{
     background:#0645ad;
     color:white;
-    padding:22px 15px;
     text-align:center;
+    padding:22px 15px;
 }
 
 header h1{
@@ -37,14 +37,14 @@ header p{
 
 nav{
     background:#063b91;
-    padding:12px;
     text-align:center;
+    padding:12px;
 }
 
 nav a{
     color:white;
     text-decoration:none;
-    margin:0 10px;
+    margin:0 9px;
     font-weight:bold;
 }
 
@@ -55,24 +55,42 @@ nav a{
 }
 
 .back{
-    display:inline-block;
-    margin-bottom:20px;
     color:#0645ad;
     font-weight:bold;
     text-decoration:none;
 }
 
-.hero{
+.intro{
     background:white;
-    padding:30px;
+    padding:25px;
     border-radius:15px;
     box-shadow:0 4px 15px rgba(0,0,0,.08);
-    margin-bottom:30px;
+    margin:20px 0;
 }
 
-.hero h2{
+.intro h2{
     color:#1261ff;
+}
+
+/* CHAPTER CARDS */
+
+.chapter{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    margin:25px 0;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.chapter h2{
+    color:#0645ad;
     margin-top:0;
+    border-bottom:2px solid #e5ecf8;
+    padding-bottom:10px;
+}
+
+.chapter h3{
+    color:#1261ff;
 }
 
 .important{
@@ -80,67 +98,7 @@ nav a{
     border-left:5px solid #ffb000;
     padding:15px;
     border-radius:7px;
-    margin-top:20px;
-}
-
-.topic-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
-    margin-bottom:35px;
-}
-
-.topic-card{
-    background:white;
-    padding:22px;
-    border-radius:15px;
-    box-shadow:0 4px 15px rgba(0,0,0,.08);
-}
-
-.topic-card h3{
-    color:#0645ad;
-    margin-top:0;
-}
-
-.topic-card p{
-    color:#444;
-}
-
-.topic-card a{
-    display:inline-block;
-    background:#0645ad;
-    color:white;
-    text-decoration:none;
-    padding:9px 16px;
-    border-radius:5px;
-    margin-top:10px;
-}
-
-.new{
-    display:inline-block;
-    background:#129447;
-    color:white;
-    padding:3px 10px;
-    border-radius:15px;
-    font-size:13px;
-    font-weight:bold;
-    margin-bottom:8px;
-}
-
-.section{
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 4px 15px rgba(0,0,0,.08);
-    margin-bottom:25px;
-}
-
-.section h2{
-    color:#1261ff;
-}
-
-.section h3{
-    color:#0645ad;
+    margin:18px 0;
 }
 
 .definition{
@@ -148,6 +106,15 @@ nav a{
     border-left:5px solid #1683ff;
     padding:15px;
     border-radius:7px;
+    margin:18px 0;
+}
+
+.revision{
+    background:#eaffef;
+    border-left:5px solid #159447;
+    padding:15px;
+    border-radius:7px;
+    margin-top:18px;
 }
 
 table{
@@ -170,21 +137,14 @@ th{
 .mcq{
     background:#f7f9fc;
     padding:15px;
+    border-left:4px solid #0645ad;
     border-radius:8px;
     margin:15px 0;
-    border-left:4px solid #0645ad;
 }
 
 .answer{
     color:#087d32;
     font-weight:bold;
-}
-
-.revision{
-    background:#eaffef;
-    border-left:5px solid #159447;
-    padding:15px;
-    border-radius:7px;
 }
 
 footer{
@@ -200,20 +160,14 @@ footer a{
     margin:0 8px;
 }
 
-@media(max-width:800px){
-    .topic-grid{
-        grid-template-columns:1fr 1fr;
-    }
-}
-
-@media(max-width:550px){
-    .topic-grid{
-        grid-template-columns:1fr;
-    }
-
+@media(max-width:600px){
     nav a{
         display:inline-block;
         margin:5px;
+    }
+
+    .chapter{
+        padding:18px;
     }
 }
 </style>
@@ -239,1114 +193,466 @@ footer a{
 
 <a class="back" href="index.html">← Back to Home</a>
 
-<div class="hero">
+<div class="intro">
 
-<h2>🧪 MDCAT Chemistry</h2>
+<h2>🧪 MDCAT Chemistry Notes</h2>
 
 <p>
-Welcome to StudyHub Chemistry. Here you can study important
-MDCAT Chemistry concepts, formulas, reactions and practice MCQs
-in one place.
+Complete Chemistry preparation for MDCAT with chapter-wise
+notes, important concepts, formulas and practice MCQs.
 </p>
 
 <div class="important">
 <strong>Important:</strong>
-These Chemistry topics are organized according to the PM&DC MDCAT
-curriculum. Always check the latest official syllabus before the exam.
+Chemistry topics are organized according to the PM&DC MDCAT
+curriculum.
 </div>
 
 </div>
 
 
-<h2 style="color:#111;">🧪 Official MDCAT Chemistry Topics</h2>
+<!-- CHAPTER 1 -->
 
-
-<div class="topic-grid">
-
-<div class="topic-card">
-<span class="new">NEW</span>
-<h3>1. Fundamentals of Chemistry</h3>
-<p>Moles, Avogadro's number, stoichiometry, limiting reactants and yield.</p>
-<a href="#unit1">Open Topic</a>
-</div>
-
-<div class="topic-card">
-<h3>2. Atomic Structure</h3>
-<p>Quantum theory, orbitals, hydrogen spectrum and electronic configuration.</p>
-<a href="#unit2">Open Topic</a>
-</div>
-
-<div class="topic-card">
-<h3>3. Gases</h3>
-<p>Kinetic molecular theory and important properties of gases.</p>
-<a href="#unit3">Open Topic</a>
-</div>
-
-<div class="topic-card">
-<h3>4. Liquids</h3>
-<p>Properties of liquids, vapor pressure, boiling point and hydrogen bonding.</p>
-<a href="#unit4">Open Topic</a>
-</div>
-
-<div class="topic-card">
-<h3>5. Solids</h3>
-<p>Crystalline, ionic and molecular solids.</p>
-<a href="#unit5">Open Topic</a>
-</div>
-
-<div class="topic-card">
-<h3>6. Chemical Equilibrium</h3>
-<p>Reversible reactions, equilibrium constant and Le Chatelier's principle.</p>
-<a href="#unit6">Open Topic</a>
-</div>
-
-<div class="topic-card">
-<h3>7. Reaction Kinetics</h3>
-<p>Reaction rates, factors affecting rate and activation energy.</p>
-<a href="#unit7">Open Topic</a>
-</div>
-
-<div class="topic-card">
-<h3>8. Thermochemistry & Energetics</h3>
-<p>Heat changes, enthalpy and energy changes in chemical reactions.</p>
-<a href="#unit8">Open Topic</a>
-</div>
-
-<div class="topic-card">
-<h3>9. Electrochemistry</h3>
-<p>Redox reactions, electrochemical cells and electrode concepts.</p>
-<a href="#unit9">Open Topic</a>
-</div>
-
-<div class="topic-card">
-<h3>10. Chemical Bonding</h3>
-<p>Ionic, covalent bonding, molecular shapes and hybridization.</p>
-<a href="#unit10">Open Topic</a>
-</div>
-
-<div class="topic-card">
-<h3>11. S- & P-Block Elements</h3>
-<p>Important properties and trends of s- and p-block elements.</p>
-<a href="#unit11">Open Topic</a>
-</div>
-
-<div class="topic-card">
-<h3>12. Transition Elements</h3>
-<p>Properties and electronic structure of transition elements.</p>
-<a href="#unit12">Open Topic</a>
-</div>
-
-<div class="topic-card">
-<h3>13. Fundamental Organic Chemistry</h3>
-<p>Organic compounds, functional groups and basic principles.</p>
-<a href="#unit13">Open Topic</a>
-</div>
-
-<div class="topic-card">
-<h3>14. Hydrocarbons</h3>
-<p>Alkanes, alkenes, alkynes and benzene.</p>
-<a href="#unit14">Open Topic</a>
-</div>
-
-<div class="topic-card">
-<h3>15. Alkyl Halides</h3>
-<p>Nomenclature, substitution and elimination reactions.</p>
-<a href="#unit15">Open Topic</a>
-</div>
-
-<div class="topic-card">
-<h3>16. Alcohols & Phenols</h3>
-<p>Structure, nomenclature, properties and reactions.</p>
-<a href="#unit16">Open Topic</a>
-</div>
-
-<div class="topic-card">
-<h3>17. Aldehydes & Ketones</h3>
-<p>Carbonyl compounds, preparation and important reactions.</p>
-<a href="#unit17">Open Topic</a>
-</div>
-
-<div class="topic-card">
-<h3>18. Carboxylic Acids</h3>
-<p>Structure, acidity, reactions and acid derivatives.</p>
-<a href="#unit18">Open Topic</a>
-</div>
-
-<div class="topic-card">
-<h3>19. Macromolecules</h3>
-<p>Proteins, amino acids and enzymes as biological catalysts.</p>
-<a href="#unit19">Open Topic</a>
-</div>
-
-<div class="topic-card">
-<span class="new">NEW</span>
-<h3>20. Industrial Chemistry</h3>
-<p>Adhesives, dyes and important polymers.</p>
-<a href="#unit20">Open Topic</a>
-</div>
-
-</div>
-
-
-<!-- UNIT 1 -->
-
-<div class="section" id="unit1">
+<div class="chapter">
 
 <h2>1. Fundamentals of Chemistry</h2>
 
+<h3>What is Chemistry?</h3>
+
 <p>
-Fundamental chemistry provides the basic calculations needed to
-understand chemical reactions.
+Chemistry is the branch of science that deals with the composition,
+structure, properties and transformations of matter.
+</p>
+
+<div class="definition">
+<strong>Definition:</strong>
+Matter is anything that has mass and occupies space.
+</div>
+
+<h3>Mole Concept</h3>
+
+<p>
+The mole is the SI unit used to express the amount of a substance.
+One mole contains approximately
+<strong>6.022 × 10<sup>23</sup></strong> particles.
 </p>
 
 <div class="important">
 <strong>Important:</strong>
-A balanced chemical equation gives the mole ratio between reactants
-and products.
+6.022 × 10<sup>23</sup> is called Avogadro's number.
 </div>
 
-<h3>1.1 Mole Concept</h3>
-
-<p>
-A mole is the amount of substance containing approximately
-6.022 × 10<sup>23</sup> representative particles.
-</p>
-
-<div class="definition">
-<strong>Avogadro's Number:</strong>
-6.022 × 10<sup>23</sup> particles per mole.
-</div>
-
-<h3>1.2 Important Formula</h3>
+<h3>Important Formulae</h3>
 
 <table>
+
 <tr>
 <th>Quantity</th>
 <th>Formula</th>
 </tr>
+
 <tr>
-<td>Moles</td>
+<td>Number of moles</td>
 <td>n = mass / molar mass</td>
 </tr>
+
 <tr>
-<td>Particles</td>
-<td>particles = moles × 6.022 × 10<sup>23</sup></td>
+<td>Number of particles</td>
+<td>Particles = moles × 6.022 × 10<sup>23</sup></td>
 </tr>
+
 <tr>
-<td>Percentage Yield</td>
+<td>Percentage yield</td>
 <td>(Actual yield / Theoretical yield) × 100</td>
 </tr>
+
 </table>
 
-<h3>1.3 Limiting Reactant</h3>
+<h3>Limiting Reactant</h3>
 
 <p>
 The limiting reactant is the reactant that is completely consumed
-first and limits the amount of product formed.
+first in a chemical reaction. It determines the maximum amount of
+product that can be formed.
 </p>
 
-<h3>Quick Revision</h3>
+<h3>Excess Reactant</h3>
+
+<p>
+The reactant that remains after the limiting reactant has been
+completely consumed is called the excess reactant.
+</p>
+
+<h3>Percentage Yield</h3>
+
+<p>
+The actual amount of product obtained in an experiment may be less
+than the theoretical amount. Percentage yield compares these two
+values.
+</p>
 
 <div class="revision">
+
+<strong>⚡ Quick Revision</strong>
+
 <ul>
 <li>1 mole = 6.022 × 10<sup>23</sup> particles.</li>
-<li>Use balanced equations for mole ratios.</li>
+<li>Moles = mass ÷ molar mass.</li>
 <li>Limiting reactant controls product formation.</li>
-<li>Percentage yield = actual/theoretical × 100.</li>
+<li>Excess reactant remains after the reaction.</li>
+<li>Percentage yield = actual yield ÷ theoretical yield × 100.</li>
 </ul>
+
+</div>
+
+<h3>📝 Practice MCQs</h3>
+
+<div class="mcq">
+
+<strong>1. One mole contains approximately:</strong><br>
+
+A. 6.022 × 10<sup>20</sup><br>
+B. 6.022 × 10<sup>23</sup><br>
+C. 3.011 × 10<sup>23</sup><br>
+D. 9.8 × 10<sup>23</sup>
+
+<p class="answer">Answer: B</p>
+
+</div>
+
+<div class="mcq">
+
+<strong>2. The reactant that is consumed first is called:</strong><br>
+
+A. Excess reactant<br>
+B. Product<br>
+C. Limiting reactant<br>
+D. Catalyst
+
+<p class="answer">Answer: C</p>
+
+</div>
+
+<div class="mcq">
+
+<strong>3. Avogadro's number is:</strong><br>
+
+A. 6.022 × 10<sup>23</sup><br>
+B. 6.022 × 10<sup>10</sup><br>
+C. 3.011 × 10<sup>23</sup><br>
+D. 9.81 × 10<sup>23</sup>
+
+<p class="answer">Answer: A</p>
+
+</div>
+
+<div class="mcq">
+
+<strong>4. Moles can be calculated using:</strong><br>
+
+A. mass × molar mass<br>
+B. mass ÷ molar mass<br>
+C. molar mass ÷ mass<br>
+D. mass + molar mass
+
+<p class="answer">Answer: B</p>
+
+</div>
+
+<div class="mcq">
+
+<strong>5. Percentage yield compares actual yield with:</strong><br>
+
+A. Atomic mass<br>
+B. Molecular mass<br>
+C. Theoretical yield<br>
+D. Limiting mass
+
+<p class="answer">Answer: C</p>
+
 </div>
 
 </div>
 
 
-<!-- UNIT 2 -->
+<!-- CHAPTER 2 START -->
 
-<div class="section" id="unit2">
+<div class="chapter">
 
 <h2>2. Atomic Structure</h2>
 
+<h3>Introduction</h3>
+
 <p>
-Atomic structure explains the arrangement of subatomic particles and
-the behavior of electrons in atoms.
+Atomic structure deals with the arrangement of subatomic particles
+inside an atom and the behavior of electrons around the nucleus.
 </p>
 
 <div class="important">
 <strong>Important:</strong>
-For electronic configuration, remember the Aufbau principle,
-Pauli exclusion principle and Hund's rule.
+The three main subatomic particles are protons, neutrons and
+electrons.
 </div>
 
-<h3>2.1 Quantum Numbers</h3>
+<h3>Subatomic Particles</h3>
+
+<table>
+
+<tr>
+<th>Particle</th>
+<th>Charge</th>
+<th>Location</th>
+</tr>
+
+<tr>
+<td>Proton</td>
+<td>Positive (+1)</td>
+<td>Nucleus</td>
+</tr>
+
+<tr>
+<td>Neutron</td>
+<td>Neutral (0)</td>
+<td>Nucleus</td>
+</tr>
+
+<tr>
+<td>Electron</td>
+<td>Negative (-1)</td>
+<td>Outside nucleus</td>
+</tr>
+
+</table>
+
+<h3>Quantum Numbers</h3>
 
 <p>
-Quantum numbers describe the energy level and location of an electron
-in an atom.
+Quantum numbers describe the state and location of an electron in
+an atom.
 </p>
 
 <table>
+
 <tr>
 <th>Quantum Number</th>
-<th>Meaning</th>
+<th>Symbol</th>
+<th>Purpose</th>
 </tr>
+
 <tr>
+<td>Principal</td>
 <td>n</td>
-<td>Principal energy level</td>
+<td>Energy level</td>
 </tr>
+
 <tr>
+<td>Azimuthal</td>
 <td>l</td>
 <td>Subshell</td>
 </tr>
+
 <tr>
+<td>Magnetic</td>
 <td>m</td>
 <td>Orbital orientation</td>
 </tr>
+
 <tr>
+<td>Spin</td>
 <td>s</td>
 <td>Electron spin</td>
 </tr>
+
 </table>
 
-<h3>2.2 Orbitals</h3>
+<h3>Orbitals</h3>
 
 <ul>
-<li>s orbital is approximately spherical.</li>
+<li>s orbital is spherical.</li>
 <li>p orbitals have dumbbell-like shapes.</li>
-<li>Orbitals are regions where electrons are most likely to be found.</li>
+<li>Electrons occupy orbitals according to their energy.</li>
 </ul>
 
-<h3>2.3 Electronic Configuration</h3>
+<h3>Electronic Configuration</h3>
 
 <p>
-Electrons occupy orbitals according to their energy. The Aufbau
-principle describes filling lower-energy orbitals first.
+Electrons are arranged in orbitals according to their energy.
+The Aufbau principle, Pauli exclusion principle and Hund's rule
+help determine electronic configurations.
 </p>
 
 <div class="revision">
-<strong>Quick Revision:</strong>
-Aufbau → filling order; Pauli → maximum two electrons per orbital
-with opposite spins; Hund → electrons occupy equal-energy orbitals
-singly before pairing.
-</div>
+
+<strong>⚡ Quick Revision</strong>
+
+<ul>
+<li>Protons and neutrons are in the nucleus.</li>
+<li>Electrons occupy orbitals outside the nucleus.</li>
+<li>n = principal quantum number.</li>
+<li>l = azimuthal quantum number.</li>
+<li>m = magnetic quantum number.</li>
+<li>s = spin quantum number.</li>
+</ul>
 
 </div>
 
+</div>
 
-<!-- UNIT 3 -->
 
-<div class="section" id="unit3">
+<!-- CHAPTER 3 -->
+
+<div class="chapter">
 
 <h2>3. Gases</h2>
 
+<h3>Introduction</h3>
+
 <p>
-Gases have particles that are far apart and move continuously.
+Gases have no fixed shape or volume. Their particles are relatively
+far apart and move continuously.
 </p>
 
 <div class="important">
 <strong>Important:</strong>
-According to kinetic molecular theory, gas particles are in continuous
-random motion.
+The kinetic molecular theory explains the behavior of gases in terms
+of the motion of their particles.
 </div>
 
-<h3>3.1 Kinetic Molecular Theory</h3>
+<h3>Kinetic Molecular Theory</h3>
 
 <ul>
-<li>Gas particles are in continuous motion.</li>
-<li>Collisions are treated as elastic.</li>
-<li>Particles are separated by relatively large spaces.</li>
-<li>Average kinetic energy depends on temperature.</li>
+<li>Gas particles are in continuous random motion.</li>
+<li>Collisions between particles are treated as elastic.</li>
+<li>The particles are separated by relatively large spaces.</li>
+<li>Average kinetic energy increases with temperature.</li>
 </ul>
 
-<h3>3.2 Gas Laws</h3>
+<h3>Important Gas Laws</h3>
 
 <table>
+
 <tr>
 <th>Law</th>
 <th>Relationship</th>
 </tr>
+
 <tr>
 <td>Boyle's Law</td>
-<td>P ∝ 1/V at constant temperature</td>
+<td>P ∝ 1/V</td>
 </tr>
+
 <tr>
 <td>Charles's Law</td>
-<td>V ∝ T at constant pressure</td>
+<td>V ∝ T</td>
 </tr>
+
 <tr>
 <td>Ideal Gas Equation</td>
 <td>PV = nRT</td>
 </tr>
+
 </table>
 
 <div class="revision">
-<strong>Quick Revision:</strong>
-Increasing temperature increases the average kinetic energy of gas
-particles.
-</div>
+
+<strong>⚡ Quick Revision</strong>
+
+<ul>
+<li>Increasing temperature increases average kinetic energy.</li>
+<li>Boyle's law relates pressure and volume.</li>
+<li>Charles's law relates volume and temperature.</li>
+<li>PV = nRT is the ideal gas equation.</li>
+</ul>
 
 </div>
 
+</div>
 
-<!-- UNIT 4 -->
 
-<div class="section" id="unit4">
+<!-- MORE CHAPTERS WILL BE ADDED IN THE SAME CARDS -->
+
+<div class="chapter">
 
 <h2>4. Liquids</h2>
 
+<h3>Introduction</h3>
+
 <p>
-Liquids have particles that are close together but can move past one
-another.
+Liquids have a definite volume but take the shape of their container.
+Their particles are close together but can move past each other.
 </p>
+
+<div class="important">
+<strong>Important:</strong>
+Intermolecular forces strongly affect the properties of liquids.
+</div>
 
 <h3>Important Properties</h3>
 
 <ul>
-<li>Evaporation</li>
 <li>Vapor pressure</li>
 <li>Boiling point</li>
-<li>Intermolecular forces</li>
+<li>Surface tension</li>
+<li>Viscosity</li>
 <li>Hydrogen bonding</li>
 </ul>
 
-<div class="important">
-<strong>Important:</strong>
-Hydrogen bonding is especially important in H<sub>2</sub>O, NH<sub>3</sub>
-and HF.
+<div class="revision">
+<strong>⚡ Quick Revision:</strong>
+Stronger intermolecular forces generally produce higher boiling
+points and lower vapor pressures.
 </div>
-
-<h3>Anomalous Behavior of Water</h3>
-
-<p>
-Water has maximum density at approximately 4°C. This unusual behavior
-is important in understanding water's physical properties.
-</p>
 
 </div>
 
 
-<!-- UNIT 5 -->
-
-<div class="section" id="unit5">
+<div class="chapter">
 
 <h2>5. Solids</h2>
 
-<p>
-Solids have closely packed particles and generally possess a definite
-shape and volume.
-</p>
-
-<h3>Crystalline Solids</h3>
+<h3>Introduction</h3>
 
 <p>
-Crystalline solids have particles arranged in an ordered repeating
-pattern.
+Solids have a definite shape and volume because their particles are
+closely packed.
 </p>
+
+<h3>Types of Solids</h3>
 
 <table>
+
 <tr>
 <th>Type</th>
-<th>Main Feature</th>
+<th>Particles</th>
 </tr>
-<tr>
-<td>Ionic solid</td>
-<td>Positive and negative ions</td>
-</tr>
-<tr>
-<td>Molecular solid</td>
-<td>Molecules held by intermolecular forces</td>
-</tr>
-</table>
 
-</div>
-
-
-<!-- UNIT 6 -->
-
-<div class="section" id="unit6">
-
-<h2>6. Chemical Equilibrium</h2>
-
-<p>
-Chemical equilibrium occurs in a reversible reaction when the forward
-and reverse reaction rates become equal.
-</p>
-
-<div class="important">
-<strong>Important:</strong>
-At equilibrium, reactions do not stop. Both forward and reverse
-reactions continue at equal rates.
-</div>
-
-<h3>Le Chatelier's Principle</h3>
-
-<p>
-When a system at equilibrium is disturbed, it shifts in a direction
-that tends to oppose the disturbance.
-</p>
-
-<h3>Equilibrium Constant</h3>
-
-<p>
-For a general reaction, equilibrium expressions relate the
-concentrations of products and reactants.
-</p>
-
-<div class="revision">
-<strong>Quick Revision:</strong>
-Equal forward and reverse rates = dynamic equilibrium.
-</div>
-
-</div>
-
-
-<!-- UNIT 7 -->
-
-<div class="section" id="unit7">
-
-<h2>7. Reaction Kinetics</h2>
-
-<p>
-Chemical kinetics is the study of the rates of chemical reactions.
-</p>
-
-<h3>Factors Affecting Reaction Rate</h3>
-
-<ul>
-<li>Concentration</li>
-<li>Temperature</li>
-<li>Surface area</li>
-<li>Catalyst</li>
-<li>Nature of reactants</li>
-</ul>
-
-<div class="important">
-<strong>Important:</strong>
-A catalyst provides an alternative pathway with lower activation
-energy.
-</div>
-
-<h3>Activation Energy</h3>
-
-<p>
-Activation energy is the minimum energy required for a reaction to
-occur.
-</p>
-
-</div>
-
-
-<!-- UNIT 8 -->
-
-<div class="section" id="unit8">
-
-<h2>8. Thermochemistry and Energetics</h2>
-
-<p>
-Thermochemistry deals with heat and energy changes during chemical
-reactions.
-</p>
-
-<table>
-<tr>
-<th>Reaction</th>
-<th>Energy Change</th>
-</tr>
-<tr>
-<td>Exothermic</td>
-<td>Releases heat</td>
-</tr>
-<tr>
-<td>Endothermic</td>
-<td>Absorbs heat</td>
-</tr>
-</table>
-
-<div class="important">
-<strong>Important:</strong>
-Exothermic reactions generally have a negative enthalpy change,
-while endothermic reactions have a positive enthalpy change.
-</div>
-
-<h3>Hess's Law</h3>
-
-<p>
-The overall enthalpy change of a reaction is independent of the route
-taken between initial and final states.
-</p>
-
-</div>
-
-
-<!-- UNIT 9 -->
-
-<div class="section" id="unit9">
-
-<h2>9. Electrochemistry</h2>
-
-<p>
-Electrochemistry studies the relationship between chemical reactions
-and electrical energy.
-</p>
-
-<h3>Redox Reactions</h3>
-
-<ul>
-<li>Oxidation involves loss of electrons.</li>
-<li>Reduction involves gain of electrons.</li>
-<li>Oxidation and reduction occur together.</li>
-</ul>
-
-<div class="important">
-<strong>Remember:</strong>
-OIL RIG = Oxidation Is Loss, Reduction Is Gain of electrons.
-</div>
-
-</div>
-
-
-<!-- UNIT 10 -->
-
-<div class="section" id="unit10">
-
-<h2>10. Chemical Bonding</h2>
-
-<p>
-Chemical bonds hold atoms together in molecules and compounds.
-</p>
-
-<table>
-<tr>
-<th>Bond</th>
-<th>Description</th>
-</tr>
 <tr>
 <td>Ionic</td>
-<td>Transfer of electrons</td>
+<td>Ions</td>
 </tr>
+
 <tr>
-<td>Covalent</td>
-<td>Sharing of electrons</td>
-<tr>
-<td>Coordinate covalent</td>
-<td>Shared pair donated by one atom</td>
+<td>Molecular</td>
+<td>Molecules</td>
 </tr>
+
+<tr>
+<td>Covalent network</td>
+<td>Atoms connected by covalent bonds</td>
+</tr>
+
 </table>
-
-<h3>Hybridization</h3>
-
-<p>
-Hybridization describes the mixing of atomic orbitals to form
-hybrid orbitals used in bonding.
-</p>
 
 <div class="revision">
-<strong>Quick Revision:</strong>
-Understand bond type, molecular shape, polarity and hybridization
-for MDCAT questions.
+<strong>⚡ Quick Revision:</strong>
+Solids generally have closely packed particles and strong attractive
+forces.
 </div>
 
 </div>
 
 
-<!-- UNIT 11 -->
-
-<div class="section" id="unit11">
-
-<h2>11. S- and P-Block Elements</h2>
-
-<p>
-The periodic table is divided into blocks according to the subshell
-being filled by the outermost electrons.
-</p>
-
-<h3>Periodic Trends</h3>
-
-<ul>
-<li>Atomic radius</li>
-<li>Ionization energy</li>
-<li>Electronegativity</li>
-<li>Electron affinity</li>
-</ul>
-
-<div class="important">
-<strong>Important:</strong>
-Periodic trends are frequently useful for comparing elements.
 </div>
-
-</div>
-
-
-<!-- UNIT 12 -->
-
-<div class="section" id="unit12">
-
-<h2>12. Transition Elements</h2>
-
-<p>
-Transition elements are associated with partially filled d orbitals
-in atoms or ions.
-</p>
-
-<h3>Important Properties</h3>
-
-<ul>
-<li>Variable oxidation states</li>
-<li>Formation of colored compounds</li>
-<li>Complex formation</li>
-<li>Catalytic activity</li>
-</ul>
-
-</div>
-
-
-<!-- UNIT 13 -->
-
-<div class="section" id="unit13">
-
-<h2>13. Fundamental Principles of Organic Chemistry</h2>
-
-<p>
-Organic chemistry is mainly the study of carbon-containing compounds.
-</p>
-
-<h3>Functional Groups</h3>
-
-<table>
-<tr>
-<th>Functional Group</th>
-<th>Example</th>
-</tr>
-<tr>
-<td>Alcohol</td>
-<td>–OH</td>
-</tr>
-<tr>
-<td>Aldehyde</td>
-<td>–CHO</td>
-</tr>
-<tr>
-<td>Ketone</td>
-<td>&gt;C=O</td>
-</tr>
-<tr>
-<td>Carboxylic acid</td>
-<td>–COOH</td>
-</tr>
-</table>
-
-<div class="important">
-<strong>Important:</strong>
-Learn functional groups carefully because they help identify organic
-compounds and predict their reactions.
-</div>
-
-</div>
-
-
-<!-- UNIT 14 -->
-
-<div class="section" id="unit14">
-
-<h2>14. Chemistry of Hydrocarbons</h2>
-
-<p>
-Hydrocarbons contain only carbon and hydrogen.
-</p>
-
-<table>
-<tr>
-<th>Class</th>
-<th>Bond</th>
-</tr>
-<tr>
-<td>Alkanes</td>
-<td>Single bonds</td>
-</tr>
-<tr>
-<td>Alkenes</td>
-<td>At least one C=C</td>
-</tr>
-<tr>
-<td>Alkynes</td>
-<td>At least one C≡C</td>
-</tr>
-<tr>
-<td>Benzene</td>
-<td>Aromatic ring</td>
-</tr>
-</table>
-
-<h3>Benzene</h3>
-
-<p>
-Benzene is an aromatic compound with a six-carbon ring and delocalized
-electrons.
-</p>
-
-</div>
-
-
-<!-- UNIT 15 -->
-
-<div class="section" id="unit15">
-
-<h2>15. Alkyl Halides</h2>
-
-<p>
-Alkyl halides contain a carbon-halogen bond.
-</p>
-
-<h3>Important Reactions</h3>
-
-<ul>
-<li>Nucleophilic substitution</li>
-<li>Elimination</li>
-</ul>
-
-<div class="important">
-<strong>Important:</strong>
-Know the difference between substitution and elimination reactions.
-</div>
-
-</div>
-
-
-<!-- UNIT 16 -->
-
-<div class="section" id="unit16">
-
-<h2>16. Alcohols and Phenols</h2>
-
-<p>
-Alcohols contain a hydroxyl group attached to a saturated carbon,
-while phenols have the hydroxyl group attached directly to an aromatic
-ring.
-</p>
-
-<h3>Important Concepts</h3>
-
-<ul>
-<li>Nomenclature</li>
-<li>Structure</li>
-<li>Physical properties</li>
-<li>Reactivity</li>
-<li>Preparation of ethers and esters</li>
-</ul>
-
-<div class="important">
-<strong>Important:</strong>
-Phenol and alcohol both contain –OH, but their chemical behavior is
-not identical.
-</div>
-
-</div>
-
-
-<!-- UNIT 17 -->
-
-<div class="section" id="unit17">
-
-<h2>17. Aldehydes and Ketones</h2>
-
-<p>
-Aldehydes and ketones contain the carbonyl group, C=O.
-</p>
-
-<table>
-<tr>
-<th>Compound</th>
-<th>Carbonyl Position</th>
-</tr>
-<tr>
-<td>Aldehyde</td>
-<td>At the end of carbon chain</td>
-</tr>
-<tr>
-<td>Ketone</td>
-<td>Within carbon chain</td>
-</tr>
-</table>
-
-<h3>Important Reactions</h3>
-
-<ul>
-<li>Nucleophilic addition</li>
-<li>Reduction</li>
-<li>Oxidation</li>
-</ul>
-
-<div class="important">
-<strong>Remember:</strong>
-Aldehydes are generally more easily oxidized than ketones.
-</div>
-
-</div>
-
-
-<!-- UNIT 18 -->
-
-<div class="section" id="unit18">
-
-<h2>18. Carboxylic Acids</h2>
-
-<p>
-Carboxylic acids contain the carboxyl group –COOH.
-</p>
-
-<h3>Properties</h3>
-
-<ul>
-<li>Acidic character</li>
-<li>Hydrogen bonding</li>
-<li>Characteristic reactions with bases</li>
-<li>Ester formation</li>
-</ul>
-
-<h3>Important Derivatives</h3>
-
-<ul>
-<li>Acyl halides</li>
-<li>Acid anhydrides</li>
-<li>Esters</li>
-</ul>
-
-<div class="important">
-<strong>Important:</strong>
-Esterification commonly involves a carboxylic acid and an alcohol.
-</div>
-
-</div>
-
-
-<!-- UNIT 19 -->
-
-<div class="section" id="unit19">
-
-<h2>19. Macromolecules</h2>
-
-<p>
-Macromolecules are large molecules with important biological
-functions.
-</p>
-
-<h3>Proteins</h3>
-
-<p>
-Proteins are made from amino acids joined by peptide bonds.
-</p>
-
-<div class="definition">
-<strong>Peptide Bond:</strong>
-The bond formed between amino acids during protein formation.
-</div>
-
-<h3>Enzymes</h3>
-
-<p>
-Enzymes act as biological catalysts and increase the rate of
-biochemical reactions.
-</p>
-
-<div class="important">
-<strong>Important:</strong>
-Protein structure is closely related to protein function.
-</div>
-
-</div>
-
-
-<!-- UNIT 20 -->
-
-<div class="section" id="unit20">
-
-<h2>20. Industrial Chemistry</h2>
-
-<p>
-Industrial chemistry applies chemical principles to large-scale
-production and useful materials.
-</p>
-
-<h3>Adhesives</h3>
-
-<p>
-Adhesives are substances used to join materials together.
-Different types are used for different applications.
-</p>
-
-<h3>Dyes</h3>
-
-<p>
-Dyes are colored substances used to impart color to materials.
-</p>
-
-<h3>Polymers</h3>
-
-<table>
-<tr>
-<th>Type</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>Addition polymer</td>
-<td>Forms through addition of monomers without eliminating small molecules.</td>
-</tr>
-<tr>
-<td>Condensation polymer</td>
-<td>Forms with elimination of small molecules in the polymerization process.</td>
-</tr>
-</table>
-
-<div class="important">
-<strong>Important:</strong>
-Know the difference between addition and condensation polymers.
-</div>
-
-</div>
-
-
-<!-- PRACTICE -->
-
-<div class="section">
-
-<h2>📝 Chemistry Practice MCQs</h2>
-
-<div class="mcq">
-<strong>1. One mole contains approximately:</strong><br>
-A. 6.022 × 10<sup>20</sup><br>
-B. 6.022 × 10<sup>23</sup><br>
-C. 3.011 × 10<sup>10</sup><br>
-D. 9.8 × 10<sup>23</sup>
-<p class="answer">Answer: B</p>
-</div>
-
-<div class="mcq">
-<strong>2. The limiting reactant determines:</strong><br>
-A. Atomic number<br>
-B. Maximum product formed<br>
-C. Temperature only<br>
-D. Pressure only
-<p class="answer">Answer: B</p>
-</div>
-
-<div class="mcq">
-<strong>3. The shape of an s orbital is:</strong><br>
-A. Dumbbell<br>
-B. Spherical<br>
-C. Linear<br>
-D. Square
-<p class="answer">Answer: B</p>
-</div>
-
-<div class="mcq">
-<strong>4. Which law relates pressure and volume at constant temperature?</strong><br>
-A. Charles's law<br>
-B. Boyle's law<br>
-C. Hess's law<br>
-D. Faraday's law
-<p class="answer">Answer: B</p>
-</div>
-
-<div class="mcq">
-<strong>5. A catalyst generally:</strong><br>
-A. Increases activation energy<br>
-B. Decreases activation energy<br>
-C. Stops a reaction<br>
-D. Changes the equilibrium constant
-<p class="answer">Answer: B</p>
-</div>
-
-<div class="mcq">
-<strong>6. Oxidation involves:</strong><br>
-A. Gain of electrons<br>
-B. Loss of electrons<br>
-C. Gain of protons only<br>
-D. Loss of neutrons
-<p class="answer">Answer: B</p>
-</div>
-
-<div class="mcq">
-<strong>7. A bond formed by transfer of electrons is:</strong><br>
-A. Covalent<br>
-B. Ionic<br>
-C. Hydrogen<br>
-D. Metallic
-<p class="answer">Answer: B</p>
-</div>
-
-<div class="mcq">
-<strong>8. Hydrocarbons contain:</strong><br>
-A. C and O<br>
-B. C and H<br>
-C. H and O<br>
-D. C and N
-<p class="answer">Answer: B</p>
-</div>
-
-<div class="mcq">
-<strong>9. The functional group of carboxylic acids is:</strong><br>
-A. –OH<br>
-B. –CHO<br>
-C. –COOH<br>
-D. –NH<sub>2</sub>
-<p class="answer">Answer: C</p>
-</div>
-
-<div class="mcq">
-<strong>10. Amino acids in proteins are joined by:</strong><br>
-A. Ionic bonds<br>
-B. Peptide bonds<br>
-C. Metallic bonds<br>
-D. Hydrogen bonds only
-<p class="answer">Answer: B</p>
-</div>
-
-</div>
-
-
-<div class="section">
-
-<h2>⚡ Quick Revision</h2>
-
-<div class="revision">
-
-<ul>
-<li>Mole → 6.022 × 10<sup>23</sup> particles.</li>
-<li>Limiting reactant → controls maximum product.</li>
-<li>Aufbau, Pauli and Hund → electronic configuration.</li>
-<li>Boyle's law → pressure-volume relationship.</li>
-<li>Equilibrium → forward rate = reverse rate.</li>
-<li>Catalyst → lowers activation energy.</li>
-<li>Oxidation → loss of electrons.</li>
-<li>Ionic bond → electron transfer.</li>
-<li>Covalent bond → electron sharing.</li>
-<li>Hydrocarbons → carbon + hydrogen.</li>
-<li>Carboxylic acid → –COOH.</li>
-<li>Protein → amino acids + peptide bonds.</li>
-<li>Enzyme → biological catalyst.</li>
-<li>Industrial chemistry → practical large-scale chemical applications.</li>
-</ul>
-
-</div>
-
-</div>
-
-
-<div class="section">
-
-<h2>🎯 MDCAT Chemistry Exam Tips</h2>
-
-<ul>
-<li>Formulas ko sirf yaad nahi, apply bhi karo.</li>
-<li>Organic chemistry mein functional groups identify karna seekho.</li>
-<li>Periodic trends ko compare karne ki practice karo.</li>
-<li>Reaction conditions aur products par focus karo.</li>
-<li>Har chapter ke MCQs practice karo.</li>
-<li>Numerical questions ke liye calculations regularly practice karo.</li>
-</ul>
-
-</div>
-
-</div>
-
 
 <footer>
 
@@ -1355,8 +661,6 @@ D. Hydrogen bonds only
 <a href="index.html">Home</a>
 <a href="biology.html">Biology</a>
 <a href="chemistry.html">Chemistry</a>
-<a href="physics.html">Physics</a>
-<a href="english.html">English</a>
 
 </footer>
 
