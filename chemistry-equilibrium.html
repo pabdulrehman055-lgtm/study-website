@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chemical Equilibrium - StudyHub</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #0b3d91;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        header p {
+            margin: 8px 0 0;
+            font-size: 17px;
+        }
+
+        nav {
+            background: #082f6d;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 25px 15px;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #0b3d91;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .back:hover {
+            text-decoration: underline;
+        }
+
+        .intro {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            margin-bottom: 25px;
+        }
+
+        .intro h2 {
+            color: #0b3d91;
+            margin-top: 0;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 22px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        section h2 {
+            color: #0b3d91;
+            border-bottom: 2px solid #e5eaf2;
+            padding-bottom: 8px;
+        }
+
+        section h3 {
+            color: #164e9c;
+        }
+
+        .definition {
+            background: #eaf3ff;
+            border-left: 5px solid #0b3d91;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+
+        .important {
+            background: #fff8d9;
+            border-left: 5px solid #e0ad00;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+
+        .formula {
+            background: #eaf8ed;
+            border-left: 5px solid #2e8b57;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+
+        .example {
+            background: #f5f0ff;
+            border-left: 5px solid #6a42a5;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        th, td {
+            border: 1px solid #d5dce5;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #0b3d91;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f7f9fc;
+        }
+
+        .mcq {
+            background: #f7f9fc;
+            border: 1px solid #dce3ec;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .mcq strong {
+            color: #0b3d91;
+        }
+
+        .answer {
+            color: #16733b;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+        }
+
+        .topic-badge {
+            display: inline-block;
+            background: #0b3d91;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #082f6d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 25px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            section,
+            .intro {
+                padding: 18px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>StudyHub 🧪</h1>
+    <p>Free MDCAT Notes & Preparation</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="biology.html">Biology</a>
+    <a href="chemistry.html">Chemistry</a>
+    <a href="physics.html">Physics</a>
+    <a href="english.html">English</a>
+    <a href="logical-reasoning.html">Logical Reasoning</a>
+</nav>
+
+<main class="container">
+
+    <a class="back" href="chemistry.html">← Back to Chemistry</a>
+
+    <div class="intro">
+        <span class="topic-badge">Official Chemistry Unit 6</span>
+
+        <h2>Chemical Equilibrium</h2>
+
+        <p>
+            This StudyHub topic covers chemical equilibrium, reversible
+            reactions, Le Chatelier's principle, solubility product,
+            common ion effect, buffer solutions and the Haber process.
+        </p>
+
+        <div class="important">
+            <strong>MDCAT Focus:</strong>
+            Understand dynamic equilibrium and how concentration,
+            pressure and temperature affect the position of equilibrium.
+        </div>
+    </div>
+
+
+    <section>
+        <h2>1. Chemical Equilibrium</h2>
+
+        <p>
+            Many chemical reactions are reversible. This means that products
+            can react to form the original reactants.
+        </p>
+
+        <div class="definition">
+            <strong>Chemical equilibrium:</strong>
+            A state in a reversible reaction where the forward and reverse
+            reactions occur at equal rates.
+        </div>
+
+        <p>
+            At equilibrium, the concentrations of reactants and products
+            remain constant with time, although the reactions continue.
+        </p>
+
+        <div class="important">
+            Equilibrium does <strong>not</strong> mean that the amounts of
+            reactants and products are necessarily equal.
+        </div>
+    </section>
+
+
+    <section>
+        <h2>2. Reversible Reactions</h2>
+
+        <p>
+            A reversible reaction can proceed in both forward and reverse
+            directions.
+        </p>
+
+        <div class="formula">
+            Reactants ⇌ Products
+        </div>
+
+        <p>
+            The double arrow (⇌) indicates that both directions are possible.
+        </p>
+
+        <div class="example">
+            <strong>Example:</strong><br><br>
+            N₂ + 3H₂ ⇌ 2NH₃
+        </div>
+
+        <p>
+            In the forward reaction, nitrogen and hydrogen form ammonia.
+            In the reverse reaction, ammonia breaks down into nitrogen
+            and hydrogen.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>3. Dynamic Equilibrium</h2>
+
+        <p>
+            Chemical equilibrium is called <strong>dynamic</strong> because
+            both forward and reverse reactions continue to occur.
+        </p>
+
+        <p>
+            At equilibrium:
+        </p>
+
+        <ul>
+            <li>Forward reaction continues.</li>
+            <li>Reverse reaction continues.</li>
+            <li>Rate of forward reaction = rate of reverse reaction.</li>
+            <li>Macroscopic concentrations remain constant.</li>
+        </ul>
+
+        <div class="formula">
+            At equilibrium:
+            <br>
+            Rate of forward reaction = Rate of reverse reaction
+        </div>
+    </section>
+
+
+    <section>
+        <h2>4. Equilibrium Constant</h2>
+
+        <p>
+            For a general reversible reaction:
+        </p>
+
+        <div class="formula">
+            aA + bB ⇌ cC + dD
+        </div>
+
+        <p>
+            The equilibrium constant in terms of concentration can be
+            represented as:
+        </p>
+
+        <div class="formula">
+            Kc = [C]ᶜ[D]ᵈ / [A]ᵃ[B]ᵇ
+        </div>
+
+        <p>
+            Pure solids and pure liquids are generally not included in
+            the equilibrium expression.
+        </p>
+
+        <div class="important">
+            <strong>MDCAT Tip:</strong>
+            The powers in the equilibrium expression come from the
+            coefficients in the balanced chemical equation.
+        </div>
+    </section>
+
+
+    <section>
+        <h2>5. Le Chatelier's Principle</h2>
+
+        <div class="definition">
+            <strong>Le Chatelier's principle:</strong>
+            When a system at equilibrium is disturbed, the system shifts
+            in a direction that tends to oppose the disturbance.
+        </div>
+
+        <p>
+            The major changes considered are:
+        </p>
+
+        <ul>
+            <li>Change in concentration</li>
+            <li>Change in pressure</li>
+            <li>Change in temperature</li>
+        </ul>
+    </section>
+
+
+    <section>
+        <h2>6. Effect of Concentration</h2>
+
+        <p>
+            If the concentration of a reactant is increased, the equilibrium
+            tends to shift toward the products and consume some of the
+            added reactant.
+        </p>
+
+        <p>
+            If the concentration of a product is increased, the equilibrium
+            tends to shift toward the reactants.
+        </p>
+
+        <table>
+            <tr>
+                <th>Change</th>
+                <th>General Equilibrium Shift</th>
+            </tr>
+
+            <tr>
+                <td>Add reactant</td>
+                <td>Toward products</td>
+            </tr>
+
+            <tr>
+                <td>Remove reactant</td>
+                <td>Toward reactants</td>
+            </tr>
+
+            <tr>
+                <td>Add product</td>
+                <td>Toward reactants</td>
+            </tr>
+
+            <tr>
+                <td>Remove product</td>
+                <td>Toward products</td>
+            </tr>
+        </table>
+    </section>
+
+
+    <section>
+        <h2>7. Effect of Pressure</h2>
+
+        <p>
+            Pressure changes are especially important for equilibrium systems
+            containing gases.
+        </p>
+
+        <p>
+            Increasing pressure generally shifts equilibrium toward the side
+            having fewer moles of gas.
+        </p>
+
+        <p>
+            Decreasing pressure generally shifts equilibrium toward the side
+            having more moles of gas.
+        </p>
+
+        <div class="example">
+            <strong>Example:</strong><br><br>
+            N₂(g) + 3H₂(g) ⇌ 2NH₃(g)
+            <br><br>
+            Left side = 4 moles of gas<br>
+            Right side = 2 moles of gas
+            <br><br>
+            Increasing pressure favors the right side.
+        </div>
+
+        <div class="important">
+            If both sides contain the same number of gaseous moles,
+            changing pressure does not shift the equilibrium position.
+        </div>
+    </section>
+
+
+    <section>
+        <h2>8. Effect of Temperature</h2>
+
+        <p>
+            Temperature affects equilibrium because heat can be considered
+            as a reactant or product depending on whether the reaction
+            is endothermic or exothermic.
+        </p>
+
+        <h3>Exothermic Reaction</h3>
+
+        <div class="formula">
+            Reactants ⇌ Products + Heat
+        </div>
+
+        <p>
+            Increasing temperature favors the reverse direction,
+            while decreasing temperature favors the forward direction.
+        </p>
+
+        <h3>Endothermic Reaction</h3>
+
+        <div class="formula">
+            Reactants + Heat ⇌ Products
+        </div>
+
+        <p>
+            Increasing temperature favors the endothermic direction.
+        </p>
+
+        <div class="important">
+            Temperature is the important condition that can change
+            the value of the equilibrium constant.
+        </div>
+    </section>
+
+
+    <section>
+        <h2>9. Solubility Equilibrium</h2>
+
+        <p>
+            Some ionic compounds are only slightly soluble in water.
+            They establish an equilibrium between the undissolved solid
+            and its ions in solution.
+        </p>
+
+        <div class="example">
+            <strong>Example:</strong><br><br>
+            AgCl(s) ⇌ Ag⁺(aq) + Cl⁻(aq)
+        </div>
+
+        <p>
+            This type of equilibrium can be described using a solubility
+            product constant.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>10. Solubility Product (Ksp)</h2>
+
+        <div class="definition">
+            <strong>Solubility product constant (Ksp):</strong>
+            The equilibrium constant for the dissolution of a sparingly
+            soluble ionic compound.
+        </div>
+
+        <p>
+            For:
+        </p>
+
+        <div class="formula">
+            AgCl(s) ⇌ Ag⁺ + Cl⁻
+            <br><br>
+            Ksp = [Ag⁺][Cl⁻]
+        </div>
+
+        <p>
+            The concentration of the solid AgCl is not included in the
+            Ksp expression.
+        </p>
+
+        <h3>Another Example</h3>
+
+        <div class="formula">
+            CaF₂(s) ⇌ Ca²⁺ + 2F⁻
+            <br><br>
+            Ksp = [Ca²⁺][F⁻]²
+        </div>
+
+        <div class="important">
+            Remember: coefficients in the balanced equation become
+            powers in the Ksp expression.
+        </div>
+    </section>
+
+
+    <section>
+        <h2>11. Common Ion Effect</h2>
+
+        <div class="definition">
+            <strong>Common ion effect:</strong>
+            The decrease in the ionization or solubility of a weak
+            electrolyte when a strong electrolyte containing a common ion
+            is added.
+        </div>
+
+        <p>
+            The common ion shifts the equilibrium according to
+            Le Chatelier's principle.
+        </p>
+
+        <div class="example">
+            <strong>Example:</strong><br><br>
+            Consider a weak electrolyte producing ion X.
+            Adding a soluble compound that also produces X increases
+            the concentration of X and shifts the equilibrium toward
+            the reactant side.
+        </div>
+
+        <div class="important">
+            Common ion effect generally decreases the solubility
+            of a sparingly soluble salt.
+        </div>
+    </section>
+
+
+    <section>
+        <h2>12. Buffer Solutions</h2>
+
+        <div class="definition">
+            <strong>Buffer solution:</strong>
+            A solution that resists significant changes in pH when
+            small amounts of acid or base are added.
+        </div>
+
+        <h3>Types of Buffers</h3>
+
+        <ul>
+            <li>Acidic buffer</li>
+            <li>Basic buffer</li>
+        </ul>
+
+        <h3>Acidic Buffer</h3>
+
+        <p>
+            An acidic buffer usually contains a weak acid and its conjugate
+            base, commonly supplied by a salt of that weak acid.
+        </p>
+
+        <div class="example">
+            <strong>Example:</strong><br><br>
+            Acetic acid (CH₃COOH) + sodium acetate (CH₃COONa)
+        </div>
+
+        <h3>Basic Buffer</h3>
+
+        <p>
+            A basic buffer commonly contains a weak base and its conjugate acid.
+        </p>
+
+        <div class="example">
+            <strong>Example:</strong><br><br>
+            Ammonia (NH₃) + ammonium salt such as NH₄Cl
+        </div>
+
+        <div class="important">
+            The main function of a buffer is to resist sudden changes
+            in pH.
+        </div>
+    </section>
+
+
+    <section>
+        <h2>13. Haber Process</h2>
+
+        <p>
+            The Haber process is used industrially to manufacture ammonia.
+        </p>
+
+        <div class="formula">
+            N₂(g) + 3H₂(g) ⇌ 2NH₃(g)
+        </div>
+
+        <h3>Important Conditions</h3>
+
+        <ul>
+            <li>High pressure</li>
+            <li>Elevated temperature</li>
+            <li>Iron catalyst</li>
+        </ul>
+
+        <p>
+            The reaction is reversible and exothermic.
+            Because there are fewer gas molecules on the product side,
+            increasing pressure favors ammonia formation.
+        </p>
+
+        <div class="important">
+            <strong>MDCAT Focus:</strong>
+            In the Haber process, high pressure favors NH₃ because
+            the product side contains fewer moles of gas.
+        </div>
+
+        <h3>Role of Catalyst</h3>
+
+        <p>
+            A catalyst increases the rate at which equilibrium is reached.
+            It does not change the final equilibrium position.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>14. Catalyst and Equilibrium</h2>
+
+        <p>
+            A catalyst lowers the activation energy of both the forward
+            and reverse reactions.
+        </p>
+
+        <div class="formula">
+            Catalyst → Faster forward reaction + Faster reverse reaction
+        </div>
+
+        <p>
+            Therefore, a catalyst helps the system reach equilibrium faster
+            but does not shift the equilibrium position.
+        </p>
+
+        <div class="important">
+            <strong>Remember:</strong>
+            Catalyst does NOT change the equilibrium constant.
+        </div>
+    </section>
+
+
+    <section>
+        <h2>15. Quick Revision</h2>
+
+        <ul>
+            <li>Equilibrium occurs in a reversible reaction.</li>
+            <li>At equilibrium, forward rate = reverse rate.</li>
+            <li>Equilibrium is dynamic, not static.</li>
+            <li>Reactant and product concentrations remain constant at equilibrium.</li>
+            <li>Le Chatelier's principle predicts equilibrium shifts.</li>
+            <li>Increasing reactant concentration generally favors products.</li>
+            <li>Increasing product concentration generally favors reactants.</li>
+            <li>Increasing pressure favors the side with fewer gas moles.</li>
+            <li>Decreasing pressure favors the side with more gas moles.</li>
+            <li>Temperature can change the equilibrium constant.</li>
+            <li>Ksp describes equilibrium involving a sparingly soluble salt.</li>
+            <li>Common ion effect generally decreases solubility.</li>
+            <li>Buffers resist sudden changes in pH.</li>
+            <li>Haber process produces ammonia.</li>
+            <li>A catalyst helps equilibrium establish faster but does not shift it.</li>
+        </ul>
+    </section>
+
+
+    <section>
+        <h2>16. MDCAT Practice MCQs</h2>
+
+        <div class="mcq">
+            <strong>1. At chemical equilibrium:</strong>
+            <ol type="A">
+                <li>Reaction stops completely</li>
+                <li>Forward rate equals reverse rate</li>
+                <li>Only forward reaction occurs</li>
+                <li>Only reverse reaction occurs</li>
+            </ol>
+            <div class="answer">Answer: B</div>
+        </div>
+
+        <div class="mcq">
+            <strong>2. Chemical equilibrium is:</strong>
+            <ol type="A">
+                <li>Static</li>
+                <li>Dynamic</li>
+                <li>Impossible in gases</li>
+                <li>Only found in solids</li>
+            </ol>
+            <div class="answer">Answer: B</div>
+        </div>
+
+        <div class="mcq">
+            <strong>3. Le Chatelier's principle describes the response of an equilibrium system to:</strong>
+            <ol type="A">
+                <li>A disturbance</li>
+                <li>Gravity only</li>
+                <li>Light only</li>
+                <li>Sound only</li>
+            </ol>
+            <div class="answer">Answer: A</div>
+        </div>
+
+        <div class="mcq">
+            <strong>4. Increasing the concentration of a reactant generally shifts equilibrium:</strong>
+            <ol type="A">
+                <li>Toward reactants</li>
+                <li>Toward products</li>
+                <li>Nowhere</li>
+                <li>Toward a solid only</li>
+            </ol>
+            <div class="answer">Answer: B</div>
+        </div>
+
+        <div class="mcq">
+            <strong>5. Increasing pressure generally favors the side with:</strong>
+            <ol type="A">
+                <li>More moles of gas</li>
+                <li>Fewer moles of gas</li>
+                <li>More liquid</li>
+                <li>More solid</li>
+            </ol>
+            <div class="answer">Answer: B</div>
+        </div>
+
+        <div class="mcq">
+            <strong>6. For N₂ + 3H₂ ⇌ 2NH₃, increasing pressure favors:</strong>
+            <ol type="A">
+                <li>N₂ and H₂</li>
+                <li>NH₃</li>
+                <li>Neither side</li>
+                <li>Only H₂</li>
+            </ol>
+            <div class="answer">Answer: B</div>
+        </div>
+
+        <div class="mcq">
+            <strong>7. The equilibrium constant expression for AgCl ⇌ Ag⁺ + Cl⁻ is:</strong>
+            <ol type="A">
+                <li>[AgCl]</li>
+                <li>[Ag⁺][Cl⁻]</li>
+                <li>[Ag⁺]/[Cl⁻]</li>
+                <li>[AgCl][Ag⁺]</li>
+            </ol>
+            <div class="answer">Answer: B</div>
+        </div>
+
+        <div class="mcq">
+            <strong>8. Ksp is associated mainly with:</strong>
+            <ol type="A">
+                <li>Highly soluble gases</li>
+                <li>Sparingly soluble ionic compounds</li>
+                <li>Organic gases only</li>
+                <li>Pure liquids only</li>
+            </ol>
+            <div class="answer">Answer: B</div>
+        </div>
+
+        <div class="mcq">
+            <strong>9. The common ion effect generally:</strong>
+            <ol type="A">
+                <li>Increases solubility</li>
+                <li>Decreases solubility</li>
+                <li>Stops all reactions</li>
+                <li>Changes an ion into an atom</li>
+            </ol>
+            <div class="answer">Answer: B</div>
+        </div>
+
+        <div class="mcq">
+            <strong>10. A buffer solution resists changes in:</strong>
+            <ol type="A">
+                <li>Mass</li>
+                <li>Volume</li>
+                <li>pH</li>
+                <li>Density only</li>
+            </ol>
+            <div class="answer">Answer: C</div>
+        </div>
+
+        <div class="mcq">
+            <strong>11. Which is an example of an acidic buffer?</strong>
+            <ol type="A">
+                <li>CH₃COOH + CH₃COONa</li>
+                <li>NaCl + water</li>
+                <li>HCl + NaCl</li>
+                <li>NaOH + KOH</li>
+            </ol>
+            <div class="answer">Answer: A</div>
+        </div>
+
+        <div class="mcq">
+            <strong>12. The Haber process produces:</strong>
+            <ol type="A">
+                <li>Oxygen</li>
+                <li>Ammonia</li>
+                <li>Chlorine</li>
+                <li>Carbon dioxide</li>
+            </ol>
+            <div class="answer">Answer: B</div>
+        </div>
+
+        <div class="mcq">
+            <strong>13. The catalyst used in the Haber process is mainly:</strong>
+            <ol type="A">
+                <li>Iron</li>
+                <li>Copper</li>
+                <li>Silver</li>
+                <li>Sodium</li>
+            </ol>
+            <div class="answer">Answer: A</div>
+        </div>
+
+        <div class="mcq">
+            <strong>14. A catalyst at equilibrium:</strong>
+            <ol type="A">
+                <li>Changes the equilibrium constant</li>
+                <li>Shifts equilibrium to products</li>
+                <li>Helps equilibrium establish faster</li>
+                <li>Stops the reverse reaction</li>
+            </ol>
+            <div class="answer">Answer: C</div>
+        </div>
+
+        <div class="mcq">
+            <strong>15. For an exothermic equilibrium, increasing temperature generally favors:</strong>
+            <ol type="A">
+                <li>The exothermic direction</li>
+                <li>The endothermic direction</li>
+                <li>Both equally</li>
+                <li>No reaction</li>
+            </ol>
+            <div class="answer">Answer: B</div>
+        </div>
+    </section>
+
+
+    <section>
+        <h2>17. MDCAT Exam Tips</h2>
+
+        <ul>
+            <li>Remember: <strong>forward rate = reverse rate</strong> at equilibrium.</li>
+            <li>Equilibrium is dynamic, not static.</li>
+            <li>Use Le Chatelier's principle for concentration, pressure and temperature questions.</li>
+            <li>For gases, higher pressure generally favors fewer gas moles.</li>
+            <li>Learn the Ksp expression carefully.</li>
+            <li>Remember the common ion effect.</li>
+            <li>Know that buffers resist changes in pH.</li>
+            <li>Remember the Haber process equation and role of iron catalyst.</li>
+            <li>A catalyst does not change the equilibrium position.</li>
+        </ul>
+
+        <div class="important">
+            <strong>Golden Point:</strong>
+            In a reversible reaction at equilibrium,
+            <strong>the forward and reverse reaction rates are equal</strong>.
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 StudyHub - Free MDCAT Preparation</p>
+    <p>Study Smart • Practice More • Achieve Your Goal 🎯</p>
+</footer>
+
+</body>
+</html>
